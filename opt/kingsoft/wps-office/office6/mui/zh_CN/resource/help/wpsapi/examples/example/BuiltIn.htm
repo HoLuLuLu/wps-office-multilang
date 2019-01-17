@@ -1,0 +1,11 @@
+<html><head>
+<title>BuiltIn</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例实现的功能是：检查活动文档中的所有样式，如果检查到一个非内置样式，则显示该样式的名称。<p>Dim styleLoop As Style<br>For Each styleLoop in ActiveDocument.Styles<br>    &nbsp;&nbsp;&nbsp;    If styleLoop.BuiltIn = False Then<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Msgbox styleLoop.NameLocal<br>    &nbsp;&nbsp;&nbsp;    End If<br>Next styleLoop
+</div>
+</body>
+</html>

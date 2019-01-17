@@ -1,0 +1,10 @@
+<html><head>
+<title>AutoShapeType</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将活动文档中的所有 16 磅星形替换为 32 磅星形。<p>    Dim docNew As Document<br>    Dim shpStar As Shape<br>    Set docNew = ActiveDocument<br>    For Each shpStar In docNew.Shapes<br>        &nbsp;&nbsp;&nbsp;        If shpStar.AutoShapeType = ksoShape16pointStar Then<br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            shpStar.AutoShapeType = ksoShape32pointStar<br>        &nbsp;&nbsp;&nbsp;        End If<br>    Next<br>　</div>
+</body>
+</html>

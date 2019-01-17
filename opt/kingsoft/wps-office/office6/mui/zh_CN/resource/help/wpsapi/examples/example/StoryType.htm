@@ -1,0 +1,12 @@
+<html><head>
+<title>StoryType</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+如果活动文档中的主要文字部分包括名为“temp”的书签，本示例则选中该书签。  
+<p>If ActiveDocument.Bookmarks.Exists("temp") = True Then <br>    &nbsp;&nbsp;&nbsp;    Set myBookmark = ActiveDocument.Bookmarks("temp") <br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    If myBookmark.StoryType = wpsMainTextStory _ <br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Then myBookmark.Select <br>End If 
+</div>
+</body>
+</html>

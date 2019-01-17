@@ -1,0 +1,22 @@
+<html><head>
+<title>Description</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例新建一篇文档并插入以制表符分隔的列表，以显示活动文档中的样式及其说明。<p>Dim wpsActive As Document<br>
+Dim wpsNew As Document<br>
+Dim styleLoop As Style<br>
+Set wpsActive = ActiveDocument<br>
+Set wpsNew = Documents.Add<br>
+For Each styleLoop In wpsActive.Styles<br>
+&nbsp;&nbsp;&nbsp; With wpsNew.Range<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .InsertAfter Text:=styleLoop.NameLocal 
+&amp; Chr(9) &amp; styleLoop.Description<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .InsertParagraphAfter<br>
+&nbsp;&nbsp;&nbsp; End With<br>
+Next styleLoop<br>
+　</div>
+</body>
+</html>

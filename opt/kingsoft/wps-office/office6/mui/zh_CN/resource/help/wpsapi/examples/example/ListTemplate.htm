@@ -1,0 +1,11 @@
+<html><head>
+<title>ListTemplate</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例查看活动文档的第二段所用的列表模板，然后将该列表模板应用到选定内容。<p>Set myltemp = ActiveDocument.Paragraphs(2).Range. _<br>    ListFormat.ListTemplate<br>Selection.Range.ListFormat.ApplyListTemplate ListTemplate:=myltemp
+</div>
+</body>
+</html>

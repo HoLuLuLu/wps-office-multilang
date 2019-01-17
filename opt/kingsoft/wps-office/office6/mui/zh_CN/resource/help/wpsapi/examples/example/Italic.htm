@@ -1,0 +1,12 @@
+<html><head>
+<title>Italic</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例检查所选内容中的倾斜格式并清除在所选内容中存在的倾斜格式。<p>If Selection.Type = wpsSelectionNormal Then <br>    &nbsp;&nbsp;&nbsp;    mySel = Selection.Font.Italic <br>    &nbsp;&nbsp;&nbsp;    If mySel = wpsUndefined or mySel = True Then <br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        MsgBox 
+&quot;There's italic text in selection.Click OK to remove." <br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Selection.Font.Italic = False <br>    &nbsp;&nbsp;&nbsp;    Else<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        MsgBox "No italic text in the selection." <br>    &nbsp;&nbsp;&nbsp;    End If <br>Else <br>    &nbsp;&nbsp;&nbsp;    MsgBox "You need to select some text." <br>End If 
+</div>
+</body>
+</html>

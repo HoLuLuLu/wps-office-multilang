@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>HasTextFrame</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例判断在活动窗口中选定的形状是否为文本框，如果是则填充文本。<p>With&nbsp;ActiveWindow.Selection.ShapeRange<br>&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;.HasTextFrame&nbsp;Then<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.TextFrame.TextRange.Text&nbsp;=&nbsp;"这是一个文本框"<br>&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;If<br>End&nbsp;With
+</div>
+</body>
+</html>

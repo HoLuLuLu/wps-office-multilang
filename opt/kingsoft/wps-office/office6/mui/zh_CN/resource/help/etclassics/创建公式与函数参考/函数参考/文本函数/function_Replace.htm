@@ -1,0 +1,109 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>REPLACE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="REPLACE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>REPLACE</h1>
+<p>REPLACE 使用其他文本字符串并根据所指定的字符数替换某文本字符串中的部分文本。</p>
+<p><b>语法</b></p>
+<p><b>REPLACE</b>(<b>old_text</b>,<b>start_num</b>,<b>num_chars</b>,<b>new_text</b>)</p>
+<p class="DT1">Old_text&nbsp;&nbsp; 是要替换其部分字符的文本。</p>
+<p class="DT1">Start_num&nbsp;&nbsp; 是要用 new_text 替换的 old_text 中字符的位置。</p>
+<p class="DT1">Num_chars&nbsp;&nbsp; 是希望 REPLACE 使用 new_text 替换 old_text 中字符的个数。</p>
+<p class="DT1">New_text&nbsp;&nbsp; 是要用于替换 old_text 中字符的文本。</p>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="298">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="115">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="115">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="117">他处在零状态中</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="117">2009</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="117">123456</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="547">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="148"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=REPLACE(A2,4,3,&quot;*&quot;)</td>
+		<td class ="ll" width="363">从第 4 个字符开始，替换 3 个字符 (他处在*中)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=REPLACE(A3,3,2,&quot;10&quot;)</td>
+		<td class ="ll" width="363">用 10 替换 2009 的最后两位 (2010)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=REPLACE(A4,1,3,&quot;@&quot;)</td>
+		<td class ="ll" width="363">用 @ 替换前三个字符 (@456)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+<p><a href="function_Trim.htm">TRIM</a></p>
+<p><a href="function_Mid.htm">MID</a></p>
+<p><a href="function_Search.htm">SEARCH</a></p>
+<p><a href="function_Substitute.htm">SUBSTITUTE</a></p>
+<p>
+　</p>
+<p>　</p>
+
+
+
+</body>
+
+</html>

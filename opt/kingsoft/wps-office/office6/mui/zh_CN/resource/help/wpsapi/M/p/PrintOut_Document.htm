@@ -1,0 +1,131 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>PrintOut_Document</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>该方法可打印指定文档的全部或部分。</P><br>
+    <P><b>语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.PrintOut</b><i>([Background], [Append], [Range], [OutputFileName], [From], [To], [Item], [Copies], [Pages], [PageType], [PrintToFile], [Collate], [FileName], [ManualDuplexPrint], [PrintZoomColumn], [PrintZoomRow], [PrintZoomPaperWidth], [PrintZoomPaperHeight])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >   必需。该表达式返回 <b>
+			<a href="../../objs/d/Document.htm">Document</a></b> 对象。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Background  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果将该参数设为 <b>True</b>，则 WPS 在打印文档时继续运行宏。 
+            默认为 <b>False</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Append  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果将该参数设为 <b>True</b>，则将指定文档添至由  
+			<b>OutputFileName</b> 参数所指定的文件中。如果将该参数设为 <b>False</b>，则覆盖 <b>OutputFileName</b> 参数所指定文件的内容。 
+            默认为 <b>False</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Range  </i></td>
+            <td width="59%" height=15 > 可选，<b>WpsPrintOutRange </b>常量。该参数表示页面范围。默认为 <b>wpsPrintAllDocument </b>
+			常量值。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>OutputFileName  </i></td>
+            <td width="59%" height=15 > 可选，<b>String </b>类型。如果 PrintToFile 的值为 True，则该参数指定输出文件的路径和文件名。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>From  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。如果将 <b>Range</b> 设为  
+			<b>wpsPrintFromTo</b>，则该参数指定起始页码。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>To  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。如果将 <b>Range</b> 设为  
+			<b>wpsPrintFromTo</b>，则该参数指定结束页码。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Item  </i></td>
+            <td width="59%" height=15 > 可选，<b>WpsPrintOutItem</b> 
+			常量。该参数代表要打印的项目。默认为 <b>wpsPrintDocumentContent</b>
+   			常量值。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Copies  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。该参数代表要打印的份数。 默认值 1</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Pages  </i></td>
+            <td width="59%" height=15 > 可选，<b>String </b>类型。该参数表示要打印的页码和页码范围，以逗号分隔各项。例如，“2, 6-10”表示打印第 2 页和第 6 至 10 页。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PageType  </i></td>
+            <td width="59%" height=15 > 可选，<b>WpsPrintOutPages </b>
+			常量。该参数表示要打印的页面类型。默认值 <b>wpsPrintAllPages </b>常量值。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PrintToFile  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如该参数值为 <b>True</b>，则将打印指令发送到文件。请确认使用  
+			<b>OutputFileName</b> 参数指定文件名。 
+            默认值 <b>False</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Collate  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。在打印文档的多份副本时，如果该参数值为  
+			<b>True</b>，则完成打印所有页面后再打印下一份副本。 默认值 <b>True</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>FileName  </i></td>
+            <td width="59%" height=15 > 可选，<b>String </b>类型。该参数表示要打印的文档的路径和文件名。如果忽略该参数，WPS 将打印活动文档。（仅应用于  
+			<b><a href="../../objs/a/Application.htm">Application</a></b> 对象）
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>ManualDuplexPrint  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果该参数值为 <b>True</b>，则表示要在无双面打印组件的打印机上打印双面文档。如果该参数值为 True，则忽略 
+			<b>PrintBackground</b> 和 <b>PrintReverse</b> 属性。使用 <b>PrintOddPagesInAscendingOrder</b> 和  
+			<b>PrintEvenPagesInAscendingOrder</b> 属性可在手动双面打印时控制输出。由于选择或安装的语言支持不同，（例如，美国英语），该参数可能无法使用。 
+            默认值 <b>False</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PrintZoomColumn  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。该参数表示 WPS 在一页纸上水平放置的页数。可以是 1、2、3 或 4。与  
+			<b>PrintZoomRow</b> 参数一同使用可在单张纸上打印多页文档。 默认值 1</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PrintZoomRow  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。该参数表示 WPS 在一页纸上垂直放置的页数。可以是 1、2、3 或 4。与  
+			<b>PrintZoomColumn</b> 参数一同使用可在单张纸上打印多页文档。 默认值 1</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PrintZoomPaperWidth  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。该参数表示 WPS 将打印页面缩放到的宽度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PrintZoomPaperHeight  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。该参数表示 WPS 将打印页面缩放到的高度，以缇为单位（20 缇 = 1 磅；72 磅 = 1 英寸）。   </td>
+          </tr>
+    </table>
+	<p><br>
+    </div>
+</body>
+</html>

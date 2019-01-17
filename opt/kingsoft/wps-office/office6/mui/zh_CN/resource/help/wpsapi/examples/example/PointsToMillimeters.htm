@@ -1,0 +1,11 @@
+<html><head>
+<title>PointsToMillimeters</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例根据 sngData 变量的值（从 1 到 5 的值，表明结果的度量单位），将 intUnit 变量的值（以磅为单位）转换为厘米、英寸、行、毫米或十二点活字。<p>Function ConvertPoints(ByVal intUnit As Integer, _<br>    &nbsp;&nbsp;&nbsp;    sngData As Single) As Single<br>    &nbsp;&nbsp;&nbsp;    Select Case intUnit<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Case 1<br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            ConvertPoints = PointsToCentimeters(sngData)<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Case 2<br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            ConvertPoints = PointsToInches(sngData)<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Case 3<br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            ConvertPoints = PointsToLines(sngData)<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Case 4<br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            ConvertPoints = PointsToMillimeters(sngData)<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Case 5<br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            ConvertPoints = PointsToPicas(sngData)<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Case Else<br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            Error 5<br>    &nbsp;&nbsp;&nbsp;    End Select<br>End Function&nbsp;
+</div>
+</body>
+</html>

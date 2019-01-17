@@ -1,0 +1,14 @@
+<html><head>
+<title>Lists</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p class="T">本示例向主页脚添加一个右对齐的页码，该页脚位于活动文档的第一节。<p>
+With ActiveDocument.Sections(1).Footers(wpsHeaderFooterPrimary)<br>
+&nbsp;&nbsp;&nbsp;
+.PageNumbers.Add PageNumberAlignment:=wpsAlignPageNumberRight<br>
+End With</div>
+</body>
+</html>

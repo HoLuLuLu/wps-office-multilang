@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.standard" component="et">
+	<libraries/>
+	<commands>
+		<KxLegacyTriggerCommand hotKey="D" ksoCmd="SendMail" aid="83002" filter="platform=win32" icon="SendMail" id="SendMail" dialogHint="1" text="@Send E-mail"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="ExportPDF" aid="80004" icon="ExportToPDF" id="ExportPDF" dialogHint="1" text="@Export to PDF"/>
+		<KxLegacyTriggerCheckCommand hotKey="R" ksoCmd="ToolBarRestrictAccess" aid="9004" filter="support:RightsManagementServices=true" icon="RestrictPermission" id="ToolBarRestrictAccess" dialogHint="1"/>
+		<KxLegacyTriggerCommandEx ksoCmd="TranslateToSimplifiedChinese" aid="80036" icon="TranslateToSimplifiedChinese" id="TranslateToSimplifiedChinese" text="@Translate to Simplified Chinese"/>
+		<KxLegacyTriggerCommandEx ksoCmd="TranslateToTraditionalChinese" aid="80037" icon="TranslateToTraditionalChinese" id="TranslateToTraditionalChinese" text="@Translate to Traditional Chinese"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="Formulas" aid="5836" id="Formulas" text="@Formulas"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="NoBorders" aid="5837" id="NoBorders" text="@No Border"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="Values" forceVisible="1" aid="370" id="Values" text="@Values"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="Transpose" aid="5838" id="Transpose" text="@Transpose"/>
+		<KxLegacyTriggerCommand hotKey="z" ksoCmd="PasteAsPicture" aid="92005" icon="PasteAsPicture" id="PasteAsPicture" text="@Paste as Picture"/>
+		<KxLegacyTriggerCommand hotKey="y" ksoCmd="PasteAsUnformattedText" forceVisible="1" aid="92000" icon="PasteAsUnformattedText" id="PasteAsUnformattedText" text="@Paste as Unformatted Text"/>
+		<KxEtPasteListCommand hotKey="p" ksoCmd="Paste" aid="22" icon="Paste" shortcutHint="Ctrl+V" id="pasteList" spaceHint="suitable" text="@Paste">
+			<command idQ="Formulas"/>
+			<command idQ="NoBorders"/>
+			<command idQ="Values"/>
+			<command idQ="Transpose"/>
+			<separator/>
+			<command idQ="PasteAsPicture"/>
+			<command idQ="PasteAsUnformattedText"/>
+			<command idQ="PasteSpecial"/>
+		</KxEtPasteListCommand>
+		<KxLegacyTriggerCommandEx hotKey="f" ksoCmd="FormatPainter" aid="108" icon="FormatPainter" id="FormatPainter" text="@Format Painter"/>
+		<KListCommand showIconAndText="1" aid="3000037" barid="40074" icon="conditionHighLight" id="rConditionHighlight" customTip="sp_ConditionHighlight" text="@Highlight" rbHotKey="T">
+			<KListCommand hotKey="n" aid="3000038" barid="40075" icon="conditionalNumerial" customTip="ConditionNumerial" text="@Value" qtspyName="conditionalNumerial">
+				<KxEtConditionFormatTriggerCommand hotKey="a" ksoCmd="ConditionHighLight" allowMultiAreas="1" aid="3000042" subType="0" type="0" dialogHint="1" text="@Equal to" qtspyName="Equal to"/>
+				<KxEtConditionFormatTriggerCommand hotKey="b" ksoCmd="ConditionHighLight" allowMultiAreas="1" aid="3000043" subType="2" type="0" dialogHint="1" text="@Greater than" qtspyName="Greater than"/>
+				<KxEtConditionFormatTriggerCommand hotKey="c" ksoCmd="ConditionHighLight" allowMultiAreas="1" aid="3000044" subType="4" type="0" dialogHint="1" text="@Less than" qtspyName="Less than"/>
+				<KxEtConditionFormatTriggerCommand hotKey="d" ksoCmd="ConditionHighLight" allowMultiAreas="1" aid="3000045" subType="6" type="0" dialogHint="1" text="@Between" qtspyName="Between"/>
+				<KxEtConditionFormatTriggerCommand hotKey="e" ksoCmd="ConditionHighLight" aid="3000046" subType="8" type="0" dialogHint="1" text="@Top 10" qtspyName="Top 10"/>
+				<KxEtConditionFormatTriggerCommand hotKey="f" ksoCmd="ConditionHighLight" aid="3000047" subType="10" type="0" dialogHint="1" text="@Top 10 %" qtspyName="Top 10 %"/>
+				<KxEtConditionFormatTriggerCommand hotKey="g" ksoCmd="ConditionHighLight" aid="3000048" subType="9" type="0" dialogHint="1" text="@Bottom 10" qtspyName="Bottom 10"/>
+				<KxEtConditionFormatTriggerCommand hotKey="h" ksoCmd="ConditionHighLight" aid="3000049" subType="11" type="0" dialogHint="1" text="@Bottom 10 %" qtspyName="Bottom 10 %"/>
+				<KxEtConditionFormatTriggerCommand hotKey="i" ksoCmd="ConditionHighLight" aid="3000050" subType="12" type="0" dialogHint="1" text="@Above Average" qtspyName="Above Average"/>
+				<KxEtConditionFormatTriggerCommand hotKey="j" ksoCmd="ConditionHighLight" aid="3000051" subType="13" type="0" dialogHint="1" text="@Below Average" qtspyName="Below Average"/>
+			</KListCommand>
+			<KListCommand hotKey="t" aid="3000039" barid="40076" icon="conditionalText" customTip="ConditionText" text="@Text" qtspyName="conditionalText">
+				<KxEtConditionFormatTriggerCommand hotKey="a" ksoCmd="ConditionHighLight" aid="3000052" subType="0" type="1" dialogHint="1" text="@Contain" qtspyName="Contain"/>
+				<KxEtConditionFormatTriggerCommand hotKey="b" ksoCmd="ConditionHighLight" aid="3000053" subType="1" type="1" dialogHint="1" text="@Does not contain" qtspyName="Does not contain"/>
+				<KxEtConditionFormatTriggerCommand hotKey="c" ksoCmd="ConditionHighLight" aid="3000054" subType="2" type="1" dialogHint="1" text="@Begin with" qtspyName="Begin with"/>
+				<KxEtConditionFormatTriggerCommand hotKey="d" ksoCmd="ConditionHighLight" aid="3000055" subType="3" type="1" dialogHint="1" text="@End with" qtspyName="End with"/>
+			</KListCommand>
+			<KListCommand hotKey="d" aid="3000040" barid="40077" icon="conditionalDate" customTip="ConditionDate" text="@Date" qtspyName="conditionalDate">
+				<KxEtConditionFormatTriggerCommand hotKey="a" ksoCmd="ConditionHighLight" aid="3000056" subType="0" type="2" dialogHint="1" text="@Yesterday" qtspyName="Yesterday"/>
+				<KxEtConditionFormatTriggerCommand hotKey="b" ksoCmd="ConditionHighLight" aid="3000057" subType="1" type="2" dialogHint="1" text="@Today" qtspyName="Today"/>
+				<KxEtConditionFormatTriggerCommand hotKey="c" ksoCmd="ConditionHighLight" aid="3000058" subType="2" type="2" dialogHint="1" text="@Tomorrow" qtspyName="Tomorrow"/>
+				<KxEtConditionFormatTriggerCommand hotKey="d" ksoCmd="ConditionHighLight" aid="3000059" subType="3" type="2" dialogHint="1" text="@In the last 7 days" qtspyName="In the last 7 days"/>
+				<KxEtConditionFormatTriggerCommand hotKey="e" ksoCmd="ConditionHighLight" aid="3000060" subType="4" type="2" dialogHint="1" text="@Last week" qtspyName="Last week"/>
+				<KxEtConditionFormatTriggerCommand hotKey="f" ksoCmd="ConditionHighLight" aid="3000061" subType="5" type="2" dialogHint="1" text="@This week" qtspyName="This week"/>
+				<KxEtConditionFormatTriggerCommand hotKey="g" ksoCmd="ConditionHighLight" aid="3000062" subType="6" type="2" dialogHint="1" text="@Next week" qtspyName="Next week"/>
+				<KxEtConditionFormatTriggerCommand hotKey="h" ksoCmd="ConditionHighLight" aid="3000063" subType="7" type="2" dialogHint="1" text="@Last month" qtspyName="Last month"/>
+				<KxEtConditionFormatTriggerCommand hotKey="i" ksoCmd="ConditionHighLight" aid="3000064" subType="8" type="2" dialogHint="1" text="@This month" qtspyName="This month"/>
+				<KxEtConditionFormatTriggerCommand hotKey="j" ksoCmd="ConditionHighLight" aid="3000065" subType="9" type="2" dialogHint="1" text="@Next month" qtspyName="Next month"/>
+				<KxEtConditionFormatTriggerCommand hotKey="k" ksoCmd="ConditionHighLight" aid="3000066" subType="10" type="2" dialogHint="1" text="@Weekend" qtspyName="Weekend"/>
+			</KListCommand>
+			<KListCommand hotKey="s" aid="3000041" barid="40078" icon="conditionalSpecial" customTip="ConditionSpecial" text="@Special Value" qtspyName="conditionalSpecial">
+				<KxEtConditionFormatTriggerCommand hotKey="a" ksoCmd="ConditionHighLight" aid="3000067" subType="0" type="3" dialogHint="1" text="@Empty Cell" qtspyName="Empty Cell"/>
+				<KxEtConditionFormatTriggerCommand hotKey="b" ksoCmd="ConditionHighLight" aid="3000068" subType="1" type="3" dialogHint="1" text="@Error Value " qtspyName="Error Value"/>
+			</KListCommand>
+			<separator/>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="ConditionalFormat" aid="3000069" icon="conditionalCustom" customTip="ConditionalFormat" text="@Custom" qtspyName="ConditionalFormat"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="ConditionalClear" aid="3000070" icon="conditionalClean" customTip="ConditionalClear" text="@Clear" qtspyName="ConditionalClear"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="q" ksoCmd="KingsoftEquationEditor" forceVisible="1" aid="30254" filter="platform=win32" icon="EquationEditor" id="KingsoftEquationEditor" dialogHint="1" text="@Equation" rbHotKey="E"/>
+		<KxPropComposeCommand hotKey="i" ksoCmd="InsertOrEditHyperlink" forceVisible="1" aid="1576" icon="InsertHyperlink" shortcutHint="Ctrl+K" id="InsertHyperlinkToolBar" dialogHint="1" text="@Insert Hyperlink" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Sum" aid="226" id="Sum" text="@Sum"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="Average" aid="5803" id="Average" customTip="Average" text="@Average" rbHotKey="A"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="Count" aid="5804" id="Count" customTip="Count" text="@Count" rbHotKey="C"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="Max" aid="5806" id="Max" customTip="Max" text="@Max" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="Min" aid="5807" id="Min" customTip="Min" text="@Min" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="Morefunctions" aid="5808" id="Morefunctions" dialogHint="1" customTip="Morefunctions" text="@More Functions" rbHotKey="F"/>
+		<KxListCommand hotKey="a" ksoCmd="AutoSum" aid="226" icon="AutoSum" id="functionsonbar" spaceHint="suitable" text="@AutoSum">
+			<command idQ="Sum"/>
+			<command idQ="Average"/>
+			<command idQ="Count"/>
+			<command idQ="Max"/>
+			<command idQ="Min"/>
+			<command idQ="Morefunctions"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="SortAscending" aid="210" icon="SortAscending" id="SortAscendingToolbar" text="@Sort Ascending"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="SortDescending" aid="211" icon="SortDescending" id="SortDescendingToolbar" text="@Sort Descending"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="AutoFilterAgain" aid="80025" icon="AutoFilterAgain" id="AutoFilterAgain" text="@Reapply"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="InsertNewChart" aid="436" icon="InsertChart" id="ChartWizardToolbar" text="@Chart Wizard"/>
+		<KxEtZoomCommand hotKey="Z" ksoCmd="ZoomCombo" aid="1733" id="WpsZoomComboBox" comboboxHint="1" text="@Zoom"/>
+		<KxEtStatusZoomSliderCommand ksoCmd="ZoomEndless" aid="40000" id="StatusZoomSlider"/>
+		<KxKsoHomepageDocerClassicsCommand hotKey="E" ksoCmd="HomepagePlugin" aid="2000022" filter="support:IntranetVersion=false" icon="wpshome" id="HomepagePlugin" text="@Online Templates"/>
+		<KxKsoHomepageDocerClassicsCommand hotKey="E" ksoCmd="HomepagePlugin" aid="2000022" filter="support:IntranetVersion=true" icon="wpshome" id="HomepagePlugin" text="@IntranetVersion Online Templates"/>
+		<KxMinisiteCommand hotKey="M" ksoCmd="MinisitePlugin" aid="40040" icon="minisite" id="MinisitePlugin" text="@Minisite"/>
+		<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" newSkinIcon="switchUINewSkinFound" hotKey="y" aid="92020" filter="category=personal;oem_SwitchFace!=0" visible="@true" icon="switchUI" id="switchFaceDlg" text="@Switch UI@Personal Version"/>
+		<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" newSkinIcon="switchUINewSkinFound" hotKey="y" aid="92020" filter="category!=personal;oem_SwitchFace!=0" visible="@true" icon="switchUI" id="switchFaceDlg" text="@Switch UI@Professional Version"/>
+		<KxEnterpriseMicroblogCommand aid="92011" filter="support:Microblog=true" ksourl="Product:EnterpriseMicroblogUrl" icon="EnterpriseMicroblog" id="EnterpriseMicroblog" text="@WPS After-sale Microblog"/>
+		<KxWeChatCustomerServiceCommand filter="support:WeChatCustomerService=true" icon="wechatcustomerservice" id="WeChatCustomerService" dialogHint="1" text="@WeChat Customer Service"/>
+		<KxSwitchLangCommand hotKey="X" aid="88888" icon="switchLang" id="switchLangDlg" dialogHint="1" text="@Switch Language"/>
+		<KHelpDocumentCommand tc="Help" ksoCmd="Help" aid="984" icon="Help" shortcutHint="F1" id="Help_classic" text="@WPS Spreadsheets Help"/>
+		<kxServiceExpireTipCommand icon="ServiceExpire" id="ServiceExpireTip" text="@Service Expired"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Standard">
+			<KQuickMenuCommand aid="18" barid="40034" id="NewBlankFileRef" referenceCommand="NewBlankFile">
+				<command idQ="NewBlankFile"/>
+				<command idQ="NewFileFromDefaultTemplate"/>
+				<command idQ="NewFileFromTemplates"/>
+			</KQuickMenuCommand>
+			<command idQ="OpenFile"/>
+			<command idQ="SaveFile"/>
+			<command idQ="SendMail"/>
+			<command idQ="ExportPDF"/>
+			<command idQ="ToolBarRestrictAccess"/>
+			<separator/>
+			<KQuickMenuCommand aid="2521" id="PrintRef" referenceCommand="Print">
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+			</KQuickMenuCommand>
+			<command idQ="PrintPreview"/>
+			<separator/>
+			<KQuickMenuCommand hotKey="t" aid="92026" filter="lang=zh_CN,zh_TW" barid="40035" id="TranslateToTraditionalChineseRef" referenceCommand="TranslateToTraditionalChinese">
+				<command idQ="TranslateToSimplifiedChinese"/>
+				<command idQ="TranslateToTraditionalChinese"/>
+			</KQuickMenuCommand>
+			<separator/>
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<command idQ="pasteList"/>
+			<command idQ="FormatPainter"/>
+			<separator/>
+			<command idQ="Undo"/>
+			<command idQ="Redo"/>
+			<separator/>
+			<command idQ="rConditionHighlight" filter="category=personal"/>
+			<command idQ="rDuplicates"/>
+			<separator/>
+			<command idQ="KingsoftEquationEditor" filter="platform=win32"/>
+			<command idQ="InsertHyperlinkToolBar"/>
+			<command idQ="functionsonbar"/>
+			<command idQ="SortAscendingToolbar"/>
+			<command idQ="SortDescendingToolbar"/>
+			<KxListCommand hotKey="f" ksoCmd="AutoFilter" aid="899" barid="40042" icon="AutoFilter" text="@AutoFilter" qtspyName="AutoFilter">
+				<command idQ="AutoFilterAgain"/>
+			</KxListCommand>
+			<separator/>
+			<command idQ="ChartWizardToolbar"/>
+			<command idQ="WpsZoomComboBox"/>
+			<command idQ="InsertScreenGrab" filter="category!=professional"/>
+			<command idQ="Find"/>
+			<command idQ="SpellCheck"/>
+			<command idQ="SetSpellcheckLanguageCommand"/>
+			<command idQ="MinisitePlugin" filter="lang=zh_CN;category=personal"/>
+			<KxQingCartCommand aid="3000071" icon="qingCart" id="QingCart"/>
+			<command idQ="HomepagePlugin"/>
+			<command idQ="switchLangDlg"/>
+			<command idQ="TComCS"/>
+			<command idQ="switchFaceDlg" filter="oem_SwitchFace!=0"/>
+			<command idQ="MailFeedBack"/>
+			<KxEtProtectEyesCommand hotKey="b" aid="100034" filter="category=personal" icon="ProtectEyes" id="ProtectEyesInStandard" customTip="Protect_Eyes" text="@Eye Protection Mode" rbHotKey="B"/>
+			<command idQ="NightMode" filter="category=personal"/>
+			<command idQ="EnterpriseMicroblog"/>
+			<command idQ="WeChatCustomerService"/>
+			<command idQ="Help"/>
+			<KxTrialToolCommand aid="40048" filter="support:EnbleCart=true" ksourl="Auth:ProBuySerialNumberUrl" icon="PurchaseSerialNumber" text="@Purchase Serial Number" qtspyName="PurchaseSerialNumber"/>
+			<command idQ="ServiceExpireTip"/>
+		</subcommand>
+	</subcommands>
+</shell>

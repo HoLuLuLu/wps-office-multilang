@@ -1,0 +1,257 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>IF</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="IF">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>IF</h1>
+<p>执行真假值判断，根据逻辑计算的真假值，返回不同结果。</p>
+<p>可以使用函数 IF 对数值和公式进行条件检测。</p>
+<p><b>语法</b></p>
+<p class="SYN"><b>IF</b>(<b>logical_test</b>,<b>value_if_true</b>,value_if_false)</p>
+<p class="DT1">Logical_test&nbsp;&nbsp; 表示计算结果为 TRUE 或 FALSE 的任意值或表达式。</p>
+<p class="DT1">例如，A10=100 
+就是一个逻辑表达式，如果单元格 A10 中的值等于 100，表达式即为 TRUE，否则为 FALSE。本参数可使用任何比较<a href="javascript:viewsampleb()" style="text-decoration: none">运算符</a><font color="#339933"><span id="sampleb" style="display: none">（一个标记或符号，指定表达式内执行的计算的类型。
+有数学、比较、逻辑和引用运算符等。）</span></font>。</p>
+<p class="DT1">V<span lang="en-us">alue</span>_if_true&nbsp;&nbsp; logical_test 为 TRUE 时返回的值。
+<p class="DT1">例如，如果本参数为文本字符串“预算内”而且 logical_test 参数值为 TRUE，则 IF 函数将显示文本“预算内”。如果 logical_test 为 TRUE 而 value_if_true 
+为空，则本参数返回 0（零）。如果要显示 TRUE，则请为本参数使用逻辑值 TRUE。<span lang="en-us">value</span>_if_true 也可以是其他公式。<p class="DT1">V<span lang="en-us">alue</span>_if_false&nbsp;&nbsp; logical_test 为 FALSE 
+时返回的值。</p>
+<p class="DT1">例如，如果本参数为文本字符串“超出预算”而且 logical_test 参数值为 FALSE，则 IF 函数将显示文本“超出预算”。如果 logical_test 为 FALSE 且忽略了  
+<span lang="en-us">value</span>_if_false（即 value_if_true 后没有逗号），则会返回逻辑值 FALSE。如果 
+logical_test 为 FALSE 且 <span lang="en-us">value</span>_if_false 为空（即 value_if_true 后有逗号，并紧跟着右括号），则本参数返回 
+0（零）。VALUE_if_false 也可以是其他公式。</p>
+<p><b>说明</b></p>
+<ul>
+  <li>函数 IF 可以嵌套七层，用 value_if_false 及 value_if_true 参数可以构造复杂的检测条件。请参阅下面最后一个示例。</li>
+  <li>在计算参数 value_if_true 和 value_if_false 后，函数 IF 返回相应语句执行后的返回值。</li>
+  <li>如果函数 IF 的参数包含<a href="javascript:viewsamplea()" style="text-decoration: none">数组</a><font color="#339933"><span id="samplea" style="display: none">（
+  用于建立可生成多个结果或可对在行和列中排列的一组参数进行运算的单个公式。数组区域共用一个公式。数组常量是用作参数的一组常量）</span></font>，则在执行 
+  IF 语句时，数组中的每一个元素都将计算。</li>
+  <li>WPS表格 还提供了其他一些函数，可依据条件来分析数据。例如，如果要计算单元格区域中某个文本字符串或数字出现的次数，则可使用 COUNTIf 工作表函数。如果要根据单元格区域中的某一文本字符串或数字求和，则可使用 SUMIf 工作表函数。请了解关于根据条件计算值。 </li>
+</ul>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<ul>
+  <li>示例一：<br>
+  <table>
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="115">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="115">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="117">50</td>
+	</tr>
+						
+
+	</table>
+	</br>
+	<table width="486">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="87"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(A2&lt;=100,&quot;Within budget&quot;,&quot;Over budget&quot;)</td>
+		<td class ="ll" width="302">如果上面的数字小于等于 100，则公式将显示“Within 
+        budget”。否则，公式显示“Over budget”。(Within budget)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(A2=100,SUM(B5:B15),&quot;&quot;)</td>
+		<td class ="ll" width="302">如果上面数字为 100，则计算单元格区域 B5:B15，否则返回空文本 (&quot;&quot;)</td>
+	</tr>
+	</table>
+
+　</li>
+  <li>示例二：<br>
+  <table width="347">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="153">A</th>
+	    <th class="th1" width="75">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="153">实际费用</td>
+		<td class = "th1" width="75">预算费用</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="156">1500</td>
+		<td class ="ll" width="127">900</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="156">500</td>
+		<td class ="ll" width="127">900</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="156">500</td>
+		<td class ="ll" width="127">925</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="486">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="87"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(A2&gt;B2,&quot;Over Budget&quot;,&quot;OK&quot;)</td>
+		<td class ="ll" width="302" valign="top">判断第 1 行是否超出预算 (Over Budget)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(A3&gt;B3,&quot;Over Budget&quot;,&quot;OK&quot;)</td>
+		<td class ="ll" width="302" valign="top">判断第 2 行是否超出预算 (OK)</td>
+	</tr>
+	</table>
+
+　</li>
+  <li>示例三：<br>
+  <table>
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="115">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="115">成绩</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="117">45</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="117">90</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="117">78</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="486">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116" valign="top"><b>公式</b></th>
+   	    <th class="th2" width="87" valign="top"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(A2&gt;89,&quot;A&quot;,IF(A2&gt;79,&quot;B&quot;, 
+        IF(A2&gt;69,&quot;C&quot;,IF(A2&gt;59,&quot;D&quot;,&quot;F&quot;))))</td>
+		<td class ="ll" width="302" valign="top">为第一个成绩指定一个字母等级 (F)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(A3&gt;89,&quot;A&quot;,IF(A3&gt;79,&quot;B&quot;, 
+        IF(A3&gt;69,&quot;C&quot;,IF(A3&gt;59,&quot;D&quot;,&quot;F&quot;))))</td>
+		<td class ="ll" width="302" valign="top">为第二个成绩指定一个字母等级 (A)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(A4&gt;89,&quot;A&quot;,IF(A4&gt;79,&quot;B&quot;, 
+        IF(A4&gt;69,&quot;C&quot;,IF(A4&gt;59,&quot;D&quot;,&quot;F&quot;))))</td>
+		<td class ="ll" width="302" valign="top">为第三个成绩指定一个字母等级 (C)</td>
+	</tr>
+	</table>
+	<p>在上例中，第二个 IF 语句同时也是第一个 IF 语句的参数 value_if_false。同样，第三个 IF 语句是第二个 IF 语句的参数 value_if_false。例如，如果第一个 logical_test (AVERAGE &gt; 89) 为 TRUE，则返回“A”。如果第一个 
+logical_test 为 FALSE，则计算第二个 IF 语句，以此类推。</p>
+
+	<p>用下列关键字指定数字的字母等级。　 </p>
+
+  <table width="248" height="80">
+	<tr>
+	    <th class="th1" width="48" valign="top" height="15">如果成绩是</th>
+   	    <th class="th2" width="48" valign="top" height="15">则返回</th>
+	</tr>
+		<tr>
+		<td class ="ll" width="84" valign="top" height="16">大于 89</td>
+		<td class ="ll" width="130" valign="top" height="16">A</td>
+	</tr>
+	<tr>
+		<td class ="ll" width="84" valign="top" height="20">80 到 89</td>
+		<td class ="ll" width="130" valign="top" height="20">B</td>
+	</tr>
+	<tr>
+		<td class ="ll" width="84" valign="top" height="16">70 到 79</td>
+		<td class ="ll" width="130" valign="top" height="16">C</td>
+	</tr>
+	<tr>
+		<td class ="ll" width="84" valign="top" height="16">60 到 69</td>
+		<td class ="ll" width="130" valign="top" height="16">D</td>
+	</tr>
+	<tr>
+		<td class ="ll" width="84" valign="top" height="16">小于 60</td>
+		<td class ="ll" width="130" valign="top" height="16">F</td>
+	</tr>
+	</table></p>
+
+　</li>
+</ul>
+
+
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_logcial.htm">逻辑函数</a></p>
+<p><a href="function_Iferror.htm">IFERROR</a></p>
+<p><a href="function_Not.htm">NOT</a></p>
+<p><a href="function_and.htm">AND</a></p>
+<p><a href="function_or.htm">OR</a></p>
+<p><a href="function_True.htm">TRUE</a></p>
+<p><a href="function_false.htm">FALSE</a></p>
+<p>　</p>
+
+
+
+</body>
+
+</html>

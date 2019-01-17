@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.proxycommands" component="et">
+	<modules>
+		<module name="konlinepicture">
+			<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" hotKey="o" aid="100074" filter="support:IntranetVersion=false" icon="onlinepicture" id="FromOnlineOnToolBar" customTip="InsertOnlinePicture" text="@Online Pictures" rbHotKey="SI"/>
+		</module>
+		<module name="kwpsassistlegacy">
+			<KOnlinePictureUnpersonalCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" hotKey="o" filter="support:IntranetVersion=false;category!=personal" icon="onlinepicture" id="FromOnlineOnToolBar" customTip="InsertOnlinePicture" text="@Online Pictures" rbHotKey="SI"/>
+		</module>
+	</modules>
+</shell>

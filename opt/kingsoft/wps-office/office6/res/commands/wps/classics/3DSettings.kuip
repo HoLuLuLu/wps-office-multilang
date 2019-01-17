@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.3dsettings" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="3DOnOff" aid="1374" icon="3DOnOff" id="3DOnOff" customTip="3DOnOff" spaceHint="compact" text="@3-D On/Off" rbHotKey="y"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltDown" aid="1375" icon="3DTiltDown" id="3DTiltDown" customTip="3DTiltDown" spaceHint="compact" text="@Tilt Down" rbHotKey="8"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltUp" aid="1376" icon="3DTiltUp" id="3DTiltUp" customTip="3DTiltUp" spaceHint="compact" text="@Tilt Up" rbHotKey="5"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltLeft" aid="1377" icon="3DTiltLeft" id="3DTiltLeft" customTip="3DTiltLeft" spaceHint="compact" text="@Tilt Left" rbHotKey="6"/>
+		<KxLegacyTriggerCommand ksoCmd="3DTiltRight" aid="1378" icon="3DTiltRight" id="3DTiltRight" customTip="3DTiltRight" spaceHint="compact" text="@Tilt Right" rbHotKey="7"/>
+		<KxValueCommand hotKey="p" ksoCmd="3DDirctionType" aid="1390" icon="3DPerspective" id="3DPerspective" index="0" text="@Perspective"/>
+		<KxValueCommand hotKey="a" ksoCmd="3DDirctionType" aid="1391" icon="3DParallel" id="3DParallel" index="1" text="@Parallel"/>
+		<KxStaticGalleryCommand column="3" ksoCmd="3DDirectionPalette" aid="1380" icon="3DDirection" id="3DDirectionPalette" customTip="3DDirectionPalette" spaceHint="suitable" text="@Direction" rbHotKey="DI">
+			<KxStaticGalleryItemCommand icon="3DDirection_0" index="0" qtspyName="3DDirection_0"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_1" index="1" qtspyName="3DDirection_1"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_2" index="2" qtspyName="3DDirection_2"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_3" index="3" qtspyName="3DDirection_3"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_4" index="4" qtspyName="3DDirection_4"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_5" index="5" qtspyName="3DDirection_5"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_6" index="6" qtspyName="3DDirection_6"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_7" index="7" qtspyName="3DDirection_7"/>
+			<KxStaticGalleryItemCommand icon="3DDirection_8" index="8" qtspyName="3DDirection_8"/>
+			<separator/>
+			<command idQ="3DPerspective"/>
+			<command idQ="3DParallel"/>
+		</KxStaticGalleryCommand>
+		<KxValueCommand hotKey="b" ksoCmd="3DLightingType" aid="1392" icon="3DLightingBright" id="3DLightingBright" index="0" text="@Bright"/>
+		<KxValueCommand hotKey="n" ksoCmd="3DLightingType" aid="1393" icon="3DLightingNormal" id="3DLightingNormal" index="1" text="@Normal"/>
+		<KxValueCommand hotKey="d" ksoCmd="3DLightingType" aid="1394" icon="3DLightingDim" id="3DLightingDim" index="2" text="@Dim"/>
+		<KxStaticGalleryCommand column="3" ksoCmd="3DLightingPalette" aid="1382" icon="3DLightingMenu" id="3DLightingPalette" spaceHint="suitable" text="@Lighting" rbHotKey="DL">
+			<KxStaticGalleryItemCommand icon="3DLighting_0" index="0" qtspyName="3DLighting_0"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_1" index="1" qtspyName="3DLighting_1"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_2" index="2" qtspyName="3DLighting_2"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_3" index="3" qtspyName="3DLighting_3"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_4" index="4" qtspyName="3DLighting_4"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_5" index="5" qtspyName="3DLighting_5"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_6" index="6" qtspyName="3DLighting_6"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_7" index="7" qtspyName="3DLighting_7"/>
+			<KxStaticGalleryItemCommand icon="3DLighting_8" index="8" qtspyName="3DLighting_8"/>
+			<command idQ="3DLightingBright"/>
+			<command idQ="3DLightingNormal"/>
+			<command idQ="3DLightingDim"/>
+		</KxStaticGalleryCommand>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="3DColor" aid="1073" icon="MoreColor" id="More3DColors" dialogHint="1" text="@More 3-D Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="3DColor" aid="100081" icon="SnapperFill" forceEnabled="1" id="Snap3DColors" text="@Snapper" rbHotKey="E"/>
+		<KxWps3DColorCommand ksoCmd="3DColor" aid="1694" icon="3DColor" id="3DColor" spaceHint="suitable" text="@3-D Color" ksoTriggerCmd="Recent3DColor" rbHotKey="C">
+			<command idQ="More3DColors"/>
+			<command idQ="Snap3DColors"/>
+		</KxWps3DColorCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="3DSettings">
+			<command idQ="3DOnOff"/>
+			<separator/>
+			<command idQ="3DTiltDown"/>
+			<command idQ="3DTiltUp"/>
+			<command idQ="3DTiltLeft"/>
+			<command idQ="3DTiltRight"/>
+			<separator/>
+			<KxListCommand ksoCmd="3DClassicMenu" aid="1379" icon="3DDepthMenu" id="3DDepthMenu" text="@Depth">
+				<KxValueCommand hotKey="0" ksoCmd="3DDepth" aid="92087" icon="3DDepth_0" id="3DDepth0pt" index="0" text="@0 pt"/>
+				<KxValueCommand hotKey="3" ksoCmd="3DDepth" aid="92088" icon="3DDepth_36" id="3DDepth36pt" index="36" text="@36 pt"/>
+				<KxValueCommand hotKey="7" ksoCmd="3DDepth" aid="92089" icon="3DDepth_72" id="3DDepth72pt" index="72" text="@72 pt"/>
+				<KxValueCommand hotKey="1" ksoCmd="3DDepth" aid="92090" icon="3DDepth_144" id="3DDepth144pt" index="144" text="@144 pt"/>
+				<KxValueCommand hotKey="2" ksoCmd="3DDepth" aid="92091" icon="3DDepth_288" id="3DDepth288pt" index="288" text="@288 pt"/>
+				<KxLegacyTriggerCommand hotKey="i" ksoCmd="3DDepthInfinity" aid="92092" icon="3DDepth_0" id="3DDepthInfinity" text="@Infinity"/>
+				<KxInputDialogCommand hotKey="c" ksoCmd="3DDepthCustom" aid="1572" id="3DDepthCustom" dialogHint="1" text="@Custom"/>
+			</KxListCommand>
+			<command idQ="3DDirectionPalette"/>
+			<command idQ="3DLightingPalette"/>
+			<KxListCommand ksoCmd="3DClassicMenu" aid="1383" icon="3DSurfaceMenu" id="3DSurfaceMenu" text="@Surface">
+				<KxValueCommand hotKey="w" ksoCmd="3DSurfaceType" aid="92093" icon="3DSurfaceWireFrame" id="3DSurfaceWireFrame" index="0" text="@Wire Frame"/>
+				<KxValueCommand hotKey="m" ksoCmd="3DSurfaceType" aid="92094" icon="3DSurfaceMatte" id="3DSurfaceMatte" index="1" text="@Matte"/>
+				<KxValueCommand hotKey="p" ksoCmd="3DSurfaceType" aid="92095" icon="3DSurfacePlastic" id="3DSurfacePlastic" index="2" text="@Plastic"/>
+				<KxValueCommand hotKey="t" ksoCmd="3DSurfaceType" aid="92096" icon="3DSurfaceMetal" id="3DSurfaceMetal" index="3" text="@Metal"/>
+			</KxListCommand>
+			<command idQ="3DColor"/>
+		</subcommand>
+	</subcommands>
+</shell>

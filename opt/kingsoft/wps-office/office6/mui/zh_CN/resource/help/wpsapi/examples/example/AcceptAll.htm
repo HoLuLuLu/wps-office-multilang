@@ -1,0 +1,15 @@
+<html><head>
+<title>AcceptAll</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例接受活动文档中的所有修订。<p>If ActiveDocument.Revisions.Count &gt;= 1 Then<br>    &nbsp;&nbsp;&nbsp;    ActiveDocument.Revisions.AcceptAll<br>
+End If </p>
+<p>　</p>
+<p>本示例接受所选内容中的所有修订。</p>
+<p>Selection.Range.Revisions.AcceptAll
+</div>
+</body>
+</html>

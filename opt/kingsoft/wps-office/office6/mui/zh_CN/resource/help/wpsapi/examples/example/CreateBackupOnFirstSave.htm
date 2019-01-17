@@ -1,0 +1,11 @@
+<html><head>
+<title>CreateBackupOnFirstSave</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例询问用户是否在第一次保存文档时生成一个备份文件，并提供了“是”和“否”两个按钮来响应。<p>If MsgBox("是否在第一次保存文档时生成一个备份文件?", 36, _<br>        &nbsp;&nbsp;&nbsp;        "生成备份文件?") = vbYes Then<br>    &nbsp;&nbsp;&nbsp;    Options.CreateBackupOnFirstSave = True<br>Else<br>    &nbsp;&nbsp;&nbsp;    Options.CreateBackupOnFirstSave = False<br>End If
+</div>
+</body>
+</html>

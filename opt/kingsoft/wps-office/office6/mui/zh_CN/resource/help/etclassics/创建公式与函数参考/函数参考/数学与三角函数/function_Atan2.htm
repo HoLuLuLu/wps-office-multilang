@@ -1,0 +1,95 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>ATAN2</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="ATAN2">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>ATAN2</h1>
+<p>返回给定的 X 及 Y 坐标值的反正切值。反正切的角度值等于 X 轴与通过原点和给定坐标点 (X坐标, Y坐标) 的直线之间的夹角。结果以弧度表示并介于 -pi 到 pi 之间（不包括 -pi）。</p>
+<p><b>语法</b></p>
+<p><b>ATAN2（X坐标,Y坐标）</b></p>
+<p>X坐标&nbsp;&nbsp;&nbsp;&nbsp;点的 X 坐标。</p>
+<p>Y坐标&nbsp;&nbsp;&nbsp;&nbsp;点的 Y 坐标。</p>
+<p><b>说明</b></p>
+<ul>
+<li>结果为正表示从 X 轴逆时针旋转的角度，结果为负表示从 X 轴顺时针旋转的角度。 </li>
+<li>ATAN2(a, b) 等于 ATAN(b/a)，除非 a 为零。</li>
+<li>如果 X坐标 和 Y坐标 都为零，ATAN2 返回错误值 #Div/0!。</li>
+<li>若要用度表示反正切值，请将结果再乘以 180/PI( ) 或使用 DEGREES 函数。 
+</li>
+</ul>
+
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class ="ll">=ATAN2(1, 1)</td>
+		<td class ="ll">以弧度表示点 (1,1) 的反正切值，即 pi/4 (0.785398)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>3</b></td>
+		<td class ="ll">=ATAN2(-1, -1)</td>
+		<td class ="ll">以弧度表示点 (<span lang="en-us">-</span>1,<span lang="en-us">-</span>1) 的反正切值，即  
+		<span lang="en-us">-3*</span>pi/4 (-2.35619)</td>
+	</tr>
+<tr>
+		<td class="tdSeqence"><b>4</b></td>
+		<td class ="ll">=ATAN2(-1, -1)*180/PI()</td>
+		<td class ="ll">以度表示点 (1,1) 的反正切值 (-135)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>5</b></td>
+		<td class ="ll">=DEGREES(ATAN2(-1, -1))</td>
+		<td class ="ll">以度表示点 (1,1) 的反正切值 (-135)</td>
+	</tr>
+
+</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_Math.htm">数学与三角函数</a></p>
+
+
+
+</body>
+
+</html>

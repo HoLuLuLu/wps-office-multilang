@@ -1,0 +1,117 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>MIN</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="MIN">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>MIN</h1>
+<p>返回一组值中的最小值。</p>
+<p><b>语法</b></p>
+<p><b>MIN</b>(<b>number1</b>,number2,...)</p>
+<p>Number1, number2,...&nbsp;&nbsp; 是要从中找出最小值的 1 到 30 个数字参数。 </p>
+<p><b>说明</b> </p>
+<ul>
+	<li>可以将参数指定为数字、空白单元格、逻辑值或数字的文本表达式。如果参数为错误值或不能转换成数字的文本，将产生错误。 
+	</li>
+	<li>如果参数是数组或引用，则函数 MIN 
+	仅使用其中的数字，空白单元格，逻辑值、文本或错误值将被忽略。如果逻辑值和文本字符串不能忽略，请使用 MINA 函数。 
+	</li>
+	<li>如果参数中不含数字，则函数 MIN 返回 0。 </li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><b>年</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class="ll">10</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><span lang="en-us">3</span></td>
+		<td class="ll">7</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence"><span lang="en-us">4</span></td>
+		<td class="ll">9</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">27</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td class="ll">2</td>
+	</tr>
+
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2" width="146"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=MIN(A2:A6)</td>
+		<td class="ll">上面数据中的最小值 (2)</td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=MIN(A2:A6,0)</td>
+		<td class="ll">上面数据和 0 之中的最小值 (0)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

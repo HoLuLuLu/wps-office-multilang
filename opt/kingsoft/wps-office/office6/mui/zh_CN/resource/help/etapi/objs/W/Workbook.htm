@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Workbook 对象</title>
+<link rel="stylesheet" type="text/css" href="../../css/ksHelpStyle.css">
+<script language="JScript" src="../../js/KsHelp.js">
+</script>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<h1>Workbook 对象</h1>
+<div class="vbanav">
+  <span class="vbanavreuse" id="seealso"><font color="#ACA899">请参阅</font>&nbsp;</span>
+  <span class="vbanavreuse" id="properties" onclick="ks_showList()">属性&nbsp;</span>
+  <span class="vbanavreuse" id="methods" onclick="ks_showList()">方法&nbsp;</span>
+  <span class="vbanavreuse" id="events"><font color="#ACA899">事件</font>&nbsp;</span>
+  <span class="vbanavreuse" id="specifics"><font color="#ACA899">特性</font>&nbsp;</span>
+</div>
+<p><b><span class="yellow">Application;Workbooks</span></b></p>
+<p>
+<img border="0" src="../../images/parchild.gif" width="15" height="17">&nbsp; <b>
+<span class="blue">Workbook</span></b></p>
+<p>&nbsp;&nbsp;&nbsp;
+<img border="0" src="../../images/parchild.gif" width="15" height="17"> <b>
+<span class="yellow">Chart;Names;Sheets;Styles;Windows</span></b></p>
+<p>　</p>
+<p><b>描述</b></p>
+<p>代表一个工作簿。<b>Workbook</b> 对象是 <b><a href="Workbooks.htm">Workbooks</a></b> 
+集合的成员。<b>Workbooks</b> 集合包含应用程序当前打开的所有 <b>Workbook</b> 对象。<br>
+<br>
+<b>说明</b></p>
+<p>本部分将对下列返回 <b class="bterm">Workbook</b> 对象的属性进行说明：</p>
+<ul>
+  <li><b class="bterm">Workbooks</b> 属性 </li>
+  <li><b class="bterm">ActiveWorkbook</b> 属性 </li>
+  <li><b class="bterm">ThisWorkbook</b> 属性 </li>
+</ul>
+<p>　</p>
+<p><b>Workbooks 属性<br>
+</b>可用 <b>Workbooks</b>(index)（其中 index 为工作簿名称或编号）返回单个 <b>Workbook</b> 
+对象。下例保存第一个工作簿。<br>
+Workbooks(1).Save<b><br>
+</b>编号指示创建或打开工作簿的顺序。Workbooks(1) 为创建的第一个工作簿，而 Workbooks(Workbooks.Count) 
+为最后一个。激活某工作簿并不更改其编号。所有工作簿均包括在编号计数中，即便是隐藏工作簿也是如此。</p>
+<p><b>ActiveWorkbook 属性</b><br>
+ActiveWorkbook 属性返回当前处于活动状态的工作簿。下例设置活动工作簿的密码为sercet。<br>
+ActiveWorkbook.Password = &quot;sercet&quot;<br>
+<b><br>
+ThisWorkbook 属性<br>
+</b>ThisWorkbook 属性返回 Visual Basic 代码正在运行的工作簿。在绝大多数情况下，这也就是活动工作簿。然而，如果 Visual 
+Basic 代码是加载宏的一部分，那么 ThisWorkbook 属性就不会返回活动工作簿。在这种情况下，活动工作簿是调用加载宏的工作簿，而 
+ThisWorkbook 属性将返回该加载宏工作簿。<br>
+如果用 Visual Basic 代码创建加载宏，那么对于那些编译到加载宏中的工作簿，在其中运行的语句应当用 ThisWorkbook 属性加以限定。<b><br>
+　</b></p>
+<p><b><span id="ks_ListSpan" class="cssList">
+<a href="../../link/linkhtm/Workbooklink.htm">
+<iframe id="ks_VBAIFrame" src="../../link/linkhtm/Workbooklink.htm" frameborder="0" marginheight="0" marginwidth="4" scrolling="auto" width="100%" target="_parent">
+</iframe></a></span></p>
+</b>
+
+</body>
+
+</html>

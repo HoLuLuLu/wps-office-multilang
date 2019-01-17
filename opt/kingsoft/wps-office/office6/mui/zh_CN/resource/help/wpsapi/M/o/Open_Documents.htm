@@ -1,0 +1,122 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>Open_Documents</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>打开指定的文档并将其添加至 <b><a href="../../objs/d/Documents.htm">Documents</a> </b>集合
+	对象。</P><br>
+    返回<b> <a href="../../objs/d/Document.htm">Document</a> </b>对象  
+</p><br>
+    <P><b>语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.Open</b><i>((FileName), [ConfirmConversions], [ReadOnly], [AddToRecentFiles], [PasswordDocument], [PasswordTemplate], [Revert], [WritePasswordDocument], [WritePasswordTemplate], [Format], [Encoding], [Visible], [OpenConflictDocument], [OpenAndRepair], [DocumentDirection], [NoEncodingDialog])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >  必需。该表达式返回 <b>Documents</b> 集合对象。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>FileName  </i></td>
+            <td width="59%" height=15 > 必需，<b>String </b>类型。文档名（可包含路径）。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>ConfirmConversions  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。该属性为 <b>True</b> 时，如果文件不是 WPS 格式，则显示“文件转换”对话框。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>ReadOnly  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果为 <b>True</b>，则以只读方式打开文档。注意 本参数不会覆盖保存的文档的只读建议设置。例如，如果文档在启用只读建议设置情况下保存，将  
+			<b>ReadOnly</b> 参数设为 <b>False</b>，也不会导致以可读写方式打开文件。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>AddToRecentFiles  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果为 <b>True</b>，则会将文件名添加至“文件”菜单底部的最近使用过的文件列表中。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PasswordDocument  </i></td>
+            <td width="59%" height=15 > 可选，<b>String </b>类型。打开此文档时所需的密码。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PasswordTemplate  </i></td>
+            <td width="59%" height=15 > 可选，<b>String </b>类型。打开此模板时所需的密码。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Revert  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。当 <b>FileName</b> 是一个已打开的文档的文件名时，控制相应的操作。如果为 
+			<b>True</b>，则放弃对已打开文档进行的所有尚未保存的改动，并将重新打开该文档。如果为 <b>False</b>，则激活已打开的文档。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>WritePasswordDocument  </i></td>
+            <td width="59%" height=15 > 可选，<b>String </b>类型。保存对文档进行的更改时所需的密码。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>WritePasswordTemplate  </i></td>
+            <td width="59%" height=15 > 可选，<b>String </b>类型。保存对模板进行的更改时所需的密码。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Format  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。打开文档时使用的文件转换器。可以是任意  
+			<b>wpsOpenFormat</b> 常量，若要指定外部文件格式，请将  
+			<b>OpenFormat</b> 属性应用于 <b>FileConverter</b> 对象，以便确定要用于此参数的值。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Encoding  </i></td>
+            <td width="59%" height=15 > 可选，<b>Encoding </b>类型。在查看保存的文档时，Kingsoft WPS 所使用的文档编码（代码页或字符集）。可以是任何有效的  
+			<b>KsoEncoding</b> 常量。有关有效的 <b>KsoEncoding</b> 常量的列表的详细信息，请参阅“Visual Basic 编辑器”的“对象浏览器”。默认值是系统代码页。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Visible  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果为 <b>True</b>，则在可见窗口中打开文档。默认值为 
+			<b>True</b>。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>OpenConflictDocument  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。指定是否脱机操作打开文档的冲突文件。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>OpenAndRepair  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果为 <b>True</b>，则修复文档，以防止文档毁坏。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>DocumentDirection  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。代表文档中的横排文字。可以是  
+			<b>wpsDocumentDirection</b> 常量。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>NoEncodingDialog  </i></td>
+            <td width="59%" height=15 > 可选，<b>Boolean </b>类型。如果为 <b>True</b>，则跳过显示“编码”对话框，如果文字编码不能识别，WPS 就会显示该对话框。默认值是  
+			<b>False</b>。    </td>
+          </tr>
+    </table><br>
+    </div>
+</body>
+</html>

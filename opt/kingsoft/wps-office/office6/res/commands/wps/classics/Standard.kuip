@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.standard" component="wps">
+	<libraries/>
+	<commands>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="SendMail" aid="83002" filter="platform=win32" icon="SendMail" id="SendMail" dialogHint="1" text="@Send E-mail"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="PrintToPDF" aid="80004" icon="ExportToPDF" id="PrintToPDF" dialogHint="1" text="@Export to PDF"/>
+		<KxLegacyTriggerCheckCommand hotKey="R" ksoCmd="ToolBarRestrictAccess" aid="9004" filter="support:RightsManagementServices=true" icon="RestrictPermission" id="ToolBarRestrictAccess" dialogHint="1"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="InsertVerticalBlankPage" aid="92019" icon="InsertVerticalBlankPage" id="InsertVerticalBlankPage" text="@Insert Vertical Blank Page"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="InsertHorizonBlankPage" aid="92020" icon="InsertHorizonBlankPage" id="InsertHorizonBlankPage" text="@Insert Horizontal Blank Page"/>
+		<KxListCommand ksoCmd="InsertBlankPage" aid="92113" barid="44530" icon="InsertBlankPage" customTip2="InsertBlankPage2" id="InsertBlankPage" customTip="InsertBlankPage" text="@Blank Page" rbHotKey="NP">
+			<command idQ="InsertVerticalBlankPage"/>
+			<command idQ="InsertHorizonBlankPage"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="R" ksoCmd="PageBreak" aid="92101" icon="InsertPageBreak" shortcutHint="Ctrl+Enter" id="PageBreak" text="@Page Break"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="TranslateToSimplifiedChinese" aid="4025" icon="TranslateToSimplifiedChinese" id="TranslateToSimplifiedChinese" text="@Convert to Simplified Chinese"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="TranslateToTraditionalChinese" aid="3997" icon="TranslateToTraditionalChinese" id="TranslateToTraditionalChinese" text="@Convert to Traditional Chinese"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="ExpandOriginFormatPaste" aid="92052" icon="ExpandPasteFormatText" id="ExpandOriginFormatPaste" text="@Keep Source Formating"/>
+		<KxLegacyTriggerCommand hotKey="M" ksoCmd="ExpandPasteMatchingFormat" aid="92053" icon="ExpandPasteMatchingFormat" id="ExpandPasteMatchingFormat" text="@Matching Current Format" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="ExpandPasteText" aid="80071" icon="ExpandPasteText" id="ExpandPasteText" text="@Unformatted Text" rbHotKey="T"/>
+		<KxLegacyTriggerCommandEx hotKey="f" ksoCmd="FormatPainter" aid="108" icon="FormatPainter" id="FormatPainterToolbar" spaceHint="suitable" text="@Format Painter"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="FastCalcSum" aid="80029" icon="AutoSum" id="FastCalcSum" text="@Sum"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="FastCalcAverage" aid="80030" icon="Average" id="FastCalcAverage" text="@Average"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="FastCalcMax" aid="80031" icon="Max" id="FastCalcMax" text="@Max"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="FastCalcMin" aid="80032" icon="Min" id="FastCalcMin" text="@Min"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="FieldFormula" aid="807" id="FieldFormula" dialogHint="1" text="@Formula"/>
+		<KListCommand hotKey="f" aid="92108" barid="44537" icon="RecentFastCalc" id="RecentFastCalcMenu" text="@Fast Calculation">
+			<command idQ="FastCalcSum"/>
+			<command idQ="FastCalcAverage"/>
+			<command idQ="FastCalcMax"/>
+			<command idQ="FastCalcMin"/>
+			<separator/>
+			<command idQ="FieldFormula"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="q" ksoCmd="KingsoftEquationEditor" forceVisible="1" aid="80022" showiconAndText="1" filter="platform=win32" icon="EquationEditor" id="KingsoftEquationEditor" dialogHint="1" customTip="KingsoftEquationEditor" spaceHint="suitable" text="@Equation" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="InsertHyperlink" aid="1576" icon="InsertHyperlink" shortcutHint="Ctrl+K" id="InsertHyperlinkToolBar" text="@Insert Hyperlink" rbHotKey="I"/>
+		<KxWpsCloumnGalleryCommand hotKey="c" ksoCmd="ColumnsPalette" aid="9" icon="Columns" id="ColumnsPalette" text="@Columns"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="ChangeTextDirection" aid="2872" icon="TextDirection" id="ChangeTextDirection" text="@Change Text Orientation" rbHotKey="AX"/>
+		<KxLegacyTriggerCommand ksoCmd="ShowDocumentMap" aid="1714" icon="DocumentMap" id="ShowDocumentMapToolbar" text="@Show Document Map"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="ShowHideFormattingMarks" aid="3900" icon="ShowHideFormattingMarks" id="ShowHideFormattingMarks" text="@Show/Hide Editing Marks"/>
+		<KxWpsTextOctopusCommand aid="92054" icon="ShowHideTextOctopus" id="ShowHideTextOctopus" customTip="ShowHideTextOctopus" text="@Show/Hide Paragraph Layout" rbHotKey="9"/>
+		<KxWpsZoomCommand ksoCmd="ZoomCombo" aid="1733" id="WpsZoomComboBox" text="@Zoom"/>
+		<KxMinisiteCommand hotKey="M" ksoCmd="MinisitePlugin" aid="100041" icon="minisite" id="MinisitePlugin" text="@Minisite"/>
+		<KxKsoHomepageDocerClassicsCommand hotKey="E" ksoCmd="HomepagePlugin" aid="2000059" filter="support:IntranetVersion=false" icon="wpshome" id="HomepagePlugin" text="@Online Templates"/>
+		<KxKsoHomepageDocerClassicsCommand hotKey="E" ksoCmd="HomepagePlugin" aid="2000059" filter="support:IntranetVersion=true" icon="wpshome" id="HomepagePlugin" text="@IntranetVersion Online Templates"/>
+		<KxGoolgeDocsCommand filter="lang=jp_JP;oem_GoogleDocs=1" aid="100050" icon="GoogleDocs" id="GoogleDocs" text="@Google Docs"/>
+		<KxSwitchLangCommand hotKey="X" aid="88888" icon="switchLang" id="switchLangDlg" dialogHint="1" text="@Switch Language"/>
+		<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" newSkinIcon="switchUINewSkinFound" hotKey="y" aid="92109" filter="category=personal;oem_SwitchFace!=0" icon="switchUI" id="switchFaceDlg" text="@Switch UI@Personal Version"/>
+		<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" newSkinIcon="switchUINewSkinFound" hotKey="y" aid="92109" filter="category!=personal;oem_SwitchFace!=0" icon="switchUI" id="switchFaceDlg" text="@Switch UI@Professional Version"/>
+		<KxEnterpriseMicroblogCommand aid="92055" filter="support:Microblog=true" ksourl="Product:EnterpriseMicroblogUrl" icon="EnterpriseMicroblog" id="EnterpriseMicroblog" text="@WPS After-sale Microblog"/>
+		<KxWeChatCustomerServiceCommand filter="support:WeChatCustomerService=true" icon="wechatcustomerservice" id="WeChatCustomerService" dialogHint="1" text="@WeChat Customer Service"/>
+		<kxServiceExpireTipCommand icon="ServiceExpire" id="ServiceExpireTip" text="@Service Expired"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Standard">
+			<KQuickMenuCommand aid="18" barid="44513" id="NewBlankFileRef" referenceCommand="NewBlankFile">
+				<command idQ="NewBlankFile"/>
+				<command idQ="NewFileFromDefaultTemplate"/>
+				<command idQ="NewFileFromTemplates" filter="lang=zh_CN,ja_JP,zh_TW"/>
+			</KQuickMenuCommand>
+			<command idQ="OpenFile"/>
+			<command idQ="SaveFile"/>
+			<command idQ="SendMail"/>
+			<command idQ="PrintToPDF"/>
+			<command idQ="ToolBarRestrictAccess"/>
+			<separator/>
+			<KQuickMenuCommand aid="2521" id="PrintRef" referenceCommand="Print">
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+			</KQuickMenuCommand>
+			<command idQ="PrintPreview"/>
+			<separator/>
+			<command idQ="InsertBlankPage"/>
+			<command idQ="PageBreak"/>
+			<separator/>
+			<KQuickMenuCommand aid="3997" filter="lang=zh_CN,zh_TW" barid="44515" id="TranslateToTraditionalChineseRef" referenceCommand="TranslateToTraditionalChinese">
+				<command idQ="TranslateToSimplifiedChinese"/>
+				<command idQ="TranslateToTraditionalChinese"/>
+			</KQuickMenuCommand>
+			<separator/>
+			<command idQ="Copy"/>
+			<command idQ="Cut"/>
+			<KQuickMenuCommand aid="22" id="PasteRef" referenceCommand="Paste">
+				<command idQ="ExpandOriginFormatPaste"/>
+				<command idQ="ExpandPasteMatchingFormat"/>
+				<command idQ="ExpandPasteText"/>
+				<separator/>
+				<command idQ="PasteSpecial"/>
+			</KQuickMenuCommand>
+			<command idQ="FormatPainterToolbar"/>
+			<separator/>
+			<command idQ="Undo"/>
+			<command idQ="Redo"/>
+			<separator/>
+			<command idQ="RecentFastCalcMenu"/>
+			<command idQ="KingsoftEquationEditor" filter="platform=win32"/>
+			<command idQ="InsertHyperlinkToolBar"/>
+			<KxGalleryTableCommand ksoCmd="InsertTablePalette" aid="3392" barid="44516" icon="InsertTable" id="InsertTablePalette" text="@Insert Table"/>
+			<KxWpsOnlineGalleryTableCommand ksoCmd="InsertTablePalette" aid="3392" filter="lang=zh_CN;category=personal" barid="44516" icon="InsertTable" id="OnlineTable" text="@Insert Table"/>
+			<command idQ="ColumnsPalette"/>
+			<command idQ="ChangeTextDirection"/>
+			<separator/>
+			<command idQ="ShowDocumentMapToolbar"/>
+			<command idQ="ShowHideFormattingMarks"/>
+			<command idQ="ShowHideTextOctopus"/>
+			<command idQ="WpsZoomComboBox"/>
+			<command idQ="InsertScreenGrab" filter="category!=professional"/>
+			<command idQ="Find"/>
+			<command idQ="CheckSpelling"/>
+			<command idQ="SetSpellcheckLanguageCommand"/>
+			<command idQ="ExportarmyDictionaryCommand"/>
+			<command idQ="MinisitePlugin" filter="lang=zh_CN;category=personal"/>
+			<KxQingCartCommand aid="3000040" icon="qingCart" id="QingCart"/>
+			<command idQ="HomepagePlugin"/>
+			<command idQ="TComCS"/>
+			<command idQ="switchLangDlg"/>
+			<command idQ="switchFaceDlg" filter="oem_SwitchFace!=0"/>
+			<command idQ="MailFeedBack"/>
+			<command idQ="ProtectEyes" filter="category=personal"/>
+			<command idQ="NightMode" filter="category=personal"/>
+			<command idQ="EnterpriseMicroblog"/>
+			<command idQ="WeChatCustomerService"/>
+			<command idQ="Help"/>
+			<KxTrialToolCommand filter="support:EnbleCart=true" ksourl="Auth:ProBuySerialNumberUrl" icon="PurchaseSerialNumber" text="@Purchase Serial Number" qtspyName="PurchaseSerialNumber"/>
+			<command idQ="ServiceExpireTip"/>
+		</subcommand>
+	</subcommands>
+</shell>

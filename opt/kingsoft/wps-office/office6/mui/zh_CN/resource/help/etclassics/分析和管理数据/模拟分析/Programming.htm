@@ -1,0 +1,60 @@
+<html>
+<script src="../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>单变量求解</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="单变量求解">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>规划求解</h1>
+
+
+<p>
+“规划求解”是一组命令的组成部分（有时也称为模拟分析工具）。借助“规划求解”，可求得工作表上某个单元格（称为目标单元格）中公式的最优（最大或最小）值，并受工作表上其他公式单元格的值的约束或限制。“规划求解”将对参与计算目标单元格和约束单元格中的公式的一组单元格（称为决策变量单元格或简称为变量单元格）进行处理。“规划求解”调整决策变量单元格中的值以符合约束条件单元格上的限制，并在目标单元格中产生想要的结果。 </p>
+<p>
+简单来说，使用“规划求解”可通过更改其他单元格来确定某个单元格的最大值或最小值。</p>
+<p>例如，我们要预算公司上半年的销售额，由两个季度合计完成，每个季度由卖出的数量乘以单价得出季度销售额。</p>
+<blockquote>
+	<p>
+	<img border="0" src="../../images/Programming1.gif"></p>
+</blockquote>
+<ol>
+	<li>制作一张产品销售信息表，如上图所示：目标值是我们需要达到的销售额度，由第一、第二季度合计得出；每个季度销售额由数量、单价计算得出。</li>
+	<li>在“数据”选项卡上，单击“数据分析”－规划求解。</li>
+	<li>在打开的“规划求解参数”对话框中，设置一个需要达到的目标值（假定为6000）；选定更改可变的单元格；约束条件可以设置产品的单价信息；设置求解方法使用“非线性内点法”。</li>
+	<li>单击“求解”。</li>
+</ol>
+<p>&nbsp;&nbsp;&nbsp;
+	<img border="0" src="../../images/Programming2.gif"></p>
+<p>　5.　在返回的求解对话框上，单击确定之后，得到需要的结果。需要达目标值，在单价确认的情况下，需要销售的数量就被计算出来了。如下图所示。</p>
+<blockquote>
+	<p>
+	<img border="0" src="../../images/Programming3.gif"></p>
+</blockquote>
+
+
+
+</body>
+
+</html>

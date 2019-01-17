@@ -1,0 +1,12 @@
+<html><head>
+<title>InsertSymbol</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在选定内容的第一个段落起始处插入一个项目符号和一个制表位。 
+<p>Set myRange = Selection.Paragraphs(1).Range <br>With myRange <br>    &nbsp;&nbsp;&nbsp;    .Collapse Direction:=wpsCollapseStart <br>    &nbsp;&nbsp;&nbsp;    .InsertSymbol CharacterNumber:=183, _ <br>        &nbsp;&nbsp;&nbsp;        Font:="Symbol", Unicode:=False <br>    &nbsp;&nbsp;&nbsp;    .MoveStart Unit:=wpsCharacter, Count:=1 <br>    &nbsp;&nbsp;&nbsp;    .InsertAfter vbTab <br>End With 
+</div>
+</body>
+</html>

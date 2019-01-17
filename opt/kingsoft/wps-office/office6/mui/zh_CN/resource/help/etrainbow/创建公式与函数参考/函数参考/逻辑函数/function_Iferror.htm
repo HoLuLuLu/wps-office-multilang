@@ -1,0 +1,223 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>IFERROR</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="table1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1><font size="3">IFERROR</font> </h1>
+<p><font size="2">如果公式计算出错误则返回您指定的值；否则返回公式结果。使用 IFERROR 函数来捕获和处理公式中的错误。</font></p>
+<p><b><font size="2">语法</font></b></p>
+<div class="cdclvSection" jQuery1299320314078="12">
+	<div class="cntArticleBody" id="m_article">
+		<b class="bterm"><font size="2">IFERROR</font></b><font size="2">(<b class="bterm">value</b>,<b class="bterm">value_if_error</b>)</font><p>
+		<font size="2">Value&nbsp;&nbsp;&nbsp;&nbsp; 需要检查是否存在错误的参数。</font></p>
+		<p><font size="2">Value_if_error&nbsp;&nbsp;&nbsp;&nbsp; 
+		公式计算出错误时要返回的值。计算得到的错误类型有：#N/A、#VALUE!、#REF!、#DIV/0!、#NUM!、#NAME? 或 
+		#NULL!。</font></div>
+</div>
+<p><b><font size="2">说明</font></b></p>
+<div class="cdclvSection" jQuery1299320314078="12">
+	<div class="cntArticleBody" id="m_article0">
+		<ul class="cntIndent36" type="disc">
+			<li>
+			<p style="line-height: 150%"><font size="2">若 value 或 value_if_error 是空单元格，则 IFERROR 
+			将其视为空字符串值 (&quot;&quot;)。 </font></li>
+			<li>
+			<p style="line-height: 150%"><font size="2">若 value 是数组公式，则 IFERROR 为 value 
+			中指定区域的每个单元格返回一个结果数组。请参阅下面的第二个示例。 </font></li>
+		</ul>
+	</div>
+</div>
+<p><b><font size="2">示例</font></b></p>
+<p><font size="2">如果您将示例复制到空白工作表中，可能会更易于理解该示例。</font></p>
+
+<ul>
+  <li><font size="2">示例一：使用常规公式捕获除法错误<br>
+  </font>
+  <table width="347" id="table9" style="padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px" border="0">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="167" align="left" bgcolor="#C0C0C0">
+		<font size="2">A</font></th>
+	    <th class="th1" width="145" align="left" bgcolor="#C0C0C0">
+		<font size="2">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">1</font></b></td>
+		<td class = "th1" width="167" bgcolor="#C0C0C0"><b><font size="2">配额</font></b></td>
+		<td class = "th1" width="145" bgcolor="#C0C0C0"><b><font size="2">销售量</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">2</font></b></td>
+		<td class ="ll" width="167"><font size="2">320</font></td>
+		<td class ="ll" width="145"><font size="2">40</font></td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">3</font></b></td>
+		<td class ="ll" width="167"><font size="2">85</font></td>
+		<td class ="ll" width="145"><font size="2">0</font></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">4</font></b></td>
+		<td class ="ll" width="167">　</td>
+		<td class ="ll" width="145"><font size="2">46</font></td>
+	</tr>
+				
+
+	</table>
+	<font size="2">
+	</br>
+	</font>
+	<table width="908" id="table3">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="234" bgcolor="#C0C0C0" align="left"><b>
+		<font size="2">公式</font></b></th>
+   	    <th class="th2" width="640" bgcolor="#C0C0C0" align="left"><b>
+		<font size="2">说明（结果）</font></b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="234" valign="top"><font size="2">
+		=IFERROR(A2/B2,&quot;计算中有错误&quot;)</font></td>
+		<td class ="ll" width="640"><font size="2">检查第一个参数中公式的错误（320 除以 
+		40），未找到错误，返回公式结果 (8)。</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="234" valign="top"><font size="2">
+		=IFERROR(A3/B3,&quot;计算中有错误&quot;)</font></td>
+		<td class ="ll" width="640"><font size="2">检查第一个参数中公式的错误（85 除以 
+		0），找到被零除错误，返回 value_if_error（计算中有错误）。</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="234" valign="top"><font size="2">
+		=IFERROR(A4/B4,&quot;计算中有错误&quot;)</font></td>
+		<td class ="ll" width="640"><font size="2">检查第一个参数中公式的错误（&quot;&quot; 除以 
+		46），未找到错误，返回公式结果 (0)。</font></td>
+	</tr>
+	</table>
+
+　</li>
+  <li><font size="2">示例二：使用数组公式捕获除法错误<br>
+  </font>
+  <table width="599" id="table4">
+	<tr>
+		<th class="thEmpty" width="21"></th>
+	    <th class="th1" width="166" align="left" bgcolor="#C0C0C0">
+		<font size="2">A</font></th>
+	    <th class="th1" width="149" align="left" bgcolor="#C0C0C0">
+		<font size="2">B</font></th>
+	    <th class="th1" width="248" align="left" bgcolor="#C0C0C0">
+		<font size="2">C</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="21" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">1</font></b></td>
+		<td class = "th1" width="166" bgcolor="#C0C0C0"><b><font size="2">配额</font></b></td>
+		<td class = "th1" width="149" bgcolor="#C0C0C0"><b><font size="2">销售量</font></b></td>
+		<td class = "th1" width="248" bgcolor="#C0C0C0"><b><font size="2">比值</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="21" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">2</font></b></td>
+		<td class ="ll" width="166"><font size="2">320</font></td>
+		<td class ="ll" width="149"><font size="2">40</font></td>
+		<td class ="ll" width="248"><font size="2">
+		=IFERROR(A2:A4/B2:B4,&quot;计算中有错误&quot;)</font></td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="21" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">3</font></b></td>
+		<td class ="ll" width="166"><font size="2">85</font></td>
+		<td class ="ll" width="149"><font size="2">0</font></td>
+		<td class ="ll" width="248">　</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="21" align="center" bgcolor="#C0C0C0"><b>
+		<font size="2">4</font></b></td>
+		<td class ="ll" width="166">　</td>
+		<td class ="ll" width="149"><font size="2">46</font></td>
+		<td class ="ll" width="248">　</td>
+	</tr>
+				
+
+	</table>
+	<font size="2">
+	</br>
+	</font>
+	<table width="926" id="table5">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="63" bgcolor="#C0C0C0" align="left"><b>
+		<font size="2">公式</font></b></th>
+   	    <th class="th2" width="829" bgcolor="#C0C0C0" align="left"><b>
+		<font size="2">说明（结果）</font></b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="63" valign="top"><font size="2">=C2</font></td>
+		<td class ="ll" width="829" valign="top"><font size="2">
+		检查数组中第一个元素的第一个参数中的公式中的错误（A2/B2 或 320 除以 40），未找到错误，返回公式结果 (8)。</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="63" valign="top"><font size="2">=C3</font></td>
+		<td class ="ll" width="829" valign="top"><font size="2">
+		检查数组中第二个元素的第一个参数中的公式中的错误（A3/B3 或 85 除以 0），找到被零除错误，返回 value_if_error（计算中有错误）。</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="63" valign="top"><font size="2">=C4</font></td>
+		<td class ="ll" width="829" valign="top"><font size="2">
+		检查数组中第三个元素的第一个参数中的公式中的错误（A4/B4 或 &quot;&quot; 除以 46），未找到错误，返回公式结果 (0)。</font></td>
+	</tr>
+	</table>
+
+	</li>
+</ul>
+
+
+
+
+
+<p><font size="2"><b>&nbsp;&nbsp;&nbsp;&nbsp; </b>注：示例中的公式必须以数组公式键入。将此示例复制到空白工作表后，
+选中区域 
+C2:C4，按 F2，然后按 Ctrl+Shift+Enter。&nbsp;&nbsp;&nbsp; </font></p>
+<p>　</p>
+<p><b><font size="2">相关功能</font></b></p>
+<p><a href="functionlist_logcial.htm"><font size="2">逻辑函数</font></a></p>
+<p><font size="2"><a href="function_If.htm">IF</a></font></p>
+<p><a href="function_Not.htm"><font size="2">NOT</font></a></p>
+<p><a href="function_and.htm"><font size="2">AND</font></a></p>
+<p><a href="function_or.htm"><font size="2">OR</font></a></p>
+<p><a href="function_True.htm"><font size="2">TRUE</font></a></p>
+<p><a href="function_false.htm"><font size="2">FALSE</font></a></p>
+<p>　</p>
+
+
+
+</body>
+
+</html>

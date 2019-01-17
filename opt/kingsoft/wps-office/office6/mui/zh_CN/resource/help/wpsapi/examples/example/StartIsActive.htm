@@ -1,0 +1,11 @@
+<html><head>
+<title>StartIsActive</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将当前所选内容扩展至下两个单词。若要确保当前选定的文本在扩展过程中保持选定状态，需要先激活所选内容的结束部分（例如，如果选定此段的前三个单词，但选定内容的开始部分处于激活状态，调用 MoveRight 方法会取消选定前两个单词）。<p>With Selection<br>   &nbsp;&nbsp;&nbsp;   .StartIsActive = False<br>   &nbsp;&nbsp;&nbsp;   .MoveRight Unit:=wpsWord, Count:=2, Extend:=wpsExtend<br>End With
+</div>
+</body>
+</html>

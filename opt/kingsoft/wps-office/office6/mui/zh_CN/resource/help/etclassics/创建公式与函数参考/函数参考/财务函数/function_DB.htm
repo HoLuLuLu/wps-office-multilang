@@ -1,0 +1,143 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>DB</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="DB">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>DB</h1>
+<p>使用固定余额递减法，计算一笔资产在给定期间内的折旧值。</p>
+<p><b>语法</b></p>
+<p><b>DB</b>(<b>cost,salvage,life,period</b>,month)</p>
+<p>cost 为资产原值。</p>
+<p>salvage 为资产在折旧期末的价值（也称为资产残值）。</p>
+<p>life 为折旧期限（有时也称作资产的使用寿命）。</p>
+<p>period 为需要计算折旧值的期间。Period 必须使用与 life 相同的单位。</p>
+<p>month 为第一年的月份数，如省略，则假设为 12。</p>
+<p><b>说明</b> </p>
+<ul>
+    <li>
+      <p class="T">固定余额递减法用于计算固定利率下的资产折旧值，函数 DB 使用下列计算公式来计算一个期间的折旧值：<br>
+      (cost - 前期折旧总值 ) * rate<br>
+      式中：<br>
+      rate = 1 - ((salvage / cost) ^ (1 / life))，保留 3 位小数
+    </li>
+    <li>
+      <p class="T">第一个周期和最后一个周期的折旧属于特例。对于第一个周期，函数 DB 的计算公式为：<br>
+      cost * rate * month / 12 </li>
+    <li>
+      <p class="T">对于最后一个周期，函数 DB 的计算公式为：<br>
+      ((cost - 前期折旧总值) * rate * (12 - month)) / 12 </li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="511">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="146">A</th>
+	    <th class="th1" width="82">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="146">数据</td>
+		<td class = "th1" width="82">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="164">1,800,000</td>
+		<td class="ll" width="313">资产原值</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="164">200,000</td>
+		<td class="ll" height="20" width="313">资产残值 </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="18" width="164">6</td>
+		<td class="ll" height="18" width="313">使用寿命 </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class = "th1" width="146">公式</td>
+		<td class = "th1" width="82">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" width="164">=DB(A2, A3, A4, 1, 7)</td>
+		<td class="ll" width="313">计算第一年 7 个月内的折旧值 (322,350.00) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class="ll" width="164">=DB(A2, A3, A4, 2, 7) </td>
+		<td class="ll" width="313">计算第二年的折旧值 (453,638.55) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">8</td>
+		<td class="ll" width="164">=DB(A2, A3, A4, 3, 7) </td>
+		<td class="ll" width="313">计算第三年的折旧值 (314,371.52) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">9</td>
+		<td class="ll" width="164">=DB(A2, A3, A4, 4, 7) </td>
+		<td class="ll" width="313">计算第四年的折旧值 (217,859.46) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">10</td>
+		<td class="ll" width="164">=DB(A2, A3, A4, 5, 7) </td>
+		<td class="ll" width="313">计算第五年的折旧值 (150,976.61) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">11</td>
+		<td class="ll" width="164">=DB(A2, A3, A4, 6, 7) </td>
+		<td class="ll" width="313">计算第六年的折旧值 (104,626.79) </td>
+	</tr>
+	
+	<tr>
+		<td class="tdSeqence" width="20">12</td>
+		<td class="ll" width="164">=DB(A2, A3, A4, 7, 7) </td>
+		<td class="ll" width="313">计算第七年 5 个月内的折旧值 (30,210.98) </td>
+	</tr>
+	
+</table>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

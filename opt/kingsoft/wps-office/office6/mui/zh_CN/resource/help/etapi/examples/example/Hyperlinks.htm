@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>AddComment</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p class="T">本示例检查第一张工作表上的超级链接是否有“C:\tarawin.bmp”。</p>
+<p class="T">Dim a As Variant</p>
+<p class="T">For Each h In ActiveWorkbook.Worksheets(1).Hyperlinks</p>
+<p class="T">a = InStr(&quot;C:\tara&quot;, &quot; C:\tarawin.bmp&quot;)</p>
+<p class="T">If a &lt;&gt; 0 Then h.Follow</p>
+<p class="T">Next</p>
+</div>
+
+</body>
+
+</html>

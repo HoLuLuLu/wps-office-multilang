@@ -1,0 +1,14 @@
+<html><head>
+<title>Scaling</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将活动文档中的文字水平拉长到原大小的 110%。<p>ActiveDocument.Content.Font.Scaling = 110 </p>
+<p>　</p>
+<p>本示例将 Sales.wps 中第一段的文字压缩到原大小的 90%。 </p>
+<p>With Documents("Sales.wps").Paragraphs(1).Range.Font <br>    &nbsp;&nbsp;&nbsp;    .Scaling = 90 <br>    &nbsp;&nbsp;&nbsp;    .Bold = False <br>End With 
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>LARGE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="LARGE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>LARGE</h1>
+<p>返回数据集中第 k 个最大值。使用此函数可以根据相对标准来选择数值。例如，可以使用函数 LARGE 得到第一名、第二名或第三名的得分。</p>
+<p><b>语法</b></p>
+<p><b>LARGE(array,k)</b></p>
+<p>Array&nbsp;&nbsp; 为需要从中选择第 k 个最大值的数组或数据区域。</p>
+<p>K&nbsp;&nbsp; 为返回值在数组或数据单元格区域中的位置（从大到小排）。</p>
+<div border="0">
+	<p><b>说明</b> </p>
+	<ul>
+		<li>如果数组为空，函数 LARGE 返回错误值 #NUM!。 
+		</li>
+		<li>如果 k ≤ 0 或 k 大于数据点的个数，函数 LARGE 返回错误值 #NUM!。 </li>
+	</ul>
+	<p>如果区域中数据点的个数为 n，则函数 LARGE(array,1) 返回最大值，函数 LARGE(array,n) 
+	返回最小值。</p>
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+	    <th class="th1">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">数据</td>
+		<td class = "th1">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class="ll">3</td>
+		<td class="ll">4</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><span lang="en-us">3</span></td>
+		<td class="ll">5</td>
+		<td class="ll">2</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence"><span lang="en-us">4</span></td>
+		<td class="ll">3</td>
+		<td class="ll">4</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence"><span lang="en-us">5</span></td>
+		<td class="ll">5</td>
+		<td class="ll">6</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence"><span lang="en-us">6</span></td>
+		<td class="ll">4</td>
+		<td class="ll">7</td>
+	</tr>
+
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2" width="146"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=LARGE(A2:B6,3)</td>
+		<td class="ll">上面数据中第三大值 (5)</td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=LARGE(A2:B6,7)</td>
+		<td class="ll">上面数据中第七大值 (4)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

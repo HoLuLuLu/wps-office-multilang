@@ -1,0 +1,16 @@
+<html><head>
+<title>Lists</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p class="T">本示例显示活动文档的第一页页眉，然后切换到下一个页眉。文档必须至少有两页。<p>
+ActiveDocument.PageSetup.DifferentFirstPageHeaderFooter = True<br>
+With ActiveDocument.ActiveWindow.View<br>
+&nbsp;&nbsp;&nbsp; .Type = wpsPrintView<br>
+&nbsp;&nbsp;&nbsp; .SeekView = wpsSeekCurrentPageHeader<br>
+&nbsp;&nbsp;&nbsp; .NextHeaderFooter<br>
+End With</div>
+</body>
+</html>

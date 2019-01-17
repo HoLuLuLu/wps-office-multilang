@@ -1,0 +1,28 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>AddComment</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p class="T">下面的示例将变量设置为工作表“sheet1”上的筛选区域中第一列的筛选 Criteria1 属性值。</p>
+<p class="T">With ThisWorkbook.Worksheets(&quot;sheet1&quot;)</p>
+<p class="T">&nbsp;&nbsp;&nbsp; If .AutoFilterMode Then</p>
+<p class="T">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; With 
+.AutoFilter.Filters.Item(1)</p>
+<p class="T">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+If .On Then c1 = .Criteria1</p>
+<p class="T">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; End With</p>
+<p class="T">&nbsp;&nbsp;&nbsp; End If</p>
+<p class="T">End With</p>
+</div>
+
+</body>
+
+</html>

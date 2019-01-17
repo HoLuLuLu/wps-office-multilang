@@ -1,0 +1,75 @@
+<html>
+
+<script src="../../css/help.js" >
+</script>
+
+<head>
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>为什么用WPS 表格进行公式计算的结果会出现舍入误差？</title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>为什么用WPS表格进行公式计算的结果会出现舍入误差？</h1>
+<p>用WPS表格做文档往往会涉及到公式计算，计算的结果需要显示为小数点后的若干位数，有时最后显示的计算结果虽然位数正确，但与真实的结果之间却有误差。这可能是因为程序舍入或数据截断而影响某些数字或公式的结果。您可以通过以下两种方法来避免这种误差：</p>
+<ul>
+<li>方法1 ：用<b>ROUND 函数</b>将其四舍五入。
+<br>&nbsp;&nbsp; 如：在A1中键入“0.123456789012345”，在B1中键入“0.4545454545454545”，用ROUND函数在C1中进行计算“=ROUND(A1+B1,5)”，结果返回值为“0.57800”。然后在D1中用IF函数进行测试
+验证“=IF(C1=0.57800,TRUE,FALSE)”，返回值为“TRUE”。
+<br>&nbsp; 
+<img border="0" src="../../images/Ribbon/buground.gif"></br></li>
+<p><li>方法2 ：用<b>“以显示精度为准”</b>防止浮点舍入错误。
+<br>&nbsp;&nbsp; 如：在表格中设置C列是B列除以A列的商、F列是D列和E列的成绩，C列和F列的和为G列
+（即C3“=B3/A3”、F3“=D3*E3”、G3“=C3+F3”；C4“=B4/A4”、F4“=D4*E4”、G4“=C4+F4”……），然后返回的结果如下图所示，我们可以看出G3、G4、G5得出的值与实际计算应得的值存在误差：
+<br>
+<img border="0" src="../../images/Ribbon/bugright01.gif" >
+<br>&nbsp;&nbsp; 您可以按下列步骤将工作标设定为以显示精度为准（即数据后面的小数位没有显示的系统默认为零），来避免出现这些误差： </br>
+<ol>
+	<li>在左上角的“WPS表格”菜单上，单击右下角的“选项”。</li>
+	<li>在打开的“选项”对话框中，选择“重新计算”选项卡，勾选“以显示精度为准”复选框。<br>
+	<img border="0" src="../../images/Ribbon/options_recalculate.gif"></li>
+<li>这时候会弹处提示“数据精度会受到影响”，单击“确定”后，可获得准确的数据。
+<br>
+<img border="0" src="../../images/Ribbon/bugright02.gif"></li></ol>
+<br><b>注意：</b><br>&nbsp;&nbsp; 勾选“以显示精度为准”复选框，将会强制将工作表中每个数字的值成为显示的值，即导致显示数据后面没有显示的小数位丢失，例如，当前显示的是小数点后两位数，选择“以显示精度为准”后，则所有超出两位的小数都会抹零。此选项影响活动的工作簿（包括所有工作表），且无法撤消动作或恢复丢失的数据
+，因此，建议您在启用此选项之前先保存工作簿。</br></li>
+</ul>
+
+<p><span id="mydiv1" class="charr1"></span>
+<a href="javascript:viewsample1()" style="text-decoration: none">
+&nbsp;选择更有利的操作方法</a></p>
+<div id="sample1" style="display: none">
+&nbsp;&nbsp;
+虽然两种操作方法的目的都是避免出现舍入误差，但仍有所区别：
+<ul>
+<li>使用ROUND 函数计算，舍入的是最后的结果，而不是计算过程中出现的显示值，它的作用就是对指定数值进行四舍五入的操作并保留指定小数位数。比如Round(9.9999,2）就是对9.9999的千分位进行四舍五入、结果就是10.00，
+它保证的是经过处理后每个中间值得到的最终运算结果和计算器算出来的一致性，更适合于关注运算结果的计算，但其并不能避免直观视觉上的误差。</li>
+<li>设置“以显示精度为准”，
+舍入的是工作表中全部的值，因此在直观上也避免了误差，更适用于财务等更强调绝对性的计算。由于操作较前者更为简单，因此也更适合运用于大型表格。但此操作将丢失显示值以外的数据，因此具有一定的风险性。
+</ul></div>
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="../函数参考/数学与三角函数/function_Round.htm">ROUND</a></p>
+
+</body>
+
+</html>

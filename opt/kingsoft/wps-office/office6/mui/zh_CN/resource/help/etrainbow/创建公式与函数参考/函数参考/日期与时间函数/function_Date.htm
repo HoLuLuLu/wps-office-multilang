@@ -1,0 +1,99 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>DATE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="DATE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>DATE</h1>
+<p>返回代表特定日期的序列号。如果在键入函数前，单元格格式为“<b class="UI" name="general">常规</b>”，则结果将设为日期格式。</p>
+<p><b>语法</b></p>
+<p><b>DATE</b>(<b>year</b>,<b>month</b>,<b>day</b>)</p>
+<p>Y<span lang="en-us">ear</span>&nbsp;&nbsp;&nbsp;&nbsp;参数 year 可以为一到四位数字。</p>
+<div border="0">
+	<ul>
+		<li>如果 year 位于 0（零）到 1899（包含）之间，则 WPS表格 会将该值加上 1900，再计算年份。例如：<code>DATE(108,1,2)</code> 
+		将返回 2008 年 1 月 2 日 (1900+108)。 </li>
+		<li>如果 year 位于 1900 到 9999（包含）之间，则 WPS表格 将使用该数值作为年份。例如：<code>DATE(2008,1,2)</code> 
+		将返回 2008 年 1 月 2 日。 </li>
+		<li>如果 year 小于 0 或大于等于 10000，则 WPS表格 将返回错误值 #NUM!。 </li>
+	</ul>
+	<p class = "pindent">M<span lang="en-us">onth</span>&nbsp;&nbsp;&nbsp;&nbsp;代表每年中月份的数字。如果所键入的月份大于 12，将从指定年份的一月份开始往上加算。例如：<code>DATE(2008,14,2)</code> 
+	返回代表 2009 年 2 月 2 日的序列号。 </p>
+	<p class = "pindent">D<span lang="en-us">ay</span>&nbsp;&nbsp;&nbsp;&nbsp;代表在该月份中第几天的数字。如果 day 大于该月份的最大天数，则将从指定月份的第一天开始往上累加。例如，<code>DATE(2008,1,35)</code> 
+	返回代表 2008 年 2 月 4 日的序列号。</p>
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<br>
+　</div>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1"><span lang="en-gb">A</span></th>
+	    <th class="th1"><span lang="en-gb">B</span></th>
+	    <th class="th1"><span lang="en-gb">C</span></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><span lang="en-gb">年</span></td>
+		<td class = "th1">月</td>
+		<td class = "th1">日</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class="ll">2008</td>
+		<td class="ll">10</td>
+		<td class="ll">1</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class = "th1">公式</td>
+		<td class = "th1" colspan="2"><b>说明（结果）</b></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td class="ll">=DATE(A2,B2,C2)</td>
+		<td class="ll" colspan="2">返回上述日期的序列号 2008-10-1 或 39722 （使用 1900 日期系统）</td>
+	</tr>
+
+</table>
+
+<br>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_datetime.htm">日期与时间函数</a></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+<html><head>
+<title>PageWidth</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例返回 Document1 的页面宽度。
+可用 PointsToInches 方法将磅值转换为英寸。 
+<p>Set wps1set = Documents("sampledocument1").PageSetup <br>Msgbox "The page's width  is " _ <br>&nbsp;&nbsp;&nbsp; & PointsToInches(wps1set.PageWidth) & " inches." 
+</div>
+</body>
+</html>

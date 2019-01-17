@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="rainbow.proxycommands" component="wps">
+	<modules>
+		<module name="wpsspeaker">
+			<KxWpsSpeakListCommand hotKey="t" speakingTip="TextSpeech2" icon="TextSpeech" id="TextToSpeechOption" customTip="TextSpeech" text="@Text Speech" rbHotKey="T">
+				<KxWpsSpeakAllCommand hotKey="a" icon="TextSpeechAll" id="TextToSpeechAll" text="@Full-Text Speech" rbHotKey="A"/>
+				<KxWpsSpeakSelectionCommand hotKey="s" icon="TextSpeechSelect" id="TextToSpeechSelect" text="@Selection Speech" rbHotKey="S"/>
+				<KxWpsSpeakOutputCommand hotKey="o" icon="TextSpeechOutput" id="TextToSpeechOutput" text="@Output Voice" rbHotKey="O"/>
+				<separator/>
+				<KxWpsSpeakToolBarCommand hotKey="d" id="TextToSpeechToolBar" text="@Show Toolbar" rbHotKey="D"/>
+			</KxWpsSpeakListCommand>
+		</module>
+		<module name="kpdf2word">
+			<KPDF2WordCommand hotKey="z" icon="PDFToWord" id="PDF2Word" customTip="PDFToWord" text="@PDF To Word" rbHotKey="Z"/>
+		</module>
+		<module name="kpdf2wordv2">
+			<KPDF2WordV2Command hotKey="z" icon="PDFToWord" id="PDF2WordV2" customTip="PDFToWord" text="@PDF To Word" rbHotKey="Z"/>
+		</module>
+		<module name="ktranslation">
+			<KTranslationCommand hotKey="t" icon="translation" id="Translation" customTip="Translation" rbHotKey="T"/>
+			<KTranslationListCommand icon="translation" id="TranslationMenu" customTip="Translation" text="@Translation" referenceCommand="Translation">
+				<command idQ="Translation"/>
+				<KTranslationOptionCommand hotKey="d" icon="translationoption"/>
+			</KTranslationListCommand>
+		</module>
+		<module name="photo2pdfentry">
+			<Photo2PdfCommand hotKey="d" icon="photo2pdf" id="Photo2Pdf" customTip="Photo2Pdf" text="@Photo2Pdf" qtspyName="Photo2Pdf" rbHotKey="D"/>
+		</module>
+		<module name="kfeedback">
+			<KxTpDonateMoneyCommand hotKey="S" screenGrabCmd="screenGrabEx" filter="support:DonateMoney=true" alias="TpDonateMoney" icon="DonateMoney" shortHint="@Donate" id="TpDonate" customTip="DonateMoney" text="@Donate" rbHotKey="S"/>
+		</module>
+		<module name="konlinepicture">
+			<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert online Picture" icon="onlinepicture" id="InsertOnlinePictureFromFileInPictureToolTab" customTip="InsertOnlinePictureFromFile" text="@Online Picture" rbHotKey="SI"/>
+			<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Picture" aid="100056" filter="support:IntranetVersion=false" icon="onlinepicture" id="InsertOnlinePictureFromFileInInsertTab" customTip="InsertOnlinePictureFromFile" text="@Online Picture" rbHotKey="SI"/>
+		</module>
+		<module name="kweibo">
+			<KxWeiboCommand text2="@Share to Microblog" hotKey="W" ksoCmd="WeiboCmd" icon="cweibo32" id="WeiboCmd" text="@Share to Microblog" rbHotKey="W"/>
+			<KxExportWeiboImageCommand text2="@Export as Image" hotKey="X" ksoCmd="ExportWeiboImageCmd" idMso="SaveAsPicture" icon="exporttopicture32" controlType="0" id="ExportWeiboImageCmd" dialogHint="1" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="X"/>
+			<KxOpenWebWeiboCommand text2="@Share to Microblog Webpage" hotKey="O" ksoCmd="OpenWebWeiboCmd" icon="weibowebshare" id="OpenWebWeiboCmd" text="@Share to Microblog Webpage" rbHotKey="O"/>
+			<KxWpsWeiboLayoutCommand text2="@WPS Microblog Layout" hotKey="P" ksoCmd="WpsWeiboLayoutCmd" icon="PivotTableShowFieldList" id="WpsWeiboLayoutCmd" text="@WPS Microblog Layout" rbHotKey="P"/>
+		</module>
+		<module name="kwpspackage">
+			<KWpsPackageCommand hotKey="P" ksoCmd="KWpsPackagePlugin" icon="WpsPackage" id="KWpsPackagePlugin" text="@WpsPackagePlugin"/>
+		</module>
+	</modules>
+	<proxycommands>
+		<proxycommand targetId="TextToSpeechOption" id="ProxyTextToSpeechOption"/>
+		<proxycommand targetId="PDF2Word" id="ProxyPDF2Word"/>
+		<proxycommand targetId="PDF2WordV2" visible="false" id="ProxyPDF2WordV2"/>
+		<proxycommand targetId="TranslationMenu" id="ProxyTranslationMenu"/>
+		<proxycommand targetId="Photo2Pdf" id="ProxyPhoto2Pdf"/>
+	</proxycommands>
+</shell>

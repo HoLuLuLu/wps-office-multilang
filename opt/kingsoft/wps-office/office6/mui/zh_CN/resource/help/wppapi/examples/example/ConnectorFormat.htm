@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>ConnectorFormat</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将选定的连接符的末端连接至新增的图形上。<p>Set firstRect = 
+ActivePresentation.Slides(Windows(1).Selection.SlideRange.SlideIndex) _<br>
+&nbsp;&nbsp;&nbsp; .Shapes.AddShape(ksoShapeRectangle, 1300, 1000, 2000, 1000)<br>Windows(1).Selection.ShapeRange.ConnectorFormat.EndConnect&nbsp;firstRect,&nbsp;1
+</div>
+</body>
+</html>

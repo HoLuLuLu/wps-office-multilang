@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.full_screen" component="wps">
+	<commands>
+		<KxWpsQuitFullScreenOnTBCommand detail="@Quit Full Screen" aid="178" id="QuitFullScreenOnTB" text="@Quit"/>
+		<KxWpsPageFitOnTBCommand detail="@Page Fit And Hide Empty" aid="179" icon="FullScreenPageFit" id="PageFitOnTB"/>
+		<KxWpsIncreaseOnTBCommand detail="@Zoom In" aid="180" id="IncreaseOnTB" text="+"/>
+		<KxWpsDecreaseOnTBCommand detail="@Zoom Out" aid="181" id="DecreaseOnTB" text="-"/>
+		<KxWpsPercentOnTBCommand detail="@Click to adjust Zoom level" aid="182" id="PercentOnTB" text="100%"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Full Screen">
+			<command idQ="PageFitOnTB"/>
+			<command idQ="DecreaseOnTB"/>
+			<command idQ="PercentOnTB"/>
+			<command idQ="IncreaseOnTB"/>
+			<command idQ="QuitFullScreenOnTB"/>
+		</subcommand>
+	</subcommands>
+</shell>

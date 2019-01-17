@@ -1,0 +1,11 @@
+<html><head>
+<title>Cells</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在新文档中创建一个表格，并填充表格编号的序列。<p>Dim newDoc As Document<br>Dim mytable As Table<br>Set newDoc = Documents.Add<br>Set mytable = newDoc.Tables.Add(Selection.Range, 4, 8)<br>For i = 1 To mytable.Range.Cells.Count<br>    &nbsp;&nbsp;&nbsp;    mytable.Range.InsertAfter "Cell " & i<br>    &nbsp;&nbsp;&nbsp;    mytable.Range.Cells(i).Range.InsertAfter "cell" & i<br>Next<br>
+</div>
+</body>
+</html>

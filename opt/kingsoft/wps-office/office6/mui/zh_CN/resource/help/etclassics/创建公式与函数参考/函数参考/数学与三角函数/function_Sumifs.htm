@@ -1,0 +1,162 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>SUMIFS</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="table1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1><font size="3">SUMIFS</font></h1>
+<p dir="ltr"><font size="2">对区域中满足多个条件的单元格求和。例如，如果需要对区域 A1:A20 
+中符合以下条件的单元格的数值求和：B1:B20 中相应单元格的数值大于零且 C1:C20 中相应单元格的数值小于 10，则可以使用以下公式</font></p>
+<div class="cdclvSection" jQuery1299214933265="12">
+	<div class="cntArticleBody" id="m_article">
+		<font size="2">=SUMIFS(A1:A20, B1:B20, &quot;&gt;0&quot;, C1:C20, &quot;&lt;10&quot;)</font><p>
+		<font size="2">注：SUMIFS 和 SUMIF 函数的参数顺序有所不同。具体而言，sum_range 参数在 SUMIFS 
+		中是第一个参数，而在 SUMIF 中则是第三个参数。若要复制和编辑这些相似函数，请确保按正确顺序放置参数。</font></div>
+</div>
+<p><b><font size="2">语法</font></b></p>
+<div class="cdclvSection" jQuery1299214933265="12">
+	<div class="cntArticleBody" id="m_article0">
+		<pre><b>SUMIFS(sum_range, criteria_range1, criteria1, [criteria_range2, criteria2], …)</b></pre>
+	</div>
+</div>
+<div class="cdclvSection" jQuery1299214933265="12">
+	<div class="cntArticleBody" id="m_article1">
+		<font size="2">sum_range&nbsp;&nbsp;&nbsp;&nbsp;对一个或多个单元格求和，包括数值或包含数值的名称、区域或单元格引用。忽略空白和文本值。 
+		</font>
+		<p><font size="2">criteria_range1&nbsp;&nbsp;&nbsp;&nbsp;在其中计算关联条件的第一个区域。 </font></p>
+		<p><font size="2">criteria1&nbsp;&nbsp;&nbsp;&nbsp;条件的形式为数字、表达式、单元格引用或文本，可用来定义将对 
+		criteria_range1 参数中的哪些单元格求和。如，条件可以表示为 41、&quot;&gt;41&quot;、D3、&quot;香蕉&quot; 或 &quot;41&quot;。 </font>
+		</p>
+		<p><font size="2">criteria_range2, criteria2, …&nbsp;&nbsp;&nbsp;&nbsp;附加的区域及其关联条件。最多允许 127 
+		个区域/条件对。</font></div>
+</div>
+<p class ="pindent"><b><font size="2">说明</font></b></p>
+<div class="cdclvSection" jQuery1299214933265="12">
+	<div class="cntArticleBody" id="m_article2">
+		<ul class="cntIndent36" type="disc">
+			<li>
+			<p style="line-height: 150%"><font size="2">仅在 sum_range 
+			参数中的单元格满足所有相应的指定条件时，才对该单元格求和。例如，假设一个公式中包含两个 criteria_range 参数。如果 
+			criteria_range1 的第一个单元格满足 criteria1，而 criteria_range2 的第一个单元格满足 
+			critera2，则 sum_range 的第一个单元格计入总和中。对于指定区域中的其余单元格，依此类推。 </font></li>
+			<li>
+			<p style="line-height: 150%"><font size="2">sum_range 中包含 TRUE 
+			的单元格计算为 1。sum_range 中包含 FALSE 的单元格计算为 0（零）。 </font></li>
+			<li>
+			<p style="line-height: 150%"><font size="2">与 SUMIF 
+			函数中的区域和条件参数不同，SUMIFS 函数中每个 criteria_range 参数包含的行数和列数必须与 sum_range 
+			参数相同。 </font></li>
+			<li>
+			<p style="line-height: 150%"><font size="2">您可以在条件中使用通配符，即问号 (?) 和星号 
+			(*)。问号匹配任一单个字符。星号匹配任一字符序列。若要查找实际的问号或星号，请在字符前键入波形符 (~)。 </font></li>
+		</ul>
+	</div>
+</div>
+
+<p><b><font size="2">示例</font></b></p>
+<p><font size="2">如果将示例复制到空白工作表中，可能会更易于理解该示例。</font></p>
+
+<table width="501" id="table2">
+	<tr>
+		<th class="thEmpty" width="23"></th>
+	    <th class="th1" width="141" bgcolor="#C0C0C0" align="left">
+		<font size="2">A</font></th>
+	    <th class="th1" width="140" bgcolor="#C0C0C0" align="left">
+		<font size="2">B</font></th>
+   	    <th class="th2" bgcolor="#C0C0C0" align="left"><font size="2">C</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="23"><b>
+		<font size="2">1</font></b></td>
+		<td class = "th1" width="141" bgcolor="#C0C0C0" align="left"><b>
+		<font size="2">已销售数量</font></b></td>
+		<td class = "th1" width="140" bgcolor="#C0C0C0" align="left"><b>
+		<font size="2">产品</font></b></td>
+		<td class = "th2" bgcolor="#C0C0C0" align="left"><b><font size="2">销售人员</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="23"><b>
+		<font size="2">2</font></b></td>
+		<td class ="ll" width="141"><font size="2">10</font></td>
+		<td class ="ll" width="140"><font size="2">花生</font></td>
+		<td class ="ll"><font size="2">3</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="23"><b>
+		<font size="2">3</font></b></td>
+		<td class ="ll" width="141"><font size="2">20</font></td>
+		<td class ="ll" width="140"><font size="2">花生</font></td>
+		<td class ="ll"><font size="2">2</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="23"><b>
+		<font size="2">4</font></b></td>
+		<td class ="ll" width="141"><font size="2">30</font></td>
+		<td class ="ll" width="140"><font size="2">胡豆</font></td>
+		<td class ="ll"><font size="2">3</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="23">
+		<font size="2"><b>5</b></font></td>
+		<td class ="ll" width="141"><font size="2">20</font></td>
+		<td class ="ll" width="140"><font size="2">胡豆</font></td>
+		<td class ="ll"><font size="2">2</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="23">
+		<font size="2"><b>6</b></font></td>
+		<td class ="ll" width="141"><font size="2">15</font></td>
+		<td class ="ll" width="140"><font size="2">瓜子</font></td>
+		<td class ="ll"><font size="2">3</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="23">
+		<font size="2"><b>7</b></font></td>
+		<td class ="ll" width="141"><font size="2">10</font></td>
+		<td class ="ll" width="140"><font size="2">瓜子</font></td>
+		<td class ="ll"><font size="2">2</font></td>
+	</tr>
+</table>
+<font size="2">
+<br>
+</font>
+<table width="648" id="table3">	
+	
+	
+	<tr>
+		<td width="17"></td>
+		<td class ="th1" width="253" bgcolor="#C0C0C0"><b><font size="2">公式</font></b></td>
+		<td class ="th2" width="364" bgcolor="#C0C0C0"><b><font size="2">说明（结果）</font></b></td>
+	</tr>
+	<tr>
+		<td width="17"></td>
+		<td class ="ll" width="253"><font size="2">=SUMIFS(A2:A7,B2:B7,&quot;=花*",C2:C7,2)</font></td>
+		<td class ="ll" width="364"><font size="2">计算以“花”开头并由销售人员 2 售出的产品的总量 (20)</font></td>
+	</tr>
+</table>
+
+
+
+<p>　</p>
+<p><b><font size="2">相关功能</font></b></p>
+<p><a href="functionlist_Math.htm"><font size="2">数学与三角函数</font></a></p>
+
+
+
+</body>
+
+</html>

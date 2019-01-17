@@ -1,0 +1,152 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>POISSON</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="POISSON">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et8
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">POISSON</font></b></p>
+<p>返回泊松分布。泊松分布通常用于预测一段时间内事件发生的次数，比如一分钟内通过收费站的轿车的数量。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">POISSON</b>(<b class="bterm">x</b>,<b class="bterm">mean</b>,<b class="bterm">cumulative</b>)</p>
+<p>X&nbsp;&nbsp;&nbsp;&nbsp; 事件数。</p>
+<p>Mean&nbsp;&nbsp;&nbsp;&nbsp; 期望值。</p>
+<p>Cumulative&nbsp;&nbsp;&nbsp;&nbsp; 一逻辑值，确定所返回的概率分布形式。如果 cumulative 为 TRUE，函数 POISSON 
+返回泊松累积分布概率，即，随机事件发生的次数在 0 到 x 之间（包含 0 和 1）。如果为 FALSE，则返回泊松概率密度函数，即，随机事件发生的次数恰好为 
+x。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>若 x 不为整数，将被截尾取整。 
+	</li>
+	<li>若 x 或 mean 为非数值型，则 POISSON 返回错误值 #VALUE!。 
+	</li>
+	<li>若 x <font face="华文仿宋">&lt;</font> 0，则 POISSON 返回错误值 #NUM!。 
+	</li>
+	<li>若 mean ≤ 0，则 POISSON 返回错误值 #NUM!。 
+	</li>
+	<li>函数 POISSON 的计算公式如下： </li>
+</ul>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 假设 
+cumulative = FALSE:</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/371/672/ZA006051232.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 假设 
+cumulative = TRUE:</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/452/910/ZA006051233.gif" border="0">
+</p>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="627" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="246"><font face="宋体">A</font></th>
+	    <th class="th1" width="348"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="246">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		数据</td>
+		<td class = "th1" width="348"><font size="2">说明</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="246">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">4</p>
+		</td>
+		<td class="ll" width="348">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">事件数</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="246"><font size="2">9</font></td>
+		<td class="ll" width="348">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">期望值</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class = "th1" width="246">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="348"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10">5</td>
+		<td class="ll" width="246">
+		<font size="2">=POISSON(A2,A3,TRUE)</font></td>
+		<td class="ll" width="348">
+		<font size="2">在上述条件下的泊松累积分布概率 (0.054963641)</font></td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">6</td>
+		<td class="ll" width="246">
+		<font size="2">=POISSON(A2,A3,FALSE)</font></td>
+		<td class="ll" width="348">
+		<font size="2">在上述条件下的泊松概率密度函数的结果 (0.033737155)</font></td>
+	</tr>
+    	
+</table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

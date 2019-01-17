@@ -1,0 +1,67 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>关于单元格和区域引用</title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>关于单元格和区域引用</h1>
+<p>
+引用的作用在于标识工作表上的单元格或单元格区域，并指明公式中所使用的数据的位置。通过引用，可以在公式中使用工作表不同部分的数据，或者在多个公式中使用同一个单元格的数值。还可以引用同一个工作簿中不同工作表上的单元格和其他工作簿中的数据。引用不同工作簿中的单元格称为链接。</p>
+<p><b>单元格引用</b></p>
+<p>例：A1</p>
+<p><b>单元格区域引用</b></p>
+<p>例：A1:D10</p>
+<p><b>同一工作簿中不同工作表上的单元格引用</b></p>
+<p>例：预算表!A1<br>
+其中“预算表”是工作表名称。</p>
+<p><b>不同工作簿中的单元格引用</b></p>
+<ul>
+  <li>如果工作簿已打开<br>
+  例：[会计报表.<span lang="en-gb">xls</span>]<span lang="en-gb">!</span>工资表<span lang="en-gb">!</span>A1</li>
+  <li>如果工作簿已关闭<br>
+  例：'D:\工作目录\[会计报表.<span lang="en-gb">xls</span>]工资表<span lang="en-gb">'</span>!A1<br>
+  其中“会计报表.<span lang="en-gb">xls</span>”是工作簿名称，“工资表”为该工作簿中的工作表名称。“D:\工作目录\”为“会计报表.<span lang="en-gb">xls</span>”这个工作簿的文件路径。</li>
+</ul>
+<p>
+
+<p><span id="mydiv1" class="charr1"></span>
+<a href="javascript:viewsample1()" style="text-decoration: none">
+&nbsp;提示
+</a></p>
+<div id="sample1" style="display: none">
+
+以上引用的示例都是相对引用，所代表的都是单元格的相对位置。<br>
+例如：在 B1 键入公式 =A1*10 ，如果将单元格 B1 中的相对引用复制到单元格 B2，将自动从 =A1*10 调整到 =A2*10 。</p>
+<p>假如您在计算过程中不愿意出现上述的变化，而希望公式的引用为单元格绝对位置，您可以采用绝对引用的方式。</p>
+</div>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="../about_formula.htm">关于公式</a></p>
+<p><a href="reference_type.htm">关于相对引用、绝对引用和混合引用</a></p>
+<p><a href="name_with_sheets.htm">在多个表中命名单元格</a></p>
+</body>
+
+</html>

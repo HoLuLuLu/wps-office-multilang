@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.record_macro" component="et">
+	<commands>
+		<KxRecordMacroCommand hotKey="R" ksoCmd="RecordMacro" forceVisible="1" aid="184" icon="StopRecord" id="RecordMacroOnToolBar" text="@Stop Recording"/>
+		<KxLegacyTriggerCommand ksoCmd="RelativeReference" forceVisible="1" aid="896" icon="RelativeRefrence" id="RelativeRefOnToolBar" text="@Relative References"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Stop Recording">
+			<command idQ="RecordMacroOnToolBar"/>
+			<separator/>
+			<command idQ="RelativeRefOnToolBar"/>
+		</subcommand>
+	</subcommands>
+</shell>

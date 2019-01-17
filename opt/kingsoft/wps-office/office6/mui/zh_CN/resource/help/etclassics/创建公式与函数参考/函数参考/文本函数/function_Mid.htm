@@ -1,0 +1,125 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>MID</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="MID">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>MID</h1>
+<p>MID 返回文本字符串中从指定位置开始的特定数目的字符，该数目由用户指定。</p>
+<p><b>语法</b></p>
+<p><b>MID</b>(<b>text</b>,<b>start_num</b>,<b>num_chars</b>)</p>
+<p class="DT1">T<span lang="en-us">ext</span>&nbsp;&nbsp; 是包含要提取字符的文本字符串。</p>
+<p class="DT1">Start_num&nbsp;&nbsp; 是文本中要提取的第一个字符的位置。文本中第一个字符的 start_num 为 1，以此类推。 </p>
+<p class="DT1">Num_chars&nbsp;&nbsp; 指定希望 MID 从文本中返回字符的个数。</p>
+<p><b>说明</b></p>
+<ul>
+  <li>如果 start_num 大于文本长度，则 MID 返回空文本 (&quot;&quot;)。 </li>
+  <li>如果 start_num 小于文本长度，但 start_num 加上 num_chars 超过了文本的长度，则 MID 
+  只返回至多直到文本末尾的字符。 </li>
+  <li>如果 start_num 小于 1，则 MID 返回错误值 #VALUE!。 </li>
+  <li>
+  <p class="RL">如果 num_chars 是负数，则 MID 返回错误值 #VALUE!。</li>
+</ul>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table >
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="115">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="115">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="117">昙花一现</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="547">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="148"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=MID(A2,1,2)</td>
+		<td class ="ll" width="363">上面字符串中的 2 个字符，从第一个字符开始 (昙花)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=MID(A2,3,10)</td>
+		<td class ="ll" width="363">提取上面字符串中的 10 个字符，从第三个字符开始 (一现)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=MID(A2,20,5)</td>
+		<td class ="ll" width="363">因为要提取的第一个字符的位置大于字符串的长度，所以返回空文本 (&quot;&quot;)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+
+
+
+<p><a href="function_Code.htm">CODE</a></p>
+
+
+
+<p><a href="function_Find.htm">FIND</a></p>
+
+
+
+<p><a href="function_Left.htm">LEFT</a></p>
+
+
+
+<p><a href="function_Right.htm">RIGHT</a></p>
+
+
+
+<p><a href="function_Search.htm">SEARCH</a></p>
+
+
+
+<p>　</p>
+
+
+
+</body>
+
+</html>

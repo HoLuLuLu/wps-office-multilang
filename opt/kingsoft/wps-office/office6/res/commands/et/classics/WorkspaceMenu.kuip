@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="workspacemenu" component="et">
+	<libraries/>
+	<commands>
+		<kxKOSUserLoginCommand hotKey="L" ksoCmd="KOSUserLoginCmd" aid="2000007" filter="support:WPSCloudLogin=true;support:EnableAccount=true" icon="OS_Login" id="KOSUserLoginCmd" dialogHint="1" text="@Sign in" rbHotKey="L"/>
+		<kxKOSRechargeCommand hotKey="R" ksoCmd="KOSRechargeCmd" aid="2000008" icon="OS_Recharge" id="KOSRechargeCmd" text="@Recharge" rbHotKey="R"/>
+		<kxKOSLogoutCommand hotKey="O" ksoCmd="KOSLogoutCommand" aid="2000011" icon="OS_Login" id="KOSLogoutCommand" customTip="KOSLogoutTip" text="@Sign Out" rbHotKey="O"/>
+		<kxKOSOpenCloudFileCommand hotKey="O" ksoCmd="KOSOpenCloudFileCmd" aid="2000013" icon="OS_OpenCloudFile" id="KOSOpenCloudFileCmd" dialogHint="1" customTip="KOSOpenCloudFileTip" text="@Open from Cloud" rbHotKey="O"/>
+		<kxKOSSaveToCloudCommand hotKey="Y" ksoCmd="KOSSaveToCloudCmd" aid="2000014" icon="OS_SaveToCloudFile" id="KOSSaveToCloudCmd" dialogHint="1" customTip="KOSSaveFileTocloudTip" text="@Save to Cloud Docs" rbHotKey="Y"/>
+		<kxKOSCreateCloudLinkCommand hotKey="K" ksoCmd="KOSCreateCloudLinkCmd" aid="2000015" icon="OS_CreateCloudLinkFile" id="KOSCreateCloudLinkCmd" dialogHint="1" customTip="KOSCreatecloudLinkTip" text="@Cloud Link" rbHotKey="K"/>
+		<KxAutoVersionCommand text2="@Enable AutoBackup" hotKey="A" ksoCmd="AutoVersionCmd" aid="2000016" icon="WS_AutoVersiong" id="AutoVersionCmd" dialogHint="1" customTip="AutoVersion" text="@Enable AutoBackup" rbHotKey="A"/>
+		<KxStopAutoVersionCommand text2="@Disable AutoBackup" hotKey="S" ksoCmd="StopAutoVersionCmd" aid="2000017" icon="WS_AutoVersiong" id="StopAutoVersionCmd" dialogHint="1" customTip="StopAutoVersion" text="@Disable AutoBackup" rbHotKey="S"/>
+		<KxMarkVersionCommand text2="@Manual Backup" hotKey="M" ksoCmd="MarkVersionCmd" aid="2000018" icon="WS_MarkVersiong" id="MarkVersionCmd" dialogHint="1" customTip="MarkVersion" text="@Manual Backup" rbHotKey="M"/>
+		<KxExplorVersionCommand text2="@View Historical Backup" hotKey="E" ksoCmd="ExplorVersionCmd" aid="2000019" icon="WS_ExplorVersiong" id="ExplorVersionCmd" dialogHint="1" customTip="ExplorVersion" text="@View Historical Backup" rbHotKey="E"/>
+		<KxExplorBackupDirCommand text2="@View File Safe " hotKey="B" ksoCmd="ExplorBackupDirCmd" aid="2000020" icon="WS_ExplorBackupdir" id="ExplorBackupDirCmd" dialogHint="1" customTip="ExplorBackupDir" text="@View File Safe " rbHotKey="B"/>
+		<kxKOSRoamingfileCommand hotKey="R" ksoCmd="KOSRoamingfileCmd" aid="40047" filter="category!=personal" icon="OS_RoamingfilePro" id="KOSRoamingfileCmd" dialogHint="1" customTip="KOSRoamingfileTip" text="@File Roaming" rbHotKey="R"/>
+		<kxKOSNewHomepageFileCommand currentChannel="" hotKey="R" icon="OS_Homepage" id="KOSNewHomepagecmd" dialogHint="1" customTip="KOSHomepageTip" text="@My WPS" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="ExportPDF" aid="80004" icon="ExportToPDF" id="ExportPDF" dialogHint="1" text="@Export to PDF"/>
+		<KxEtMoreColorCommand hotKey="m" ksoCmd="ReadingLayoutMoreColor" aid="2000030" id="ReadingLayoutMoreColor" dialogHint="1" text="@More Colors"/>
+		<KxEtStartReaddingLayoutCommand beginText="@Start Reading Layout" descName="@Start Reading Layout" hotKey="s" ksoCmd="RecentReadingLayout" aid="100031" icon="ReadingLayout" id="StartReaddingLayout" stopText="@Stop Reading Layout" text="@Start Reading Layout"/>
+		<KxDocPermissionCommand hotKey="p" filter="support:DocPermission=true" icon="DocumentsPremissions" id="docpermission" customTip="DocPermission" text="@Account Encryption" defaultPage="Account" rbHotKey="PE"/>
+	</commands>
+	<subcommands>
+		<subcommand id="WorkspaceMenu">
+			<command idQ="KOSUserLoginCmd"/>
+			<KLoginMenuCommand hotKey="L" aid="2000045" filter="support:CloudStorage=true" barid="40041" id="Menu_Cloud_login" customTip="@Sign in" text="@Sign in">
+				<KUserCenterCommand id="userCenterCmd"/>
+				<KxOpenPersonalCenterCommand customShortcutEnabled="false" icon="OS_ViewUserInfo" id="OpenPersonalCenterCmd" text="@Personal Center"/>
+				<KxOpenMySubscriptionPageCommand customShortcutEnabled="false" filter="support:MyOrBuySubscription=true" icon="OS_MySubscription" id="OpenMySubscriptionPage" text="@My Subscription"/>
+				<KxOpenBuySubscriptionPageCommand customShortcutEnabled="false" filter="support:MyOrBuySubscription=true" icon="OS_BuySubscription" id="OpenBuySubscriptionPage" text="@Buy Subscription"/>
+				<command idQ="KOSLogoutCommand"/>
+				<command idQ="KOSRechargeCmd" filter="lang=zh_CN;category=personal"/>
+				<command idQ="KOSHireCmd" filter="lang=zh_CN;category=personal"/>
+			</KLoginMenuCommand>
+			<separator/>
+			<command idQ="KOSOpenCloudFileCmd" filter="support:CloudStorage=true"/>
+			<command idQ="KOSSaveToCloudCmd" filter="support:CloudStorage=true"/>
+			<command idQ="KOSRoamingfileCmd" filter="support:CloudStorage=true"/>
+			<command idQ="KOSNewHomepagecmd" filter="category!=professional;platform=win32"/>
+			<command idQ="docpermission" filter="category!=professional"/>
+			<separator/>
+			<command idQ="AutoVersionCmd" filter="support:CloudAutoBackup=true;category=personal"/>
+			<command idQ="StopAutoVersionCmd" filter="support:CloudAutoBackup=true;category=personal"/>
+			<command idQ="MarkVersionCmd" filter="support:CloudAutoBackup=true;category=personal"/>
+			<command idQ="ExplorVersionCmd" filter="support:CloudAutoBackup=true;category=personal"/>
+			<command idQ="ExplorBackupDirCmd" filter="support:CloudAutoBackup=true;category=personal"/>
+			<separator filter="support:CloudAutoBackup=true;category=personal"/>
+			<command idQ="ExportPDF"/>
+			<separator/>
+			<command idQ="rDuplicates"/>
+			<KListCommand hotKey="r" aid="80152" barid="40066" icon="ReadingLayout" text="@Reading Layout" qtspyName="ReadingLayout">
+				<command idQ="StartReaddingLayout"/>
+				<KxEtReadingLayoutColorCommand hotKey="c" ksoCmd="ReadingLayout" aid="100038" barid="40070" text="@Set Color" qtspyName="ReadingLayout">
+					<KxEtMoreColorCommand hotKey="m" ksoCmd="ReadingLayoutMoreColor" aid="2000030" id="ReadingLayoutMoreColorInWorkSpaceMenu" dialogHint="1" text="@More Colors" qtspyName="ReadingLayoutMoreColor"/>
+				</KxEtReadingLayoutColorCommand>
+			</KListCommand>
+			<command idQ="ProtectEyes" filter="category=personal"/>
+			<command idQ="NightMode" filter="category=personal"/>
+			<separator filter="support:DocerEntrance=true;lang!=zh_TW;category=personal"/>
+			<KxOpenUrlCommand hotKey="d" referenceDisable="1" filter="support:DocerEntrance=true;lang!=zh_TW;category=personal" url="http://www.docer.com/?from=wps_func_etsp" icon="DocerURLEntrance" customTip="DocerURLEntranceTip" text="@Docer Entrance" qtspyName="DocerURLEntrance"/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Application 对象</title>
+<link rel="stylesheet" type="text/css" href="../../css/ksHelpStyle.css">
+<script language="JScript" src="../../js/KsHelp.js"></script>
+
+</HEAD>
+
+<body bgcolor="#FFFFFF">
+
+<h1>Application 对象</h1>
+<div class="vbanav">
+<span class="vbanavreuse" id="seealso" ><font color="#ACA899">请参阅</font>&nbsp;</span>
+<span class="vbanavreuse" id="properties" onclick="ks_showList()">属性&nbsp;</span>
+<span class="vbanavreuse" id="methods" onclick="ks_showList()">方法&nbsp;</span>
+<span class="vbanavreuse" id="events" onclick="ks_showList()">事件&nbsp;</span>
+<span class="vbanavreuse" id="specifics"><font color="#ACA899">特性</font>&nbsp;</span>
+</div>
+
+<p><b><span class="blue">Application</span></b></p>
+
+<p><img border="0" src="../../images/parchild.gif" width="15" height="17">&nbsp;<b> </b> 
+<span class="blue"><b>Chart</b>；<b>Recentfiles</b>；<b>Windows</b>；<b>Workbooks</b>；<b>Worksheet</b></span></p>
+
+　</p>
+
+<p><b>描述</b> </p>
+
+<p>代表整个金山表格应用程序。<b>Application</b> 对象包含： </p>
+
+<ul>
+  <li class="LB1">应用程序范围内的设置和选项。 </li>
+  <li class="LB1">返回顶级对象的方法，例如 <b>ActiveCell</b> 和 <b>ActiveSheet</b> 等。 </li>
+</ul>
+
+<p>　</p>
+
+<p><b>说明</b> </p>
+
+<p class="T">可用 <b>Application</b> 属性返回 <b>Application</b> 对象。下例将 <b>Windows</b> 
+属性应用于 <b>Application</b> 对象，并激活工作簿。</p>
+<pre><code>Application.Windows(&quot;book1.et&quot;).Activate</code></pre>
+<p class="T">许多返回常用用户界面对象的属性和方法，例如活动单元格（<b><a href="../../properties/A/ActiveCell.htm">ActiveCell</a></b> 属性），可不加 <b>Application</b> 
+对象识别符而直接使用。</p>
+<p class="T">例如，可用 <code>ActiveCell.Font.Bold = True</code> 代替 <code>
+Application.ActiveCell.Font.Bold = True</code>。</p>
+
+<b>
+
+<span id="ks_ListSpan" class="cssList">
+<iframe id="ks_VBAIFrame" src="../../link/linkhtm/Applicationlink.htm" frameborder="0" marginheight="0" marginwidth="4" scrolling="auto" width="100%" target="_parent"></iframe></span>
+</body>
+</html>

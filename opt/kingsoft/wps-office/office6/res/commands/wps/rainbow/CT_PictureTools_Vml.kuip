@@ -1,0 +1,264 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="rainbow.ct_picturetools_vml" component="wps">
+	<commands>
+		<KxListCommand detail="@Insert Picture" ksoCmd="InsertPictureFromFile" icon="InsertPictureFromFile" customTip2="InsertPictureFromFile2" id="m_InsertPicture_Vml" customTip="InsertPictureFromFile" text="@Picture" rbHotKey="P">
+			<KxLegacyTriggerCommand detail="@Insert Picture" hotKey="p" ksoCmd="InsertPictureFromFile" idMso="PictureInsertFromFile" icon="InsertPictureFromFile" controlType="0" text="@From File" rbHotKey="P"/>
+			<KxLegacyTriggerCommand detail="@From Scanner" hotKey="s" ksoCmd="InsertPictureFromScan" filter="platform=win32" icon="InsertPictureFromScan" text="@From Scanner" rbHotKey="S"/>
+		</KxListCommand>
+		<KListCommand id="RB_Illustrations_PictureTool_Vml" text="@Insert" rbFileMenuEmbed="1">
+			<command idQ="m_InsertPicture_Vml"/>
+			<KConditionVisibleProxyCommand relatedKsoCmd="InsertPictureFromFile" targetId="" detail="@Insert online Picture" delayloadPath="commands/wps/rainbow/ProxyCommands.kuip" targetModule="konlinepicture" filter="platform=win32" dependPluginNames="cef" icon="onlinepicture" customTip="InsertOnlinePictureFromFile" text="@Online Picture" rbHotKey="SI"/>
+			<KxLegacyTriggerCommand detail="@Insert Clip Art" ksoCmd="InsertClipArt" filter="lang=jp_JP | support:IsArmyVersion = true" icon="InsertClipArt" customTip="InsertClipArt" text="@Clip Art" rbHotKey="F"/>
+			<KGalleryLibraryCommand ksoCmd="GalleryLibrary" filter="lang=zh_CN;category=personal" icon="wpsgallery32" id="GalleryLibrary" customTip="Gallery" text="@Gallery" rbHotKey="y"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="PictureMoreContrast" icon="PictureMoreContrast" id="PictureMoreContrast" text="@More Contrast"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="PictureLessContrast" icon="PictureLessContrast" id="PictureLessContrast" text="@Less Contrast"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="PictureMoreBrightness" icon="PictureMoreBrightness" id="PictureMoreBrightness" text="@More Brightness"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="PictureLessBrightness" icon="PictureLessBrightness" id="PictureLessBrightness" text="@Less Brightness"/>
+		<KxValueCommand hotKey="a" ksoCmd="PictureColor" id="PictureColorAutomatic" index="0" text="@Automatic"/>
+		<KxValueCommand hotKey="g" ksoCmd="PictureColor" id="PictureColorGrayscale" index="1" text="@Grayscale"/>
+		<KxValueCommand hotKey="b" ksoCmd="PictureColor" id="PictureColorBlackAndWhite" index="2" text="@Black and White"/>
+		<KxValueCommand hotKey="w" ksoCmd="PictureColor" id="PictureColorWashout" index="3" text="@Washout"/>
+		<KxLegacyTriggerCommandEx hotKey="s" ksoCmd="PictureSetTransparentColor" icon="PictureSetTransparentColor" id="PictureSetTransparentColor" text="@Set Transparent Color"/>
+		<KListCommand id="RB_DC_Picture_Vml" text="@Picture Adjust" rbFileMenuEmbed="1">
+			<KListCommand icon="PictureAdjust" customTip="PictureAdjust" text="@Adjust Picture" rbHotKey="R">
+				<command idQ="PictureMoreContrast"/>
+				<command idQ="PictureLessContrast"/>
+				<command idQ="PictureMoreBrightness"/>
+				<command idQ="PictureLessBrightness"/>
+			</KListCommand>
+			<KListCommand icon="PictureColor" customTip="PictureColor" text="@Color" rbHotKey="I">
+				<command idQ="PictureColorAutomatic"/>
+				<command idQ="PictureColorGrayscale"/>
+				<command idQ="PictureColorBlackAndWhite"/>
+				<command idQ="PictureColorWashout"/>
+				<command idQ="PictureSetTransparentColor"/>
+			</KListCommand>
+			<KxLegacyTriggerCommand ksoCmd="CompressPictures" icon="CompressPictures" customTip="CompressPictures" spaceHint="suitable" text="@Compress Pictures" rbHotKey="M"/>
+			<KxLegacyTriggerCommand ksoCmd="ChangePicture" icon="ChangePicture" customTip="ChangePicture" spaceHint="suitable" text="@Change Picture" rbHotKey="G"/>
+			<KxListCommand ksoCmd="ResetPicture" forceVisible="1" icon="ResetPicture" id="ResetPicture" customTip="ResetPicture" spaceHint="suitable" text="@Reset Picture" rbHotKey="Q">
+				<KxPropComposeCommand hotKey="r" ksoCmd="ResetPicture" icon="ResetPicture" text="@Reset Picture" rbHotKey="R"/>
+				<KxPropComposeCommand hotKey="s" ksoCmd="ResetPictureAndSize" icon="ResetPicture" text="@Reset Picture and Size" rbHotKey="S"/>
+			</KxListCommand>
+		</KListCommand>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="FillColor" icon="MoreColor" id="MoreFillColors" dialogHint="1" text="@More Fill Colors"/>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="LineColor" icon="MoreColor" id="MoreLineColors" dialogHint="1" text="@More Line Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="FillColor" icon="SnapperFill" forceEnabled="1" id="SnapFillColors" text="@Eyedropper" rbHotKey="E"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="LineColor" icon="SnapperFill" forceEnabled="1" id="SnapLineColors" text="@Eyedropper" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PatternedLines" id="PatternedLines" dialogHint="1" text="@Patterned Lines"/>
+		<KxLineStyleStaticGalleryCommand hotKey="w" column="1" ksoCmd="LineStylePalette" icon="LineStyleMenu" id="LineStylePalette" text="@Line Style" rbHotKey="W">
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_0" galleryItemHeight="16" index="0" text="@0.25 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_1" galleryItemHeight="16" index="1" text="@0.5 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_2" galleryItemHeight="16" index="2" text="@0.75 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_3" galleryItemHeight="16" index="3" text="@1 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_4" galleryItemHeight="16" index="4" text="@1.5 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_5" galleryItemHeight="16" index="5" text="@2.25 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_6" galleryItemHeight="16" index="6" text="@3 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_7" galleryItemHeight="16" index="7" text="@4.5 pt"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_8" galleryItemHeight="16" index="8" text="@6 pt"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="m" ksoCmd="MoreLines" id="MoreLines" dialogHint="1" text="@More Lines"/>
+		</KxLineStyleStaticGalleryCommand>
+		<KxStaticGalleryCommand hotKey="s" column="1" ksoCmd="DashStylePalette" icon="DashStyleMenu" id="DashStylePalette" text="@Dash Style" rbHotKey="S">
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Solid" icon="DashStyle_0" galleryItemHeight="14" index="0"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Round Dot" icon="DashStyle_1" galleryItemHeight="14" index="1"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Square Dot" icon="DashStyle_2" galleryItemHeight="14" index="2"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Dash" icon="DashStyle_3" galleryItemHeight="14" index="3"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Dash Dot" icon="DashStyle_4" galleryItemHeight="14" index="4"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Long Dash" icon="DashStyle_5" galleryItemHeight="14" index="5"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Long Dash Dot" icon="DashStyle_6" galleryItemHeight="14" index="6"/>
+			<KxStaticGalleryItemCommand galleryItemWidth="98" detail="@Long Dash Dot Dot" icon="DashStyle_7" galleryItemHeight="14" index="7"/>
+		</KxStaticGalleryCommand>
+		<KxListCommand ksoCmd="FormatObject" forceVisible="1" id="RB_DC_PictureStyles_Vml" customTip="FormatObject" text="@Picture Styles" rbFileMenuEmbed="1" rbHotKey="O">
+			<KxWpsFillColorCommand4Rainbow ksoCmd="FillColor" icon="CellFillColor" customTip2="PictureFill2" customTip="PictureFill" spaceHint="suitable" text="@Picture Fill" ksoTriggerCmd="RecentFillColor" rbHotKey="SF">
+				<command idQ="MoreFillColors"/>
+				<command idQ="SnapFillColors"/>
+				<KxPropComposeCommand tabIndex="0" hotKey="g" ksoCmd="FillEffects" icon="GradiantFill" text="@Gradient" rbHotKey="G"/>
+				<KxPropComposeCommand tabIndex="1" hotKey="t" ksoCmd="FillEffects" icon="TextureFill" text="@Texture" rbHotKey="T"/>
+				<KxPropComposeCommand tabIndex="2" hotKey="n" ksoCmd="FillEffects" icon="PatternFill" text="@Pattern"/>
+				<KxPropComposeCommand tabIndex="3" hotKey="p" ksoCmd="FillEffects" icon="PictureFill" text="@Picture" rbHotKey="P"/>
+			</KxWpsFillColorCommand4Rainbow>
+			<KxWpsLineColorCommand ksoCmd="LineColor" icon="LineColor" customTip2="PictureOutline2" customTip="PictureOutline" spaceHint="suitable" text="@Picture Outline" ksoTriggerCmd="RecentLineColor" rbHotKey="SO">
+				<command idQ="MoreLineColors"/>
+				<command idQ="SnapLineColors"/>
+				<command idQ="PatternedLines"/>
+				<command idQ="LineStylePalette"/>
+				<command idQ="DashStylePalette"/>
+			</KxWpsLineColorCommand>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="WrappingInLineWithText" icon="WrappingInLineWithText" id="WrappingInLineWithText" text="@In Line with Text"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="WrappingSquare" icon="WrappingSquare" id="WrappingSquare" text="@Square" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="WrappingTight" icon="WrappingTight" id="WrappingTight" text="@Tight" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="WrappingBehindText" icon="WrappingBehindText" id="WrappingBehindText" text="@Behind Text" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="WrappingInFrontofText" icon="WrappingInFrontofText" id="WrappingInFrontofText" text="@In Front of Text" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="WrappingTopandBottom" icon="WrappingTopandBottom" id="WrappingTopandBottom" text="@Top and Bottom" rbHotKey="O"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="WrappingThrough" icon="WrappingThrough" id="WrappingThrough" text="@Through" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="F" ksoCmd="BringForward" icon="BringForward" id="RbBringForwardInToolBar" text="@Bring Forward"/>
+		<KxLegacyTriggerCommand hotKey="R" ksoCmd="BringToFront" idMso="ObjectBringToFront" icon="BringToFront" controlType="0" id="RbBringToFrontInToolBar" text="@Bring to Front"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="BringInFrontOfText" aid="168" icon="BringInFrontOfText" id="RbBringInFrontOfText" text="@Bring in Front of Text"/>
+		<KxListCommand hotKey="f" ksoCmd="BringForward" icon="BringForward" customTip2="BringForward2" id="sp_BringForward" customTip="BringForward" text="@Bring Forward" rbHotKey="AF">
+			<command idQ="RbBringForwardInToolBar"/>
+			<command idQ="RbBringToFrontInToolBar"/>
+			<command idQ="RbBringInFrontOfText"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="B" ksoCmd="SendBackward" icon="SendBackward" id="RbSendBackwardInToolBar" text="@Send Backward"/>
+		<KxLegacyTriggerCommand hotKey="K" ksoCmd="SendToBack" icon="SendToBack" id="RbSendToBackInToolBar" text="@Send to Back"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="SendBehindText" aid="169" idMso="ObjectSendBehindText" icon="SendBehindText" id="SendBehindText" text="@Send Behind Text" rbHotKey="H"/>
+		<KxListCommand hotKey="b" ksoCmd="SendBackward" icon="SendBackward" customTip2="SendBackward2" id="sp_SendBackward" customTip="SendBackward" text="@Send Backward" rbHotKey="AE">
+			<command idQ="RbSendBackwardInToolBar"/>
+			<command idQ="RbSendToBackInToolBar"/>
+			<command idQ="SendBehindText"/>
+		</KxListCommand>
+		<KxObjectSelectCommand hotKey="J" ksoCmd="ObjectSelect" icon="ObjectSelect" id="ObjectSelect" customTip="ObjectSelect" text="@Selection Pane" rbHotKey="AB"/>
+		<KxValueCommand hotKey="l" ksoCmd="DrawAlign" icon="DrawAlignLeft" id="DrawAlignLeft" index="0" text="@Align Left" rbHotKey="L"/>
+		<KxValueCommand hotKey="c" ksoCmd="DrawAlign" icon="DrawAlignCenter" id="DrawAlignCenter" index="1" text="@Align Center" rbHotKey="C"/>
+		<KxValueCommand hotKey="r" ksoCmd="DrawAlign" icon="DrawAlignRight" id="DrawAlignRight" index="2" text="@Align Right" rbHotKey="R"/>
+		<KxValueCommand hotKey="t" ksoCmd="DrawAlign" icon="DrawAlignTop" id="DrawAlignTop" index="3" text="@Align Top" rbHotKey="T"/>
+		<KxValueCommand hotKey="m" ksoCmd="DrawAlign" icon="DrawAlignMiddle" id="DrawAlignMiddle" index="4" text="@Align Middle" rbHotKey="M"/>
+		<KxValueCommand hotKey="b" ksoCmd="DrawAlign" icon="DrawAlignBottom" id="DrawAlignBottom" index="5" text="@Align Bottom" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="AlignDistributeHori" idMso="AlignDistributeHorizontally" icon="AlignDistributeHori" controlType="0" id="AlignDistributeHori" text="@Distribute Horizontally"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="AlignDistributeVert" idMso="AlignDistributeVertically" icon="AlignDistributeVert" controlType="0" id="AlignDistributeVert" text="@Distribute Vertically"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EqualHeight" icon="EqualHeight" id="EqualHeight" text="@Equal Height"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="EqualWidth" icon="EqualWidth" id="EqualWidth" text="@Equal Width"/>
+		<KxLegacyTriggerCommand hotKey="Q" ksoCmd="EqualSize" icon="EqualSize" id="RbEqualSize" text="@Equal Size"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="AlighRelativeToPage" id="RbAlighRelativeToPage" text="@Relative to Page"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Gridlines" aid="300" icon="Gridlines" id="RbGridlines" spaceHint="suitable" text="@Gridlines"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="Grid" icon="FTB_GridSwitch" id="RbGrid" dialogHint="1" text="@Grid"/>
+		<KListCommand icon="DrawAlignLeft" id="m_Align" customTip="m_Align" spaceHint="suitable" text="@Align" rbHotKey="AA">
+			<command idQ="DrawAlignLeft"/>
+			<command idQ="DrawAlignCenter"/>
+			<command idQ="DrawAlignRight"/>
+			<command idQ="DrawAlignTop"/>
+			<command idQ="DrawAlignMiddle"/>
+			<command idQ="DrawAlignBottom"/>
+			<separator/>
+			<command idQ="AlignDistributeHori"/>
+			<command idQ="AlignDistributeVert"/>
+			<separator/>
+			<command idQ="EqualHeight"/>
+			<command idQ="EqualWidth"/>
+			<command idQ="RbEqualSize"/>
+			<separator/>
+			<command idQ="RbAlighRelativeToPage"/>
+			<separator/>
+			<command idQ="RbGridlines"/>
+			<command idQ="RbGrid"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="G" ksoCmd="Group" icon="Group" id="RbGroupInToolBar" text="@Group"/>
+		<KxLegacyTriggerCommand hotKey="U" ksoCmd="UnGroup" icon="UnGroup" id="RbUnGroupInToolBar" text="@Ungroup"/>
+		<KListCommand icon="Group" id="m_Group" customTip="m_Group" spaceHint="suitable" text="@Group" rbHotKey="AG">
+			<command idQ="RbGroupInToolBar"/>
+			<command idQ="RbUnGroupInToolBar"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="FreeRotate" icon="FreeRotate" id="FreeRotate" text="@Free Rotate"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="RotateLeft" icon="RotateLeft" id="RotateLeft" text="@Rotate Left 90°" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RotateRight" icon="RotateRight" id="RotateRight" text="@Rotate Right 90°" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="FlipHorizontal" icon="FlipHorizontal" id="FlipHorizontal" text="@Flip Horizontal" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="FlipVertical" icon="FlipVertical" id="FlipVertical" text="@Flip Vertical" rbHotKey="V"/>
+		<KListCommand icon="RotateRight" id="m_Rotate_Vml" customTip="m_Rotate" spaceHint="suitable" text="@Rotate" rbHotKey="AY">
+			<command idQ="FreeRotate"/>
+			<command idQ="RotateLeft"/>
+			<command idQ="RotateRight"/>
+			<separator/>
+			<command idQ="FlipHorizontal"/>
+			<command idQ="FlipVertical"/>
+		</KListCommand>
+		<KListCommand id="RB_DC_Arrange_Vml" text="@Arrange" rbFileMenuEmbed="1">
+			<KListCommand detail="@Wrap Text" icon="TextWrappingMenu" customTip="m_Wrapping" text="@Wrap Text" rbHotKey="TW">
+				<command idQ="WrappingInLineWithText"/>
+				<separator/>
+				<command idQ="WrappingSquare"/>
+				<command idQ="WrappingTight"/>
+				<command idQ="WrappingBehindText"/>
+				<command idQ="WrappingInFrontofText"/>
+				<separator/>
+				<command idQ="WrappingTopandBottom"/>
+				<command idQ="WrappingThrough"/>
+			</KListCommand>
+			<command idQ="sp_BringForward"/>
+			<command idQ="sp_SendBackward"/>
+			<command idQ="ObjectSelect"/>
+			<command idQ="m_Align"/>
+			<command idQ="m_Group"/>
+			<command idQ="m_Rotate_Vml"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PictureCrop" icon="PictureCrop" id="PictureCrop" customTip="PictureCrop" text="@Crop" rbHotKey="V"/>
+		<KListCommand id="RB_DC_PictureSize_Vml" text="@PictureSize" rbFileMenuEmbed="1">
+			<command idQ="PictureCrop"/>
+			<KxPropComposeCommand tabIndex="1" hotKey="o" ksoCmd="FormatObject" icon="ShapeSize" dialogHint="1" customTip="PictureSize" text="@PictureSize" rbHotKey="SZ"/>
+		</KListCommand>
+		<KxStaticGalleryItemCommand galleryItemWidth="108" ksoCmd="NoShadow" id="NoShadow" galleryItemHeight="24" forceLine="true" text="@No Shadow"/>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="ShadowColor" icon="MoreColor" id="MoreShadowColors" dialogHint="1" text="@More Shadow Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="ShadowColor" forceEnabled="1" icon="SnapperFill" id="SnapShadowColors" text="@Eyedropper" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SemitransparentShadow" id="SemitransparentShadow" text="@Semitransparent Shadow"/>
+		<KxWpsShadowColorCommand ksoCmd="ShadowColor" icon="ShadowColor" customTip2="ShadowColor2" id="ShadowColor" customTip="ShadowColor" text="@Shadow Color" ksoTriggerCmd="RecentShadowColor" rbHotKey="SC">
+			<command idQ="MoreShadowColors"/>
+			<command idQ="SnapShadowColors"/>
+			<command idQ="SemitransparentShadow"/>
+		</KxWpsShadowColorCommand>
+		<KRbDonotShowHotKeyCommand id="NULL" spaceHint="compact" rbHotKey=""/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowLeft" icon="NudgeShadowLeft" id="NudgeShadowLeft" customTip="NudgeShadowLeft" spaceHint="compact" text="@Nudge Shadow Left" rbHotKey="2"/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowUp" icon="NudgeShadowUp" id="NudgeShadowUp" customTip="NudgeShadowUp" spaceHint="compact" text="@Nudge Shadow Up" rbHotKey="1"/>
+		<KxLegacyTriggerCommand ksoCmd="ShadowOnOff" icon="ShadowOnOff" id="ShadowOnOff" customTip="ShadowOnOff" spaceHint="compact" text="@Shadow On/Off" rbHotKey="z"/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowDown" icon="NudgeShadowDown" id="NudgeShadowDown" customTip="NudgeShadowDown" spaceHint="compact" text="@Nudge Shadow Down" rbHotKey="4"/>
+		<KxLegacyTriggerCommand ksoCmd="NudgeShadowRight" icon="NudgeShadowRight" id="NudgeShadowRight" customTip="NudgeShadowRight" spaceHint="compact" text="@Nudge Shadow Right" rbHotKey="3"/>
+		<KListCommand id="RB_ShadowSettings_Vml" text="@Shadow Setting" rbFileMenuEmbed="1">
+			<KxShadowStaticGalleryCommand column="4" ksoCmd="ShadowPalette" icon="ShadowStyleMenu" customTip="ShadowSetting" text="@Shadow Style" rbHotKey="SS">
+				<command idQ="NoShadow"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 1" icon="ShadowStyle_0" galleryItemHeight="24" index="0"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 2" icon="ShadowStyle_1" galleryItemHeight="24" index="1"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 3" icon="ShadowStyle_2" galleryItemHeight="24" index="2"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 4" icon="ShadowStyle_3" galleryItemHeight="24" index="3"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 5" icon="ShadowStyle_4" galleryItemHeight="24" index="4"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 6" icon="ShadowStyle_5" galleryItemHeight="24" index="5"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 7" icon="ShadowStyle_6" galleryItemHeight="24" index="6"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 8" icon="ShadowStyle_7" galleryItemHeight="24" index="7"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 9" icon="ShadowStyle_8" galleryItemHeight="24" index="8"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 10" icon="ShadowStyle_9" galleryItemHeight="24" index="9"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 11" icon="ShadowStyle_10" galleryItemHeight="24" index="10"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 12" icon="ShadowStyle_11" galleryItemHeight="24" index="11"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 13" icon="ShadowStyle_12" galleryItemHeight="24" index="12"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 14" icon="ShadowStyle_13" galleryItemHeight="24" index="13"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 15" icon="ShadowStyle_14" galleryItemHeight="24" index="14"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 16" icon="ShadowStyle_15" galleryItemHeight="24" index="15"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 17" icon="ShadowStyle_16" galleryItemHeight="24" index="16"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 18" icon="ShadowStyle_17" galleryItemHeight="24" index="17"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 19" icon="ShadowStyle_18" galleryItemHeight="24" index="18"/>
+				<KxStaticGalleryItemCommand galleryItemWidth="24" detail="@Shadow Style 20" icon="ShadowStyle_19" galleryItemHeight="24" index="19"/>
+			</KxShadowStaticGalleryCommand>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="ShadowColor"/>
+			<command idQ="NULL"/>
+			<command idQ="NudgeShadowLeft"/>
+			<command idQ="NULL"/>
+			<command idQ="NudgeShadowUp"/>
+			<command idQ="ShadowOnOff"/>
+			<command idQ="NudgeShadowDown"/>
+			<command idQ="NULL"/>
+			<command idQ="NudgeShadowRight"/>
+			<command idQ="NULL"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="FormatObject" aid="3249" icon="ChartObjects" id="FormatObject" dialogHint="1" text="@Format Object"/>
+		<KListCommand id="DetailedSettings_PictureTools_Vml">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_PictureTools_Vml" text="@Detailed Settings">
+				<command idQ="FormatObject"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_PictureTools_Vml">
+			<command idQ="RB_Illustrations_PictureTool_Vml"/>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="RB_DC_Picture_Vml"/>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="RB_DC_PictureStyles_Vml"/>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="RB_DC_Arrange_Vml"/>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="RB_DC_PictureSize_Vml"/>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="RB_ShadowSettings_Vml"/>
+			<separator filter="lang!=jp_JP,en_US"/>
+			<command idQ="DetailedSettings_PictureTools_Vml" filter="lang=jp_JP,en_US"/>
+		</subcommand>
+	</subcommands>
+</shell>

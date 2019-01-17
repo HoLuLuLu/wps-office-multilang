@@ -1,0 +1,137 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>ERROR.TYPE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="ERROR.TYPE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>ERROR.TYPE</h1>
+<p>返回对应于 WPS表格 中某一错误值的数字，或者，如果没有错误则返回 #N/A。在函数 IF 中可以使用 ERROR.TYPE 
+检测错误值，并返回文本字符串（如，消息）来取代错误值。</p>
+<p><b>语法</b></p>
+<p><b>ERROR.TYPE</b>(<b>error_val</b>)</p>
+<p>Error_val&nbsp;&nbsp; 为需要得到其标号的一个错误值。尽管 error_val 
+可以为实际的错误值，但它通常为一个单元格引用，而此单元格中包含需要检测的公式。</p>
+
+<table>
+	<tr>
+	    <th class="th1">如果 error_val 为</th>
+   	    <th class="th2">函数 ERROR.TYP<span lang="en-us">E</span> 返回</th>
+	</tr>
+	<tr>
+		<td class="ll">#NULL!</td>
+		<td class="ll">1</td>
+	</tr>
+	<tr>
+		<td class="ll">#DIV/0!</td>
+		<td class="ll">2</td>
+	</tr>
+	<tr>
+		<td class="ll">#VALUE!</td>
+		<td class="ll">3</td>
+	</tr>
+	<tr>
+		<td class="ll">#REF!</td>
+		<td class="ll">4</td>
+	</tr>
+	<tr>
+		<td class="ll">#NAME?</td>
+		<td class="ll">5</td>
+	</tr>
+	<tr>
+		<td class="ll">#NUM!</td>
+		<td class="ll">6</td>
+	</tr>
+	<tr>
+		<td class="ll">#N/A</td>
+		<td class="ll">7</td>
+	</tr>
+	<tr>
+		<td class="ll">其他值</td>
+		<td class="ll">#N/A</td>
+	</tr>
+</table>
+
+
+
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+  <table>
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="115">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="115">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="117">#NULL!</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="117">=1/0</td>
+	</tr>
+
+	
+</table>
+
+
+<br>
+	<table width="625">
+	<tr>
+		<th class="thEmpty" width="20" ></th>
+	    <th class="th1" width="200" ><b>公式</b></th>
+   	    <th class="th2" width="282" ><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" valign="top" width="200">=ERROR.TYPE(A2)</td>
+		<td class ="ll" width="282" >返回对应错误值 #NULL! 的数字 (1)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll"  valign="top" width="200">
+		=IF(ERROR.TYPE(A3)&lt;3,CHOOSE(ERROR.TYPE(A3),&quot;区域没有交叉&quot;,&quot;除数为零&quot;))</td>
+		<td class ="ll" width="282" >检查单元格 A3 是否包含 #NULL! 或 #DIV/0! 
+		错误值。如果有，则会在工作表函数 CHOOSE 中使用错误值以显示两条消息之一，否则将返回 #N/A 错误值（除数为零）。</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_information.htm">信息函数</a></p>
+
+
+
+</body>
+
+</html>

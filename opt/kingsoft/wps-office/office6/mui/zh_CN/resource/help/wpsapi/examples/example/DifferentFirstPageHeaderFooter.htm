@@ -1,0 +1,11 @@
+<html><head>
+<title>DifferentFirstPageHeaderFooter</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例检查活动文档的每一节，查找第一页是否有不同的页眉和页脚，如果有就显示一条消息。<p>Dim secLoop As Section <br>For Each secLoop In ActiveDocument.Sections <br>    &nbsp;&nbsp;&nbsp;    If secLoop.PageSetup.DifferentFirstPageHeaderFooter = True Then <br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        Msgbox "Section " & secLoop.Index _ <br>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;            & " has different first page headers & footers." <br>    &nbsp;&nbsp;&nbsp;    End If <br>Next secLoop 
+</div>
+</body>
+</html>

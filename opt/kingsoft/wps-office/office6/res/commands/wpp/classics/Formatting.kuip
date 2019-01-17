@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.formatting" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Shadow" aid="686" icon="Shadow" id="ShadowButton" customTip="ShadowButton" text="@Shadow" rbHotKey="5"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="FormatAlignDistributed" forceVisible="1" aid="2792" icon="AlignDistributed" id="Distributed" customTip="Distributed" text="@Distributed" rbHotKey="AD"/>
+		<KListCommand aid="4000009" icon="TextDirection" id="TextDirection" customTip="Text Direction" text="@Text Direction" rbHotKey="AX">
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_1" index="1" text="@Horizontal direction" qtspyName="TextDirection_Horizontal" rbHotKey="H"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_2" index="2" text="@Vertical direction" qtspyName="TextDirection_Vertical" rbHotKey="V"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_3" index="3" text="@Rotate all text 90°" qtspyName="TextDirection_Rotate90" rbHotKey="R"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_4" index="4" text="@Rotate all text 270°" qtspyName="TextDirection_Rotate270" rbHotKey="O"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_5" index="5" text="@Stacked" qtspyName="TextDirection_Stacked" rbHotKey="S"/>
+			<separator/>
+			<KxValueCommand ksoCmd="TextDirection" icon="TextDirection" index="6" text="@More Options..." qtspyName="TextDirection_More" rbHotKey="M"/>
+		</KListCommand>
+		<KxWppBulletsNumberingStaticGalleryCommand tc="Num" column="4" ksoCmd="Numbering" aid="11" icon="Numbering" customTip2="Numbering2" id="Numbering" customTip="Numbering" text="@Numbering" ksoTriggerCmd="Numbering" rbHotKey="N">
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_0" galleryItemHeight="70" index="0" customTip="@None" qtspyName="wpp_numbering_0" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_1" galleryItemHeight="70" index="@3" customTip="@1.2.3." qtspyName="wpp_numbering_1" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_2" galleryItemHeight="70" index="@2" customTip="@With The Circle Number." qtspyName="wpp_numbering_2" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_3" galleryItemHeight="70" index="@7" customTip="@Ⅰ.Ⅱ.Ⅲ." qtspyName="wpp_numbering_3" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_4" galleryItemHeight="70" index="@1" customTip="@A.B.C." qtspyName="wpp_numbering_4" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_5" galleryItemHeight="70" index="@9" customTip="@a).b).c)." qtspyName="wpp_numbering_5" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_6" galleryItemHeight="70" index="@0" customTip="@a.b.c." qtspyName="wpp_numbering_6" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wpp_numbering_7" galleryItemHeight="70" index="@6" customTip="@Pictographic Number, Wide End" qtspyName="wpp_numbering_7" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxPropComposeCommand tabIndex="1" hotKey="m" ksoCmd="BulletsNumber" aid="783" icon="BulletsNumber" dialogHint="1" text="@More Numbering" qtspyName="BulletsNumber" rbHotKey="N"/>
+		</KxWppBulletsNumberingStaticGalleryCommand>
+		<KxWppBulletsNumberingStaticGalleryCommand column="4" ksoCmd="Bullets" aid="12" icon="BulletsNumber" customTip2="Bullets2" id="Bullets" customTip="Bullets" text="@Bullets" ksoTriggerCmd="Bullets" rbHotKey="U">
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_numbering_0" galleryItemHeight="72" index="-1" customTip="@None" qtspyName="wpp_numbering_0" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_bullets_0" galleryItemHeight="72" index="@108" customTip="@With Filling Effect Of Large Round-Shaped Bullets" qtspyName="wpp_bullets_0" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_bullets_1" galleryItemHeight="72" index="@110" customTip="@With Filling Effect Of Large Square-Shaped Bullets" qtspyName="wpp_bullets_1" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_bullets_2" galleryItemHeight="72" index="@117" customTip="@With Filling Effect Of Diamond-Shaped Bullets" qtspyName="wpp_bullets_2" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_bullets_3" galleryItemHeight="72" index="@118" customTip="@Bold Square-Hollow Bullets" qtspyName="wpp_bullets_3" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_bullets_4" galleryItemHeight="72" index="@216" customTip="@Sagittate Bullet " qtspyName="wpp_bullets_4" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_bullets_5" galleryItemHeight="72" index="@252" customTip="@The Check Mark-shaped Bullets" qtspyName="wpp_bullets_5" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="72" icon="wpp_bullets_7" galleryItemHeight="72" index="@8226" customTip="@With Filling Effect Of Round-Shaped Bullets" qtspyName="wpp_bullets_7" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="m" ksoCmd="BulletsNumber" aid="783" icon="BulletsNumber" dialogHint="1" text="@More Bullets" qtspyName="BulletsNumber" rbHotKey="N"/>
+		</KxWppBulletsNumberingStaticGalleryCommand>
+		<KxWppMoreColorCommand hotKey="m" ksoCmd="FontColor" aid="92041" icon="MoreColor" id="MoreFontColors" dialogHint="1" text="@More Font Colors" rbHotKey="M"/>
+		<KxWppSnapColorCommand hotKey="e" ksoCmd="FontColor" icon="SnapperFill" forceEnabled="1" id="SnapFontColors" text="@Eyedropper" rbHotKey="E"/>
+		<KxWppFontColorCommand ksoCmd="FontColor" aid="401" barid="5006" icon="ChartFontColor" id="FontColor" name="Font Color" text="@Font Color" ksoTriggerCmd="RecentFontColor">
+			<command idQ="MoreFontColors"/>
+			<command idQ="SnapFontColors"/>
+			<separator/>
+			<command idQ="MoreFontFill"/>
+		</KxWppFontColorCommand>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="IncreaseSpace" forceVisible="1" aid="92247" faceid="20" icon="IncreaseSpace" id="IncreaseSpace" customTip="IncreaseSpace" text="@Increase Spacing" rbHotKey="P"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="DecreaseSpace" forceVisible="1" aid="92145" faceid="21" icon="DecreaseSpace" id="DecreaseSpace" customTip="DecreaseSpace" text="@Decrease Spacing" rbHotKey="E"/>
+		<KxLegacyTriggerCommand ksoCmd="SlideDesign" aid="1001" filter="lang!=zh_CN,zh_TW|category!=personal" faceid="36" icon="SlideDesign" id="SlideDesign" dialogHint="1" text="@Slide Design"/>
+		<KWpsAssistOnlineTemplateCommand aid="1001" filter="support:WpsAssistOnlineTemplate=true" faceid="36" icon="templateonline" id="SlideDesign" dialogHint="1" text="@More DesignTemplates"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="NewSlide" aid="92122" faceid="35" icon="NewSlide" shortcutHint="Ctrl+M" id="NewSlide" customTip="NewSlide" text="@New Slide" rbHotKey="I"/>
+		<KxGallerySlideLayoutCommand hotKey="l" galleryWidth="490" aid="700" filter="category!=personal" icon="TaskPaneSlideLayout" id="SlideLayout" text="@Slide Layout" rbHotKey="L"/>
+		<KxWppChangeLayoutWebGalleryCommand hotKey="l" aid="700" entrance="formattingTab_Layout" filter="lang=zh_CN;category=personal" icon="TaskPaneSlideLayout" id="SlideLayout" text="@Slide Layout" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="s" disableCustomRibbon="true" ksoCmd="TableStyle" aid="92009" icon="TaskPaneTableStyle" id="TableStyle" dialogHint="1" text="@Table Style"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="Background" aid="1706" icon="Background" id="BackDrop" dialogHint="1" text="@Background" rbHotKey="B"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Formatting">
+			<KxWppFontComboboxCommand ksoCmd="FontName" aid="1728" fixedWidth="150" icon="FontName" controlType="2" id="FontName" text="@Font"/>
+			<KxWppFontSizeCommand ksoCmd="FontSize" aid="1731" fixedWidth="60" icon="FontSize" id="FontSize" text="@Font Size"/>
+			<command idQ="Bold"/>
+			<command idQ="Italic"/>
+			<command idQ="Underline"/>
+			<command idQ="ShadowButton"/>
+			<command idQ="Superscript"/>
+			<command idQ="Subscript"/>
+			<separator/>
+			<command idQ="Left"/>
+			<command idQ="Center"/>
+			<command idQ="Right"/>
+			<command idQ="Justify"/>
+			<command idQ="Distributed"/>
+			<command idQ="TextDirection"/>
+			<separator/>
+			<command idQ="Numbering"/>
+			<command idQ="Bullets"/>
+			<separator/>
+			<command idQ="IncreaseFontSize"/>
+			<command idQ="DecreaseFontSize"/>
+			<separator/>
+			<command idQ="DecreaseIndent"/>
+			<command idQ="IncreaseIndent"/>
+			<separator/>
+			<command idQ="FontColor"/>
+			<separator/>
+			<command idQ="IncreaseSpace"/>
+			<command idQ="DecreaseSpace"/>
+			<separator/>
+			<command idQ="SlideDesign"/>
+			<command idQ="NewSlide"/>
+			<separator/>
+			<command idQ="SlideLayout"/>
+			<command idQ="TableStyle"/>
+			<command idQ="BackDrop"/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,300 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>TREND</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="TREND">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et2
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et3
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">TREND</font></b></p>
+<p>返回一条线性回归拟合线的值。即找到适合已知数组 known_y's 和 known_x's 的直线（用最小二乘法），并返回指定数组 new_x's 
+在直线上对应的 y 值。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">TREND</b>(<b class="bterm">known_y's</b>,known_x's,new_x's,const)</p>
+<p>Known_y's&nbsp;&nbsp;&nbsp;&nbsp; 关系表达式 y = mx + b 中已知的 y 值集合。</p>
+<ul class="cntIndent36" type="disc">
+	<li>若数组 known_y's 在单独一列中，则 known_x's 的每一列被视为一个独立的变量。 
+	</li>
+	<li>若数组 known-y's 在单独一行中，则 known-x's 的每一行被视为一个独立的变量。 </li>
+</ul>
+<p>Known_x's&nbsp;&nbsp;&nbsp;&nbsp; 关系表达式 y = mx + b 中已知的可选 x 值集合。</p>
+<ul class="cntIndent36" type="disc">
+	<li>数组 known_x's 可以包含一组或多组变量。若只用到一个变量，只要 known_y's 和 known_x's 
+	维数相同，它们可以是任何形状的区域。若用到多个变量，known_y's 必须为向量（即必须为一行或一列）。 
+	</li>
+	<li>若省略 known_x's，则假设该数组为 {1,2,3,...}，其大小与 known_y's 相同。 </li>
+</ul>
+<p>New_x's&nbsp;&nbsp;&nbsp;&nbsp; 需要函数 TREND 返回对应 y 值的新 x 值。</p>
+<ul class="cntIndent36" type="disc">
+	<li>New_x's 与 known_x's 一样，每个独立变量必须为单独的一行（或一列）。因此，若 known_y's 是单列的，known_x's 
+	和 new_x's 应该有同样的列数。若 known_y's 是单行的，known_x's 和 new_x's 应该有同样的行数。 
+	</li>
+	<li>若省略 new_x's，将假设它和 known_x's 一样。 
+	</li>
+	<li>若 known_x's 和 new_x's 都省略，将假设它们为数组 {1,2,3,...}，大小与 known_y's 相同。 </li>
+</ul>
+<p>Const&nbsp;&nbsp;&nbsp;&nbsp; 一逻辑值，用于指定是否将常量 b 强制设为 0。</p>
+<ul class="cntIndent36" type="disc">
+	<li>若 const 为 TRUE 或省略，b 将按正常计算。 
+	</li>
+	<li>若 const 为 FALSE，b 将被设为 0（零），m 将被调整以使 y = mx。 </li>
+</ul>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>有关WPS表格对数据进行直线拟合的详细信息，请参阅 LINEST 函数。 
+	</li>
+	<li>对于返回结果为数组的公式，必须以数组公式的形式输入。 
+	</li>
+	<li>可以使用 TREND 函数计算同一变量的不同乘方的回归值来拟合多项式曲线。例如，假设 A 列包含 y 值，B 列含有 x 值。可以在 C 
+	列中输入 x^2，在 D 列中输入 x^3，等等，然后根据 A 列，对 B 列到 D 列进行回归计算。 
+	</li>
+	<li>当为参数（如 known_x's）输入数组常量时，应当使用逗号分隔同一行中的数据，用分号分隔不同行中的数据。 </li>
+</ul>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+<p>第一个公式显示与已知值对应的值。如果线性趋势继续存在，第二个公式预测下个月的值。</p>
+
+<table width="579" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="159"><font face="宋体">A</font></th>
+	    <th class="th1" width="191"><font face="宋体">B</font></th>
+	    <th class="th1" width="196"><font face="宋体">C</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="159">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<b class="bterm">月份</b></td>
+		<td class = "th1" width="191">
+		<p style="line-height: 100%"><b class="bterm"><font size="2">成本</font></b></td>
+		<td class = "th1" width="196">
+		<p style="line-height: 100%"><b class="bterm"><font size="2">公式 1</font></b></p>
+		<p style="line-height: 100%"><b class="bterm">（对应的成本）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="159">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">1</p>
+		</td>
+		<td class="ll" width="191">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">￥165,890</p>
+		</td>
+		<td class="ll" width="196">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		=TREND(B2:B13,A2:A13)</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="159"><font size="2">2</font></td>
+		<td class="ll" width="191">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">￥103,310</p>
+		</td>
+		<td class="ll" width="196">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">　</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="159"><font size="2">3</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥182,810</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">5</td>
+		<td class="ll" width="159"><font size="2">4</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥132,190</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">6</td>
+		<td class="ll" width="159"><font size="2">5</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥124,130</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">7</td>
+		<td class="ll" width="159"><font size="2">6</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥145,870</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">8</td>
+		<td class="ll" width="159"><font size="2">7</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥153,240</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">9</td>
+		<td class="ll" width="159"><font size="2">8</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥146,690</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">10</td>
+		<td class="ll" width="159"><font size="2">9</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥136,010</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">11</td>
+		<td class="ll" width="159"><font size="2">10</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥138,830</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">12</td>
+		<td class="ll" width="159"><font size="2">11</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥141,570</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">13</td>
+		<td class="ll" width="159"><font size="2">12</font></td>
+		<td class="ll" width="191">
+		<font size="2">￥142,690</font></td>
+		<td class="ll" width="196">
+		　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">14</td>
+		<td class = "th1" width="159">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<b class="bterm">月份</b></td>
+		<td class = "th1" width="389" colspan="2">
+		<p style="line-height: 100%">
+		<font face="宋体" size="2">公式 2</font></p>
+		<p style="line-height: 100%"><b class="bterm">（预测的成本）</b></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10">15</td>
+		<td class="ll" width="159">
+		<font size="2">13</font></td>
+		<td class="ll" width="389" colspan="2">
+		<font size="2">=TREND(B2:B13,A2:A13,A15:A19)</font></td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">16</td>
+		<td class="ll" width="159">
+		<font size="2">14</font></td>
+		<td class="ll" width="389" colspan="2">
+		　</td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">17</td>
+		<td class="ll" width="159">
+		<font size="2">15</font></td>
+		<td class="ll" width="389" colspan="2">
+		　</td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">18</td>
+		<td class="ll" width="159">
+		<font size="2">16</font></td>
+		<td class="ll" width="389" colspan="2">
+		　</td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">19</td>
+		<td class="ll" width="159">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		17</p>
+		</td>
+		<td class="ll" width="389" colspan="2">
+		　</td>
+	</tr>
+    	
+</table>
+
+<p><b class="cntnote">注释&nbsp;</b>&nbsp;&nbsp;示例中的公式必须以数组公式输入。将示例复制到空白工作表后，请选中以公式单元格开始的区域 
+C2:C13 或 B15:B19。按 F2，再按 Ctrl+Shift+Enter。如果公式不是以数组公式的形式输入的，则单个结果为 145164.74359 
+和 139938.0303 。</p>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

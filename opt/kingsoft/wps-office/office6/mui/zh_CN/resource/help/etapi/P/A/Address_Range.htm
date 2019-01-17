@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Address_Range</title>
+<style>@import url(../../css/ksHelpStyle.css);
+</style>
+<base target="_parent">
+</head>
+
+<body>
+<div class=ind>
+<p><b>描述</b></p>
+<p>返回区域引用。<b>String</b>类型，只读。</p>
+<P>　</P>
+<P><b>语法</b></P>
+<div class=vbasyn>
+<P><I>expression</I>.<b>Add</b><b>ress</b><span lang="en-us"><i>([RowAbsolute], 
+[ColumnAbsolute], [ReferenceStyle], [External], [RelativeTo])</i></span></P>
+</div>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2">
+  <tr>
+    <td width="16%" align="center" bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+    <td width="50%" align="center" bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+  </tr>
+  <tr>
+    <td width="15%"><i>expression</i></td>
+    <td width="51%">必需。该表达式返回 <b><a href="../../objs/R/Range.htm">Range</a></b> 
+    对象。</td>
+  </tr>
+  <tr>
+    <td width="15%"><i><span lang="en-us">RowAbsolute</span></i></td>
+    <td width="51%"><span lang="zh-cn"><b>Variant</b>类型，可选。如果为 <b>True</b>，则以绝对引用方式返回对行的引用。默认值为 
+    <b>True</b>。</span></td>
+  </tr>
+  <tr>
+    <td width="15%"><span lang="en-us"><i>ColumnAbsolute</i></span></td>
+    <td width="51%"><span lang="zh-cn"><b>Variant</b>类型，可选。如果为 <b>True</b>，则以绝对引用方式返回对列的引用。默认值为 
+    <b>True</b>。</span></td>
+  </tr>
+  <tr>
+    <td width="15%"><span lang="en-us"><i>ReferenceStyle</i></span></td>
+    <td width="51%"><b>ETReerenceStyle</b><span lang="zh-cn">类型，可选。</span></td>
+  </tr>
+  <tr>
+    <td width="15%"><span lang="en-us"><i>External</i></span></td>
+    <td width="51%"><span lang="zh-cn"><b>Variant</b>类型，可选。如果为 <b>True</b>，则返回外部引用。如果为<b> 
+    False</b>，则返回局部引用。默认值为 <b>False</b>。</span></td>
+  </tr>
+  <tr>
+    <td width="15%"><span lang="en-us"><i>RelativeTo</i></span></td>
+    <td width="51%"><b>String</b><span lang="zh-cn">类型，可选。如果 <i>RowAbsolute</i> 
+    和 <i>ColumnAbsolute</i> 为 <b>False</b>, <i>ReferenceStyle</i> 
+    为 <b>etR1C1</b>, 则必须指定相对引用的起始点。本参数即为定义起始点的 <b>Range</b> 对象</span></td>
+  </tr>
+</table>
+<P>　<P><b>说明</b><P><span lang="zh-cn">该属性目前ET不可用</span>。<ol>
+  <li><span lang="zh-cn">如果引用包含多个单元格，<i>RowAbsolute</i> 和 <i>ColumnAbsolute</i> 将应用于所有的行和列。</span></li>
+  <li><span lang="zh-cn"><b><i>ET</i></b><i><b>ReferenceStyle</b></i> 可为以下 <b>
+  <i>ET</i></b><i><b>ReferenceStyle</b></i> 常量之一：<br>
+  <b>etA1</b> 默认值。如果用 etA1，则返回 A1 样式的引用。 <br>
+  <b>etDefaultRefStyle</b> 默认值。<br>
+  <b>etR1C1</b>。如果用 etR1C1，则返回 R1C1 样式的引用 <br>
+　</span></li>
+  </ol>
+  </div>
+</body>
+</html>

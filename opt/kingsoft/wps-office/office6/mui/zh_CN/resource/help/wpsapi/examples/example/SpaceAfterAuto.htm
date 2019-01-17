@@ -1,0 +1,32 @@
+<html><head>
+<title>AcceptAll</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例显示关于活动文档的 SpaceAfterAuto 属性设置的信息。<p>
+Select Case ActiveDocument.Paragraphs.SpaceAfterAuto<br>
+&nbsp;&nbsp;&nbsp;
+Case True<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+x = &quot;Spacing after paragraphs is handled &quot; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&amp; &quot;automatically for all paragraphs.&quot;<br>
+&nbsp;&nbsp;&nbsp;
+Case False<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+x = &quot;Spacing after paragraphs is handled &quot; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&amp; &quot;manually for all paragraphs.&quot;<br>
+&nbsp;&nbsp;&nbsp;
+Case wpsUndefined<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+x = &quot;Spacing after paragraphs is handled &quot; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&amp; &quot;automatically for some paragraphs, &quot; _<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&amp; &quot;manually for some paragraphs.&quot;<br>
+End Select</div>
+</body>
+</html>

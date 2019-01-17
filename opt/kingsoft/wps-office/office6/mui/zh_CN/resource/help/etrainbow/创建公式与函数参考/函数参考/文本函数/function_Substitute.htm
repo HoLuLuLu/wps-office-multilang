@@ -1,0 +1,112 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>SUBSTITUTE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="SUBSTITUTE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>SUBSTITUTE</h1>
+<p>在文本字符串中用 new_text 替代 old_text。如果需要在某一文本字符串中替换指定的文本，请使用函数 SUBSTITUTE；如果需要在某一文本字符串中替换指定位置处的任意文本，请使用函数 
+REPLACE。</p>
+<p><b>语法</b></p>
+<p class="SYN">SUBSTITUTE(<b>text</b>,<b>old_text</b>,<b>new_text</b>,instance_num)</p>
+<p class="DT1">T<span lang="en-us">ext</span>&nbsp;&nbsp; 为需要替换其中字符的文本，或对含有文本的单元格的引用。</p>
+<p class="DT1">Old_text&nbsp;&nbsp; 为需要替换的旧文本。</p>
+<p class="DT1">New_text&nbsp;&nbsp; 用于替换 old_text 的文本。</p>
+<p class="DT1">Instance_num&nbsp;&nbsp; 为一数值，用来指定以 new_text 替换第几次出现的 old_text。如果指定了 
+instance_num，则只有满足要求的 old_text 被替换；否则将用 new_text 替换 TEXT 中出现的所有 old_text。</p>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table>
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="115">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="115">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="117">销售数据</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="117">2008 年第一季度</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="117">2011 年第一季度</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="570" height="39">
+	<tr>
+		<th class="thEmpty" width="20" height="1"></th>
+	    <th class="th1" width="147" height="1"><b>公式</b></th>
+   	    <th class="th2" width="94" height="1"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20" height="22"></th>
+		<td class ="ll" width="227" valign="top" height="10">=SUBSTITUTE(A2, 
+        &quot;销售&quot;, &quot;成本&quot;)</td>
+		<td class ="ll" width="309" height="10" valign="top"><span lang="en-us">
+		“</span>成本<span lang="en-us">”</span>替代<span lang="en-us">“</span>销售<span lang="en-us">”</span>（成本数据）</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20" height="15"></th>
+		<td class ="ll" width="227" valign="top" height="18">=SUBSTITUTE(A3, 
+        &quot;一&quot;, &quot;二&quot;, 1)</td>
+		<td class ="ll" width="309" height="18" valign="top">用<span lang="en-us">“</span>二”代替
+		示例中第一次出现的“一”（2008 年第二季度）</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20" height="21"></th>
+		<td class ="ll" width="227" valign="top" height="9">=SUBSTITUTE(A4, &quot;1&quot;, 
+        &quot;2&quot;, 2)</td>
+		<td class ="ll" width="309" height="9" valign="top">用“2”代替示例中第二次出现的“1”（2012 
+        年第一季度）</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+<p><a href="function_Trim.htm">TRIM</a></p>
+<p><a href="function_Replace.htm">REPLACE</a></p>
+
+
+
+</body>
+
+</html>

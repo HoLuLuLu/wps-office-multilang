@@ -1,0 +1,8 @@
+prefix=/home/cyrille/mysnaps/wps-office-all-lang-no-internet/stage/home/wps-g/桌面/snap/stage/usr
+
+Name: shared-mime-info
+Description: Freedesktop common MIME database
+Version: 1.5
+Requires:
+Libs:
+Cflags:

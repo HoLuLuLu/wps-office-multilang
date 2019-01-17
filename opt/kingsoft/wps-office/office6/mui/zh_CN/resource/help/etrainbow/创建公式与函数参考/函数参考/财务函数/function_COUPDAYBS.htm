@@ -1,0 +1,185 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>DB</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="DB">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et1
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1><b>COUPDAYBS</b></h1>
+<p>函数返回从付息期开始到结算日的天数。</p>
+<p><b>语法</b></p>
+<p><b>COUPDAYBS(settlement, maturity, frequency, [basis])</b></p>
+<p>settlement 成交日：证券结算日。证券结算日是在发行日期之后，证券卖给购买者的日期。</p>
+<p>maturity 到期日：证券的到期日。到期日是证券有效期截止时的日期。</p>
+<p>frequency 年付息次数。如果按年支付，frequency＝1；按半年期支付，frequency＝2；按季支付，frequency＝4。</p>
+<p>[basis] 基准选项：是所采用的日算类型。</p>
+
+<table width="749" height="55" style="border-bottom-width: 0px">
+	<tr>
+		<th class="thEmpty" width="20" height="11"></th>
+	    <th class="th1" width="214" height="15">Basis</th>
+	    <th class="th1" width="502" height="15">支付时间</th>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="214" height="16"><font size="2">0 或省略</font></td>
+		<td class="ll" width="502" height="16"><font size="2">US (NASD) 30/360</font></td>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="214" height="16"><font size="2">1</font></td>
+		<td class="ll" width="502" height="16"><font size="2">实际天数/实际天数</font></td>
+	</tr>
+		
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="214" height="16"><font size="2">2</font></td>
+		<td class="ll" width="502" height="16"><font size="2">实际天数/360</font></td>
+	</tr>
+		
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="214" height="16"><font size="2">3</font></td>
+		<td class="ll" width="502" height="16"><font size="2">实际天数/365</font></td>
+	</tr>
+		
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="214" height="16"><font size="2">4</font></td>
+		<td class="ll" width="502" height="16"><font size="2">欧洲 30/360</font></td>
+	</tr>
+		
+</table>
+
+<p><b>说明</b> </p>
+<div border="0">
+	<div id="m_divBody" name="client-body">
+		<div class="cdclvSection">
+			<div id="m_article" class="cntArticleBody">
+				<ul class="cntIndent36" type="disc">
+					<li>WPS表格可将日期存储为序列号，以便可以在计算中使用它们。默认情况下，1900 年 1 月 1 日的序列号是 
+					1，而 2008 年 1 月 1 日的序列号是 39448，这是因为它距 1900 年 1 月 1 日有 39,448 
+					天。</li>
+					<li>成交日是购买者买入息票（如债券）的日期。到期日是息票有效期截止时的日期。例如，在 2008 年 1 月 1 
+					日发行的 30 年期债券，六个月后被购买者买走。则发行日为 2008 年 1 月 1 日，成交日为 2008 年 7 月 
+					1 日，而到期日是在发行日 2008 年 1 月 1 日的 30 年后，即 2038 年 1 月 1 日。</li>
+					<li>所有参数将被截尾取整。</li>
+					<li>如果 settlement 或 maturity 不是合法日期，函数 COUPDAYBS 返回错误值 
+					#VALUE!。</li>
+					<li>如果 frequency 不是数字 1、2 或 4，函数 COUPDAYBS 返回错误值 #NUM!。</li>
+					<li>如果 basis &lt; 0 或 Basis &gt; 4，函数 COUPDAYBS 返回错误值 #NUM!。</li>
+					<li>如果 settlement ≥ maturity，函数 COUPDAYBS 返回错误值 #NUM!。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="748">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="212">A</th>
+	    <th class="th1" width="502">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="212"><font size="2">数据</font></td>
+		<td class = "th1" width="502"><font size="2">说明</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="212"><font size="2">2013-9-16</font></td>
+		<td class="ll" width="502"><font size="2">成交日</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="212"><font size="2">2014-1-20</font></td>
+		<td class="ll" height="20" width="502"><font size="2">到期日</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="18" width="212"><font size="2">2</font></td>
+		<td class="ll" height="18" width="502"> <font size="2">按半年期支付（请参见以上信息）</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class="ll" height="18" width="212"><font size="2">1</font></td>
+		<td class="ll" height="18" width="502"> <font size="2">
+		以实际天数/实际天数为日计数基准（请参见以上信息）</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" width="212" bgcolor="#C0C0C0"><b><font size="2">公式</font></b></td>
+		<td class="ll" width="502" bgcolor="#C0C0C0"><b><font size="2">说明（结果）</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class="ll" width="212"><font size="2">=COUPDAYBS(A2,A3,A4,A5)</font></td>
+		<td class="ll" width="502"><font size="2">在上述条件下从债券付息期开始到结算日的天数 (58)</font></td>
+	</tr>
+		
+</table>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

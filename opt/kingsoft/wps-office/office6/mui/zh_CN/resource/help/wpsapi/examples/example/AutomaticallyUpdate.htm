@@ -1,0 +1,11 @@
+<html><head>
+<title>AutomaticallyUpdate</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例创建名为“Style1”的样式，该样式不需进行确认即可重新定义。<p>Dim docNew as Document<br>Dim styleNew as Style<br>Set docNew = Documents.Add<br>Set styleNew = docNew.Styles.Add("Style1")<br>With styleNew<br>    &nbsp;&nbsp;&nbsp;    .BaseStyle = docNew.Styles(wpsStyleNormal)<br>    &nbsp;&nbsp;&nbsp;    .ParagraphFormat.LineSpacingRule = wpsLineSpaceDouble<br>    &nbsp;&nbsp;&nbsp;    .AutomaticallyUpdate = True<br>End With
+</div>
+</body>
+</html>

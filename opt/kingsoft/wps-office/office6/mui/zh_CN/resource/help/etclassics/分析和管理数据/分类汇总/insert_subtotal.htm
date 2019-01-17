@@ -1,0 +1,138 @@
+<html>
+<script src="../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>插入分类汇总</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="插入汇总">
+  <param name="Keyword" value="增加汇总">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>插入分类汇总</h1>
+
+
+<p><span id="mydiv1" class="charr1"></span>
+<a href="javascript:viewsample1()" style="text-decoration: none">
+&nbsp;插入单个分类汇总
+</a></p>
+<div id="sample1" style="display: none">
+<blockquote>
+	<p><img src="../../images/subtotal.gif" ></p>
+</blockquote>
+<ol>
+	<li>确保要分类汇总的数据为数据清单的格式：第一行的每一列都有标志，并且同一列中应包含相似的数据，在数据清单中不应有空行或空列。
+	<li>选中要分类汇总的列中的单元格。在上面的示例中，应单击“货品类别”列（列 A）中的单元格。 
+	<li>选择“升序排序”  或“降序排序”  。 
+	<li>在“数据”菜单下<br>
+，选择“分类汇总”。 
+	<li>在“分类字段”框中，选中要分类汇总的列。在上面示例中，应单击“货品类别”列。
+	<li>在“汇总方式”框中，选择所需的用于计算分类汇总的汇总函数。上面的示例中，使用了“求和”汇总函数。
+	<li>在“选定汇总项”框中，选中包含了要进行分类汇总的数值的每一列的复选框。在上面的示例中，应选中“金额”列。
+	<li>如果想在每个分类汇总后有一个自动分页符，请选中“每组数据分页”复选框。 
+	<li>如果希望分类汇总结果出现在分类汇总的行的上方，而不是在行的下方，请清除“汇总结果显示在数据下方”复选框。 
+	<li>单击“确定”。</li>
+	
+	<p><B>注意</B>&nbsp;&nbsp;可再次使用“分类汇总”命令来添加多个具有不同汇总函数的分类汇总。若要防止覆盖已存在的分类汇总，请清除“替换当前分类汇总”复选框。    
+    </p>
+	
+	<p><B>提示</B>&nbsp;&nbsp;若要显示分类汇总和总计的汇总，请单击行数值旁的分级显示符号<img src="../../images/insert_subtotal1.png" width="47" height="17">  。使用<img src="../../images/insert_subtotal2.png" width="17" height="17">和符号<img src="../../images/insert_subtotal3.png" width="17" height="17">来显示或隐藏单个分类汇总的明细数据行。  </p>
+</ol>
+</div>
+
+<p><span id="mydiv2" class="charr1"></span>
+<a href="javascript:viewsample2()" style="text-decoration: none">
+&nbsp;插入嵌套分类汇总
+</a></p>
+<div id="sample2" style="display: none">
+<blockquote>
+	<p><img src="../../images/insert_subtotal4.gif"></p>
+</blockquote>
+
+	<ol>
+		<li>确保要进行分类汇总的数据为数据清单的格式：第一行的每一列都有标志，并且同一列中应包含相似的数据，在清单中没有空行或空列。 </li>
+		<li>排序数据清单。首先（主要关键字）用外部分类汇总的列来排序，（次要关键字）再使用下一层嵌套分类汇总的内部列来排序，等等...<br>
+		例如：在上面的示例中，应首先用“地区”列来排序清单，再使用“类别”列来排序。
+				<br><span id="mydiv3" class="charr1"></span>
+				<a href="javascript:viewsample3()" style="text-decoration: none">
+				&nbsp;排序的操作方法	</a>
+				<div id="sample3"				 style="display: none">
+					<ol>
+						<li>在需要排序的数据清单中，单击任一单元格。 </li>
+						<li>在“数据”菜单下<br>
+，选择“排序”。 </li>
+						<li>在“主要关键字”和“次要关键字”框中，选择需要排序的列。 </li>
+						<li>根据所需选择其他的排序选项，“确定”。 </li>
+					</ol>
+				</div>
+		</li> 
+
+		
+		<li>插入外部分类汇总。
+			<br><span id="mydiv4" class="charr1"></span>
+				<a href="javascript:viewsample4()" style="text-decoration: none">
+				&nbsp;操作方法	</a>
+				<div id="sample4"				 style="display: none">
+				 	<ol> 
+						<li>在“数据”菜单下<br>
+，选择“分类汇总”。 </li>
+						<li>在“分类字段”框中，选择外部分类汇总的列。在上面的示例中，应单击“地区”列。 </li>
+						<li>在“汇总方式”框中，单击所需的用于计算分类汇总的汇总函数。上面的示例中使用了“求和”汇总函数。 </li>
+						<li>在“选定汇总项”框中，选中包含了要进行分类汇总的数值的每一列的复选框。在上面的示例中，应为“数量”列。 </li>
+						<li>如果想在每个分类汇总后有一个自动分页符，请选中“每组数据分页”复选框。 </li>
+						<li>如果希望分类汇总结果出现在分类汇总的行的上方，而不是在行的下方，请清除“汇总结果显示在数据下方”复选框。 </li>
+					</ol>
+				</div>
+		</li>
+		
+		<li>插入嵌套分类汇总。
+						<Br><span id="mydiv5" class="charr1"></span>
+						<a href="javascript:viewsample5()" style="text-decoration: none">
+						&nbsp;操作方法	</a>
+						<div id="sample5"						 style="display: none">
+						 	<ol>
+								<li>在“数据”菜单下<br>
+，选择“分类汇总”。</li>
+								<li>在“分类字段”框中，单击嵌套分类汇总的列。在上面的示例中，应单击“类别”列。</li>
+								<li>选择汇总函数和其他选项。上面的示例中，使用了“求和”汇总函数。 </li>
+								<li>清除“替换当前分类汇总”复选框。</li>
+							</ol>
+						</div>
+		</li>
+		
+		<li>如果是对多个嵌套的分类汇总，重复进行上一步。</li>
+	</ol>
+	<p><b>注意</b>&nbsp;&nbsp;嵌套分类总是从最外层的分类汇总开始进行。 </p>
+
+</div>
+
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="about_subtotal.htm">关于分类汇总</a></p>
+<p><a href="delete_subtotal.htm">删除分类汇总</a></p>
+<p><a href="../合并计算/function_about_subtotal.htm">进行数据分析的汇总函数</a></p>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="rainbow.ct_pagelayout" component="wps">
+	<commands>
+		<KListCommand id="RB_EditTheme" text="@Edit Theme" rbFileMenuEmbed="1">
+			<KxWpsThemesGalleryCommand ksoCmd="Themes" galleryWidth="330" bForceScrollToIndex="1" icon="theme" customTip="Themes" text="@Themes" rbHotKey="TT"/>
+			<KxWpsThemeColorsGalleryCommand ksoCmd="ThemeColors" galleryWidth="250" bForceScrollToIndex="1" icon="themeColor" customTip="Theme Colors" spaceHint="autocompact" text="@Colors" rbHotKey="TC"/>
+			<KxWpsThemeFontsGalleryCommand ksoCmd="ThemeFonts" galleryWidth="250" bForceScrollToIndex="1" icon="themeFont" customTip="Theme Fonts" spaceHint="autocompact" text="@Fonts" rbHotKey="TF"/>
+			<KxWpsThemeEffectsGalleryCommand ksoCmd="ThemeEffects" galleryWidth="350" bForceScrollToIndex="1" icon="themeEffect" customTip="Theme Effects" spaceHint="autocompact" text="@Effects" rbHotKey="TE"/>
+		</KListCommand>
+		<KxWpsTextDirectionCommand detail="@Change Text Direction" ksoCmd="ChangeTextDirection" idMso="TextDirectionGalleryWord" icon="TextDirection" controlType="4" id="m_TextDirection" customTip="ChangeTextDirection" text="@Text Direction" rbHotKey="Q">
+			<KxWpsTextDirectionDlgCommand hotKey="x" icon="TextDirection" id="TextDirectionOptions" dialogHint="1" text="@Text Direction Options" rbHotKey="X"/>
+		</KxWpsTextDirectionCommand>
+		<KxWpsPageMarginCommand ksoCmd="PageSetup" idMso="PageMarginsGallery" icon="margins" controlType="4" id="m_Margins" customTip="m_Margins" text="@Margins" rbHotKey="M">
+			<KxPropComposeCommand tabIndex="0" hotKey="a" ksoCmd="PageSetup" icon="MoreMarginsOption" id="MoreMargins" dialogHint="1" text="@Custom Margins" rbHotKey="A"/>
+		</KxWpsPageMarginCommand>
+		<KxWpsPageOrientationCommand hotKey="O" ksoCmd="PageSetup" idMso="PageOrientationGallery" icon="Orientation" controlType="4" id="PageOrientation" customTip="PageOrientation" text="@Orientation" rbHotKey="O"/>
+		<KxWpsPageSizeCommand ksoCmd="PageSetup" idMso="PageSizeGallery" icon="PageSize" controlType="4" id="m_PageSize" customTip="m_PageSize" galleryHeight="656" text="@Size" rbHotKey="SZ">
+			<KxPropComposeCommand tabIndex="1" hotKey="a" ksoCmd="PageSetup" icon="OtherPageSize" id="OtherPageSize" dialogHint="1" text="@More Paper Sizes" rbHotKey="A"/>
+		</KxWpsPageSizeCommand>
+		<KxValueCommand hotKey="O" ksoCmd="ColumnsPalette" icon="ColumnsOne" id="ColumnsOne" index="65536" text="@One"/>
+		<KxValueCommand hotKey="W" ksoCmd="ColumnsPalette" icon="ColumnsTwo" id="ColumnsTwo" index="131072" text="@Two"/>
+		<KxValueCommand hotKey="T" ksoCmd="ColumnsPalette" icon="ColumnsThree" id="ColumnsThree" index="196608" text="@Three"/>
+		<KxLegacyTriggerCommand hotKey="C" ksoCmd="Columns" icon="ColumnsMore" id="ColumnsMore" text="@More Columns"/>
+		<KListCommand icon="Columns" id="m_ColumnsPalette" customTip="m_ColumnsPalette" spaceHint="suitable" text="@Columns" rbHotKey="J">
+			<command idQ="ColumnsOne"/>
+			<command idQ="ColumnsTwo"/>
+			<command idQ="ColumnsThree"/>
+			<command idQ="ColumnsMore"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="InsertPageBreak" aid="80014" icon="InsertPageBreak" id="InsertPageBreak" customTip="InsertPageBreak" text="@Page Break" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="T" ksoCmd="InsertTextWrappingBreak" aid="80016" icon="InsertTextWrappingBreak" id="RbInsertTextWrappingBreak" text="@Text Wrapping Break"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="InsertNextPageSectionBreak" aid="80017" icon="InsertNextPageSectionBreak" id="InsertNextPageSectionBreak" text="@Next Page Section Break" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="O" ksoCmd="InsertContinuousSectionBreak" aid="80018" icon="InsertContinuousSectionBreak" id="RbInsertContinuousSectionBreak" text="@Continuous Section Break"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="InsertEvenPageSectionBreak" aid="80019" icon="InsertEvenPageSectionBreak" id="InsertEvenPageSectionBreak" text="@Even Page Section Break" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="InsertOddPageSectionBreak" aid="80020" icon="InsertOddPageSectionBreak" id="RbInsertOddPageSectionBreak" text="@Odd Page Section Break"/>
+		<KxWpsBreaksListCommand icon="InsertBreaks" id="m_Breaks" customTip="m_Breaks" spaceHint="suitable" text="@Breaks" rbHotKey="B">
+			<command idQ="InsertPageBreak"/>
+			<KxLegacyTriggerCommand hotKey="c" ksoCmd="InsertColumnBreak" icon="rbColumns" id="InsertColumnBreakInPageLayoutTab" text="@Column Break" rbHotKey="C"/>
+			<command idQ="RbInsertTextWrappingBreak"/>
+			<separator/>
+			<command idQ="InsertNextPageSectionBreak"/>
+			<command idQ="RbInsertContinuousSectionBreak"/>
+			<command idQ="InsertEvenPageSectionBreak"/>
+			<command idQ="RbInsertOddPageSectionBreak"/>
+		</KxWpsBreaksListCommand>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="LineNumOff" aid="92011" id="LineNumOff" text="@None"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="LineNumContinuous" aid="92012" id="LineNumContinuous" text="@Continuous"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="LineNumRestPage" aid="92013" id="LineNumRestPage" text="@Restart Each Page"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="LineNumResetSection" aid="92014" id="LineNumResetSection" text="@Restart Each Section"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="LineNumSuppress" aid="92015" id="LineNumSuppress" text="@Suppress for Current Paragraph"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="LineNumBlanklineNoLnn" aid="92016" id="LineNumBlanklineNoLnn" text="@Do not Show Line Number for Blank Line"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="SetLineNumbering" aid="92017" id="SetLineNumbering" dialogHint="1" text="@Line Number Options"/>
+		<KListCommand idMso="LineNumbersMenu" icon="LineNumbering" controlType="15" id="m_LineNumber" customTip="m_LineNumber" spaceHint="suitable" text="@Line Numbers" rbHotKey="L">
+			<command idQ="LineNumOff"/>
+			<command idQ="LineNumContinuous"/>
+			<command idQ="LineNumRestPage"/>
+			<command idQ="LineNumResetSection"/>
+			<separator/>
+			<command idQ="LineNumSuppress"/>
+			<command idQ="LineNumBlanklineNoLnn"/>
+			<separator/>
+			<command idQ="SetLineNumbering"/>
+		</KListCommand>
+		<KxListCommand ksoCmd="PageSetup" forceVisible="1" id="RB_Page_Setup" customTip="PageSetup" text="@Page Setup" rbFileMenuEmbed="1" rbHotKey="SP">
+			<command idQ="m_TextDirection"/>
+			<command idQ="m_Margins"/>
+			<command idQ="PageOrientation"/>
+			<command idQ="m_PageSize"/>
+			<command idQ="m_ColumnsPalette"/>
+			<command idQ="m_Breaks"/>
+			<command idQ="m_LineNumber"/>
+		</KxListCommand>
+		<KxWpsMoreColorCommand hotKey="m" ksoCmd="BackgroundShapeFillColor" aid="1051" icon="MoreColor" id="MoreBackgroundShapeColors" dialogHint="1" text="@More Fill Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="BackgroundShapeFillColor" icon="SnapperFill" forceEnabled="1" id="SnapBackgroundShapeColors" text="@Snapper" rbHotKey="E"/>
+		<KxWpsFillColorCommand4Rainbow ksoCmd="BackgroundShapeFillColor" icon="Background" id="RbNewBackGroundColor" customTip="BackgroundShapeFillColor" text="@Background" rbHotKey="PC">
+			<command idQ="MoreBackgroundShapeColors"/>
+			<command idQ="SnapBackgroundShapeColors"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="g" ksoCmd="BackgroundShape" icon="GradiantFill" id="GradiantFillInPageLayoutTab" text="@Gradient" rbHotKey="G"/>
+			<KxPropComposeCommand tabIndex="1" hotKey="t" ksoCmd="BackgroundShape" icon="TextureFill" id="TextureFillInPageLayoutTab" text="@Texture" rbHotKey="T"/>
+			<KxPropComposeCommand tabIndex="2" hotKey="n" ksoCmd="BackgroundShape" icon="PatternFill" id="PatternFillInPageLayoutTab" text="@Pattern"/>
+			<KxPropComposeCommand tabIndex="3" hotKey="p" ksoCmd="BackgroundShape" icon="PictureFill" id="PictureFillInPageLayoutTab" text="@Picture" rbHotKey="P"/>
+		</KxWpsFillColorCommand4Rainbow>
+		<KxPropComposeCommand tabIndex="1" hotKey="b" ksoCmd="BorderShading" idMso="PageBorderAndShadingDialog" icon="PageBorderColor" controlType="0" id="m_PageBorder" customTip="m_PageBorder" text="@Page Borders" rbHotKey="PB"/>
+		<KListCommand id="RB_Page_Background" text="@Page Background" rbFileMenuEmbed="1">
+			<command idQ="RbNewBackGroundColor"/>
+			<command idQ="m_PageBorder"/>
+		</KListCommand>
+		<KxPropComposeCommand tabIndex="1" hotKey="g" ksoCmd="GenkoSetting" icon="GenkoSetting" id="m_Genko_Setting" customTip="GenkoSetting" text="@Genko Setting" rbHotKey="G"/>
+		<KListCommand id="RB_Genko_Setting" text="@Genko Setting" rbFileMenuEmbed="1">
+			<command idQ="m_Genko_Setting"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="WrappingInLineWithText" idMso="TextWrappingInLineWithText" icon="WrappingInLineWithText" controlType="6" id="WrappingInLineWithText" text="@In Line with Text"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="WrappingSquare" idMso="TextWrappingSquare" icon="WrappingSquare" controlType="6" id="WrappingSquare" text="@Square" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="WrappingTight" idMso="TextWrappingTight" icon="WrappingTight" controlType="6" id="WrappingTight" text="@Tight" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="WrappingBehindText" idMso="TextWrappingBehindText" icon="WrappingBehindText" controlType="6" id="WrappingBehindText" text="@Behind Text" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="WrappingInFrontofText" idMso="TextWrappingInFrontOfText" icon="WrappingInFrontofText" controlType="6" id="WrappingInFrontofText" text="@In Front of Text" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="WrappingTopandBottom" idMso="TextWrappingTopAndBottom" icon="WrappingTopandBottom" controlType="6" id="WrappingTopandBottom" text="@Top and Bottom" rbHotKey="O"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="WrappingThrough" idMso="TextWrappingThrough" icon="WrappingThrough" controlType="6" id="WrappingThrough" text="@Through" rbHotKey="H"/>
+		<KListCommand idMso="TextWrappingMenu" icon="TextWrappingMenu" controlType="15" id="m_Wrapping" customTip="m_Wrapping" text="@Wrap
+Text" rbHotKey="TW">
+			<command idQ="WrappingInLineWithText"/>
+			<separator/>
+			<command idQ="WrappingSquare"/>
+			<command idQ="WrappingTight"/>
+			<command idQ="WrappingBehindText"/>
+			<command idQ="WrappingInFrontofText"/>
+			<separator/>
+			<command idQ="WrappingTopandBottom"/>
+			<command idQ="WrappingThrough"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="F" ksoCmd="BringForward" icon="BringForward" id="RbBringForwardInToolBar" text="@Bring Forward"/>
+		<KxLegacyTriggerCommand hotKey="R" ksoCmd="BringToFront" idMso="ObjectBringToFront" icon="BringToFront" controlType="0" id="RbBringToFrontInToolBar" text="@Bring to Front"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="BringInFrontOfText" aid="168" icon="BringInFrontOfText" id="RbBringInFrontOfText" text="@Bring in Front of Text"/>
+		<KxListCommand hotKey="f" ksoCmd="BringForward" idMso="ObjectBringForward" icon="BringForward" customTip2="BringForward2" controlType="0" id="sp_BringForward" customTip="BringForward" text="@Bring Forward" rbHotKey="AF">
+			<command idQ="RbBringForwardInToolBar"/>
+			<command idQ="RbBringToFrontInToolBar"/>
+			<command idQ="RbBringInFrontOfText"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="B" ksoCmd="SendBackward" icon="SendBackward" id="RbSendBackwardInToolBar" text="@Send Backward"/>
+		<KxLegacyTriggerCommand hotKey="K" ksoCmd="SendToBack" icon="SendToBack" id="RbSendToBackInToolBar" text="@Send to Back"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="SendBehindText" aid="169" idMso="ObjectSendBehindText" icon="SendBehindText" controlType="0" id="SendBehindText" text="@Send Behind Text" rbHotKey="H"/>
+		<KxListCommand hotKey="b" ksoCmd="SendBackward" icon="SendBackward" customTip2="SendBackward2" id="sp_SendBackward" customTip="SendBackward" text="@Send Backward" rbHotKey="AE">
+			<command idQ="RbSendBackwardInToolBar"/>
+			<command idQ="RbSendToBackInToolBar"/>
+			<command idQ="SendBehindText"/>
+		</KxListCommand>
+		<KxObjectSelectCommand hotKey="J" ksoCmd="ObjectSelect" idMso="ObjectsSelect" icon="ObjectSelect" controlType="0" id="ObjectSelect" customTip="ObjectSelect" text="@Selection Pane" rbHotKey="AB"/>
+		<KxValueCommand hotKey="l" ksoCmd="DrawAlign" idMso="ObjectsAlignLeft" icon="DrawAlignLeft" controlType="0" id="DrawAlignLeft" index="0" text="@Align Left" rbHotKey="L"/>
+		<KxValueCommand hotKey="c" ksoCmd="DrawAlign" icon="DrawAlignCenter" id="DrawAlignCenter" index="1" text="@Align Center" rbHotKey="C"/>
+		<KxValueCommand hotKey="r" ksoCmd="DrawAlign" icon="DrawAlignRight" id="DrawAlignRight" index="2" text="@Align Right" rbHotKey="R"/>
+		<KxValueCommand hotKey="t" ksoCmd="DrawAlign" icon="DrawAlignTop" id="DrawAlignTop" index="3" text="@Align Top" rbHotKey="T"/>
+		<KxValueCommand hotKey="m" ksoCmd="DrawAlign" icon="DrawAlignMiddle" id="DrawAlignMiddle" index="4" text="@Align Middle" rbHotKey="M"/>
+		<KxValueCommand hotKey="b" ksoCmd="DrawAlign" icon="DrawAlignBottom" id="DrawAlignBottom" index="5" text="@Align Bottom" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="AlignDistributeHori" idMso="AlignDistributeHorizontally" icon="AlignDistributeHori" controlType="0" id="AlignDistributeHori" text="@Distribute Horizontally"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="AlignDistributeVert" idMso="AlignDistributeVertically" icon="AlignDistributeVert" controlType="0" id="AlignDistributeVert" text="@Distribute Vertically"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EqualHeight" icon="EqualHeight" id="EqualHeight" text="@Equal Height"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="EqualWidth" icon="EqualWidth" id="EqualWidth" text="@Equal Width"/>
+		<KxLegacyTriggerCommand hotKey="Q" ksoCmd="EqualSize" icon="EqualSize" id="RbEqualSize" text="@Equal Size"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="AlighRelativeToPage" id="RbAlighRelativeToPage" text="@Relative to Page"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Gridlines" aid="300" idMso="ViewGridlinesWord" icon="Gridlines" controlType="1" id="RbGridlines" spaceHint="suitable" text="@Gridlines"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="Grid" icon="FTB_GridSwitch" id="RbGrid" dialogHint="1" text="@Grid"/>
+		<KListCommand idMso="AlignJustifyMenu" icon="DrawAlignLeft" controlType="6" id="m_Align" customTip="m_Align" spaceHint="suitable" text="@Align" rbHotKey="AA">
+			<command idQ="DrawAlignLeft"/>
+			<command idQ="DrawAlignCenter"/>
+			<command idQ="DrawAlignRight"/>
+			<command idQ="DrawAlignTop"/>
+			<command idQ="DrawAlignMiddle"/>
+			<command idQ="DrawAlignBottom"/>
+			<separator/>
+			<command idQ="AlignDistributeHori"/>
+			<command idQ="AlignDistributeVert"/>
+			<separator/>
+			<command idQ="EqualHeight"/>
+			<command idQ="EqualWidth"/>
+			<command idQ="RbEqualSize"/>
+			<separator/>
+			<command idQ="RbAlighRelativeToPage"/>
+			<separator/>
+			<command idQ="RbGridlines"/>
+			<command idQ="RbGrid"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="G" ksoCmd="Group" icon="Group" id="RbGroupInToolBar" text="@Group"/>
+		<KxLegacyTriggerCommand hotKey="U" ksoCmd="UnGroup" icon="UnGroup" id="RbUnGroupInToolBar" text="@Ungroup"/>
+		<KListCommand icon="Group" id="m_Group" customTip="m_Group" spaceHint="suitable" text="@Group" rbHotKey="AG">
+			<command idQ="RbGroupInToolBar"/>
+			<command idQ="RbUnGroupInToolBar"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="FreeRotate" icon="FreeRotate" id="FreeRotate" text="@Free Rotate"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="RotateLeft" idMso="ObjectRotateLeft90" icon="RotateLeft" controlType="0" id="RotateLeft" text="@Rotate Left 90°" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="RotateRight" icon="RotateRight" id="RotateRight" text="@Rotate Right 90°" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="FlipHorizontal" icon="FlipHorizontal" id="FlipHorizontal" text="@Flip Horizontal" rbHotKey="H"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="FlipVertical" icon="FlipVertical" id="FlipVertical" text="@Flip Vertical" rbHotKey="V"/>
+		<KListCommand id="RB_Arrange" text="@Arrange" rbFileMenuEmbed="1">
+			<command idQ="m_Wrapping"/>
+			<command idQ="sp_BringForward"/>
+			<command idQ="sp_SendBackward"/>
+			<command idQ="ObjectSelect"/>
+			<command idQ="m_Align"/>
+			<command idQ="m_Group"/>
+			<KListCommand icon="RotateRight" id="RotateMenu" customTip="m_Rotate" spaceHint="suitable" text="@Rotate" rbHotKey="AY">
+				<command idQ="FreeRotate"/>
+				<command idQ="RotateLeft"/>
+				<command idQ="RotateRight"/>
+				<separator/>
+				<command idQ="FlipHorizontal"/>
+				<command idQ="FlipVertical"/>
+			</KListCommand>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="Paragraph" aid="779" idMso="ParagraphDialog" icon="Paragraph" controlType="0" id="Paragraph" dialogHint="1" text="@Paragraph"/>
+		<KListCommand id="DetailedSettings_PageLayout">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_PageLayout" text="@Settings">
+				<command idQ="PageSetup"/>
+				<command idQ="Paragraph"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_PageLayout">
+			<command idQ="RB_EditTheme"/>
+			<separator/>
+			<command idQ="RB_Page_Setup"/>
+			<separator/>
+			<command idQ="RB_Page_Background"/>
+			<separator/>
+			<command idQ="RB_Genko_Setting" filter="lang=zh_CN,zh_TW"/>
+			<separator/>
+			<command idQ="RB_Arrange"/>
+			<separator/>
+			<command idQ="DetailedSettings_PageLayout" filter="patent:LogicGroupShowExtensionButton=false"/>
+		</subcommand>
+	</subcommands>
+</shell>

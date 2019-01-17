@@ -1,0 +1,154 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>ACCRINTM</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="ACCRINTM">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>ACCRINTM</h1>
+<p>返回到期一次性付息有价证券的应计利息。</p>
+<p><b>语法</b></p>
+<p><b class="bterm">ACCRINTM</b>(<b class="bterm">issue</b>,<b class="bterm">maturity</b>,<b class="bterm">rate</b>,par,basis)</p>
+<p>
+	<b><span style="font-family: 宋体; letter-spacing: .55pt">注意：</span></b><span style="font-family: 宋体; letter-spacing: .55pt">应使用 
+	<span lang="EN-US">DATE </span>函数来键入日期，或者将日期作为其他公式或函数的结果键入。例如，</span><span style="letter-spacing: 0.5500pt; font-family: 宋体">使用函数&nbsp;DATE(2009,7,23)&nbsp;键入&nbsp;2009&nbsp;年&nbsp;7&nbsp;月&nbsp;23&nbsp;日</span><span style="font-family: 宋体; letter-spacing: .55pt">。如果日期以文本形式键入，则会出现问题。</span></p>
+<p>Issue&nbsp;&nbsp;&nbsp;&nbsp; 有价证券的发行日。</p>
+<p>Maturity&nbsp;&nbsp;&nbsp;&nbsp; 有价证券的到期日。</p>
+<p>Rate&nbsp;&nbsp;&nbsp;&nbsp; 有价证券的年息票利率。</p>
+<p>Par&nbsp;&nbsp;&nbsp;&nbsp; 有价证券的票面价值，如果省略 par，函数 ACCRINTM 视 par 为 $1000。</p>
+<p>Basis&nbsp;&nbsp;&nbsp;&nbsp; 日计数基准类型。</p>
+
+<table width="460" id="table1">
+	<tr>
+		<td class = "th1" width="146"><b class="bterm">Basis</b></td>
+		<td class = "th1" width="278"><b class="bterm">日计数基准</b></td>
+	</tr>
+	<tr>
+		<td class="ll" width="164">0 或省略</td>
+		<td class="ll" width="278">美国（美国证券交易商协会）30/360</td>
+	</tr>
+	<tr>
+		<td class="ll" width="164">1</td>
+		<td class="ll" width="278">实际天数/实际天数</td>
+	</tr>
+	<tr>
+		<td class="ll" width="164">2</td>
+		<td class="ll" width="278">实际天数/360</td>
+	</tr>
+	<tr>
+		<td class="ll" width="164">3</td>
+		<td class="ll" width="278">实际天数/365</td>
+	</tr>
+	<tr>
+		<td class="ll" width="164">4</td>
+		<td class="ll" width="278">欧洲 30/360</td>
+	</tr>
+		
+</table>
+
+<p><b>说明</b> </p>
+<ul class="cntIndent36" type="disc">
+	<li>WPS表格 可将日期存储为可用于计算的序列号。默认情况下，1900 年 1 月 1 日<span lang="en-gb"></span><span lang="en-gb"></span><span lang="en-gb"></span>的序列号是 1 而 2008 年 1 月 1 
+	日的序列号是 39448，这是因为它距 1900 年 1 月 1 日<span lang="en-gb"></span><span lang="en-gb"></span><span lang="en-gb"></span>有 39448 天。</li>
+	<li>Issue、settlement 和 basis 将被截尾取整。 
+	</li>
+	<li>如果 issue、first-interest 或 settlement 不是合法日期，函数 ACCRINTM 返回错误值 #VALUE!。 
+	</li>
+	<li>如果利率为 0 或票面价值为 0，函数 ACCRINTM 返回错误值 #NUM!。 
+	</li>
+	<li>如果 basis &lt; 0 或 basis &gt; 4，函数 ACCRINTM 返回错误值 #NUM!。 
+	</li>
+	<li>如果 issue ≥ settlement，函数 ACCRINTM 返回错误值 #NUM!。 
+	</li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="561">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="204">A</th>
+	    <th class="th1" width="323">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="204">数据</td>
+		<td class = "th1" width="323">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="204">2008-4-1</td>
+		<td class="ll" width="323">发行日</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="204">2008-6-15</td>
+		<td class="ll" height="20" width="323">到期日</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="18" width="204">10.0%</td>
+		<td class="ll" height="18" width="323">息票利率百分比</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class="ll" height="18" width="204">￥1,000</td>
+		<td class="ll" height="18" width="323">票面价值</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" height="18" width="204">3</td>
+		<td class="ll" height="18" width="323">以实际天数/365 为日计数基准（请参见上面的信息）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class = "th1" width="204">公式</td>
+		<td class = "th1" width="323">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">8</td>
+		<td class="ll" width="204">=ACCRINTM(A2,A3,A4,A5,A6)</td>
+		<td class="ll" width="323">满足上述条件的应计利息 (20.54795) </td>
+	</tr>
+		
+</table>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

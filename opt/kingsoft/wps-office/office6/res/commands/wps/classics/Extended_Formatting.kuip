@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.extended_formatting" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="CharacterBorder" aid="3517" icon="CharacterBorder" id="CharacterBorderToolbar" text="@Character Border"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="CharacterShading" aid="3518" icon="CharacterShading" id="CharacterShadingToolbar" text="@Character Shading"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="EmphasisMark" aid="2805" icon="EmphasisMark" id="EmphasisMark" customTip="EmphasisMark" text="@Emphasis Mark" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="Strikethought" aid="92076" icon="Strikethought" id="Strikethought" customTip="Strikethought" text="@Strikethrough" rbHotKey="4"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DoubleStrikethought" aid="714" icon="DoubleStrikethought" id="DoubleStrikethought" text="@Double Strikethrough"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="PhoneticGuide" forceVisible="1" aid="3511" filter="l10n:PHONETIC_GUIDE_SUPPORT=true" icon="PhoneticGuide" id="PhoneticGuide" dialogHint="1" customTip="PhoneticGuide" text="@Phonetic Guide"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EncloseCharacters" aid="3969" icon="EncloseCharacters" id="EncloseCharacters" dialogHint="1" text="@Enclose Characters"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="CombineCharacters" aid="3512" icon="CombineCharacters" id="CombineCharacters" dialogHint="1" text="@Combine Characters"/>
+		<KxValueCommand hotKey="s" ksoCmd="LineSpacingNumber" aid="54" icon="SingleLineSpacing" id="LineSpacing_Single" index="10" text="@Single Space"/>
+		<KxValueCommand hotKey="l" ksoCmd="LineSpacingNumber" aid="55" icon="OneAndAHalfLineSpacing" id="LineSpacing_OneAndHalf" index="15" text="@1.5 Space"/>
+		<KxValueCommand hotKey="d" ksoCmd="LineSpacingNumber" aid="56" icon="DoubleLineSpacing" id="LineSpacing_Double" index="20" text="@Double Space"/>
+		<KxWpsCloumnGalleryCommand hotKey="c" ksoCmd="ColumnsPalette" aid="9" icon="Columns" id="ColumnsPalette" text="@Columns"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Extended Formatting">
+			<command idQ="CharacterBorderToolbar"/>
+			<command idQ="CharacterShadingToolbar"/>
+			<command idQ="EmphasisMark"/>
+			<command idQ="Strikethought"/>
+			<command idQ="DoubleStrikethought"/>
+			<command idQ="PhoneticGuide"/>
+			<command idQ="EncloseCharacters"/>
+			<command idQ="CombineCharacters"/>
+			<separator/>
+			<command idQ="LineSpacing_Single"/>
+			<command idQ="LineSpacing_OneAndHalf"/>
+			<command idQ="LineSpacing_Double"/>
+			<separator/>
+			<command idQ="ColumnsPalette"/>
+		</subcommand>
+	</subcommands>
+</shell>

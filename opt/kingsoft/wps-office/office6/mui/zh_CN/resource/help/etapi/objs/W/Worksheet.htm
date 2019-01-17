@@ -1,0 +1,73 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Worksheet 对象</title>
+<link rel="stylesheet" type="text/css" href="../../css/ksHelpStyle.css">
+<script language="JScript" src="../../js/KsHelp.js"></script>
+
+</HEAD>
+
+<body bgcolor="#FFFFFF">
+
+<h1>Worksheet 对象</h1>
+<div class="vbanav">
+<span class="vbanavreuse" id="seealso"><font color="#ACA899">请参阅&nbsp;</font></span>
+<span class="vbanavreuse" id="properties" onclick="ks_showList()">属性&nbsp;</span>
+<span class="vbanavreuse" id="methods" onclick="ks_showList()">方法&nbsp;</span>
+<span class="vbanavreuse" id="events"><font color="#ACA899">事件</font>&nbsp;</span>
+<span class="vbanavreuse" id="specifics"><font color="#ACA899">特性</font>&nbsp;</span>
+</div>
+
+<p><b><span class="yellow">Worksheets</span></b></p>
+
+<p><img border="0" src="../../images/parchild.gif" width="15" height="17">&nbsp;
+<b> 
+<span class="blue">Worksheet</span></b></p>
+
+<p>&nbsp;&nbsp;&nbsp; <img border="0" src="../../images/parchild.gif" width="15" height="17">
+<b> <span class="blue">AutoFilter;Hyperlinks;Outline;Pagesetup;Protection;QueryTables;Range;Shapes;Tab</span></b></p>
+
+<p>　</p>
+
+<p><b>描述</b> </p>
+
+<p>代表一张工作表。<b>Worksheet</b> 对象是 <b><a href="Worksheets.htm">Worksheets</a></b> 集合的成员。<b>Worksheets</b> 
+集合包含工作簿中所有的 <b>Worksheet</b> 对象。</p>
+
+<p>　</p>
+
+<p><b>说明</b> </p>
+
+<p>本部分将对下列返回 <b>Worksheet</b> 对象的属性进行说明： </p>
+<ul>
+  <li><b>Worksheets</b> 属性 </li>
+  <li><b>ActiveSheet</b> 属性</li>
+</ul>
+<p>　</p>
+<p><b>Worksheets 属性 </b> </p>
+<p>可用 <b>Worksheets</b>(index)返回单个 <b>Worksheet</b> 
+对象。下例返回活动工作簿中的第二张工作表的名称。 </p>
+<p>Msgbox Worksheets(2).Name</p>
+<p>index表示工作表编号时，指示的是该工作表在工作簿的标签栏上的位置。Worksheets(1) 为工作簿中第一个工作表。如果第一个工作表是隐藏工作表
+，依然可以使用 Worksheets(1) 引用它。 </p>
+<p>index表示工作表名称时，指示的是显示在工作表的标签上的名称。使用 <b>Name</b> 属性可设置或返回工作表的名称。下例激活工作表 Sheet1。 </p>
+<p>Worksheets(&quot;Sheet1&quot;).Activate</p>
+<p><b>Worksheet</b> 对象也是 <b>Sheets</b> 集合的成员。<b>Sheets</b> 集合包含工作簿中的所有工作表。 </p>
+<p>　</p>
+<p><b>ActiveSheet 属性 </b> </p>
+<p>当工作表处于活动状态时，可用 <b>ActiveSheet</b> 属性来引用它。下例删除活动工作表。 </p>
+<p>ActiveSheet.Delete</p>
+<p>
+
+
+
+<b>
+
+<span id="ks_ListSpan" class="cssList">
+<iframe id="ks_VBAIFrame" src="../../link/linkhtm/worksheetlink.htm" frameborder="0" marginheight="0" marginwidth="4" scrolling="auto" width="100%" target="_parent"></iframe></span>
+</p>
+</body>
+</html>

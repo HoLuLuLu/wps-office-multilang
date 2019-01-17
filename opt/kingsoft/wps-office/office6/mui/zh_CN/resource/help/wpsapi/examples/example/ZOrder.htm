@@ -1,0 +1,11 @@
+<html><head>
+<title>ZOrder</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将活动文档中图形3 置于 Z 顺序中倒数第二的位置（如果文档中至少还有另一个图形）。<p>With ActiveDocument.Shapes(3)<br>    &nbsp;&nbsp;&nbsp;    While .ZOrderPosition > 2<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        .ZOrder ksoSendBackward<br>    &nbsp;&nbsp;&nbsp;    Wend<br>End With
+</div>
+</body>
+</html>

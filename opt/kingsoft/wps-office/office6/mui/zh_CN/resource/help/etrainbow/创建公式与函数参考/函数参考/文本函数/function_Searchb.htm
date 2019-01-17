@@ -1,0 +1,74 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>SEARCHB</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="SEARCHB">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">SEARCH</font></b><b class="bterm"><font size="3">B</font></b></p>
+<p>可在其他文本字符串 (within_text) 中查找文本字符串 (find_text)，并返回 find_text 
+的起始位置编号。此结果是基于每个字符所使用的字节数，并从 start_num 开始的。此函数用于双字节字符。此外，也可使用 FINDB 
+在其他文本字符串中查找文本字符串。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">SEARCHB</b>(<b class="bterm">find_text</b>,<b class="bterm">within_text</b>,start_num)</p>
+<p>Find_text&nbsp;&nbsp;&nbsp;&nbsp; 要查找的文本。可以在 find_text 中使用通配符，包括问号 (?) 和星号 
+(*)。问号可匹配任意的单个字符，星号可匹配任意一串字符。如果要查找真正的问号或星号，请在该字符前键入波形符 (~)。</p>
+<p>Within_text&nbsp;&nbsp;&nbsp;&nbsp; 要在其中查找 find_text 的文本。</p>
+<p>Start_num&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; within_text 中开始查找的字符的编号。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>SEARCHB 在查找文本时不区分大小写。 
+	</li>
+	<li>SEARCHB 类似于 FIND 和 FINDB，但 FIND 和 FINDB 区分大小写。 
+	</li>
+	<li>若没有找到 find_text，则返回错误值 #VALUE!。 
+	</li>
+	<li>若忽略 start_num，则假定其为 1。 
+	</li>
+	<li>若 start_num 不大于 0（零）或大于 within_text，则返回错误值 #VALUE!。 </li>
+</ul>
+
+
+
+<div class="cdclvSection" jQuery1281498481906="12">
+	<div class="cntArticleBody" id="m_article">
+		<h3><font face="宋体" size="2">示例</font></h3>
+		<p><font face="宋体">在下面的示例中，由于每个字符均按其字节数来计数，因此 SEARCHB 函数返回 3；又由于首字符有 2 
+		个字节，因此第二个字符从第三个字节开始。</font></p>
+		<p><code><font face="宋体">=SEARCHB</font></code><font face="宋体">(</font><code><font face="宋体" size="2">&quot;花&quot;,&quot;雪花飘&quot;</font></code><font face="SONGTI "><code><font face="宋体">)</font></code></font><font face="宋体"> 
+		等于 3</font></p>
+		　</div>
+</div>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>HasTable</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例检查演示文稿第一张幻灯片上的第一个形状，以查看其是否为表格。如果是表格，则显示“该图形为表格”的字样。<p>With&nbsp;ActivePresentation.Slides(1).Shapes(1)<br>&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;.HasTable&nbsp;=&nbsp;ksoTrue&nbsp;Then<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MsgBox&nbsp;"该图形为表格！"<br>&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;If<br>End&nbsp;With
+</div>
+</body>
+</html>

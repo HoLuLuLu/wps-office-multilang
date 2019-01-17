@@ -1,0 +1,15 @@
+<html><head>
+<title>SpaceAfter</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将活动文档第一段的段后间距设置为 12 磅。<p>ActiveDocument.Paragraphs(1).SpaceAfter = 12 </p>
+<p>　</p>
+<p>本示例将活动文档设置为三栏，第一栏后的间距为 0.5 英寸。<br>
+InchesToPoints 方法用来将英寸转换为磅值。 </p>
+<p>With ActiveDocument.PageSetup.TextColumns <br>    &nbsp;&nbsp;&nbsp;    .SetCount NumColumns:=3 <br>    &nbsp;&nbsp;&nbsp;    .LineBetween = False <br>    &nbsp;&nbsp;&nbsp;    .EvenlySpaced = True <br>    &nbsp;&nbsp;&nbsp;    .Item(1).SpaceAfter = InchesToPoints(0.5) <br>End With 
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_smartartdesign" component="wpp">
+	<commands>
+		<KListCommand id="RB_CreateGraph" text="@Create Graph" rbFileMenuEmbed="1">
+			<KListCommand icon="SmartArtInsertShape" spaceHint="suitable" text="@Insert Shape" qtspyName="SmartArtInsertShape">
+				<KxValueCommand hotKey="W" ksoCmd="SmartArtInsShapeOnBelow" icon="SmartArtInsShapeOnBelow" index="1" text="@Insert shape on below" qtspyName="SmartArtInsShapeOnBelow"/>
+				<KxValueCommand hotKey="V" ksoCmd="SmartArtInsShapeOnAbove" icon="SmartArtInsShapeOnAbove" index="2" text="@Insert shape on above" qtspyName="SmartArtInsShapeOnAbove"/>
+				<KxValueCommand hotKey="A" ksoCmd="SmartArtInsShapeInAfter" icon="SmartArtInsShapeInAfter" index="3" text="@Insert shape in after" qtspyName="SmartArtInsShapeInAfter"/>
+				<KxValueCommand hotKey="B" ksoCmd="SmartArtInsShapeInBefore" icon="SmartArtInsShapeInBefore" index="4" text="@Insert shape in before" qtspyName="SmartArtInsShapeInBefore"/>
+				<KxValueCommand hotKey="T" ksoCmd="SmartArtInsAssistant" icon="SmartArtInsAssistant" index="5" text="@Insert assist" qtspyName="SmartArtInsAssistant"/>
+			</KListCommand>
+			<KxLegacyTriggerCommand hotKey="b" ksoCmd="SmartArtInsertBullet" icon="sa-addbullet-nomal;sa-addbullet-click" id="SmartArtInsertBullet" spaceHint="suitable" text="@Insert Bullet" rbHotKey="b"/>
+			<separator/>
+			<KxLegacyTriggerCommand hotKey="p" ksoCmd="SmartArtIncreaseLevel" icon="SmartArtIncreaseLevel" id="SmartArtIncreaseLevel" spaceHint="suitable" text="@Increase Level" rbHotKey="p"/>
+			<KxLegacyTriggerCommand hotKey="d" ksoCmd="SmartArtReduceLevel" icon="SmartArtReduceLevel" id="SmartArtReduceLevel" spaceHint="suitable" text="@Reduce Level" rbHotKey="d"/>
+			<KxLegacyTriggerCommand hotKey="u" ksoCmd="SmartArtMoveForward" icon="SmartArtMoveForward" id="SmartArtMoveForward" spaceHint="suitable" text="@Forward" rbHotKey="u"/>
+			<KxLegacyTriggerCommand hotKey="w" ksoCmd="SmartArtMoveBackward" icon="SmartArtMoveBackward" id="SmartArtMoveBackward" spaceHint="suitable" text="@Backward" rbHotKey="w"/>
+			<KxLegacyTriggerCommand hotKey="r" ksoCmd="SmartArtRToLLayout" icon="SmartArtRToLLayout" id="SmartArtRToLLayout" spaceHint="suitable" text="@RightToLeft Layout" rbHotKey="r"/>
+			<KListCommand hotKey="o" ksoCmd="SmartArtChangeLayout" icon="SmartArtChangeLayout" id="SmartArtChangeLayout" spaceHint="suitable" text="@Layout" rbHotKey="o">
+				<KxValueCommand hotKey="S" ksoCmd="SmartArtStandardLayout" icon="SmartArtStandardLayout" index="1" text="@Standard" qtspyName="SmartArtStandardLayout"/>
+				<KxValueCommand hotKey="B" ksoCmd="SmartArtBothLayout" icon="SmartArtBothLayout" index="2" text="@Both" qtspyName="SmartArtBothLayout"/>
+				<KxValueCommand hotKey="L" ksoCmd="SmartArtLeftHangLayout" icon="SmartArtLeftHangLayout" index="3" text="@Left Hang" qtspyName="SmartArtLeftHangLayout"/>
+				<KxValueCommand hotKey="R" ksoCmd="SmartArtRightHangLayout" icon="SmartArtRightHangLayout" index="4" text="@Right Hang" qtspyName="SmartArtRightHangLayout"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_SAStyles" text="@smart-art Styles" rbFileMenuEmbed="1">
+			<KxSmartArtColorsGalleryCommand hotKey="c" ksoCmd="SmartArtChangeColors" galleryWidth="350" icon="SmartArtChangeColors" id="SmartArtChangeColors" galleryHeight="520" text="@Change Colors" rbHotKey="c"/>
+			<KxSmartArtQuickStylesGalleryCommand hotKey="s" ksoCmd="SmartArtChangeQuickStyles" galleryWidth="350" triggerAble="1" embedHint="1" id="SmartArtChangeStyles" text="@Change Styles" rbHotKey="s"/>
+		</KListCommand>
+		<KListCommand id="RB_SAShageArrange" text="@smart-art Shape pos" rbFileMenuEmbed="1">
+			<command idQ="ObjectSelect"/>
+			<KxListCommand ksoCmd="BringForward" idMso="ObjectBringForward" customTip2="BringForward2" icon="BringForward" controlType="0" id="ShapeBringForward" customTip="BringForward" spaceHint="suitable" text="@Bring Forward" rbHotKey="AF">
+				<command idQ="BringForward"/>
+				<command idQ="RbBringToFront"/>
+			</KxListCommand>
+			<KxListCommand ksoCmd="SendBackward" idMso="ObjectSendBackward" customTip2="SendBackward2" icon="SendBackward" controlType="0" id="ShapeSendBackward" customTip="SendBackward" spaceHint="suitable" text="@Send Backward" rbHotKey="AE">
+				<command idQ="SendBackward"/>
+				<command idQ="SendToBack"/>
+			</KxListCommand>
+		</KListCommand>
+		<KxListCommand ksoCmd="FormatObjectSize" id="RB_SASize" customTip="FormatObjectSize" text="@Size" rbFileMenuEmbed="1">
+			<KxHeightSpinboxCommand ksoCmd="ShapeHeight" icon="shapeHeight" embedHint="1" id="ShapeHeight" spaceHint="suitable" customTip="ShapeHeight" text="@Height"/>
+			<KxWidthSpinboxCommand ksoCmd="ShapeWidth" icon="shapeWidth" embedHint="1" id="ShapeWidth" spaceHint="suitable" customTip="ShapeWidth" text="@Width"/>
+		</KxListCommand>
+	</commands>
+	<subcommands>
+		<subcommands id="CT_SmartArtDesign">
+			<command idQ="RB_CreateGraph"/>
+			<separator/>
+			<command idQ="RB_LayoutOfSmartArt"/>
+			<separator/>
+			<command idQ="RB_SAStyles"/>
+			<separator/>
+			<command idQ="RB_SAShageArrange"/>
+			<separator/>
+			<command idQ="RB_SASize"/>
+			<separator/>
+		</subcommands>
+	</subcommands>
+</shell>

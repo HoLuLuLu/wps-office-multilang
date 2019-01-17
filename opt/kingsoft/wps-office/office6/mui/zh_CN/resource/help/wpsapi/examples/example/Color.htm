@@ -1,0 +1,14 @@
+<html><head>
+<title>Color</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将活动文档中第一段的文字颜色更改为绿色。<p>ActiveDocument.Paragraphs(1).Range.Font.Color = wpsColorGreen</p>
+<p>　</p>
+<p>本示例在第一个表格中每个单元格周围添加靛蓝色的点划线边框。 </p>
+<p>If ActiveDocument.Tables.Count >= 1 Then<br>    &nbsp;&nbsp;&nbsp;    For Each aBorder In ActiveDocument.Tables(1).Borders<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        aBorder.Color = wpsColorIndigo<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        aBorder.LineStyle = wpsLineStyleDashDot<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        aBorder.LineWidth = wpsLineWidth075pt<br>    &nbsp;&nbsp;&nbsp;    Next aBorder<br>End If
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.header_and_footer" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="PageNumberOnHeaderAndFooter" aid="92065" id="PageNumberOnHeaderAndFooter" text="@- Page -"/>
+		<KxLegacyTriggerCommand ksoCmd="PageNumerOfOnHeaderAndFooter" aid="92066" id="PageNumerOfOnHeaderAndFooter" text="@Page X"/>
+		<KxLegacyTriggerCommand ksoCmd="PageCountOnHeaderAndFooter" aid="92067" id="PageCountOnHeaderAndFooter" text="@Total of Y Page"/>
+		<KxLegacyTriggerCommand ksoCmd="PageOfCountOnHeaderAndFooter" aid="92068" id="PageOfCountOnHeaderAndFooter" text="@Page X of Y"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="InsertPageNumber" aid="1554" icon="InsertPageNumber" id="InsertPageNumber" text="@Insert Page Number"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="InsertNumberOfPages" aid="743" icon="InsertNumberOfPages" id="InsertNumberOfPages" text="@Insert Number of Pages"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="InsertDate" aid="125" icon="InsertDate" id="InsertDate" text="@Insert Date"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="InsertTime" aid="126" icon="InsertTime" id="InsertTime" text="@Insert Time"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="LinktoPreviousHeader" aid="250" icon="LinktoPreviousHeader" id="LinktoPreviousHeader" customTip="LinktoPreviousHeader" text="@Link to Previous" rbHotKey="K"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="ShowHeaderOrFooter" aid="237" icon="ShowHeaderOrFooter" id="ShowHeaderOrFooter" text="@Switch Between Header and Footer" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PreviousHeader" aid="238" icon="PreviousHeader" id="PreviousHeader" customTip="PreviousHeader" text="@Show Previous" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="NextHeader" aid="239" icon="NextHeader" id="NextHeader" customTip="NextHeader" text="@Next Header" rbHotKey="X"/>
+		<KxLegacyTriggerCommand ksoCmd="CloseHeaderAndFooter" aid="924" icon="CloseHeaderFooter" id="CloseHeaderAndFooter" customTip="CloseHeaderAndFooter" text="@Close" rbHotKey="C"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Header and Footer">
+			<KListCommand hotKey="s" aid="30423" id="InsertAutoText" text="@Insert AutoText">
+				<command idQ="PageNumberOnHeaderAndFooter"/>
+				<command idQ="PageNumerOfOnHeaderAndFooter"/>
+				<command idQ="PageCountOnHeaderAndFooter"/>
+				<command idQ="PageOfCountOnHeaderAndFooter"/>
+			</KListCommand>
+			<command idQ="InsertPageNumber"/>
+			<command idQ="InsertNumberOfPages"/>
+			<command idQ="ShowHeaderLine"/>
+			<separator/>
+			<command idQ="InsertDate"/>
+			<command idQ="InsertTime"/>
+			<separator/>
+			<command idQ="PageSetup"/>
+			<separator/>
+			<command idQ="LinktoPreviousHeader"/>
+			<command idQ="ShowHeaderOrFooter"/>
+			<command idQ="PreviousHeader"/>
+			<command idQ="NextHeader"/>
+			<separator/>
+			<command idQ="CloseHeaderAndFooter"/>
+		</subcommand>
+	</subcommands>
+</shell>

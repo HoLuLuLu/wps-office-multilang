@@ -1,0 +1,139 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>RATE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="RATE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>RATE</h1>
+<p>返回年金的各期利率。函数 RATE 通过迭代法计算得出，并且可能无解或有多个解。如果在进行 20 次迭代计算后，函数 RATE 的相邻两次结果没有收敛于 
+0.0000001，函数 RATE 将返回错误值 #NUM!。</p>
+<p><b>语法</b></p>
+<p><b>RATE</b>(<b>nper,pmt,pv</b>,fv,type,guess)</p>
+<p>有关函数 RATE 中参数的详细说明，请参阅函数 <a href="function_PV.htm">PV</a>。</p>
+<p>nper 为总投资期，即该项投资的付款期总数。</p>
+<p>pmt 为各期付款额，其数值在整个投资期内保持不变。通常 pmt 包括本金和利息，但不包括其他费用或税金。如果忽略了 pmt，则必须包含 fv 参数。</p>
+<p>pv 为现值，即从该项投资开始计算时已经入帐的款项，或一系列未来付款当前值的累积和，也称为本金。</p>
+<p>fv 为未来值，或在最后一次付款后希望得到的现金余额，如果省略 fv，则假设其值为零，也就是一笔贷款的未来值为零。</p>
+<p>type 数字 0 或 1，用以指定各期的付款时间是在期初还是期末。</p>
+
+<table width="759" height="55">
+	<tr>
+		<th class="thEmpty" width="20" height="11"></th>
+	    <th class="th1" width="137" height="15">Type 值</th>
+	    <th class="th1" width="91" height="15">支付时间</th>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">0 或省略</td>
+		<td class="ll" width="502" height="16">期末</td>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">1</td>
+		<td class="ll" width="502" height="16">期初 </td>
+	</tr>
+		
+</table>
+
+<p>guess 为预期利率。</p>
+
+<ul>
+  <li>如果省略预期利率，则假设该值为 10%。 </li>
+  <li>如果函数 RATE 不收敛，请改变 guess 的值。通常当 guess 位于 0 到 1 之间时，函数 RATE 是收敛的。</li>
+</ul>
+
+<p><b>说明</b> </p>
+<p>应确认所指定的 guess 和 nper 单位的一致性，对于年利率为 12% 的 6 年期贷款，如果按月支付，guess 为 12%/12，nper 为 
+6*12。如果按年支付，guess 为 12%，nper 为 6。</p>
+
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="759">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="137">A</th>
+	    <th class="th1" width="91">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="137">数据</td>
+		<td class = "th1" width="91">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="223">10</td>
+		<td class="ll" width="502">贷款期限</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="223">-950</td>
+		<td class="ll" height="20" width="502">每月支付</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="20" width="223">80000 </td>
+		<td class="ll" height="20" width="502">贷款额</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class = "th1" width="137">公式</td>
+		<td class = "th1" width="91">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" width="223">=RATE(A2*12, A3, A4) </td>
+		<td class="ll" width="502">在上述条件下贷款的月利率 (1%) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class="ll" width="223">=RATE(A2*12, A3, A4)*12 </td>
+		<td class="ll" width="502">在上述条件下贷款的年利率（8%）</td>
+	</tr>
+				
+</table>
+
+	<p>
+
+<b>注意</b> 贷款的年数乘以 12 为月数。</p>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

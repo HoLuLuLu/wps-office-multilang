@@ -1,0 +1,1000 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="对象模型总表">
+		<param name="Local" value="obj_Application.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="对象">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="a">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Application对象">
+				<param name="Local" value="objs/a/Application.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="c">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Application对象">
+				<param name="Local" value="objs/c/ColorSchemes.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Application对象">
+				<param name="Local" value="objs/c/ColorScheme.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="m">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Master对象">
+				<param name="Local" value="objs/m/MasterRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Master对象">
+				<param name="Local" value="objs/m/Master.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="o">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Options对象">
+				<param name="Local" value="objs/o/Options.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="p">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PageSetup对象">
+				<param name="Local" value="objs/p/PageSetup.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Presentation对象">
+				<param name="Local" value="objs/p/Presentation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Presentations对象">
+				<param name="Local" value="objs/p/Presentations.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="s">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Shape对象">
+				<param name="Local" value="objs/s/Shape.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Slides对象">
+				<param name="Local" value="objs/s/Shapes.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Slide对象">
+				<param name="Local" value="objs/s/Slide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Slides对象">
+				<param name="Local" value="objs/s/Slides.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideRange对象">
+				<param name="Local" value="objs/s/SlideRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Application对象">
+				<param name="Local" value="objs/s/Selection.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Application对象">
+				<param name="Local" value="objs/s/ShapeRange.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="属性">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="A">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ActionSettings属性">
+				<param name="Local" value="Properties/A/ActionSettings.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Active属性">
+				<param name="Local" value="Properties/A/Active.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ActivePresentation属性">
+				<param name="Local" value="Properties/A/ActivePresentation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ActiveWindow属性">
+				<param name="Local" value="Properties/A/ActiveWindow.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Application属性">
+				<param name="Local" value="Properties/A/Application.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AutoFitBodyText属性">
+				<param name="Local" value="Properties/A/AutoFitBodyText.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AutoFitTitleText属性">
+				<param name="Local" value="Properties/A/AutoFitTitleText.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AutoShapeType属性">
+				<param name="Local" value="Properties/A/AutoShapeType.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="B">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Background属性">
+				<param name="Local" value="Properties/B/Background.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="BuiltInDocumentProperties属性">
+				<param name="Local" value="Properties/B/BuiltInDocumentProperties.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="C">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Child属性">
+				<param name="Local" value="Properties/C/Child.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ChildShapeRange属性">
+				<param name="Local" value="Properties/C/ChildShapeRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ColorScheme属性">
+				<param name="Local" value="Properties/C/ColorScheme.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="COMAddIns属性">
+				<param name="Local" value="Properties/C/COMAddIns.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CommandBars属性">
+				<param name="Local" value="Properties/C/CommandBars.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ConnectionSiteCount属性">
+				<param name="Local" value="Properties/C/ConnectionSiteCount.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Connector属性">
+				<param name="Local" value="Properties/C/Connector.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ConnectorFormat属性">
+				<param name="Local" value="Properties/C/ConnectorFormat.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Count属性">
+				<param name="Local" value="Properties/C/Count.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Creator属性">
+				<param name="Local" value="Properties/C/Creator.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="CustomDocumentProperties属性">
+				<param name="Local" value="Properties/C/CustomDocumentProperties.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="D">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DefaultFileLocation属性">
+				<param name="Local" value="Properties/D/DefaultFileLocation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Description属性">
+				<param name="Local" value="Properties/D/Description.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Design属性">
+				<param name="Local" value="Properties/D/Design.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Designs属性">
+				<param name="Local" value="Properties/D/Designs.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DisplayGridLines属性">
+				<param name="Local" value="Properties/D/DisplayGridLines.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DisplayMasterShapes属性">
+				<param name="Local" value="Properties/D/DisplayMasterShapes.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DisplayRecentFile属性">
+				<param name="Local" value="Properties/D/DisplayRecentFile.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="DisplayRecentFiles属性">
+				<param name="Local" value="Properties/D/DisplayRecentFiles.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="E">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ExtraColors属性">
+				<param name="Local" value="Properties/E/ExtraColors.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="F">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="FarEastLineBreakLevel属性">
+				<param name="Local" value="Properties/F/FarEastLineBreakLevel.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Fill属性">
+				<param name="Local" value="Properties/F/Fill.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="FirstSlideNumber属性">
+				<param name="Local" value="Properties/F/FirstSlideNumber.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="FollowMasterBackground属性">
+				<param name="Local" value="Properties/F/FollowMasterBackground.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="FullName属性">
+				<param name="Local" value="Properties/F/FullName.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="G">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GenBackupFile属性">
+				<param name="Local" value="Properties/G/GenBackupFile.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GridDistance属性">
+				<param name="Local" value="Properties/G/GridDistance.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="GroupItems属性">
+				<param name="Local" value="Properties/G/GroupItems.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="H">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="HasChildShapeRange属性">
+				<param name="Local" value="Properties/H/HasChildShapeRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="HasTable属性">
+				<param name="Local" value="Properties/H/HasTable.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="HasTextFrame属性">
+				<param name="Local" value="Properties/H/HasTextFrame.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="HeadersFooters属性">
+				<param name="Local" value="Properties/H/HeadersFooters.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Height属性">
+				<param name="Local" value="Properties/H/Height.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="HorizontalFlip属性">
+				<param name="Local" value="Properties/H/HorizontalFlip.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Id属性">
+				<param name="Local" value="Properties/I/Id.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Item属性">
+				<param name="Local" value="Properties/I/Item.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="L">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Layout属性">
+				<param name="Local" value="Properties/L/Layout.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Left属性">
+				<param name="Local" value="Properties/L/Left.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Line属性">
+				<param name="Local" value="Properties/L/Line.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="LockAspectRatio属性">
+				<param name="Local" value="Properties/L/LockAspectRatio.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="M">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Master属性">
+				<param name="Local" value="Properties/M/Master.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MasterID属性">
+				<param name="Local" value="Properties/M/MasterID.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MasterIndex属性">
+				<param name="Local" value="Properties/M/MasterIndex.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MasterRange属性">
+				<param name="Local" value="Properties/M/MasterRange.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="N">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Name属性">
+				<param name="Local" value="Properties/N/Name.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NewSlideLayoutTaskPane属性">
+				<param name="Local" value="Properties/N/NewSlideLayoutTaskPane.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NoLineBreakAfter属性">
+				<param name="Local" value="Properties/N/NoLineBreakAfter.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NoLineBreakBefore属性">
+				<param name="Local" value="Properties/N/NoLineBreakBefore.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NotesOrientation属性">
+				<param name="Local" value="Properties/N/NotesOrientation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NotesPageHeight属性">
+				<param name="Local" value="Properties/N/NotesPageHeight.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NotesPageWidth属性">
+				<param name="Local" value="Properties/N/NotesPageWidth.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="O">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Options属性">
+				<param name="Local" value="Properties/O/Options.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="P">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PageSetup属性">
+				<param name="Local" value="Properties/P/PageSetup.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Parent属性">
+				<param name="Local" value="Properties/P/Parent.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Password属性">
+				<param name="Local" value="Properties/P/Password.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PasswordEncryptionAlgorithm属性">
+				<param name="Local" value="Properties/P/PasswordEncryptionAlgorithm.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PasswordEncryptionFileProperties属性">
+				<param name="Local" value="Properties/P/PasswordEncryptionFileProperties.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PasswordEncryptionKeyLength属性">
+				<param name="Local" value="Properties/P/PasswordEncryptionKeyLength.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PasswordEncryptionProvider属性">
+				<param name="Local" value="Properties/P/PasswordEncryptionProvider.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Path属性">
+				<param name="Local" value="Properties/P/Path.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PictureFormat属性">
+				<param name="Local" value="Properties/P/PictureFormat.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Placeholder属性">
+				<param name="Local" value="Properties/P/Placeholders.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PlaceholderFormat属性">
+				<param name="Local" value="Properties/P/PlaceholderFormat.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PlayAutoPreview属性">
+				<param name="Local" value="Properties/P/PlayAutoPreview.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Presentations属性">
+				<param name="Local" value="Properties/P/Presentations.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PrintOptions属性">
+				<param name="Local" value="Properties/P/PrintOptions.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="R">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ReadOnly属性">
+				<param name="Local" value="Properties/R/ReadOnly.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="RecentFiles属性">
+				<param name="Local" value="Properties/R/RecentFiles.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="RecentlyUsedFileCount属性">
+				<param name="Local" value="Properties/R/RecentlyUsedFileCount.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Rotation属性">
+				<param name="Local" value="Properties/R/Rotation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Ruler属性">
+				<param name="Local" value="Properties/R/Ruler.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="S">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Saved属性">
+				<param name="Local" value="Properties/S/Saved.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SaveFilesAs属性">
+				<param name="Local" value="Properties/S/SaveFilesAs.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Shadow属性">
+				<param name="Local" value="Properties/S/Shadow.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ShapeRange属性">
+				<param name="Local" value="Properties/S/ShapeRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Shapes属性">
+				<param name="Local" value="Properties/S/Shapes.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ShowVisualBasicEditor属性">
+				<param name="Local" value="Properties/S/ShowVisualBasicEditor.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideHeight属性">
+				<param name="Local" value="Properties/S/SlideHeight.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideID属性">
+				<param name="Local" value="Properties/S/SlideID.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideIndex属性">
+				<param name="Local" value="Properties/S/SlideIndex.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideNumber属性">
+				<param name="Local" value="Properties/S/SlideNumber.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideOrientation属性">
+				<param name="Local" value="Properties/S/SlideOrientation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideRange属性">
+				<param name="Local" value="Properties/S/SlideRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Slides属性">
+				<param name="Local" value="Properties/S/Slides.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideShowBlackEndSlide属性">
+				<param name="Local" value="Properties/S/SlideShowBlackEndSlide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideShowRightClickMenu属性">
+				<param name="Local" value="Properties/S/SlideShowRightClickMenu.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideShowSettings属性">
+				<param name="Local" value="Properties/S/SlideShowSettings.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideShowTransition属性">
+				<param name="Local" value="Properties/S/SlideShowTransition.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideShowWindow属性">
+				<param name="Local" value="Properties/S/SlideShowWindow.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideShowWindows属性">
+				<param name="Local" value="Properties/S/SlideShowWindows.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideSize属性">
+				<param name="Local" value="Properties/S/SlideSize.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SlideWidth属性">
+				<param name="Local" value="Properties/S/SlideWidth.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SnapToGrid属性">
+				<param name="Local" value="Properties/S/SnapToGrid.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="StartupTaskPane属性">
+				<param name="Local" value="Properties/S/StartupTaskPane.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="StatusBar属性">
+				<param name="Local" value="Properties/S/StatusBar.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="T">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Table属性">
+				<param name="Local" value="Properties/T/Table.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TemplateName属性">
+				<param name="Local" value="Properties/T/TemplateName.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TextEffect属性">
+				<param name="Local" value="Properties/T/TextEffect.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TextFrame属性">
+				<param name="Local" value="Properties/T/TextFrame.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TextRange属性">
+				<param name="Local" value="Properties/T/TextRange.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TextStyles属性">
+				<param name="Local" value="Properties/T/TextStyles.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ThreeD属性">
+				<param name="Local" value="Properties/T/ThreeD.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="TimeLine属性">
+				<param name="Local" value="Properties/T/TimeLine.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Top属性">
+				<param name="Local" value="Properties/T/Top.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Type属性">
+				<param name="Local" value="Properties/T/Type.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="U">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="UserControl属性">
+				<param name="Local" value="Properties/U/UserControl.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="UserInitials属性">
+				<param name="Local" value="Properties/U/UserInitials.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="UserName属性">
+				<param name="Local" value="Properties/U/UserName.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="V">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="VerticalFlip属性">
+				<param name="Local" value="Properties/V/VerticalFlip.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="VerticalRuler属性">
+				<param name="Local" value="Properties/V/VerticalRuler.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Visible属性">
+				<param name="Local" value="Properties/V/Visible.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="W">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Width属性">
+				<param name="Local" value="Properties/W/Width.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Windows属性">
+				<param name="Local" value="Properties/W/Windows.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="WindowsState属性">
+				<param name="Local" value="Properties/W/WindowsState.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="方法">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="A">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Activate方法">
+				<param name="Local" value="Methods/A/Activate.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Add方法">
+				<param name="Local" value="Methods/A/Add.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddConnector方法">
+				<param name="Local" value="Methods/A/AddConnector.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddCurve方法">
+				<param name="Local" value="Methods/A/AddCurve.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddLine方法">
+				<param name="Local" value="Methods/A/AddLine.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddMediaObject方法">
+				<param name="Local" value="Methods/A/AddMediaObject.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddOLEObject方法">
+				<param name="Local" value="Methods/A/AddOLEObject.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddPicture方法">
+				<param name="Local" value="Methods/A/AddPicture.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddPlaceholder方法">
+				<param name="Local" value="Methods/A/AddPlaceholder.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddPolyline方法">
+				<param name="Local" value="Methods/A/AddPolyline.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddShape方法">
+				<param name="Local" value="Methods/A/AddShape.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddTable方法">
+				<param name="Local" value="Methods/A/AddTable.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddTextbox方法">
+				<param name="Local" value="Methods/A/AddTextbox.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="AddTextEffect方法">
+				<param name="Local" value="Methods/A/AddTextEffect.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Align方法">
+				<param name="Local" value="Methods/A/Align.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Apply方法">
+				<param name="Local" value="Methods/A/Apply.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ApplyTemplate方法">
+				<param name="Local" value="Methods/A/ApplyTemplate.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="B">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="BuildFreeform方法">
+				<param name="Local" value="Methods/B/BuildFreeform.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="C">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Close方法">
+				<param name="Local" value="Methods/C/Close.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Colors方法">
+				<param name="Local" value="Methods/C/Colors.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Copy方法">
+				<param name="Local" value="Methods/C/Copy.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Cut方法">
+				<param name="Local" value="Methods/C/Cut.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="D">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Delete方法">
+				<param name="Local" value="Methods/D/Delete.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Distribute方法">
+				<param name="Local" value="Methods/D/Distribute.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="F">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Flip方法">
+				<param name="Local" value="Methods/F/Flip.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="I">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IncrementLeft方法">
+				<param name="Local" value="Methods/I/IncrementLeft.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IncrementRotation方法">
+				<param name="Local" value="Methods/I/IncrementRotation.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="IncrementTop方法">
+				<param name="Local" value="Methods/I/IncrementTop.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Item方法">
+				<param name="Local" value="Methods/I/Item.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="M">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="MoveTo方法">
+				<param name="Local" value="Methods/M/MoveTo.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="N">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="NewWindow方法">
+				<param name="Local" value="Methods/N/NewWindow.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="O">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Open方法">
+				<param name="Local" value="Methods/O/Open.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="P">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Paste方法">
+				<param name="Local" value="Methods/P/Paste.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PickUp方法">
+				<param name="Local" value="Methods/P/PickUp.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="PrintOut方法">
+				<param name="Local" value="Methods/P/PrintOut.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Q">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Quit方法">
+				<param name="Local" value="Methods/Q/Quit.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="R">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Range方法">
+				<param name="Local" value="Methods/R/Range.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Redo方法">
+				<param name="Local" value="Methods/R/Redo.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="RerouteConnections方法">
+				<param name="Local" value="Methods/R/RerouteConnections.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="S">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Save方法">
+				<param name="Local" value="Methods/S/Save.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SaveAs方法">
+				<param name="Local" value="Methods/S/SaveAs.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ScaleHeight方法">
+				<param name="Local" value="Methods/S/ScaleHeight.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ScaleWidth方法">
+				<param name="Local" value="Methods/S/ScaleWidth.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Select方法">
+				<param name="Local" value="Methods/S/Select.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SelectAll方法">
+				<param name="Local" value="Methods/S/SelectAll.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SendForReview方法">
+				<param name="Local" value="Methods/S/SendForReview.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SetPasswordEncryptionOptions方法">
+				<param name="Local" value="Methods/S/SetPasswordEncryptionOptions.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="SetShapesDefaultProperties方法">
+				<param name="Local" value="Methods/S/SetShapesDefaultProperties.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="U">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Undo方法">
+				<param name="Local" value="Methods/U/Undo.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Unselect方法">
+				<param name="Local" value="Methods/U/Unselect.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Z">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="ZOrder方法">
+				<param name="Local" value="Methods/Z/ZOrder.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+</UL>
+</BODY></HTML>

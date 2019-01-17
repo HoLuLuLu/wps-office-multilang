@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>SetShapesDefaultProperties</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将一个矩形添至&nbsp;myDocument，设置矩形的填充格式，将矩形的格式应用于默认图形，然后将另一个（较小的）文本框添至幻灯片中。后一个文本框与前一个矩形有相同的填充格式。<p>Set&nbsp;mydocument&nbsp;=&nbsp;ActivePresentation.Slides(1)<br>With&nbsp;mydocument.Shapes<br>&nbsp;&nbsp;&nbsp;&nbsp;With&nbsp;.AddShape(ksoShapeRectangle,&nbsp;5,&nbsp;5,&nbsp;80,&nbsp;60)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With&nbsp;.Fill<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.ForeColor.RGB&nbsp;=&nbsp;RGB(0,&nbsp;0,&nbsp;255)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.BackColor.RGB&nbsp;=&nbsp;RGB(0,&nbsp;204,&nbsp;255)<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.Patterned&nbsp;KsoPatternHorizontalBrick<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;With<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;Sets&nbsp;formatting&nbsp;for&nbsp;default&nbsp;shapes<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;mydocument.Shapes(1).Select&nbsp;ksoTrue<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Windows(1).Selection.ShapeRange.SetShapesDefaultProperties<br>&nbsp;&nbsp;&nbsp;&nbsp;End&nbsp;With<br>&nbsp;&nbsp;&nbsp;&nbsp;'&nbsp;New&nbsp;shape&nbsp;has&nbsp;default&nbsp;formatting<br>&nbsp;&nbsp;&nbsp;&nbsp;.AddTextbox&nbsp;ksoTextOrientationHorizontal,&nbsp;90,&nbsp;90,&nbsp;40,&nbsp;30<br>End&nbsp;With
+</div>
+</body>
+</html>

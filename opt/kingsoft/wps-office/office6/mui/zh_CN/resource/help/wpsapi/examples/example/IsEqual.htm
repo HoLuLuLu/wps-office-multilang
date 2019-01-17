@@ -1,0 +1,12 @@
+<html><head>
+<title>IsEqual</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例对活动文档第二段和所选内容进行比较。如果所选内容与第二段不相同，则选定第二段。  
+<p>If Selection.IsEqual(ActiveDocument _ <br>        &nbsp;&nbsp;&nbsp;        .Paragraphs(2).Range) = False Then <br>    &nbsp;&nbsp;&nbsp;    ActiveDocument.Paragraphs(2).Range.Select <br>End If 
+</div>
+</body>
+</html>

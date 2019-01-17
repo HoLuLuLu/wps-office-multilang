@@ -1,0 +1,741 @@
+<html>
+
+<script src="../../../css/help.js">
+</script>
+
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>数字格式代码</title>
+
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="数字格式代码">
+  <param name="Keyword" value="格式代码">
+  <param name="Keyword" value="分节格式">
+  <param name="Keyword" value="文本">
+  <param name="Keyword" value="文本型数值提示">
+  <param name="Keyword" value="数字">
+  <param name="Keyword" value="日期">
+  <param name="Keyword" value="时间">
+  <param name="Keyword" value="科学记数">
+  <param name="Keyword" value="百分数">
+  <param name="Keyword" value="分数">
+  <param name="Keyword" value="颜色">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>数字格式代码</h1>
+
+
+
+<p>
+  格式代码（格式化字符串）是通过不同的占位符来描述格式化语意的，是格式代码的最基本元素。<p>
+  占位符由字符组合而成，格式化占位符包括：“#”、“0”、“?”、“.”、“,”、“G”、“X”、“%”、“E”、“/”、“yy”、“yyyy”、“M”、“MM”、“MMM”、“MMMM”、“MMMMM”、“d”、“dd”、“ddd”、“dddd”、“w”、“ww”、“www”、“H”、“HH”、“h”、“hh”、“m”、“mm”、“s”、“ss”、“[d]”、“[h]”、“[m]”、“[s]”、“AM/PM”、“A/P”、“am/pm”、“a/p”、“上午/下午”、“@”、“+”、“-”、“<span lang="en-gb">_</span>”、“<span lang="en-gb">\</span>”。</p>
+  <p>
+
+
+<p><span id="mydiv2" class="charr1"></span>
+<a href="javascript:viewsample2()" style="text-decoration: none">
+&nbsp;分节格式</a></p>
+<div id="sample2" style="display: none; width:773; height:353">
+  在格式代码中最多可以指定四个节。这些格式代码是以分号分隔的，它们顺序定义了格式中的正数、负数、零和文本。格式代码允许省略：<ul>
+    <li>如果只指定一个节，则该节用于所有的四节，即正数、负数、零和文本同用该节格式进行格式化。</li>
+    <li>如果只指定两个节，则第一部分用于表示正数和零，第二部分用于表示负数，文本直接显示。 </li>
+    <li>如果只指定三个节，则第一部分用于表示正数，第二部分用于表示负数，第三部分用于表示零，文本直接显示。 </li>
+    <li>如果节内没有任何格式字符，则该节没有格式，设置该节为空（NULL），而不被指定为通用格式或其它等。 </li>
+    <li>如果要跳过某一节，则对该节仅使用分号即可。 </li>
+    <li>一旦某一节格式为文本，则其后的节不能再指定格式<br>
+　<table border="2" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#FFFFFF" width="100%" id="AutoNumber3" height="157">
+      <tr>
+        <td width="22%" bgcolor="#C0C0C0" align="left" height="19"><b>
+        格式化代码</b></td>
+        <td width="78%" bgcolor="#C0C0C0" align="left" height="19"><b>
+        说明</b></td>
+      </tr>
+      <tr>
+        <td width="22%" height="17" bordercolor="#C0C0C0">#.##</td>
+        <td width="78%" height="17" bordercolor="#C0C0C0">
+      只指定一个节，则该节被用于正数、负数、零和文本的格式化显示</td>
+      </tr>
+      <tr>
+      <td width="134" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      #.##;</td>
+      <td width="555" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      指定第一节显示正数，第二节为空，第一节也显示负数，因为该格式属于指定了两个节</td>
+      </tr>
+      <tr>
+      <td width="134" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      #.##;#.##</td>
+      <td width="555" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      第一节用于表示正数和零，第二节用于表示负数，文本直接显示</td>
+      </tr>
+      <tr>
+      <td width="134" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      #.##;#.##;</td>
+      <td width="555" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      第一节用于表示正数，第二节用于表示负数，第三节为空，用于表示零，文本直接显示</td>
+      </tr>
+      <tr>
+      <td width="134" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      #.##;#.##;#.##</td>
+      <td width="555" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      第一节用于表示正数，第二节用于表示负数，第三节用于表示零，文本直接显示</td>
+      </tr>
+      <tr>
+      <td width="134" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      #.##;#.##;#.##;</td>
+      <td width="555" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      第一节用于表示正数，第二节用于表示负数，第三节用于表示零，第四节为空</td>
+      </tr>
+      <tr>
+      <td width="134" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0; border-left-color:#C0C0C0; border-top-color:#C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      #.##;#.##;#.##;@</td>
+      <td width="555" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0; border-left-color:#C0C0C0; border-top-color:#C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      第一节用于表示正数，第二节用于表示负数，第三节用于表示零，第四节用于表示文本</td>
+      </tr>
+    </table>
+    </li>
+  </ul>
+ 
+</div>
+
+
+<p><span id="mydiv3" class="charr1"></span>
+<a href="javascript:viewsample3()" style="text-decoration: none">
+&nbsp;普通数字</a></p>
+<div id="sample3" style="display: none; width:886; height:291">
+基本位置标识符包括：</br>
+    <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#FFFFFF" width="733" id="AutoNumber3" height="122">
+      <tr>
+	  <td width="22" height="1"></td>
+        <td width="79" bgcolor="#C0C0C0" align="left" height="19"><b>
+        格式化代码</b></td>
+        <td width="649" bgcolor="#C0C0C0" align="left" height="19"><b>
+        说明</b></td>
+      </tr>
+      <tr>
+	  	  <td width="22" height="1"></td>
+      <td width="79" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      #</td>
+        <td width="649" height="17" bordercolor="#C0C0C0">
+        只显示有意义的数字而不显示无意义的零，例如：<br>
+        使用格式: &quot;#.##&quot; 显示 13.702 则为: &quot;13.7&quot;</td>
+      </tr>
+      <tr>
+	  	  <td width="22" height="1"></td>
+      <td width="79" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      0</td>
+      <td width="649" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" valign="top" height="19" bordercolor="#C0C0C0">
+      如果数字位数少于格式中的零的个数，将显示无意义的零，例如：<br>
+      使用格式: &quot;00.000&quot; 显示 8.5 则为: &quot;08.500&quot;</td>
+      </tr>
+      <tr>
+	  
+      	  <td width="22" height="1"></td><td width="79" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      ?</td>
+      <td width="649" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      为无意义的零在小数点两边添加空格，以便使小数点对齐。例如：<br>
+      使用格式: &quot;<span lang="en-gb">?.??</span>&quot; 显示 <span lang="en-gb">38.604</span> 
+      则为: &quot;<span lang="en-gb">38.6 </span>&quot;</td>
+      </tr>
+      <tr>
+	  	  <td width="22" height="1"></td>
+      <td width="79" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      .</td>
+      <td width="649" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      小数点，例如：<br>
+      使用格式: &quot;<span lang="en-gb">#.##</span>&quot; 显示 <span lang="en-gb">634.834</span> 
+      则为: &quot;<span lang="en-gb">634.83&quot;</span></td>
+      </tr>
+      <tr>	  <td width="22" height="1"></td>
+      <td width="79" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      ,</td>
+      <td width="649" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      千分位分隔符（该符号的位置是固定的），例如：<br>
+      使用格式: &quot;<span lang="en-gb">#,##0</span>&quot; 显示 <span lang="en-gb">1384627.8</span> 
+      则为: &quot;<span lang="en-gb">1,384,628&quot;</span></td>
+      </tr>
+      <tr>	  <td width="22" height="1"></td>
+      <td width="79" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="68" valign="top">
+      x</td>
+      <td width="649" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="68" valign="top">
+      <p style="LINE-HEIGHT: 150%"><span lang="en-gb">x</span>占位符如果在小数点左边，并且其左没有不再有其他标识符，则代表数据到此截断，否则等同于#标识符。例如：<br>
+      使用格式: &quot;x##&quot; 显示 111439 则为: &quot;439&quot;<br>
+      使用格式: &quot;.x&quot; 显示 0.75 则为: &quot;.8&quot;</td>
+      </tr>
+	  
+      <tr>	  <td width="22" height="1"></td>
+      <td width="79" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      g</td>
+      <td width="649" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      g占位符不能与其他位置标识符同用；并且只对DBNum1(中文小写)、DBNum2(中文大写)数值码页有效。 
+      其含义是将数值按口语发音显示。例如：<br>
+      显示 12 为 十二， 显示 102 为 一百○二。</td>
+	  </tr>     
+    </table>
+</div>
+
+<p><span id="mydiv4" class="charr1"></span>
+<a href="javascript:viewsample4()" style="text-decoration: none">
+&nbsp;分数、百分数、科学记数</a></p>
+<div id="sample4" style="display: none">
+  
+　<table border="1"id="AutoNumber2" bordercolor="#FFFFFF" cellspacing="1" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="75">
+    <tr>
+      <td width="22" height="1"></td>
+      <td bgcolor="#C0C0C0" width="114" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>格式化代码</b></td>
+      <td bgcolor="#C0C0C0" width="575" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>说明</b></td>
+    </tr>
+    <tr>
+      <td width="22" height="16"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      <span lang="en-gb">/</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      分数占位符的两边可以用#、0、?来指定分子分母，左边为分子，右边为分母。<br>
+	  分母可以指定数值和位数，指定分母的大小只能是整数，指定分母位数是由分母部分的占位符个数决定。 
+      分母的位数最大为“6位”<span lang="en-gb">。</span><br>
+      分子则不可以指定值和位数。<br>
+      例如：<br>
+      　　格式代码：&quot;# ?/4&quot; 显示 -1.21 则为：<span lang="en-gb">&quot;</span>-1 
+      1/4<span lang="en-gb">&quot;<br>
+&nbsp;&nbsp;&nbsp; 格式代码；&quot;# ??/??&quot; </span>显示<span lang="en-gb"> -1.21 则为：&quot;-1 
+      17/81&quot;<br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;# ??/??&quot; 显示 2.0001 则为：&quot;2 &quot;</span></td>
+    </tr>
+	    <tr>
+      <td width="22" height="16"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      <span lang="en-gb">%</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      百分数格式与普通数字格式的唯一不同之处在于它只在百分号之前显示数字，而且显示的数字值是被扩大了100的。<br>
+	  例如：<br>
+      　　使用格式: &quot;#<span lang="en-gb">.##%</span>&quot; 显示 <span lang="en-gb">2.894</span> 
+      则为: &quot;<span lang="en-gb">289.40%</span>&quot;</td>
+    </tr>
+    <tr>
+      <td width="22" height="16"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      <span lang="en-gb">E 或 e</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      科学记数包括[尾数]、[底数]、[指数]三部分。<br>
+	  E 表示“底数”为 10 。<br>
+      E 右侧 0、? 或 # 的个数决定了“指数”的位数。<br>
+      E 左侧的“尾数”不强制要求 ∈(10,1]，而是根据左侧所指定的数字占位符的个数决定。<br>
+      E+ 或 e+ 在正指数时填加正号，负指数时填加减号。E- 或 e- 等价于 E 或 e ，表示在指数为正数时不显示正号。<br>
+      例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>##0.00E+00<span lang="en-gb">&quot;
+      </span>显示 12345.678 则为：<span lang="en-gb">&quot;1.23E+04&quot;</span>
+      </td>
+    </tr>
+
+    </table>
+</div>
+
+
+
+<p><span id="mydiv7" class="charr1"></span>
+<a href="javascript:viewsample7()" style="text-decoration: none">
+&nbsp;日期时间</a></p>
+<div id="sample7" style="display: none">
+  日期时间格式类型的占位符不区分大小写，但是H和HH例外。<br>
+　<table border="1" width="733" id="AutoNumber2" bordercolor="#FFFFFF" cellspacing="1" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="48">
+    <tr>
+      <td width="22" height="1"></td>
+      <td bgcolor="#C0C0C0" width="114" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>格式化代码</b></td>
+      <td bgcolor="#C0C0C0" width="575" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>说明</b></td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      yy</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将年份显示为 00～99 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>yy-m-d<span lang="en-gb">&quot; </span>显示 
+      1997-7-1 则为：<span lang="en-gb">&quot;</span>97-7-1<span lang="en-gb">&quot;</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      yyyy</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将年份显示为 1900～9999 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>yyyy-mm-dd<span lang="en-gb">&quot; </span>显示 
+      1997-7-1 则为：<span lang="en-gb">&quot;19</span>97-07-01<span lang="en-gb">&quot;</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      m</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将月份显示为 0～12</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      m<span lang="en-gb">m</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将月份显示为 01～12</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      m<span lang="en-gb">mm</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将月份显示为 Jan～Dec ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>dd-mmm-yyyy<span lang="en-gb">&quot; </span>显示 
+      1997-7-1 则为：<span lang="en-gb">&quot;01-Jul-1997&quot;</span> </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      <span lang="en-gb">mmm</span>m</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将月份显示为 January～December</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      <span lang="en-gb">mmmm</span>m</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将月份显示为 J～D</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      d</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将日期显示为 1～31</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      dd</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将日期显示为 01～31</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      ddd</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将工作日显示为 Sun～Sat ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>ddd<span lang="en-gb">&quot; </span>显示 
+      1997-7-1 则为：<span lang="en-gb">&quot;Tue&quot;</span> </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      dddd</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将工作日显示为 Sunday～Saturday</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      w</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将工作日显示为 一～日 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>ddd<span lang="en-gb">&quot; </span>显示 
+      1997-7-1 则为：<span lang="en-gb">&quot;</span>二<span lang="en-gb">&quot;</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      ww</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将工作日显示为 周一～周日</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      www</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将工作日显示为 星期一～星期日</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      H</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将小时显示为 0～23 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;H:m:s&quot; </span>显示  
+      <span lang="en-gb">1997-7-1 2:8:6</span> 则为：<span lang="en-gb">&quot;2:8:6&quot;</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      HH</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将小时显示为 00～23 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;HH:mm:ss&quot; </span>显示  
+      <span lang="en-gb">1997-7-1 14:8:6</span> 则为：<span lang="en-gb">&quot;14:08:06&quot;</span>
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      h</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将小时显示为 1～12</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      hh</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将小时显示为 01～12 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;hh:mm:ss am/pm&quot; </span>显示  
+      <span lang="en-gb">1997-7-1 14:8:6</span> 则为：<span lang="en-gb">&quot;02:08:06 
+      pm&quot;</span> </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      m</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将分钟显示为 0～59</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      mm</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将分钟显示为 00～59</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      s</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将秒显示为 0～59</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      ss</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将秒显示为 00～59</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      AM/PM</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      
+      用“AM/PM”区分时间段，“AM”表示从午夜十二点到中午十二点之间的时间，“PM”表示从中午十二点到午夜十二点之间的时间。</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      A/P</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      用“A/P”区分时间段，“A”表示从午夜十二点到中午十二点之间的时间，“P”表示从中午十二点到午夜十二点之间的时间。</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      上午/下午</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      
+      用“上午/下午”区分时间段，“上午”表示从午夜十二点到中午十二点之间的时间，“下午”表示从中午十二点到午夜十二点之间的时间。</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [d]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      以天计算的一段时间 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;[</span>d<span lang="en-gb">]&quot; </span>显示  
+      <span lang="en-gb">3.2648</span> 则为：<span lang="en-gb">&quot;3&quot; ,</span>等同于 
+      <span lang="en-gb">=ROUND(3.2648,0</span>)。 </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [h]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      以小时计算的一段时间 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;[h]&quot; </span>显示  
+      <span lang="en-gb">3.2648</span> 则为：<span lang="en-gb">&quot;78&quot; ,</span>等同于 
+      <span lang="en-gb">=ROUND(3.2648*24,0</span>)。</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [m]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      以分钟计算的一段时间 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;[m]&quot; </span>显示  
+      <span lang="en-gb">3.2648</span> 则为：<span lang="en-gb">&quot;4701&quot; ,</span>等同于 
+      <span lang="en-gb">=ROUND(3.2648*24*60,0</span>)。</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [s]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      以秒计算的一段时间 ，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;[s]&quot; </span>显示  
+      <span lang="en-gb">3.2648</span> 则为：<span lang="en-gb">&quot;282079&quot; 
+      ,</span>等同于 <span lang="en-gb">=ROUND(3.2648*24*60*60,0</span>)。</td>
+    </tr>
+    </table>
+</div>
+
+<p><span id="mydiv8" class="charr1"></span>
+<a href="javascript:viewsample8()" style="text-decoration: none">
+&nbsp;数值码页、颜色</a></p>
+<div id="sample8" style="display: none">
+  <p><b>数值码页</b></p>
+  所谓数值码页，是指我们可以选择其他的方式来显示这些数值。在通常情形下，我们显示数值 0-9 就是采用ANSI编码中的阿拉伯字母 
+  0-9 。<br>
+　<table border="1" width="733" id="AutoNumber2" bordercolor="#FFFFFF" cellspacing="1" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="35">
+    <tr>
+      <td width="22" height="1"></td>
+      <td bgcolor="#C0C0C0" width="114" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>格式化代码</b></td>
+      <td bgcolor="#C0C0C0" width="575" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>说明</b></td>
+    </tr>
+    <tr>
+      <td width="22" height="16"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      [DBNum0]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      默认情形下的数值码页，</span>将数值以</span>半角阿拉伯数字<span lang="en-gb">(</span>0～9<span lang="en-gb">)</span>显示</span>，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>[DBNum0]0<span lang="en-gb">&quot; </span>显示 
+      <span lang="en-gb">100318.05</span> 则为：<span lang="en-gb">&quot;100318.05&quot;</span> </td>
+    </tr>
+    <tr>
+      <td width="22" height="16"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      [DBNum1]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      将数值以</span>小写中文数字<span lang="en-gb">(</span>○～九<span lang="en-gb">)</span>显示</span>，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>[DBNum1]0<span lang="en-gb">&quot; </span>显示 
+      <span lang="en-gb">100318.05</span> 则为：<span lang="en-gb">&quot;十万</span>○三百一十八点○五</span><span lang="en-gb">&quot;</span> </td>
+    </tr>
+    <tr>
+      <td width="22" height="16"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      [DBNum2]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      将数值以</span>大写中文数字<span lang="en-gb">(</span>零～玖<span lang="en-gb">)</span>显示</span>，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>[DBNum2]0<span lang="en-gb">&quot; </span>显示 
+      <span lang="en-gb">100318.05</span> 则为：<span lang="en-gb">&quot;拾万</span>零叁佰壹拾捌点零</span>伍<span lang="en-gb">&quot;</span> </td>
+    </tr>
+    <tr>
+      <td width="22" height="16"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      [DBNum3]</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="16" valign="top">
+      将数值以</span>全角阿拉伯数字<span lang="en-gb">(</span>０～９<span lang="en-gb">)</span>显示</span>，例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：<span lang="en-gb">&quot;</span>[DBNum3]0<span lang="en-gb">&quot; </span>显示 
+      <span lang="en-gb">100318.05</span> 则为：<span lang="en-gb">&quot;１００３１８.０５&quot;</span> </td>
+    </tr>
+    </table>
+
+
+
+
+<p><b>颜色</b></p>
+
+  数字格式格式化支持八种颜色。当需要设置格式中某一节的颜色，请在该节对应位置用方括号键入上列八种颜色名称之一。<br>
+　<table border="1" width="733" id="AutoNumber2" bordercolor="#FFFFFF" cellspacing="1" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="48">
+    <tr>
+      <td width="22" height="1"></td>
+      <td bgcolor="#C0C0C0" width="141" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>格式化代码</b></td>
+      <td bgcolor="#C0C0C0" width="548" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>说明</b></td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [红色] 或 [Red]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以红色显示，例如： <br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;0.00;[红色]0.00&quot; 显示 986.24 则为：&quot;986.24&quot; <br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;0.00;[红色]0.00&quot; 显示 -123.4 则为：&quot;<font color="#FF0000">123.40&quot;
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [黑色] 或 [Black]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以黑色显示</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [蓝色] 或 [Blue]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以蓝色显示</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [青色] 或 [Cyan]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以青色显示</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [绿色] 或 [Green]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以绿色显示</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [洋红] 或 [Magenta]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以洋红色显示</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [白色] 或 [White]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以白色显示</td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="141" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      [黄色] 或 [Yellow]</td>
+      <td width="548" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      将数值以黄色显示</td>
+    </tr>
+    </table>
+</div>
+
+<p><span id="mydiv10" class="charr1"></span>
+<a href="javascript:viewsample10()" style="text-decoration: none">
+&nbsp;文本格式</a></p>
+<div id="sample10" style="display: none; width:772; height:189">
+  当需要键入文本或者显示文本的时候，请使用下列格式化代码。<br>
+　<table border="1" width="733" id="AutoNumber2" bordercolor="#FFFFFF" cellspacing="1" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="48">
+    <tr>
+      <td width="22" height="1"></td>
+      <td bgcolor="#C0C0C0" width="114" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>格式化代码</b></td>
+      <td bgcolor="#C0C0C0" width="575" bordercolor="#C0C0C0" bordercolordark="#FFFFFF" style="border-left-width: 1; border-right-width: 1; border-top-width: 1; border-bottom-style: solid; border-bottom-width: 1" height="1">
+      <b>说明</b></td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      <span lang="en-gb">@</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+  当需要设置格式中某一节按字符串显示，请在该节对应位置加入符号(@)，否则字符串(文本)将不会显示出来。例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;<span lang="en-gb">#;#;#;</span>&quot; 显示 无数据 则为：&quot;&quot; <br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;<span lang="en-gb">#;#;#;@</span>&quot; 显示 无数据 则为：&quot;无数据&quot;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;<span lang="en-gb">@_ </span>号<span lang="en-gb">
+      </span>&quot; 显示 0186 则为：&quot;0186 号&quot; </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      <span lang="en-gb">&quot;&quot;</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      当需要在单元格键入的数字在显示时自动加上一串字符，可将字符括在双引号<span lang="en-gb">(&quot;&quot;)</span>中。例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;<span lang="en-gb"> &quot;人民币&quot;0&quot;万元&quot; </span>&quot; 显示 128 则为：&quot;人民币128万元&quot;
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      <span lang="en-gb">_</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      当需要在单元格键入的数字在显示时自动加上一个空格，可在该字符前加下划线<span lang="en-gb">(_)</span>中。例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;<span lang="en-gb">0.00_ </span>&quot; 显示  
+      <span lang="en-gb">-356.283</span> 则为：&quot;<span lang="en-gb">-356.28
+      </span>&quot; </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      <span lang="en-gb">!</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      当需要在单元格键入的数字在显示时自动加上一个字符，也可在该字符前加感叹号<span lang="en-gb">(!)</span>中。例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;<span lang="en-gb">0!箱 </span>&quot; 显示  
+      <span lang="en-gb">826</span> 则为：&quot;<span lang="en-gb">826箱 </span>&quot;
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      <span lang="en-gb">\</span></td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      当需要在单元格键入的数字在显示时自动加上一个字符，也可在该字符前加反斜杠<span lang="en-gb">(\)</span>中。例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;<span lang="en-gb">\～ 0_ </span>&quot; 显示  
+      <span lang="en-gb">469.3</span> 则为：&quot;～<span lang="en-gb"> 469 </span>&quot;
+      </td>
+    </tr>
+    <tr>
+      <td width="22" height="1"></td>
+      <td width="114" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      *</td>
+      <td width="575" bordercolordark="#FFFFFF" style="border-left-width: 1; border-top-width: 1; border-bottom: 1px solid #C0C0C0" height="1" valign="top">
+      当需要在格式中多次重复一个字符以填满列宽，请在数字格式中加入星号(*)。例如：<br>
+&nbsp;&nbsp;&nbsp; 格式代码：&quot;￥* #,##0.00&quot; 显示 96835.2 则为：&quot;￥&nbsp;&nbsp; 96<span lang="en-gb">,</span>835.2<span lang="en-gb">0</span>&quot;
+      </td>
+    </tr>
+    </table>
+</div>
+
+<p><span id="mydiv11" class="charr1"></span>
+<a href="javascript:viewsample11()" style="text-decoration: none">
+&nbsp;提示</a></p>
+<div id="sample11" style="display: none">
+<ul>
+  <li>数字格式只影响数据的显示，不影响数据的存储和计算。</li>
+  <li>不论是否对含有数字的单元格应用了“文本”格式，都不会改变将数字保存成数字数据。若要将类似证件号码的数字理解成文本，首先应将空白单元格设置成“文本”格式，然后键入数字，此时才会将数字保存成文本数据。</li>
+  <li>打开一份表格文档或从别处复制粘贴表格进入WPS表格中，在其基础上所做的编辑将会受到原文档的格式控制,不同格式的数据有时会具有相似的外表，常常也会有用户因为疏忽这些差异而导致编辑的失败。<br>
+	在WPS表格中，编辑以文本格式控制的文档单元格中键入数字，则会在
+	该单元格左上角标注出绿色小三角符号（如下图所示）。若选择此单元格，则在其左侧或右侧提示用户选择操作。
+	如需改变表格内多个单元格格式，也可以先选中其中一个单元格，并利用“Ctrl”和“Shift”键做多个单元格的选择，然后便可进行转换设置。
+	<br>
+	<img border="0" src="../../../images/Ribbon/wordsnum.png" width="497" height="227"></br></li>
+  </ul>
+
+</div>
+
+
+
+  
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="about_NumberFormat.htm">关于数字格式</a></p>
+<p><a href="set_NumberFormat.htm">设置数字格式</a></p>
+<p><a href="create_Customer_Number_Format.htm">创建和删除自定义的数字格式</a></p>
+
+</body>
+
+</html>

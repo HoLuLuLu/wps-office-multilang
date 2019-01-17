@@ -1,0 +1,112 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>EXACT</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="EXACT">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>EXACT</h1>
+<p>该函数测试两个字符串是否完全相同。如果它们完全相同，则返回 TRUE。否则，返回 FALSE。函数 EXACT 能区分大小写，但忽略格式上的差异。利用函数 
+EXACT 可以测试输入文档内的文本。</p>
+<p><b>语法</b></p>
+<p><b>EXACT</b>(<b>text1</b>,<b>text2</b>)</p>
+<p>Text1 待比较的第一个字符串。<br>
+<br>
+Text2 待比较的第二个字符串。</p>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="298">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="115">A</th>
+   	    <th class="th2" width="150">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="115">第一个字符串</td>
+		<td class = "th2" width="150">第二个字符串</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="117">wps 办公</td>
+		<td class ="ll" width="150">wps 办公</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="117">Wps 办公</td>
+		<td class ="ll" width="150">wps 办公</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="117">wps 办公</td>
+		<td class ="ll" width="150">WPS 办公</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="547">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="148"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=EXACT(A2,B2)</td>
+		<td class ="ll" width="363">测试第一行中的两个字符串是否完全相同 (TRUE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=EXACT(A3,B3)</td>
+		<td class ="ll" width="363">测试第二行中的两个字符串是否完全相同 (FALSE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=EXACT(A4,B4)</td>
+		<td class ="ll" width="363">测试第三行中的两个字符串是否完全相同 (FALSE)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+<p><a href="function_Len.htm">LEN</a></p>
+<p><a href="function_Search.htm">SEARCH</a></p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<html><head>
+<title>TypeBackspace</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例删除插入点（折叠的所选内容）前面的字符。<p>With Selection<br>    &nbsp;&nbsp;&nbsp;    .Collapse Direction:=wpsCollapseEnd<br>    &nbsp;&nbsp;&nbsp;    .TypeBackspace<br>End With<p>　<p>本示例将所选内容扩展到当前段落的末尾（包括段落标记），然后删除所选内容。<p>With Selection<br>    &nbsp;&nbsp;&nbsp;    .EndOf Unit:=wpsParagraph, Extend:=wpsExtend<br>    &nbsp;&nbsp;&nbsp;    .TypeBackspace<br>End With
+</div>
+</body>
+</html>

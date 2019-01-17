@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>Id</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例向当前演示文稿添加一个新形状，再根据&nbsp;ID&nbsp;属性的值填充该形状。<p>With 
+ActivePresentation.Slides(1).Shapes.AddShape(ksoShape5pointStar, 100, 100, 100, 
+100)<br>
+&nbsp;&nbsp;&nbsp; Select Case .Id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case 0 To 500<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+.Fill.ForeColor.RGB = RGB(Red:=255, Green:=0, Blue:=0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case 500 To 1000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+.Fill.ForeColor.RGB = RGB(Red:=255, Green:=255, Blue:=0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case 1000 To 1500<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+.Fill.ForeColor.RGB = RGB(Red:=255, Green:=0, Blue:=255)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case 1500 To 2000<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+.Fill.ForeColor.RGB = RGB(Red:=0, Green:=255, Blue:=0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case 2000 To 2500<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+.Fill.ForeColor.RGB = RGB(Red:=0, Green:=255, Blue:=255)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Case Else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+.Fill.ForeColor.RGB = RGB(Red:=0, Green:=0, Blue:=255)<br>
+&nbsp;&nbsp;&nbsp; End Select<br>
+End With
+</div>
+</body>
+</html>

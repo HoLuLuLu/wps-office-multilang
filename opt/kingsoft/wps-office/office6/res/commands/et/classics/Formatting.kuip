@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.formatting" component="et">
+	<commands>
+		<KxEtFontComboboxCommand hotKey="f" ksoCmd="FontName" aid="1728" fixedWidth="119" icon="FontName" controlType="2" id="FontName" customTip="FontName" comboboxHint="1" text="@Font" rbHotKey="FF"/>
+		<KxFontSizeComboboxCommand hotKey="f" ksoCmd="FontSize" aid="1731" icon="FontSize" fontSizeList="6;8;9;10;11;12;14;16;18;20;22;24;26;28;36;48;72" id="FontSize" customTip="FontSize" comboboxHint="1" text="@Font Size" rbHotKey="FS"/>
+		<KxValueCommand hotKey="l" ksoCmd="FormatAlignLeft" aid="120" icon="AlignLeft" id="AlignLeft" index="-4131" text="@Align Left" rbHotKey="AL"/>
+		<KxValueCommand hotKey="c" ksoCmd="FormatAlignCenter" aid="122" icon="AlignCenter" id="AlignCenter" index="-4108" text="@Center" rbHotKey="AC"/>
+		<KxValueCommand hotKey="r" ksoCmd="FormatAlignRight" aid="121" icon="AlignRight" id="AlignRight" index="-4152" text="@Align Right" rbHotKey="AR"/>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="RecentLineWrap" aid="80040" icon="LineWrap2" id="LineWrap" text="@Wrap Text"/>
+		<KxLegacyTriggerCommand text2="@Merge and 
+Center" hotKey="C" ksoCmd="MergeCenter" aid="402" icon="MergeCenter" id="MergeCenter" customTip="MergeCenter" text="@Merge and Center"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="MergeSelection" aid="80041" icon="MergeSelection" id="MergeSelection" customTip="MergeSelection" text="@Merge Cells" rbHotKey="M"/>
+		<KxLegacyTriggerCommand hotKey="a" ksoCmd="MergeColumns" aid="80042" icon="MergeColumns" id="MergeColumns" text="@Merge Across"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="ColumnsCenter" aid="80043" icon="ColumnsCenter" id="ColumnsCenter" customTip="ColumnsCenter" text="@Center Across" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="MergeCancel" icon="MergeCancel" id="MergeCancel" customTip="MergeCancel" text="@Unmerge Cells"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="Currency" aid="1643" icon="Currency" id="Currency" text="@Currency"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PercentStyle" aid="396" icon="PercentStyle" id="PercentStyle" text="@Percent Style"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="CommaStyle" aid="397" icon="CommaStyle" id="CommaStyle" text="@Comma Style"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="IncreaseDecimal" aid="398" icon="IncreaseDecimal" id="IncreaseDecimal" text="@Increase Decimal"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DecreaseDecimal" aid="399" icon="DecreaseDecimal" id="DecreaseDecimal" text="@Decrease Decimal"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DecreaseIndent" aid="3162" icon="DecreaseIndent" id="DecreaseIndent" text="@Decrease Indent" rbHotKey="5"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="IncreaseIndent" aid="3161" icon="IncreaseIndent" id="IncreaseIndent" text="@Increase Indent" rbHotKey="6"/>
+		<KxStaticGalleryCommand hotKey="b" column="4" ksoCmd="BordersPalette" aid="1618" icon="NoBorder" id="TableOutsideBorder" text="@Borders" ksoTriggerCmd="RecentBorders" hasDynamicIcon="1">
+			<KxStaticGalleryItemCommand aid="203" icon="NoBorder" index="0" qtspyName="NoBorder"/>
+			<KxStaticGalleryItemCommand icon="AllBorders" index="1" qtspyName="AllBorders"/>
+			<KxStaticGalleryItemCommand icon="OutsideBorders" index="2" qtspyName="OutsideBorders"/>
+			<KxStaticGalleryItemCommand icon="ThickBoxBorder" index="3" qtspyName="ThickBoxBorder"/>
+			<KxStaticGalleryItemCommand icon="BottomBorder" index="4" qtspyName="BottomBorder"/>
+			<KxStaticGalleryItemCommand icon="BottomDoubleBorder" index="5" qtspyName="BottomDoubleBorder"/>
+			<KxStaticGalleryItemCommand icon="ThickBottomBorder" index="6" qtspyName="ThickBottomBorder"/>
+			<KxStaticGalleryItemCommand icon="LeftBorder" index="7" qtspyName="LeftBorder"/>
+			<KxStaticGalleryItemCommand icon="TopAndBottomBorder" index="8" qtspyName="TopAndBottomBorder"/>
+			<KxStaticGalleryItemCommand icon="TopAndDoubleBottomBorder" index="9" qtspyName="TopAndDoubleBottomBorder"/>
+			<KxStaticGalleryItemCommand icon="TopAndThickBottomBorder" index="10" qtspyName="TopAndThickBottomBorder"/>
+			<KxStaticGalleryItemCommand icon="RightBorder" index="11" qtspyName="RightBorder"/>
+			<KxLegacyTriggerCommand galleryItemWidth="113" hotKey="d" ksoCmd="ShowBorderToolbar" id="ShowBorderToolbar2" dialogHint="1" galleryItemHeight="24" text="@Draw Borders"/>
+		</KxStaticGalleryCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="Formatting">
+			<command idQ="FontName"/>
+			<command idQ="FontSize"/>
+			<separator/>
+			<command idQ="GrowFont"/>
+			<command idQ="ShrinkFont"/>
+			<separator/>
+			<command idQ="Bold"/>
+			<command idQ="Italic"/>
+			<command idQ="Underline"/>
+			<separator/>
+			<command idQ="AlignLeft"/>
+			<command idQ="AlignCenter"/>
+			<command idQ="AlignRight"/>
+			<command idQ="LineWrap"/>
+			<KxListCommand text2="@Join and
+Center" hotKey="r" ksoCmd="MergeCenter" aid="798" icon="MergeCenter" id="MergeSelectionRef" customTip="MergeCenter" text="@Merge and Center">
+				<command idQ="MergeCenter"/>
+				<command idQ="MergeColumns"/>
+				<command idQ="MergeSelection"/>
+				<command idQ="ColumnsCenter"/>
+				<command idQ="MergeCancel" filter="category=personal"/>
+			</KxListCommand>
+			<separator/>
+			<command idQ="Currency"/>
+			<command idQ="PercentStyle"/>
+			<command idQ="CommaStyle"/>
+			<command idQ="IncreaseDecimal"/>
+			<command idQ="DecreaseDecimal"/>
+			<separator/>
+			<command idQ="DecreaseIndent"/>
+			<command idQ="IncreaseIndent"/>
+			<separator/>
+			<command idQ="TableOutsideBorder"/>
+			<KxEtCellFillThemeCommand hotKey="F" ksoCmd="CellFillColor" aid="1691" barid="4242" icon="TableShadingColor" id="CellFillColor" name="Fill Color" text="@Fill Color" ksoTriggerCmd="RecentCellFillColor">
+				<KxEtMoreColorThemeCommand hotKey="m" aid="100141" colorUsage="FillColor" icon="MoreColor" id="MoreCellFillColors" dialogHint="1" text="@More Fill Colors" rbHotKey="M"/>
+				<KxEtSnapColorCommand hotKey="e" ksoCmd="FillColor" aid="100137" icon="SnapperFill" forceEnabled="1" id="SnapFillColors" text="@Snapper" rbHotKey="E"/>
+			</KxEtCellFillThemeCommand>
+			<KxEtFontThemeCommand hotKey="f" ksoCmd="FontColor" aid="401" barid="4481" icon="ChartFontColor" id="FontColor" name="Font Color" text="@Font Color" ksoTriggerCmd="RecentFontColor">
+				<KxEtMoreColorThemeCommand hotKey="m" ksoCmd="FontColor" aid="100126" colorUsage="FontColor" icon="MoreColor" id="MoreFontColors" dialogHint="1" text="@More Font Colors"/>
+				<KxEtSnapColorCommand hotKey="e" ksoCmd="FontColor" aid="100127" icon="SnapperFill" forceEnabled="1" id="SnapFontColors" text="@Snapper" rbHotKey="E"/>
+			</KxEtFontThemeCommand>
+		</subcommand>
+	</subcommands>
+</shell>

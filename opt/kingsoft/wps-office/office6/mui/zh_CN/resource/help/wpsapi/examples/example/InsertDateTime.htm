@@ -1,0 +1,11 @@
+<html><head>
+<title>InsertDateTime</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在活动文档的页脚以 TIME 域的形式插入当前日期。<p>ActiveDocument.Sections(1).Footers(wpsHeaderFooterPrimary).Range _ <br>    .InsertDateTime DateTimeFormat:="MM dd, yyyy", _ <br>    InsertAsField:=True 
+</div>
+</body>
+</html>

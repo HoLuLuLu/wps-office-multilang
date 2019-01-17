@@ -1,0 +1,196 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>NPV</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="NPV">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>NPV</h1>
+<p>通过使用贴现率以及一系列未来支出（负值）和收入（正值），返回一项投资的净现值。</p>
+<p><b>语法</b></p>
+<p><b>NPV</b>(<b>rate,<span lang="en-gb">value1</span></b>,<span lang="en-gb">value2</span>,<span lang="en-gb">...</span>)</p>
+<p>rate 为某一期间的贴现率，是一固定值。</p>
+<p>Value1, value2, ... 为 1 到 29 个参数，代表支出及收入。</p>
+<ul>
+  <li>Value1, value2, ...在时间上必须具有相等间隔，并且都发生在期末。 </li>
+  <li>NPV 使用 Value1,Value2, <span lang="en-gb">...</span> 
+  的顺序来解释现金流的顺序。所以务必保证支出和收入的数额按正确的顺序输入。 </li>
+  <li>如果参数为数值、空白单元格、逻辑值或数字的文本表达式，则都会计算在内。如果参数是错误值或不能转化为数值的文本，则被忽略。 </li>
+  <li>如果参数是一个数组或引用，则只计算其中的数字。数组或引用中的空白单元格、逻辑值、文字及错误值将被忽略。</li>
+</ul>
+
+<p><b>说明</b> </p>
+<ul>
+  <li>函数 NPV 假定投资开始于 value1 现金流所在日期的前一期，并结束于最后一笔现金流的当期。函数 NPV 
+  依据未来的现金流来进行计算。如果第一笔现金流发生在第一个周期的期初，则第一笔现金必须添加到 函数 NPV 的结果中，而不应包含在 values 
+  参数中。有关详细信息，请参阅下面的示例。 </li>
+  <li>如果 n 是数值参数表中的现金流的次数，则 NPV 的公式如下： <br>
+  <img border="0" src="../../../images/function_NPV.gif" width="135" height="37"></li>
+  <li>函数 NPV 与函数 PV（现值）相似。PV 与 NPV 之间的主要差别在于：函数 PV 允许现金流在期初或期末开始。与可变的 NPV 
+  的现金流数值不同，PV 的每一笔现金流在整个投资中必须是固定的。有关年金与财务函数的详细信息，请参阅函数 <a href="function_PV.htm">PV</a>。 </li>
+  <li>函数 NPV 与函数 IRR（内部收益率）也有关，函数 IRR 是使 NPV 等于零的比率：NPV(IRR(...), ...) = 0。</li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="759">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="137">A</th>
+	    <th class="th1" width="91">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="137">数据</td>
+		<td class = "th1" width="91">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="223"><span lang="en-gb">8</span>%</td>
+		<td class="ll" width="502">年贴现率</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="223">-<span lang="en-gb">8</span>,000</td>
+		<td class="ll" height="20" width="502">一年前的初期投资</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="20" width="223"><span lang="en-gb">3</span>,<span lang="en-gb">5</span>00</td>
+		<td class="ll" height="20" width="502">第一年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class="ll" height="20" width="223"><span lang="en-gb">4</span>,<span lang="en-gb">6</span>00</td>
+		<td class="ll" height="20" width="502">第二年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" height="18" width="223"><span lang="en-gb">6</span>,<span lang="en-gb">8</span>00</td>
+		<td class="ll" height="18" width="502">第三年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class = "th1" width="137">公式</td>
+		<td class = "th1" width="91">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">8</td>
+		<td class="ll" width="223">=NPV(A2, A3, A4, A5, A6)</td>
+		<td class="ll" width="502">该投资的净现值 (<span lang="en-gb">4,243.11</span>)</td>
+	</tr>
+				
+</table>
+
+	<p>
+
+在上例中，将开始投资的 $8，000 作为数值参数中的一个。这是因为付款发生在第一个周期的期末。</p>
+
+<table width="759">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="137">A</th>
+	    <th class="th1" width="91">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="137">数据</td>
+		<td class = "th1" width="91">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="223">8%</td>
+		<td class="ll" width="502">年贴现率。可表示整个投资的通货膨胀率或利率。</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="223">-48,000 </td>
+		<td class="ll" height="20" width="502">初期投资</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="20" width="223">9,300 </td>
+		<td class="ll" height="20" width="502">第一年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class="ll" height="20" width="223">10,600 </td>
+		<td class="ll" height="20" width="502">第二年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" height="20" width="223">12,800 </td>
+		<td class="ll" height="20" width="502">第三年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class="ll" height="20" width="223">15,000 </td>
+		<td class="ll" height="20" width="502">第四年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">8</td>
+		<td class="ll" height="20" width="223">18,200 </td>
+		<td class="ll" height="20" width="502">第五年的收益</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">9</td>
+		<td class = "th1" width="137">公式</td>
+		<td class = "th1" width="91">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">10</td>
+		<td class="ll" width="223">=NPV(A2, A4:A8)+A3 </td>
+		<td class="ll" width="502">该投资的净现值 (3,272.02)</td>
+	</tr>
+				
+	<tr>
+		<td class="tdSeqence" width="20">11</td>
+		<td class="ll" width="223">=NPV(A2, A4:A8, -8000)+A3 </td>
+		<td class="ll" width="502">该投资的净现值，包括第六年中 9000 的赔付 (-1,769.34) </td>
+	</tr>
+				
+</table>
+
+	<p>
+
+在上例中，一开始投资的 $48,000 并不包含在数值参数中，因为此项付款发生在第一期的期初。</p>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>IPMT</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="IPMT">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>IPMT</h1>
+<p>基于固定利率及等额分期付款方式，返回给定期数内对投资的利息偿还额。</p>
+<p><b>语法</b></p>
+<p><b>IPMT</b>(<b>rate,</b><b>per,</b><b>nper,pv</b>,fv,type)</p>
+<p>有关函数 IPMT 中参数的详细说明，请参阅函数 <a href="function_PV.htm">PV</a>。</p>
+<p>rate 为各期利率</p>
+<p>per 用于计算其利息数额的期数，必须在 1 到 nper 之间。</p>
+<p>nper 为总投资期，即该项投资的付款期总数。</p>
+<p>pv 为现值，即从该项投资开始计算时已经入帐的款项，或一系列未来付款的当前值的累积和，也称为本金。</p>
+<p>fv 为未来值，或在最后一次付款后希望得到的现金余额。如果省略 fv，则假设其值为零（例如，一笔贷款的未来值即为零）。</p>
+<p>type 数字 0 或 1，用以指定各期的付款时间是在期初还是期末。</p>
+
+<table width="759" height="55">
+	<tr>
+		<th class="thEmpty" width="20" height="11"></th>
+	    <th class="th1" width="137" height="15">Type 值</th>
+	    <th class="th1" width="91" height="15">支付时间</th>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">0 或省略</td>
+		<td class="ll" width="502" height="16">期末</td>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">1</td>
+		<td class="ll" width="502" height="16">期初 </td>
+	</tr>
+		
+</table>
+
+<p><b>说明</b> </p>
+<ul>
+  <li>应确认所指定的 rate 和 nper 单位的一致性。例如，同样是四年期年利率为 12% 的贷款，如果按月支付，rate 应为 
+  12%/12，nper 应为 4*12。如果按年支付，rate 应为 12%，nper 为 4。 </li>
+  <li>对于所有参数，支出的款项，如银行存款，表示为负数。收入的款项，如股息收入，表示为正数。 </li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="759">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="137">A</th>
+	    <th class="th1" width="91">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="137">数据</td>
+		<td class = "th1" width="91">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="223">8%</td>
+		<td class="ll" width="502">年利率</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="223">1</td>
+		<td class="ll" height="20" width="502">用于计算其利息数额的期数</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="18" width="223">5</td>
+		<td class="ll" height="18" width="502">贷款的年限</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class="ll" height="18" width="223">12000</td>
+		<td class="ll" height="18" width="502">贷款的现值</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class = "th1" width="137">公式</td>
+		<td class = "th1" width="91">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class="ll" width="223">=IPMT(A2/12, A3, A4*12, A5) </td>
+		<td class="ll" width="502">在上述条件下贷款第一个月的利息 (-80.00)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">8</td>
+		<td class="ll" width="223">=IPMT(A2, 5, A4, A5) </td>
+		<td class="ll" width="502">在上述条件下贷款最后一年的利息（按年支付）(-222.63)</td>
+	</tr>
+			
+</table>
+
+<p><b>注意</b> 利率除以 12 将得到月利率。现金支出的年限乘以 12 将得到应偿还的数额。</p>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>ZTEST</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="ZTEST">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et8
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">ZTEST</font></b></p>
+<p>返回 z 检验的单尾概率值。对于给定的假设总体平均值 μ<sub>0</sub>，ZTEST 
+返回样本平均值大于数据集（数组）中观察平均值的概率，即观察样本平均值。 </p>
+<p>若要了解如何在公式中使用 ZTEST 计算双尾概率值的有关信息，请参阅下面的“说明”部分。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">ZTEST</b>(<b class="bterm">array</b>,<b class="bterm">μ<sub>0</sub></b>,sigma)</p>
+<p>Array&nbsp;&nbsp;&nbsp;&nbsp; 用来检验 μ<sub>0</sub> 的数组或数据区域。</p>
+<p>μ<sub>0</sub>&nbsp;&nbsp;&nbsp; 待检验的值。</p>
+<p>Sigma&nbsp;&nbsp;&nbsp;&nbsp; 样本总体（已知）的标准偏差，如果省略，则使用样本标准偏差。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>若 array 为空，则 ZTEST 返回错误值 #N/A。 
+	</li>
+	<li>不省略 sigma 时，函数 ZTEST 的计算公式如下： </li>
+</ul>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/832/220/ZA006051270.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;省略 sigma 
+时，函数 ZTEST 的计算公式如下：</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/166/510/ZA006054798.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其中，x 
+为样本平均值 AVERAGE(array)。s 为样本标准偏差 STDEV(array)。n 为样本中的观察值个数 COUNT(array)。</p>
+<ul class="cntIndent36" type="disc">
+	<li>ZTEST 表示当基础总体平均值为 μ<sub>0</sub> 时，样本平均值大于观察值 AVERAGE(array) 
+	的概率。由于正态分布是对称的，若 AVERAGE(array) &lt; μ<sub>0</sub>，则 ZTEST 的返回值将大于 0.5。 
+	</li>
+</ul>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="364" id="table12">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="334"><font face="宋体">A</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="334">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="334">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">5</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="334"><font size="2">1</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="334"><font size="2">9</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">5</font></td>
+		<td class="ll" width="334"><font size="2">4</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">6</font></td>
+		<td class="ll" width="334"><font size="2">8</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">7</td>
+		<td class="ll" width="334"><font size="2">2</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">8</td>
+		<td class="ll" width="334"><font size="2">7</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">9</td>
+		<td class="ll" width="334"><font size="2">6</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">10</td>
+		<td class="ll" width="334"><font size="2">1</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">11</td>
+		<td class="ll" width="334"><font size="2">3</font></td>
+	</tr>
+	    	
+</table>
+
+<table width="797" id="table13">
+	<tr>
+		<td class="tdSeqence" width="10">12</td>
+		<td class = "th1" width="335">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="429"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10">13</td>
+		<td class="ll" width="335">
+		<font size="2">=ZTEST(A2:A11,4)</font></td>
+		<td class="ll" width="429">
+		<font size="2">假设总体平均值为 4，以上数据集的 z 检验单尾概率值 (0.254655143)</font></td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">14</td>
+		<td class="ll" width="335">
+		<font size="2">=2 * MIN(ZTEST(A2:A11,4), 1 - ZTEST(A2:A11,4))</font></td>
+		<td class="ll" width="429">
+		<font size="2">假设总体平均值为 4，以上数据集的 z 检验双尾概率值 (0.509310287)</font></td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">15</td>
+		<td class="ll" width="335">
+		<font size="2">=ZTEST(A2:A11,6)</font></td>
+		<td class="ll" width="429">
+		<font size="2">假设总体平均值为 6，以上数据集的 z 检验单尾概率值 (0.938194801)</font></td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">16</td>
+		<td class="ll" width="335">
+		<font size="2">=2 * MIN(ZTEST(A2:A11,6), 1 - ZTEST(A2:A11,6))</font></td>
+		<td class="ll" width="429">
+		<font size="2">假设总体平均值为 6，以上数据集的 z 检验双尾概率值 (0.123610398)</font></td>
+	</tr>
+    	
+    </table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

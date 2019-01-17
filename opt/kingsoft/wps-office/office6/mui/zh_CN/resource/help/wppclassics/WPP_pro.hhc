@@ -1,0 +1,1001 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WPS Office软件最终用户许可协议">
+		<param name="Local" value="软件最终用户许可协议/License_pro.htm">
+		<param name="URL" value="软件最终用户许可协议/License_pro.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WPS演示功能概述">
+		<param name="Local" value="NewFnuc.htm">
+		<param name="URL" value="NewFnuc.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="管理文件">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="新建文件">
+			<param name="Local" value="管理文件/newfile.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="文件打包">
+			<param name="Local" value="管理文件/file_package.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="打开文件">
+			<param name="Local" value="管理文件/Openfile.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="保存文件">
+			<param name="Local" value="管理文件/Savefile.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="关闭文件">
+			<param name="Local" value="管理文件/Close_file.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="文件属性">
+			<param name="Local" value="管理文件/File_property.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="文件恢复">
+			<param name="Local" value="管理文件/file_copy.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="输出PDF文件">
+			<param name="Local" value="管理文件/out_pdf.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="文件定时备份">
+			<param name="Local" value="管理文件/file_autosave.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="疑难解答">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="如果因特殊原因程序中止，怎样找回正在编辑的文件？">
+				<param name="Local" value="管理文件/疑难解答/wpp_q3b.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="如果希望用WPS演示直接打开ppt文件，如何快速设置？">
+				<param name="Local" value="管理文件/疑难解答/wpp_q3c.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="创建演示文稿">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="使用空白幻灯片创建演示文稿">
+			<param name="Local" value="创建演示文稿/Set%20up_speech.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="使用现有演示文稿样式新建演示文稿">
+			<param name="Local" value="创建演示文稿/Seed_manuscript_new.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="使用设计模版创建演示文稿">
+			<param name="Local" value="创建演示文稿/Use_stencil.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="疑难解答">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="通过文件菜单新建和通过工具栏按钮新建演示稿有何区别？">
+				<param name="Local" value="创建演示文稿/疑难解答/wpp_q4b.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="如何把自己喜欢的演示文稿添加到模板中？">
+				<param name="Local" value="创建演示文稿/疑难解答/wpp_q4c.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="编辑演示文稿">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="演示视图">
+			<param name="Local" value="编辑演示文稿/wpp_view.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="幻灯片切换">
+			<param name="Local" value="编辑演示文稿/SlideTransition.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="动画方案">
+			<param name="Local" value="编辑演示文稿/AnimationSchemes.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="取色器">
+			<param name="Local" value="编辑演示文稿/Color_picker.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="使用幻灯片">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="插入新幻灯片">
+				<param name="Local" value="编辑演示文稿/使用幻灯片/New_slide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="在演示文稿内复制幻灯片">
+				<param name="Local" value="编辑演示文稿/使用幻灯片/Copy_slide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="更改幻灯片顺序">
+				<param name="Local" value="编辑演示文稿/使用幻灯片/RP_slide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="删除幻灯片">
+				<param name="Local" value="编辑演示文稿/使用幻灯片/Delete_slide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="隐藏和显示幻灯片">
+				<param name="Local" value="编辑演示文稿/使用幻灯片/HS_slide.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="放大或缩小幻灯片">
+				<param name="Local" value="编辑演示文稿/使用幻灯片/BR_slide.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="幻灯片格式">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="版式">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于幻灯片版式">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/版式/About_layout.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="应用幻灯片版式">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/版式/App_layout.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="对幻灯片重新应用版式和字体">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/版式/AnewApp_layout.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="打开或关闭自动版式">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/版式/use_autolayout.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="配色方案">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于配色方案">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/配色方案/color_scheme.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="修改配色方案">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/配色方案/amend_ColorS.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="删除配色方案">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/配色方案/Delete_ColorS.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="应用配色方案">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/配色方案/use_ColorS.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="使用另一个幻灯片或演示文稿的配色方案">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/配色方案/Other_ColorS.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="背景">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改幻灯片背景">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/背景/Rejigger_background.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="隐藏背景图形">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/背景/hide_background.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="模板">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于模板">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/模板/apparent.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="应用设计模板">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/模板/use_apparent.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="通过主题模板创建演示文稿">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/模板/Motif_cyclostyle.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="幻灯片母版">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于幻灯片母版和标题母版">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/幻灯片母版/SM_About.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="在整个演示文稿范围内更改样式">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/幻灯片母版/SM_rejiggermode.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="添加或删除幻灯片母版">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/幻灯片母版/SM_AddOrDel.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="修改及恢复占位符">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/幻灯片母版/SM_Placeholders.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="重命名幻灯片母版">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/幻灯片母版/SM_againcall.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="防止删除幻灯片母版">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/幻灯片母版/SM_avoidDelete.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="在幻灯片中使用幻灯片母版设置的样式">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/幻灯片母版/Use_mode.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="页眉页脚">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于页眉和页脚">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/页眉页脚/About_header2footer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="添加页眉和页脚">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/页眉页脚/Add_header2footer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="对页眉和页脚格式化、定位和调整大小">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/页眉页脚/Format_header2footer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="在幻灯片的任何位置上添加日期、时间或幻灯片编号">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/页眉页脚/RP_AppendDate.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改幻灯片起始编号">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/页眉页脚/RI_number.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="对页眉和页脚重新应用占位符">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/页眉页脚/AnewApp_placeholder.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="删除页眉和页脚">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/页眉页脚/Delete_header2footer.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="超链接">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于超链接">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/超链接/About_hyperlink.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="创建超链接">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/超链接/Found_hyperlink.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改超链接">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/超链接/Rejigger_hyperlink.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="删除超链接">
+					<param name="Local" value="编辑演示文稿/幻灯片格式/超链接/Delete_hyperlink.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="文本格式">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="添加文本">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于演示文稿中的文本">
+					<param name="Local" value="编辑演示文稿/文本格式/添加文本/About_text.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="向幻灯片中添加文本">
+					<param name="Local" value="编辑演示文稿/文本格式/添加文本/Add_text.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入符号或特殊字符">
+					<param name="Local" value="编辑演示文稿/文本格式/添加文本/Plug_emblem.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="设置格式">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置文字格式">
+					<param name="Local" value="编辑演示文稿/文本格式/Wpp_character.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置段落格式">
+					<param name="Local" value="编辑演示文稿/文本格式/wpp_paragraph.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="项目符号和编号">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于项目符号和编号">
+					<param name="Local" value="编辑演示文稿/文本格式/项目符号和编号/wpp_bullets.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="添加或删除项目符号和编号">
+					<param name="Local" value="编辑演示文稿/文本格式/项目符号和编号/wpp_addbullets.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="调整项目符号或编号的位置">
+					<param name="Local" value="编辑演示文稿/文本格式/项目符号和编号/tune_bullets.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改列表中的项目符号样式">
+					<param name="Local" value="编辑演示文稿/文本格式/项目符号和编号/rejigger_bullets.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改列表中的编号样式">
+					<param name="Local" value="编辑演示文稿/文本格式/项目符号和编号/rejigger_number.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改项目编号列表中的起始编号">
+					<param name="Local" value="编辑演示文稿/文本格式/项目符号和编号/incept_number.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="将图片文件用作项目符号">
+					<param name="Local" value="编辑演示文稿/文本格式/项目符号和编号/picture_bullets.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="查找和替换文本">
+				<param name="Local" value="编辑演示文稿/文本格式/lookupdisplace_text.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="对象">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="关于对象">
+				<param name="Local" value="编辑演示文稿/对象/Obj_PAbout.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="选择对象">
+				<param name="Local" value="编辑演示文稿/对象/choice_object.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="移动对象">
+				<param name="Local" value="编辑演示文稿/对象/move_object.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="调整对象大小">
+				<param name="Local" value="编辑演示文稿/对象/adjust_object.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="旋转和翻转对象">
+				<param name="Local" value="编辑演示文稿/对象/Obj_Rotate.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="自选图形">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于自选图形">
+					<param name="Local" value="编辑演示文稿/对象/自选图形/About_optionallogo.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入自选图形对象">
+					<param name="Local" value="编辑演示文稿/对象/自选图形/insert_optionallogo.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="绘制线条对象">
+					<param name="Local" value="编辑演示文稿/对象/自选图形/Obj_NewLine.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="为线条添加或删除箭头">
+					<param name="Local" value="编辑演示文稿/对象/自选图形/Add_arrowhead.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="连接符的使用">
+					<param name="Local" value="编辑演示文稿/对象/自选图形/Obj_PConnectors.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="文本框和竖排文本框">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入文本框或竖排文本框">
+					<param name="Local" value="编辑演示文稿/对象/文本框和竖排文本框/insert_textbox.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置形状或文本框中文字的起始点">
+					<param name="Local" value="编辑演示文稿/对象/文本框和竖排文本框/setting_textboxform.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="为形状或文本框中的文字设置换行">
+					<param name="Local" value="编辑演示文稿/对象/文本框和竖排文本框/newline_textbox.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改形状或文本框中文字周围的边距">
+					<param name="Local" value="编辑演示文稿/对象/文本框和竖排文本框/rejigger_form.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="调整形状或文本框大小以适应其中的文字">
+					<param name="Local" value="编辑演示文稿/对象/文本框和竖排文本框/tune_size.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="将文本框中文字旋转">
+					<param name="Local" value="编辑演示文稿/对象/文本框和竖排文本框/eddy_character.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="艺术字">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入艺术字">
+					<param name="Local" value="编辑演示文稿/对象/艺术字/insert_art.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="更改艺术字内容">
+					<param name="Local" value="编辑演示文稿/对象/艺术字/alter_content.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="改变艺术字效果">
+					<param name="Local" value="编辑演示文稿/对象/艺术字/alter_impact.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="图片">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入图片">
+					<param name="Local" value="编辑演示文稿/对象/图片/insert_pictuer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="图片裁剪">
+					<param name="Local" value="编辑演示文稿/对象/图片/reduce_pictuer.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="图片尺寸">
+					<param name="Local" value="编辑演示文稿/对象/图片/pictuer_size.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="图象调整">
+					<param name="Local" value="编辑演示文稿/对象/图片/tune_image.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="恢复图片原始效果">
+					<param name="Local" value="编辑演示文稿/对象/图片/revert_image.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="多媒体设置">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入多媒体对象">
+					<param name="Local" value="编辑演示文稿/对象/多媒体设置/insert_media.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="编辑多媒体对象">
+					<param name="Local" value="编辑演示文稿/对象/多媒体设置/compilation_object.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="播放声音或影片">
+					<param name="Local" value="编辑演示文稿/对象/多媒体设置/play_object.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入背景音乐">
+					<param name="Local" value="编辑演示文稿/对象/多媒体设置/insert_bgmusic.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入Flash动画">
+					<param name="Local" value="编辑演示文稿/对象/多媒体设置/insert_flash.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="播放Flash动画">
+					<param name="Local" value="编辑演示文稿/对象/多媒体设置/show_flash.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="嵌入式对象">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="插入嵌入式对象">
+					<param name="Local" value="编辑演示文稿/对象/嵌入式对象/bed_object.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置嵌入式对象动作">
+					<param name="Local" value="编辑演示文稿/对象/嵌入式对象/setting_action.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="设置对象基本格式">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="对象的基本格式">
+					<param name="Local" value="编辑演示文稿/对象/设置对象基本格式/Obj_Format.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置对象效果">
+					<param name="Local" value="编辑演示文稿/对象/设置对象基本格式/Obj_3d.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="线条的编辑">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="编辑顶点">
+					<param name="Local" value="编辑演示文稿/对象/线条的编辑/compilation_acme.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="编辑线段">
+					<param name="Local" value="编辑演示文稿/对象/线条的编辑/compilation_seam.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="组合和堆砌对象">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="对象组合">
+					<param name="Local" value="编辑演示文稿/对象/组合和堆砌对象/Obj_PGrouping.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="对象层次">
+					<param name="Local" value="编辑演示文稿/对象/组合和堆砌对象/Obj_Layer.htm">
+					</OBJECT>
+			</UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="对齐和排列对象">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="对象的对齐和分布">
+					<param name="Local" value="编辑演示文稿/对象/对齐和排列对象/Obj_PAlignDistribute.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="将对象按网格对齐">
+					<param name="Local" value="编辑演示文稿/对象/对齐和排列对象/Obj_AlignbyGriding.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="将对象按参考线对齐">
+					<param name="Local" value="编辑演示文稿/对象/对齐和排列对象/Obj_AlignbyLine.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置网络线间距">
+					<param name="Local" value="编辑演示文稿/对象/对齐和排列对象/space_between.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="显示或隐藏网格">
+					<param name="Local" value="编辑演示文稿/对象/对齐和排列对象/show_reseau.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="显示或隐藏标尺">
+					<param name="Local" value="编辑演示文稿/对象/对齐和排列对象/staff_guage.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="显示或隐藏参考线">
+					<param name="Local" value="编辑演示文稿/对象/对齐和排列对象/show_line.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="表格">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="创建表格">
+				<param name="Local" value="编辑演示文稿/表格/found_table.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="设置表格格式">
+				<param name="Local" value="编辑演示文稿/表格/Table_Format.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="表格操作">
+				<param name="Local" value="编辑演示文稿/表格/Table_Operate.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="表格样式">
+				<param name="Local" value="编辑演示文稿/表格/table_style.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="表格样式选项">
+				<param name="Local" value="编辑演示文稿/表格/Table_style_item.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="设置自定义动画">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="关于自定义动画">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/CA_about.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="关于自定义动画任务窗格">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/about_CArolepane.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="为文本和对象添加动画">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/append_cartoon.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="删除动画效果">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/delete_cartoon.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="按字母或段落动画显示文本">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/CA_show.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="更改文本或对象的动画">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/rejigger_cartoon.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="为动画文本或对象创建平稳的开始或结束">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/calmbegin.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="为文本和对象设置路径动画">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/setting_path.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="更改动作路径">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/rejigger_action.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="自定义动作路径">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/cartoonpath.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="更改动画序列">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/rejigger_list.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="设置动画播放后的特殊效果">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/rejigger_impact.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="更改动画计时">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/rejigger_timing.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="高级日程表">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/calendar.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="循环播放动画">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/cycplay_cartoon.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="预览动画效果">
+				<param name="Local" value="编辑演示文稿/自定义动画设置/preview_cartoon.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="设置对象动作">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="用声音强调超连接">
+				<param name="Local" value="编辑演示文稿/设置对象动作/SI_hyperlink.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="插入动作按钮">
+				<param name="Local" value="编辑演示文稿/设置对象动作/insert_button.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="自定义放映">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="创建自定义放映">
+				<param name="Local" value="编辑演示文稿/自定义放映/establish_view.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="演示自定义放映">
+				<param name="Local" value="编辑演示文稿/自定义放映/custom_view.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="删除自定义放映">
+				<param name="Local" value="编辑演示文稿/自定义放映/delete_view.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="疑难解答">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="如何快速改变对象的形状？">
+				<param name="Local" value="编辑演示文稿/疑难解答/wpp_q2a.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="在幻灯片设计的任务窗格中，选中一个设计模板，其下拉菜单中“应用于”一栏为什么有时是两项命令有时是三项命令？">
+				<param name="Local" value="编辑演示文稿/疑难解答/wpp_q5a.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="在制作演示文稿过程中，如何记录使用过的设计模板？">
+				<param name="Local" value="编辑演示文稿/疑难解答/wpp_q5b.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="怎样可以一次性地为演示稿中所有的对象添加上动画效果？">
+				<param name="Local" value="编辑演示文稿/疑难解答/wpp_q5c.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="为什么有时设置页眉页脚无效？">
+				<param name="Local" value="编辑演示文稿/疑难解答/wpp_q5d.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="随意画的几个图形，大小都不一致，如何用最简单的办法使它们的大小一致？">
+				<param name="Local" value="编辑演示文稿/疑难解答/wpp_q5e.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="运行演示文稿">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="设置放映方式">
+			<param name="Local" value="运行演示文稿/Play_Setup.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="播放演示文稿">
+			<param name="Local" value="运行演示文稿/Play_SlideShow.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="双屏播放">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="关于双屏播放">
+				<param name="Local" value="运行演示文稿/双屏播放/about_2screen.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="运行双屏播放">
+				<param name="Local" value="运行演示文稿/双屏播放/play_2screen.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="双屏扩展模式向导">
+				</OBJECT>
+			<UL>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="关于双屏扩展模式向导">
+					<param name="Local" value="运行演示文稿/双屏播放/双屏播放扩展模式/about_guide.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置监视器物理匹配">
+					<param name="Local" value="运行演示文稿/双屏播放/双屏播放扩展模式/set_monitor.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="设置屏幕分辨率及颜色质量">
+					<param name="Local" value="运行演示文稿/双屏播放/双屏播放扩展模式/set_screen.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="使用当前选择设备作为主监视器">
+					<param name="Local" value="运行演示文稿/双屏播放/双屏播放扩展模式/use_existemt.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="将Windows桌面扩展到当前选择的监视器上">
+					<param name="Local" value="运行演示文稿/双屏播放/双屏播放扩展模式/spread_desktop.htm">
+					</OBJECT>
+			</UL>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="播放标记">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="关于播放标记">
+				<param name="Local" value="运行演示文稿/播放标记/about_playmark.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="绘制播放标记">
+				<param name="Local" value="运行演示文稿/播放标记/draw_playmark.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="擦除播放标记">
+				<param name="Local" value="运行演示文稿/播放标记/del_playmark.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="保存播放标记">
+				<param name="Local" value="运行演示文稿/播放标记/save_playmark.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="触发器">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="关于触发器">
+				<param name="Local" value="运行演示文稿/触发器/about_trigger.htm">
+				<param name="ImageNumber" value="9">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="插入触发器">
+				<param name="Local" value="运行演示文稿/触发器/insert_trigger.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="触发器效果播放">
+				<param name="Local" value="运行演示文稿/触发器/play_trigger.htm">
+				</OBJECT>
+		</UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="疑难解答">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="改变了某一页的动画效果想切换到放映视图，怎样可以从当前页开始播放？">
+				<param name="Local" value="运行演示文稿/疑难解答/wpp_q6a.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="对于一篇完整的演示稿，如果只想挑其中的一部分展示给听众，应该如何设置？">
+				<param name="Local" value="运行演示文稿/疑难解答/wpp_q6b.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="放映过程中如果有一两页是不希望被播放的，应该如何设置？">
+				<param name="Local" value="运行演示文稿/疑难解答/wpp_q6c.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="打印演示文稿">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="关于打印">
+			<param name="Local" value="打印演示文稿/wpp_print.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="打印设置">
+			<param name="Local" value="打印演示文稿/wpp_printset.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="打印预览">
+			<param name="Local" value="打印演示文稿/wpp_printview.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="页面设置">
+			<param name="Local" value="打印演示文稿/page_setup.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="疑难解答">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="没有提供备注/讲义母版和备注页视图的情况下，如何打印需要的相关内容？">
+				<param name="Local" value="打印演示文稿/疑难解答/wpp_q2c.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="WPS传统的反片打印，在WPS演示中支持吗？">
+				<param name="Local" value="打印演示文稿/疑难解答/wpp_q7a.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="可以打印隐藏幻灯片吗？">
+				<param name="Local" value="打印演示文稿/疑难解答/wpp_q7b.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="协同办公">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="发送邮件">
+			<param name="Local" value="协同办公/sendmail.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="保护文档">
+			<param name="Local" value="协同办公/wpp_protectfile.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="文档缩略图">
+			<param name="Local" value="协同办公/summary_info.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="插入批注">
+			<param name="Local" value="协同办公/insert_comment.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="关于批注">
+			<param name="Local" value="协同办公/about_comment.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="删除批注">
+			<param name="Local" value="协同办公/delete_comment.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="显示/隐藏批注">
+			<param name="Local" value="协同办公/display_comment.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="编辑批注">
+			<param name="Local" value="协同办公/modify_comment.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="公式编辑器">
+			</OBJECT>
+		<UL>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="公式编辑器简介">
+				<param name="Local" value="协同办公/公式编辑器/Tool_EquationEditor01.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="使用公式编辑器">
+				<param name="Local" value="协同办公/公式编辑器/Tool_EquationEditor02.htm">
+				</OBJECT>
+		</UL>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="快捷键列表">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="快捷键列表">
+			<param name="Local" value="快捷健列表/wpp_KS.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更换界面风格">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="更换界面风格">
+			<param name="Local" value="更换界面风格/About_Interface.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="产品技术支持">
+		<param name="Local" value="wpp_support.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

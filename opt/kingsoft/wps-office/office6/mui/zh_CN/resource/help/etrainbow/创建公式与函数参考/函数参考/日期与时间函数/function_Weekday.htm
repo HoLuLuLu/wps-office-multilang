@@ -1,0 +1,123 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>WEEKDAY</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="WEEKDAY">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>WEEKDAY</h1>
+<p>返回某日期为星期几。默认情况下，其值为 1（星期天）到 7（星期六）之间的整数。</p>
+<p><b>语法</b></p>
+<p><b>WEEKDAY</b>(<b>serial_number</b>,return_type)</p>
+
+<p class = "pindent">Serial_number&nbsp;&nbsp; 表示一个顺序的序列号，代表要查找的那一天的日期。应使用 DATE 
+函数键入日期，或者将函数作为其他公式或函数的结果键入。例如，使用 DATE(2008,5,23) 键入 2008 年 5 月 23 日。如果日期以文本的形式键入，则会出现问题。</p>
+<p class = "pindent">Return_type&nbsp;&nbsp; 为确定返回值类型的数字。</p>
+
+<table width="598">
+	<tr>
+		<td class = "th1">Return_type</td>
+		<td class = "th2" width="474">返回的数字</td>
+	</tr>
+	<tr>
+		<td class = "ll">1 或省略</td>
+		<td class = "ll">数字 1（星期日）到数字 7（星期六）。</td>
+	</tr>
+	<tr>
+		<td class = "ll">2</td>
+		<td class = "ll">数字 1（星期一）到数字 7（星期日）。</td>
+	</tr>
+	<tr>
+		<td class = "ll">3</td>
+		<td class = "ll">数字 0（星期一）到数字 6（星期日）。</td>
+	</tr>
+</table>
+
+
+
+<p><b>说明</b> </p>
+<p>WPS表格 可将日期存储为可用于计算的序列号。默认情况下，1900 年 1 月 1 日<span lang="en-gb"></span><span lang="en-gb"></span><span lang="en-gb"></span>的序列号是 1 <span lang="en-gb">,</span>而 2008 年 1 月 1 
+日的序列号是 39448，这是因为它距 1900 年 1 月 1 日<span lang="en-gb"></span><span lang="en-gb"></span><span lang="en-gb"></span>有 39448 天。</p>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="653">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="126">A</th>
+	    <th class="th1" width="102">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="126">日期</td>
+		<td class = "th1" width="102">　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class="ll" width="187">2008-<span lang="en-gb">8</span>-1</td>
+		<td class="ll" width="433">　</td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="19"><span lang="en-gb">3</span></td>
+		<td class = "th1" width="126"><b>公式</b></td>
+		<td class = "th2" width="433"><b>说明（结果）</b></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="19"><span lang="en-gb">4</span></td>
+		<td class = "ll">=WEEKDAY(A2)</td>
+		<td class = "ll">具有数字 1（星期日）到数字 7（星期六）的星期号 (<span lang="en-gb">6</span>)</td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="19"><span lang="en-gb">5</span></td>
+		<td class = "ll">=WEEKDAY(A2,2)</td>
+		<td class = "ll">具有数字 1（星期一）到数字 7（星期日）的星期号 (<span lang="en-gb">5</span>)</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19"><span lang="en-gb">6</span></td>
+		<td class = "ll">=WEEKDAY(A2,3)</td>
+		<td class = "ll">具有数字 0（星期一）到数字 6（星期日）的星期号 (<span lang="en-gb">4</span>)</td>
+	</tr>
+
+</table>
+
+
+
+<p><b>注意&nbsp;&nbsp; </b>2008-<span lang="en-gb">8</span>-1 为星期五。</p>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_datetime.htm">日期与时间函数</a></p>
+
+
+
+<p>　</p>
+
+
+
+</body>
+
+</html>

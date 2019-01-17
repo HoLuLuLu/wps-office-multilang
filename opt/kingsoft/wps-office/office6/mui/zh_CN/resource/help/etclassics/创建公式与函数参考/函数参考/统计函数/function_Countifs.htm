@@ -1,0 +1,154 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>COUNTIFS</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="table1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1><font size="3">COUNTIFS</font></h1>
+<p><font size="2">将条件应用于跨多个区域的单元格，并计算符合所有条件的次数。</font></p>
+<p><b><font size="2">语法</font></b></p>
+<div border="0">
+	<div class="cdclvSection" jQuery1299247544734="12">
+		<div class="cntArticleBody" id="m_article">
+			<pre><b>COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]…)</b></pre>
+		</div>
+	</div>
+	<div class="cdclvSection" jQuery1299247544734="12">
+		<div class="cntArticleBody" id="m_article0">
+			<font size="2">criteria_range1&nbsp;&nbsp;&nbsp;&nbsp;在其中计算关联条件的第一个区域。 </font>
+			<p><font size="2">
+			criteria1&nbsp;&nbsp;&nbsp;&nbsp;条件的形式为数字、表达式、单元格引用或文本，可用来定义将对哪些单元格进行计数。如，条件可以表示为 
+			41、&quot;&gt;41&quot;、D3、&quot;香蕉&quot; 或 &quot;41&quot;。 </font></p>
+			<p><font size="2">criteria_range2, criteria2, 
+			...&nbsp;&nbsp;&nbsp;&nbsp;附加的区域及其关联条件。最多允许 127 个区域/条件对。</font></div>
+	</div>
+	<p><b><font size="2">说明</font></b></p>
+	<div class="cdclvSection" jQuery1299247544734="12">
+		<div class="cntArticleBody" id="m_article1">
+			<ul class="cntIndent36" type="disc">
+				<li>
+				<p style="line-height: 150%"><font size="2">每个区域的条件一次应用于一个单元格。若所有的第一个单元格都满足其关联条件，则计数增加 
+				1。如果所有的第二个单元格都满足其关联条件，则计数再增加 1，依此类推，直到计算完所有单元格。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若条件参数是对空单元格的引用，COUNTIFS 会将该单元格的值视为 0(零)。 
+				</font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">您可以在条件中使用通配符，即问号 (?) 和星号 
+				(*)。问号匹配任一单个字符。星号匹配任一字符序列。若要查找实际的问号或星号，请在字符前键入波形符 (<b class="bterm">~</b>)。</font></li>
+			</ul>
+		</div>
+	</div>
+
+<p><b><font size="2">示例</font></b></p>
+<p><font size="2">如果将示例复制到空白工作表中，可能会更易于理解该示例。</font></p>
+
+<table id="table8" width="267" border="0">
+	<tr>
+		<th class="thEmpty" width="21" height="19"></th>
+	    <th class="th1" width="93" height="19" align="left" bgcolor="#C0C0C0"><font size="2">
+		A</font></th>
+	    <th class="th1" height="19" align="left" bgcolor="#C0C0C0"><font size="2">
+		B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="21" bgcolor="#C0C0C0" align="center" height="18"><b><font size="2">
+		1</font></b></td>
+		<td class = "th1" width="93" align="left" bgcolor="#C0C0C0" height="18"><b>
+		<font size="2">数据</font></b></td>
+		<td class = "th1" align="left" bgcolor="#C0C0C0" height="18"><b><font size="2">数据</font></b></td>
+		</tr>
+	<tr>
+		<td class="tdSeqence" width="21" bgcolor="#C0C0C0" align="center">
+		<font size="2"><b>2</b></font></td>
+		<td class = "th1" width="93" bordercolorlight="#FFFFFF"><font size="2">2</font></td>
+		<td class="ll" bordercolorlight="#FFFFFF"><font size="2">2011-3-7</font></td>
+		</tr>
+	<tr>
+		<td class="tdSeqence" width="21" bgcolor="#C0C0C0" align="center">
+		<font size="2"><b>3</b></font></td>
+		<td class = "th1" width="93" bordercolorlight="#FFFFFF"><font size="2">4</font></td>
+		<td class="ll" bordercolorlight="#FFFFFF"><font size="2">2011-3-6</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="21" bgcolor="#C0C0C0" align="center">
+		<font size="2"><b>4</b></font></td>
+		<td class="ll" width="93" bordercolorlight="#FFFFFF"><font size="2">6</font></td>
+		<td class="ll" bordercolorlight="#FFFFFF"><font size="2">2011-3-5</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="21" bgcolor="#C0C0C0" align="center"><b>
+		<font size="2">5</font></b></td>
+		<td class="ll" width="93" bordercolorlight="#FFFFFF"><font size="2">8</font></td>
+		<td class="ll" bordercolorlight="#FFFFFF"><font size="2">2011-3-4</font></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="21" bgcolor="#C0C0C0" align="center"><b>
+		<font size="2">6</font></b></td>
+		<td class="ll" width="93" bordercolorlight="#FFFFFF"><font size="2">10</font></td>
+		<td class="ll" bordercolorlight="#FFFFFF"><font size="2">2011-3-3</font></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="21" bgcolor="#C0C0C0" align="center"><b>
+		<font size="2">7</font></b></td>
+		<td class="ll" width="93" bordercolorlight="#FFFFFF"><font size="2">12</font></td>
+		<td class="ll" bordercolorlight="#FFFFFF"><font size="2">2011-3-2</font></td>
+	</tr>
+
+</table>
+<font size="2">
+<br>
+</font>
+	<table id="table9">
+
+	<tr>
+		<td class ="tdEmpty" width="20" height="19" ></td>
+		<td class = "th1" bgcolor="#C0C0C0" height="19"><b><font size="2">公式</font></b></td>
+		<td class = "th2" width="642" bgcolor="#C0C0C0" height="19"><b><font size="2">说明（结果）</font></b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" width="20">　</td>
+		<td class="ll"><font size="2">=COUNTIFS(A2:A7,&quot;&lt;10&quot;,A2:A7，&quot;&gt;2&quot;)</font></td>
+		<td class="ll"><font size="2">计算 2 到 10 之间（不包括 2 和 10）有几个数包含在单元格 A2 到 A7 
+		中（3）</font></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" width="20">　</td>
+		<td class="ll"><font size="2">=COUNTIFS(A2:A7,&quot;&lt;12&quot;,B2:B7,&quot;&gt;2011-3-4&quot;)</font></td>
+		<td class="ll"><font size="2">计算单元格 A2 到 A7 中包含小于 12 的数，同时在单元格 B2 到 B7 
+		中包含晚于2011-3-4的日期的行数（3）</font></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+<p>　</p>
+
+
+
+
+<p><b><font size="2">相关功能</font></b></p>
+<p><a href="functionlist_stat.htm"><font size="2">统计函数</font></a></p>
+
+
+
+</body>
+
+</html>

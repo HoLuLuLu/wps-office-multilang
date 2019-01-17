@@ -1,0 +1,100 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>SINH</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="SINH">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>SINH</h1>
+<p>返回某一数字的双曲正弦值。</p>
+<p><b>语法</b></p>
+<p><b>SINH（number）</b></p>
+<p>Number&nbsp;&nbsp;&nbsp;&nbsp;为任意实数。</p>
+<p><b>说明</b></p>
+<p>双曲正弦的计算公式如下：</p>
+<p>
+<img border="0" src="../../../images/Ribbon/Sinh.png" width="128" height="49"></p>
+
+<p><b>示例1</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class ="ll">=SINH<span lang="en-us"></span>(1)</td>
+		<td class ="ll">1 的双曲正弦值 (1.175201194)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class ="ll">=SINH<span lang="en-us"></span>(-1)</td>
+		<td class ="ll">-1 的双曲正弦值 (-1.175201194)</td>
+	</tr>
+</table>
+<p><b>示例2</b></p>
+<p>可以使用双曲正弦函数来估计分布的累积概率。假设实验检测值在 0 到 10 秒之间变化。对于实验所搜集的历史数据的经验分析表明：结果 x 小于 t 秒的概率可用下面的等式进行估计：
+<br>P(x&lt;t) = 2.868 * SINH(0.0342 * t)，式中 0&lt;t&lt;10
+<br>若要计算结果小于 1.03 秒的概率，请用 1.03 代替 t。
+<br>如果您将示例复制到空白工作表中，可能会更易于理解该示例。
+</p>
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class ="ll">=2.868*SINH(0.0342*1.03)</td>
+		<td class ="ll">得到结果小于 1.03 秒的概率 (0.101049063)</td>
+	</tr>
+</table>
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_Math.htm">数学与三角函数</a></p>
+
+
+
+</body>
+
+</html>

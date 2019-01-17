@@ -1,0 +1,116 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>FIXED</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="FIXED">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">FIXED</font></b></p>
+<p>将数字按指定的小数位数进行取整，利用句号和逗号，以小数格式对该数进行格式设置，并以文本形式返回结果。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">FIXED</b>(<b class="bterm">number</b>,decimals,no_commas)</p>
+<p>Number&nbsp;&nbsp;&nbsp;&nbsp; 要进行四舍五入并转换为文本字符串的数。</p>
+<p>Decimals&nbsp;&nbsp;&nbsp;&nbsp; 一数值，用以指定小数点右边的小数位数。</p>
+<p>No_commas&nbsp;&nbsp;&nbsp;&nbsp; 一逻辑值，如果为 TRUE，则会禁止 FIXED 在返回的文本中包含逗号。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>若 Decimals 为负数，则参数 number 舍入到小数点左边。 
+	</li>
+	<li>若省略小数，则假设其值为 2。 
+	</li>
+	<li>若其值为 FALSE 或被省略，则返回的文本中和往常一样包含逗号。 
+	</li>
+	<li>该函数与使用“格式”菜单下<br>
+的“单元格”命令格式化包含数字的单元格的主要区别在于：函数 FIXED 
+	将其结果转换成文本，而“单元格”命令格式化的结果仍是数字。 </li>
+</ul>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="243" id="table8">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="214">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="214">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19">2</td>
+		<td class ="ll" width="214">4567.89</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="214">-4567.89</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="214">77.888</td>
+	</tr>
+		
+	
+	</table>
+
+<table width="716" id="table9">
+	<tr>
+		<td class="tdSeqence" width="19">5</td>
+		<td class = "th1" width="214">公式</td>
+		<td class = "th2" width="469">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19">6</td>
+		<td class ="ll" width="214">=FIXED(A2, 1)</td>
+		<td class ="ll" width="469">将第一个数四舍五入到小数点右边一位 (4,567.9)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19">7</td>
+		<td class ="ll" width="214">=FIXED(A2, -1)</td>
+		<td class ="ll" width="469">将第一个数四舍五入到小数点左边一位 (4,570)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19">8</td>
+		<td class ="ll" width="214">=FIXED(-4567.89, -1, TRUE)</td>
+		<td class ="ll" width="469">将第二个数四舍五入到小数点左边一位，并且返回的文本中不包含逗号 (-4570)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19">9</td>
+		<td class ="ll" width="214">=FIXED(77.888)</td>
+		<td class ="ll" width="469">将第三个数四舍五入到小数点右边二位 (77.89)</td>
+	</tr>
+		
+	
+	</table>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+
+
+
+</body>
+
+</html>

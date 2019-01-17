@@ -1,0 +1,129 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>SYD</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="SYD">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>PRICE</h1>
+<p>返回定期付息的面值 $100 的有价证券的价格。</p>
+<p><b>语法</b></p>
+	<p><b>PRICE(settlement,maturity,rate,yld,redemption,frequency,</b>basis)<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	要点&nbsp;应使用 DATE 函数来输入日期，或者将日期作为其他公式或函数的结果输入。例如，使用函数 DATE(2008,5,23) 输入 2008 年 5 
+	月 23 日。如果日期以文本的形式输入，则会出现问题。<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	Settlement&nbsp;为证券的成交日。即在发行日之后，证券卖给购买者的日期。<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	Maturity&nbsp;为有价证券的到期日。到期日是有价证券有效期截止时的日期。<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	Rate&nbsp;为有价证券的年息票利率。<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	Yld&nbsp;为有价证券的年收益率。<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	Redemption&nbsp;为面值 $100 的有价证券的清偿价值。<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	Frequency&nbsp;为年付息次数，如果按年支付，frequency = 1；按半年期支付，frequency = 2；按季支付，frequency = 
+	4。<br style="color: rgb(100, 100, 100); font-family: Arial, Verdana; font-size: 14px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 22px; orphans: 2; text-align: -webkit-auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); ">
+	Basis&nbsp;为日计数基准类型。<table width="759" height="55" id="table1">
+	<tr>
+		<th class="thEmpty" width="20" height="11"></th>
+	    <th class="th1" width="137" height="15">BASIS</th>
+	    <th class="th1" width="91" height="15">日计数基准</th>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">0或者省略</td>
+		<td class="ll" width="502" height="16">
+		美国（美国证券交易商协会）30/360</td>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">1</td>
+		<td class="ll" width="502" height="16">实际天数/实际天数</td>
+	</tr>
+		
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">2</td>
+		<td class="ll" width="502" height="16">实际天数/360</td>
+	</tr>
+		
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">3</td>
+		<td class="ll" width="502" height="16">实际天数/365</td>
+	</tr>
+		
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">4</td>
+		<td class="ll" width="502" height="16">欧洲 30/360</td>
+	</tr>
+		
+</table>
+
+<p><b>说明 </b>
+<ul>
+	<li>
+	<p class="T">WPS Office可将日期存储为可用于计算的序列号。默认情况下，1900 年 1 月 1 日的序列号是 1，而 2008 
+	年 1 月 1 日的序列号是 39448，这是因为它距 1900 年 1 月 1 日有 39448 天。</li>
+	<li>
+	<p class="T">成交日是购买者买入息票（如债券）的日期。到期日是息票有效期截止时的日期。例如，在 2008 年 1 月 1 日发行的 30 
+	年期债券，六个月后被购买者买走。则发行日为 2008 年 1 月 1 日，成交日为 2008 年 7 月 1 日，而到期日则是在发行日 2008 年 1 
+	月 1 日的 30 年后，即 2038 年 1 月 1 日。</li>
+	<li>
+	<p class="T">Settlement、maturity、frequency 和 basis 将被截尾取整。</li>
+	<li>
+	<p class="T">如果 settlement 或 maturity 不是合法日期，函数 PRICE 返回错误值 #NUM!。</li>
+	<li>
+	<p class="T">如果 yld &lt; 0 或 rate &lt; 0，函数 PRICE 返回错误值 #NUM!。</li>
+	<li>
+	<p class="T">如果 redemption ≤ 0，函数 PRICE 返回错误值 #NUM!。</li>
+	<li>
+	<p class="T">如果 frequency 不为 1、2 或 4，函数 PRICE 返回错误值 #NUM!。</li>
+	<li>
+	<p class="T">如果 basis &lt; 0 或 basis &gt; 4，函数 PRICE 返回错误值 #NUM!。</li>
+	<li>
+	<p class="T">如果 settlement ≥ maturity，函数 PRICE 返回错误值 #NUM!。</li>
+	<li>
+	<p class="T">函数 PRICE 的计 算公式如下：</li>
+</ul>
+<p class="T">
+<img border="0" src="../../../images/function_PRICE.gif" width="458" height="167"></p>
+<p class="T">式中：</p>
+<p class="T">DSC = 成交日与下一付息日之间的天数。</p>
+<p class="T">E = 成交日所在的付息期的天数。</p>
+<p class="T">N = 成交日与清偿日之间的付息次数。</p>
+<p class="T">A = 当前付息期内截止到成交日的天数。</p>
+<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

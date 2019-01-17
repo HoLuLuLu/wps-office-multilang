@@ -1,0 +1,138 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>NPER</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="NPER">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>NPER</h1>
+<p>基于固定利率及等额分期付款方式，返回某项投资的总期数。</p>
+<p><b>语法</b></p>
+<p><b>NPER</b>(<b>rate,pmt,pv</b>,fv,type)</p>
+<p>有关函数 NPER 中参数的详细说明，请参阅函数 <a href="function_PV.htm">PV</a>。</p>
+<p>rate 为各期利率，是一固定值。</p>
+<p>pmt 为各期所应支付的金额，其数值在整个年金期间保持不变。通常，pmt 包括本金和利息，但不包括其他的费用及税款。</p>
+<p>pv 为现值，即从该项投资开始计算时已经入帐的款项，或一系列未来付款的当前值的累积和，也称为本金。</p>
+<p>fv 为未来值，或在最后一次付款后希望得到的现金余额，如果省略 fv，则假设其值为零，也就是一笔贷款的未来值为零。</p>
+<p>type 数字 0 或 1，用以指定各期的付款时间是在期初还是期末。</p>
+
+<table width="759" height="55">
+	<tr>
+		<th class="thEmpty" width="20" height="11"></th>
+	    <th class="th1" width="137" height="15">Type 值</th>
+	    <th class="th1" width="91" height="15">支付时间</th>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">0 或省略</td>
+		<td class="ll" width="502" height="16">期末</td>
+	</tr>
+    <tr>
+		<th class="thEmpty" width="20" height="16"></th>
+		<td class="ll" width="223" height="16">1</td>
+		<td class="ll" width="502" height="16">期初 </td>
+	</tr>
+		
+</table>
+
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="759">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="137">A</th>
+	    <th class="th1" width="91">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="137">数据</td>
+		<td class = "th1" width="91">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="223">16%</td>
+		<td class="ll" width="502">年利率</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="223">-2000 </td>
+		<td class="ll" height="20" width="502">各期所付的金额 </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="20" width="223">-10000 </td>
+		<td class="ll" height="20" width="502">现值 </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class="ll" height="20" width="223">80000 </td>
+		<td class="ll" height="20" width="502">未来值</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" height="20" width="223">1</td>
+		<td class="ll" height="20" width="502">各期的支付时间在期初（请参见上面的信息）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class = "th1" width="137">公式</td>
+		<td class = "th1" width="91">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">8</td>
+		<td class="ll" width="223">=NPER(A2/12, A3, A4, A5, 1) </td>
+		<td class="ll" width="502">在上述条件下投资的总期数 (27)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">9</td>
+		<td class="ll" width="223">=NPER(A2/12, A3, A4, A5) </td>
+		<td class="ll" width="502">在上述条件下投资的总期数，不包括在期初的支付 (27) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">9</td>
+		<td class="ll" width="223">=NPER(A2/12, A3, A4) </td>
+		<td class="ll" width="502">在上述条件下投资的总期数，不包括未来值 (-4.87) </td>
+	</tr>
+			
+</table>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

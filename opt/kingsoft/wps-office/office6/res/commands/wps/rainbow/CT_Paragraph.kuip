@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="rainbow.ct_paragraph" component="wps">
+	<commands>
+		<KxWpsStyleGalleryCommand ksoCmd="Style" galleryWidth="362" icon="Style" embedHint="1" id="RainbowStyle" galleryHeight="300" text="@Style" rbHotKey="L"/>
+		<KxListCommand hotKey="G" ksoCmd="TPNewStyle" icon="StyleFormat" customTip2="m_Style2" id="m_Style" customTip="m_Style" text="@New Style" rbHotKey="G">
+			<KxLegacyTriggerCommand hotKey="N" ksoCmd="TPNewStyle" icon="StyleFormat" id="TPNewStyle" text="@New Style"/>
+			<KxLegacyTriggerCommand hotKey="C" ksoCmd="TPClearFormatting" idMso="ClearFormatting" icon="ClearStyle" controlType="0" text="@Clear Style"/>
+		</KxListCommand>
+		<KxListCommand ksoCmd="StyleFormat" forceVisible="1" triggerAble="FY" id="RB_StyleOnParagraph" customTip="RB_Style" text="@Style">
+			<command idQ="RainbowStyle"/>
+			<command idQ="m_Style"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand ksoCmd="PromoteToHighestLevelOnOutlining" icon="PromoteToHighestLevelOnOutlining" id="PromoteToHighestLevelOnParagraph" customTip="PromoteToHighestLevelOnParagraph" text="@Promote to Level 1" rbHotKey="R"/>
+		<KxLegacyTriggerCommand ksoCmd="PromoteOnOutlining" icon="PromoteOnOutlining" shortcutHint="Ctrl+Alt+Left" id="PromoteOnParagraph" customTip="PromoteOnParagraph" text="@Promote TOC Level" rbHotKey="P"/>
+		<KxLegacyTriggerCommand ksoCmd="DemoteOnOutlining" icon="DemoteOnOutlining" shortcutHint="Ctrl+Alt+Right" id="DemoteOnParagraph" customTip="DemoteOnParagraph" text="@Demote TOC Level" rbHotKey="M"/>
+		<KxLegacyTriggerCommand ksoCmd="DemoteToLowestLevelOnOutlining" icon="DemoteToLowestLevelOnOutlining" shortcutHint="Ctrl+Shift+N" id="DemoteToLowestLevelOnParagraph" customTip="DemoteToLowestLevelOnParagraph" text="@Demote to Body Text" rbHotKey="B"/>
+		<KListCommand id="RB_OutlineOnParagraph" text="@TOC Level" rbFileMenuEmbed="1">
+			<KListCommand embedHint="1">
+				<KxWpsComboBoxCommand ksoCmd="OutLineLevelComboOnOutlining" fixedWidth="88" items="@Level 1;Level 2;Level 3;Level 4;Level 5;Level 6;Level 7;Level 8;Level 9;Body Text" id="TOCLevelCombobox" customTip="DirectoryLevel" text="@TOC Level" rbHotKey="O"/>
+				<command idQ="PromoteToHighestLevelOnParagraph"/>
+				<command idQ="PromoteOnParagraph"/>
+				<command idQ="DemoteOnParagraph"/>
+				<command idQ="DemoteToLowestLevelOnParagraph"/>
+			</KListCommand>
+		</KListCommand>
+		<KxWpsTightLineSpacingCommand detail="@Tight" showIconAndText="1" icon="TightLineSpacing" id="TightLineSpacing" customTip="TightLineSpacing" text="@Tight"/>
+		<KxWpsLooseLineSpacingCommand detail="@Loose" showIconAndText="1" icon="LooseLineSpacing" id="LooseLineSpacing" customTip="LooseLineSpacing" text="@Loose"/>
+		<KxWpsCleanLineSpacingCommand detail="@Clean Line Spacing" icon="CleanLineSpacing" id="CleanLineSpacing" customTip="CleanLineSpacing"/>
+		<KxListCommand ksoCmd="Paragraph" id="RB_ParagraphOnParagraph" customTip="RB_Paragraph" text="@Line Spacing" rbFileMenuEmbed="1">
+			<KListCommand embedHint="1">
+				<KxWpsReducedLineSpacingCommand icon="ReducedStep" id="ReduceLineSpacing" customTip="ReducedStep" text="@Reduce Line Spacing" rbHotKey="d"/>
+				<KxWpsLineSpacingCommand fixedHeight="20" fixedWidth="100" id="ChangeLineSpacing" customTip="LineSpacingShow" text="@Line Spacing" qtspyName="LineSpacing"/>
+				<KxWpsIncreaseLineSpacingCommand icon="IncreaseStep" id="IncreaseLineSpacing" customTip="IncreaseStep" text="@Increase Line Spacing" rbHotKey="I"/>
+				<separator/>
+				<command idQ="TightLineSpacing"/>
+				<command idQ="LooseLineSpacing"/>
+				<separator/>
+				<command idQ="CleanLineSpacing"/>
+			</KListCommand>
+		</KxListCommand>
+		<KxListCommand ksoCmd="PageSetup" id="RB_GridlinesOnParagraph" customTip="PageSetup" text="@Document Gridlines" rbFileMenuEmbed="1">
+			<KxCheckBoxCommand hotKey="g" ksoCmd="Gridlines" id="GridlinesInParaLayoutTab" customTip="Gridlines" spaceHint="suitable" text="@Gridlines" rbHotKey="G"/>
+			<KxWpsDisableLineHeightGridCommand id="SnapToGridInParaLayoutTab" customTip="DisableLineHeightGrid" spaceHint="suitable" text="@Snap to Grid" qtspyName="SnapToGrid"/>
+			<KxWpsAutoAdjustRightIndentCommand id="AutoAdjustRightIndent" customTip="AutoAdjustRightIndent" spaceHint="suitable" text="@Auto Adjust Right Indent"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="StyleFormat" aid="5757" idMso="StylesPane" icon="StyleFormat" controlType="0" id="StyleFormat" dialogHint="1" text="@Styles and Formatting"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="Paragraph" aid="779" idMso="ParagraphDialog" icon="Paragraph" controlType="0" id="Paragraph" dialogHint="1" text="@Paragraph"/>
+		<KListCommand id="DetailedSettings_Paragraph">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_Paragraph" text="@Settings">
+				<command idQ="StyleFormat"/>
+				<command idQ="Paragraph"/>
+				<command idQ="PageSetup"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="RB_ExitParagraphOnParagraph" text="@Close" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand detail="@Close" hotKey="c" ksoCmd="ExitParagraph" icon="CloseWindow" id="CloseParaLayout" customTip="ExitParagraph" text="@Close" rbHotKey="C"/>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Paragraph">
+			<command idQ="RB_StyleOnParagraph"/>
+			<separator/>
+			<command idQ="RB_OutlineOnParagraph"/>
+			<separator/>
+			<command idQ="RB_ParagraphOnParagraph"/>
+			<separator/>
+			<command idQ="RB_GridlinesOnParagraph"/>
+			<separator/>
+			<command idQ="DetailedSettings_Paragraph" filter="patent:LogicGroupShowExtensionButton=false"/>
+			<command idQ="RB_ExitParagraphOnParagraph"/>
+			<separator/>
+		</subcommand>
+	</subcommands>
+</shell>

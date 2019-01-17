@@ -1,0 +1,112 @@
+<html>
+
+<script src="../../../css/help.js" >
+</script>
+
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=GB2312">
+<title>关于数组公式和数组常量</title>
+
+</head>
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>关于数组公式和数组常量</h1>
+<p>数组公式可以对一组或多组值执行多重计算，并返回一个或多个结果。按 Ctrl+Shift+Enter 可以输入数组公式，此时通过编辑框可以看到数组公式的两端被自动加上了大括号{}。</p>
+<p>如果不想在工作表的单个单元格里输入每个常量值，则可用数组常量来代替引用。</p>
+<p>一些内置函数就是数组公式，因此必须将其作为数组公式输入才可得到正确结果。 </p>
+
+<p><span id="mydiv1" class="charr1"></span>
+<a href="javascript:viewsample1()" style="text-decoration: none">
+&nbsp;使用数组公式</a></p>
+<div id="sample1" style="display: none">
+
+    <p>例如，下例计算每个分公司年度超额完成情况的总计：</p>
+    <blockquote><img border="0" src="../../../images/ArrayFormulas1.png" width="371" height="194"></blockquote><br>
+    当将公式 =SUM(C4:C8-B4:B8)作为数组公式输入（按 Crtl + Shift + Enter）时，
+	该公式将每个分公司的“年度实际收入”和“年度销售预算”相减，然后再将这些计算结果相加。 
+    返回一个总计（12000000）。
+
+  <p>
+</div>
+
+
+<p><span id="mydiv4" class="charr1"></span>
+<a href="javascript:viewsample4()" style="text-decoration: none">
+&nbsp;使用数组常量</a></p>
+<div id="sample4" style="display: none">
+  在普通公式中，可输入包含数值的单元格引用，或数值本身，其中该数值与单元格引用被称为<a href="javascript:viewsamplea()" style="text-decoration: none">常量</a><font color="#339933"><span id="samplea" style="display: none">（不会发生变化
+  的值。例如，数字 988 以及文本<span lang="en-gb">&quot;数学成绩&quot;</span>都是常量。表达式以及表达式产生的值都不是常量。）</span></font>。同样，在数组公式中也可输入数组引用，或包含在单元格中的数值数组，其中该数值数组和数组引用被称为数组常量。数组公式可以按与非数组公式相同的方式使用常量，但是必须按特定格式输入数组常量。 
+  <br>
+　<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber1" height="239">
+    <tr>
+      <td width="100%" colspan="3" height="24">
+  数组常量是用大括号({})括起的一组常量，中间用逗号(,)和分号(;)分隔表示不同的列、行。</td>
+    </tr>
+    <tr>
+      <td width="4%" height="17"></td>
+      <td width="27%" bgcolor="#C0C0C0" style="border-left: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" height="18">
+      <p align="center">
+  <b>格式</b> </td>
+      <td width="69%" bgcolor="#C0C0C0" style="border-left: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" height="18">
+      <p align="center"><b>描述</b></td>
+    </tr>
+    <tr>
+      <td width="4%" height="120">　</td>
+      <td width="27%" style="border-left: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" valign="top" height="121">
+  数组常量用逗号(,)和分号(;)分隔表示不同的列、行。</td>
+      <td width="69%" style="border-left: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" valign="top" height="121">
+  不同列的数值用逗号(,)分隔。<br>
+      例如，若要表示数值 1、3、5 、7 和 9，必须输入 {1<span lang="en-gb">,</span>3<span lang="en-gb">,</span>5,7,9}。这个数组常量是一个 
+  1 行 5 列数组，相当于一个 1 行 5 列的引用。 
+  <p>
+  不同行的数值用分号(;)分隔。<br>
+  例如，如果要表示两组数据，分别包括性别、姓名、工龄、工资，则应该输入一个 2 行 4 列的数组常量：{TRUE<span lang="en-gb">,&quot;</span>张三<span lang="en-gb">&quot;,</span>5<span lang="en-gb">,</span>1400<span lang="en-gb">;</span>FALSE<span lang="en-gb">,&quot;李四&quot;,</span>4<span lang="en-gb">,</span>1280}。 
+  此时每行的数值个数必须是相等的。</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="4%" height="78">　</td>
+      <td width="27%" style="border-left: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" valign="top" height="79">
+      数组常量内只能包含常量。</td>
+      <td width="69%" style="border-left: 1px solid #FFFFFF; border-right: 1px solid #FFFFFF; border-top: 1px solid #C0C0C0; border-bottom: 1px solid #C0C0C0" valign="top" height="79">
+  数组常量可包含数字、文本<span lang="en-gb">（</span>文本必须包含在半角的双引号内）、逻辑值（如 TRUE、FALSE 
+  或错误值 #N/A）。数组常量中可包含不同类型的数值。 
+  <p>
+  数组常量不包含单元格引用、长度不等的行或列、公式或特殊字符 $（美元符号）、括弧或 %（百分号）。</p>
+      </td>
+    </tr>
+  </table>
+  <p>
+</div>
+
+<p><span id="mydiv5" class="charr1"></span>
+<a href="javascript:viewsample5()" style="text-decoration: none">
+&nbsp;提示</a></p>
+<div id="sample5" style="display: none">
+  
+  数组公式在提高计算能力、完成普通公式无法做到的计算的同时，也加大了对系统资源的使用，尤其是大范围使用数组公式时可能导致重算速度减慢。<p>
+  
+  在此建议，慎用数组公式：能用普通公式完成的计算，尽量使用普通公式。能用分析工具完成的分析统计，尽量使用分析工具。</p>
+</div>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="../about_formula.htm">关于公式</a></p>
+<p><a href="create_arrayFormulas.htm">创建数组公式</a></p>
+<p><a href="change_arrayFormulas.htm">编辑数组公式</a></p>
+</body>
+
+</html>

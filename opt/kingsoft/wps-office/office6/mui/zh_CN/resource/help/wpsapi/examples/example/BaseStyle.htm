@@ -1,0 +1,11 @@
+<html><head>
+<title>BaseStyle</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例新建一篇文档，然后为其新添一个名为“myHeading”的段落样式，并以样式“标题 1”为新样式的基本样式。然后将新样式的左缩进量设置为 1 英寸（72 磅）。<p>Dim docNew As Document<br>Dim styleNew As Style<br>Set docNew = Documents.Add<br>Set styleNew = docNew.Styles.Add("NewHeading1")<br>With styleNew<br>    &nbsp;&nbsp;&nbsp;    .BaseStyle = docNew.Styles(wpsStyleHeading1)<br>    &nbsp;&nbsp;&nbsp;    .ParagraphFormat.LeftIndent = 72<br>End With
+</div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>FIND</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="FIND">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>FIND</h1>
+<p>FIND 用于查找其他文本字符串 (within_text) 内的文本字符串 (FIND_text)，并从 within_text 
+的首字符开始返回 FIND_text 的起始位置编号。也可使用 SEARCH 查找其他文本字符串中的某个文本字符串，但是，FIND 和 SEARCH 
+不同，FIND 区分大小写并且不允许使用通配符。</p>
+<p><b>语法</b></p>
+<p><b>FIND</b>(<b>FIND_text</b>,<b>within_text</b>,start_num)</p>
+<p>F<span lang="en-us">ind</span>_text&nbsp;&nbsp; 是要查找的文本。 </p>
+<p>Within_text&nbsp;&nbsp; 是包含要查找文本的文本。</p>
+<p>Start_num&nbsp;&nbsp; 指定开始进行查找的字符。within_text 中的首字符是编号为 1 的字符。如果忽略 
+start_num，则假设其为 1。</p>
+<p><b>说明</b></p>
+<ul>
+  <li>如果 FIND_text 是空文本 (&quot;&quot;)，则 FIND 会匹配搜索串中的首字符（即：编号为 start_num 或 1 的字符）。 </li>
+  <li>FIND_text 中不能包含通配符。 </li>
+  <li>如果 within_text 中没有 FIND_text，则返回错误值 #VALUE!。 
+  </li>
+  <li>如果 start_num 不大于 0，则返回错误值 #VALUE!。 </li>
+  <li>如果 start_num 大于 within_text 的长度，则返回错误值 #VALUE!。</li>
+</ul>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<ul>
+  <li>示例一：<br>
+  
+  <table width="410">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="175">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="175">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="229">书卡号码 #124-TD45-87</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="229">图书编号 #12-671-6772</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="229">借阅日期 #20071030</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="547">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="165"><b>公式</b></th>
+   	    <th class="th2" width="99"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="201" valign="top">=MID(A2,1,FIND(&quot; #&quot;,A2,1)-1)</td>
+		<td class ="ll" width="312" valign="top">在上面第一个字符串中，抽取从第一个字符到“#”的文本 
+        (书卡号码)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="201" valign="top">=MID(A3,1,FIND(&quot; #&quot;,A3,1)-1)</td>
+		<td class ="ll" width="312" valign="top">在上面第二个字符串中，抽取从第一个字符到“#”的文本 
+        (图书编号)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="201" valign="top">=MID(A4,1,FIND(&quot; #&quot;,A4,1)-1)</td>
+		<td class ="ll" width="312" valign="top">在上面第三个字符串中，抽取从第一个字符到“#”的文本 
+        (借阅日期)</td>
+	</tr>
+	</table>
+
+  
+　</li>
+  <li>示例二：<br>
+  <table>
+	<tr>
+		<th class="thEmpty" width="1"></th>
+	    <th class="th1" width="134">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="1"><b>1</b></td>
+		<td class = "th1" width="134">PRODUCT</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="1"><b>2</b></td>
+		<td class ="ll" width="137">画上荷花和尚画</td>
+	</tr>
+				
+
+	</table>
+	</br>
+	<table width="547">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="148"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=FIND(&quot;画&quot;,A2)</td>
+		<td class ="ll" width="363">上面字符串中第一个“画”的位置 (1)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=FIND(&quot;花&quot;,A2)</td>
+		<td class ="ll" width="363">上面字符串中第一个“花”的位置 (4)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=FIND(&quot;画&quot;,A2,3)</td>
+		<td class ="ll" width="363">从上面字符串的第三个字符开始查找的第一个“画”的位置 (7)</td>
+	</tr>
+	</table>
+
+  
+　</li>
+</ul>
+
+
+
+<p><P><span id="mydiv1" class="charr1"></span><a href="javascript:viewsample1()" style="text-decoration: none">&nbsp;提示</a></P>
+<div id="sample1" style="display=none; ">
+使用 start_num 
+可跳过指定数目的字符。例如，假定使用文本字符串“AJF0093.Java技术”，如果要查找文本字符串中说明部分的第一个“J”的编号，则可将 
+start_num 设置为 8，这样就不会查找文本的序列号部分。FIND 将从第 8 个字符开始查找，而在下一个字符处即可找到 FIND_text，于是返回编号 
+9。FIND 总是从 within_text 的起始处返回字符编号，如果 start_num 大于 1，也会对跳过的字符进行计数。</p>
+</div>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+<p><a href="function_Exact.htm">EXACT</a></p>
+<p><a href="function_Len.htm">LEN</a></p>
+<p><a href="function_Mid.htm">MID</a></p>
+<p><a href="function_Search.htm">SEARCH</a></p>
+<p>　</p>
+
+
+
+</body>
+
+</html>

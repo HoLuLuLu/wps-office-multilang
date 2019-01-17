@@ -1,0 +1,156 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>DB</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="DB">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et1
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>CUMIPMT</h1>
+<p>返回一笔贷款在给定的start_peroid到end_period期间累计偿还的利息数额。</p>
+<p><b>语法</b></p>
+<p><b>CUMIPMT(rate, nper, pv, start_period, end_period, type)</b></p>
+<p>rate 利率：各期利率。例如：当利率为6%时，使用6%/4计算一个季度的还款额。</p>
+<p>nper 支付总期数：总投资期，即该项投资总的付款期数。</p>
+<p>pv 现值：从该项投资开始计算已经入账的款项；或一系列未来付款当前值的累积和。如果忽略，现在值（pv）＝0，且此时必须包含定期支付额（pmt）</p>
+<p>start_period 首期：是要从中提取数据的数据字段的名称。</p>
+<p>end_period 末期：计算中的末期。</p>
+<p>type 是否期初支付：；逻辑值 0 或 1 ，用于指定付款时间在期初还是在期末。1＝期初，0 或 忽略＝期末。</p>
+<p>　</p>
+
+<p><b>说明</b> </p>
+<div border="0">
+	<div id="m_divBody" name="client-body">
+		<div class="cdclvSection">
+			<div id="m_article" class="cntArticleBody">
+				<div id="m_divBody0" name="client-body">
+					<div class="cdclvSection">
+						<div id="m_article0" class="cntArticleBody">
+							<ul class="cntIndent36" type="disc">
+								<li>应确认所指定的 rate 和 nper 单位的一致性。例如，同样是四年期年利率为 12% 
+								的贷款，如果按月支付，rate 应为 12%/12，nper 应为 
+								4*12；如果按年支付，rate 应为 12%，nper 为 4。</li>
+								<li>如果 rate ≤ 0、nper ≤ 0 或 pv ≤ 0，函数 CUMPRINC 
+								返回错误值 #NUM!。</li>
+								<li>如果 start_period &lt; 1，end_period &lt; 1 或 
+								start_period &gt; end_period，函数 CUMPRINC 返回错误值 
+								#NUM!。</li>
+								<li>如果 type 为 0 或 1 之外的任何数，函数 CUMPRINC 返回错误值 
+								#NUM!。</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="748">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="263">A</th>
+	    <th class="th1" width="451">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="263"><font size="2">数据</font></td>
+		<td class = "th1" width="451"><font size="2">说明</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="263"><font size="2">9.00%</font></td>
+		<td class="ll" width="451"><font size="2">年利率</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="263"><font size="2">50</font></td>
+		<td class="ll" height="20" width="451"><font size="2">贷款期限</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="18" width="263"><font size="2">120,000</font></td>
+		<td class="ll" height="18" width="451"> <font size="2">现值</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class="ll" width="263" bgcolor="#C0C0C0"><b><font size="2">公式</font></b></td>
+		<td class="ll" width="451" bgcolor="#C0C0C0"><b><font size="2">说明（结果）</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" width="263"><font size="2">
+		=CUMIPMT(A2/12,A3*12,A4,13,24,0)</font></td>
+		<td class="ll" width="451"><font size="2">该笔贷款在第二年中所付的总利息（第 13 期到第 24 
+		期）(-10782.71451)</font></td>
+	</tr>
+		
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class="ll" width="263"><font size="2">
+		=CUMIPMT(A2/12,A3*12,A4,1,1,0)</font></td>
+		<td class="ll" width="451"><font size="2">该笔贷款在第一个月所付的利息 (-900)</font></td>
+	</tr>
+		
+</table>
+
+	<ul>
+		<li>利率除以 12 得到月利率。支付的年数乘以 12 得到支付次数。<br></li>
+</ul>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

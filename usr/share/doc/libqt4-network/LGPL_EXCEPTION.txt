@@ -1,0 +1,1 @@
+../libqtcore4/LGPL_EXCEPTION.txt

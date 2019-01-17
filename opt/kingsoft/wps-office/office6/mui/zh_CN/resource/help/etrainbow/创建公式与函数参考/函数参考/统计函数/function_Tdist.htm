@@ -1,0 +1,161 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>TDIST</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="TDIST">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et6
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et7
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">TDIST</font></b></p>
+<p>返回学生的 t 分布。t 分布用于小样本数据集合的假设检验。使用此函数可以代替 t 分布的临界值表。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">TDIST</b>(<b class="bterm">x</b>,<b class="bterm">degrees_freedom</b>,<b class="bterm">tails</b>)</p>
+<p>X&nbsp;&nbsp;&nbsp;&nbsp; 用于计算分布的数值。</p>
+<p>Degrees_freedom&nbsp;&nbsp;&nbsp;&nbsp; 一个表示自由度数的整数。</p>
+<p>Tails&nbsp;&nbsp;&nbsp;&nbsp; 指明返回的分布函数是单尾分布还是双尾分布。如果 tails = 1，函数 TDIST 返回单尾分布。如果 tails = 2，函数 
+TDIST 返回双尾分布。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>若任一参数为非数值型，则 TDIST 返回错误值 #VALUE!。 
+	</li>
+	<li>若出现以下任一情况，则 TDIST 返回错误值 #NUM!。 
+	</li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1、 degrees_freedom
+<font face="华文仿宋">&lt;</font> 1</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2、 tails 不为 1 或 2</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3、 x <font face="华文仿宋">&lt;</font> 0</p>
+<ul class="cntIndent36" type="disc">
+	<li>参数 degrees_freedom 和 tails 将被截尾取整。 
+	</li>
+	<li>如果 tails = 1，TDIST 的计算公式为 TDIST = P( X<font face="华文仿宋"> &gt; </font>x )，其中 X 为服从 t 分布的随机变量。如果 tails = 
+	2，TDIST 的计算公式为 TDIST = P(|X|<font face="华文仿宋"> &gt;</font> x) = P(X
+	<font face="华文仿宋">&gt;</font> x or X <font face="华文仿宋">&lt;</font> -x)。 
+	</li>
+	<li>因为不允许 x <font face="华文仿宋">&lt;</font> 0，当 x <font face="华文仿宋">&lt;</font> 0 时要使用 TDIST，应该注意 TDIST(-x,df,1) = 1 – TDIST(x,df,1) = 
+	P(X <font face="华文仿宋">&gt;</font> -x) 和 TDIST(-x,df,2) = TDIST(x df,2) = P(|X| 
+	<font face="华文仿宋">&gt;</font> x)。 </li>
+</ul>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="574" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="246"><font face="宋体">A</font></th>
+	    <th class="th1" width="295"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="246">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		数据</td>
+		<td class = "th1" width="295"><font size="2">说明</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="246">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">2.254</td>
+		<td class="ll" width="295">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">为需要计算分布的数值</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="246"><font size="2">40</font></td>
+		<td class="ll" width="295">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">自由度</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class = "th1" width="246">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="295"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10">5</td>
+		<td class="ll" width="246">
+		<font size="2">=TDIST(A2,A3,1)</font></td>
+		<td class="ll" width="295">
+		<font size="2">单尾分布（0.014872102798 或 1.49%）</font></td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">6</td>
+		<td class="ll" width="246">
+		<font size="2">=TDIST(A2,A3,2)</font></td>
+		<td class="ll" width="295">
+		<font size="2">双尾分布（0.029744205595 或 2.97%）</font></td>
+	</tr>
+    	
+</table>
+
+<p><b class="cntnote">注释&nbsp;</b>&nbsp;&nbsp;若要将数字显示为百分比，请选择单元格，并单击“格式”菜单上的“单元格”，再单击“数字”选项卡，然后单击“分类”框中的“百分比”。</p>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

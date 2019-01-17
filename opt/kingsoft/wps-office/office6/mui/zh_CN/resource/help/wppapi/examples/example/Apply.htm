@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Apply</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例复制第一个窗口中选定形状的格式，再添加一个图形，将所复制的格式应用于这个新增图形。<p>Windows(1).Selection.ShapeRange.PickUp<br>
+Set firstRect = 
+ActivePresentation.Slides(Windows(1).Selection.SlideRange.SlideIndex) _<br>
+&nbsp;&nbsp;&nbsp; .Shapes.AddShape(ksoShapeRectangle, 1300, 1000, 2000, 1000)<br>firstRect.Apply
+</div>
+</body>
+</html>

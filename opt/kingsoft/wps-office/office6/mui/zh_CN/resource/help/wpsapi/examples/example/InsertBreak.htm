@@ -1,0 +1,12 @@
+<html><head>
+<title>InsertBreak</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在活动文档第二段之后插入分页符。
+<p>Set myRange = ActiveDocument.Paragraphs(2).Range <br>With myRange <br>    &nbsp;&nbsp;&nbsp;    .Collapse Direction:=wpsCollapseEnd <br>    &nbsp;&nbsp;&nbsp;    .InsertBreak Type:=wpsPageBreak <br>End With <br>
+</div>
+</body>
+</html>

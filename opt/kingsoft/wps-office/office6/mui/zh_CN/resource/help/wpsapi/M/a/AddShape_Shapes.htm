@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>AddShape_Shapes</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>在文档中添加一个“自选图形”对象。返回代表该“自选图形”对象的 <b><a href="../../objs/s/Shape.htm">Shape</a></b> 对象，并将其添加到 <b>
+    <a href="../../objs/s/Shapes.htm">Shapes</a></b> 集合对象。</P>
+    <P><b><br>
+    语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.AddShape</b><i>((Type), (Left), (Top), (Width), (Height), [Anchor])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >   必需。该表达式返回 <b>Shapes</b> 集合对象。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Type  </i></td>
+            <td width="59%" height=15 > 必需，<b>Long </b>类型。要返回的图形类型。可以是任何 <b>KsoAutoShapeType</b> 常量。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Left  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。“自选图形”对象左侧边缘的位置，以磅为单位。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Top  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。“自选图形”对象上部边缘的位置，以磅为单位。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Width  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。“自选图形”对象的宽度，以磅为单位。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Height  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。“自选图形”对象的高度，以磅为单位。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Anchor  </i></td>
+            <td width="59%" height=15 > 可选，<b>Variant </b>类型。代表该“自选图形”所连接文本的 <b>
+            <a href="../../objs/r/Range.htm">Range</a></b> 对象。如果指定  
+			<b>Anchor</b>，则锁定标记位于锁定区域第一段的起始位置。如果忽略该参数，则 WPS 将自动选定锁定区域，而自选图形将相对于页面的上部和左侧边缘进行定位。   </td>
+          </tr>
+    </table><br>
+    <br><P><b>说明</b></P>
+    <P>要改变所添加的“自选图形”类型，可设置其 <b>AutoShapeType</b> 属性。</P>
+    </div>
+</body>
+</html>

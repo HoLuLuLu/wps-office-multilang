@@ -1,0 +1,200 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>AVERAGEIFS</title>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="table1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1><font size="3">AVERAGEIFS</font></h1>
+<div class="cdclvSection" jQuery1299319204328="12">
+	<div class="cntArticleBody" id="m_article">
+		<font size="2">返回满足多重条件的所有单元格的平均值（算术平均值）。</font></div>
+</div>
+<p><b><font size="2">语法</font></b></p>
+<div class="cdclvSection" jQuery1299319204328="12">
+	<div class="cntArticleBody" id="m_article0">
+		<b class="bterm"><font size="2">AVERAGEIFS</font></b><font size="2">(<b class="bterm">average_range</b>,<b class="bterm">criteria_range1</b>,<b class="bterm">criteria1</b>,criteria_range2,criteria2…)</font><p>
+		<font size="2">Average_range&nbsp;&nbsp;&nbsp;&nbsp; 要计算平均值的一个或多个单元格，其中包括数字或包含数字的名称、数组或引用。</font></p>
+		<p><font size="2">Criteria_range1, criteria_range2, …&nbsp;&nbsp;&nbsp;&nbsp; 计算关联条件的 1 至 
+		127 个区域。</font></p>
+		<p><font size="2">Criteria1, criteria2, …&nbsp;&nbsp;&nbsp;&nbsp; 数字、表达式、单元格引用或文本形式的 1 至 127 
+		个条件，用于定义要对哪些单元格求平均值。如，条件可以表示为 41、&quot;&gt;41&quot;、D3、&quot;香蕉&quot; 或 &quot;41&quot;。</font></div>
+</div>
+<p><b><font size="2">说明</font></b><font size="2"> </font> </p>
+<div border="0">
+	<div class="cdclvSection" jQuery1299319204328="12">
+		<div class="cntArticleBody" id="m_article1">
+			<ul class="cntIndent36" type="disc">
+				<li>
+				<p style="line-height: 150%"><font size="2">若 average_range 为空值或文本值，则 AVERAGEIFS 会返回 
+				#DIV0! 错误值。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若条件区域中的单元格为空，AVERAGEIFS 将其视为 0 值。 </font>
+				</li>
+				<li>
+				<p style="line-height: 150%"><font size="2">区域中包含 TRUE 的单元格计算为 1；区域中包含 FALSE 的单元格计算为 
+				0（零）。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">仅当 average_range 
+				中的每个单元格满足为其指定的所有相应条件时，才对这些单元格进行平均值计算。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">与 AVERAGEIF 函数中的区域和条件参数不同，AVERAGEIFS 中每个 
+				criteria_range 的大小和形状必须与 sum_range 相同。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若 average_range 中的单元格无法转换为数字，则 AVERAGEIFS 会返回 
+				#DIV0! 错误值。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若没有满足所有条件的单元格，AVERAGEIFS 会返回 #DIV/0! 错误值。 
+				</font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">您可以在条件中使用通配符，即问号 (?) 和星号 
+				(*)。问号匹配任一单个字符；星号匹配任一字符序列。若要查找实际的问号或星号，请在字符前键入波形符 (~)。 </font>
+				</li>
+			</ul>
+			<p><b class="cntnote"><font size="2">&nbsp;</b>注释<b class="cntnote">&nbsp;</b></font><font size="2">&nbsp;&nbsp;AVERAGEIFS 
+			函数用于计算趋中性，趋中性是统计分布中一组数中间的位置。三种最常见的趋中性计算方法是：</font></p>
+			<ul class="cntIndent36" type="disc">
+				<li>
+				<p style="line-height: 150%"><font size="2">平均值&nbsp;&nbsp;&nbsp;&nbsp; 
+				算数平均，其计算方法是先对一组数求和再除以这组数的个数。例如，2、3、3、5、7 和 10 的平均值是 5，即用 30 除以 
+				6。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">中值&nbsp;&nbsp;&nbsp;&nbsp; 
+				一组数的中间数，这组数的一半大于中值，另一半小于中值。例如，2、3、3、5、7 和 10 的中值是 4。 </font>
+				</li>
+				<li>
+				<p style="line-height: 150%"><font size="2">众数&nbsp;&nbsp;&nbsp;&nbsp; 
+				在一组数中出现频率最高的数。例如，2、3、3、5、7 和 10 的众数为 3。 </font></li>
+			</ul>
+			<p><font size="2">
+			对于对称分布的一组数来说，这三种趋中性计算方法是相同的。对于偏态分布的一组数来说，这三种趋中性计算方法可能不同。</font></div>
+	</div>
+	</div>
+<p><b class="bterm"><font size="2">示例</font></b></p>
+<p><font size="2">如果您将示例复制到空白工作表中，可能会更易于理解该示例。</font></p>
+
+<table id="table6" width="637">
+	<tr>
+		<th class="thEmpty" width="22"></th>
+	    <th class="th1" bgcolor="#C0C0C0" align="left" width="119">
+		<font size="2">A</font></th>
+	    <th class="th1" bgcolor="#C0C0C0" align="left" width="157">
+		<font size="2">B</font></th>
+	    <th class="th1" bgcolor="#C0C0C0" align="left"><font size="2">C</font></th>
+	    <th class="th1" bgcolor="#C0C0C0" align="left" width="155">
+		<font size="2">D</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" width="22" align="center"><b>
+		<font size="2">1</font></b></td>
+		<td class = "th1" bgcolor="#C0C0C0" width="119"><b><font size="2">学生</font></b></td>
+		<td class = "th1" bgcolor="#C0C0C0" width="157"><b><font size="2">
+		第一次测验成绩</font></b></td>
+		<td class = "th1" bgcolor="#C0C0C0"><b><font size="2">第二次测验成绩</font></b></td>
+		<td class = "th1" bgcolor="#C0C0C0" width="155"><b><font size="2">最终测验成绩</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" width="22" align="center"><b>
+		<font size="2">2</font></b></td>
+		<td class="ll" width="119"><font size="2">张三</font></td>
+		<td class="ll" width="157"><font size="2">70</font></td>
+		<td class="ll"><font size="2">87</font></td>
+		<td class="ll" width="155"><font size="2">85</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" height="18" bgcolor="#C0C0C0" width="22" align="center">
+		<b><font size="2">3</font></b></td>
+		<td class="ll" height="18" width="119"><font size="2">李四</font></td>
+		<td class="ll" height="18" width="157"><font size="2">84</font></td>
+		<td class="ll" height="18"><font size="2">81</font></td>
+		<td class="ll" height="18" width="155"><font size="2">88</font></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" width="22" align="center"><b>
+		<font size="2">4</font></b></td>
+		<td class="ll" width="119"><font size="2">王五</font></td>
+		<td class="ll" width="157"><font size="2">98</font></td>
+		<td class="ll"><font size="2">66</font></td>
+		<td class="ll" width="155"><font size="2">不及格</font></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" width="22" align="center"><b>
+		<font size="2">5</font></b></td>
+		<td class="ll" width="119"><font size="2">赵六</font></td>
+		<td class="ll" width="157"><font size="2">55</font></td>
+		<td class="ll"><font size="2">74</font></td>
+		<td class="ll" width="155"><font size="2">不及格</font></td>
+	</tr>
+
+	</table>
+
+
+　<table id="table7" width="1108">
+
+	<tr>
+		<td class ="tdEmpty" >
+		　</td>
+		<td class = "th1" bgcolor="#C0C0C0" width="334"><b><font size="2">公式</font></b></td>
+		<td class = "th2" width="737" bgcolor="#C0C0C0"><b><font size="2">说明（结果）</font></b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll" width="334"><font size="2">=AVERAGEIFS(B2:B5,B2:B5,&quot;&gt;60&quot;,B2:B5,&quot;&lt;90&quot;)</font></td>
+		<td class="ll"><font size="2">计算所有学生第一次测验成绩在 60 分到 90 分之间的分数的平均值 
+		(77)。</font></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll" width="334"><font size="2">=AVERAGEIFS(C2:C5,C2:C5,&quot;&gt;98&quot;)</font></td>
+		<td class="ll"><font size="2">计算所有学生第二次测验成绩超过 98 分的分数的平均值。因为均未超过 98 
+		分，所以返回 #DIV/0!。</font></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll" width="334"><font size="2">
+		=AVERAGEIFS(D2:D5,D2:D5,&quot;&lt;&gt;不及格&quot;,D2:D5,&quot;&gt;80&quot;)</font></td>
+		<td class="ll"><font size="2">计算所有学生最终测验成绩超过 80 分的分数的平均值 
+		(86.5)。标记为“不及格”的分数不计算在内，因为它不是一个数字值。</font></td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b><font size="2">相关功能</font></b></p>
+<p><a href="functionlist_stat.htm"><font size="2">统计函数</font></a></p>
+
+
+
+</body>
+
+</html>

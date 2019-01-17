@@ -1,0 +1,26 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>AddComment</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p >如果单元格区域 E1:E10 的条件格式一的公式指定的是“小于 5”，则本示例将对其进行更改。<br>
+<br>
+With Activeworkbook.Worksheets(1).Range(&quot;e1:e10&quot;).FormatConditions(1)</p>
+<p >&nbsp;&nbsp;&nbsp; If .Operator = etLess And .Formula1 = &quot;5&quot; Then</p>
+<p >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Modify etCellValue, etBetween, 
+&quot;5&quot;, &quot;15&quot;</p>
+<p >&nbsp;&nbsp;&nbsp; End If</p>
+<p >End With</p>
+</div>
+
+</body>
+
+</html>

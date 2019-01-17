@@ -1,0 +1,17 @@
+<html><head>
+<title>AcceptAll</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例给所选内容添加一个框架，将活动窗口切换到页面视图，并显示框架对象的锁定标记。<p>
+Selection.Frames.Add(Range:=Selection.Range).LockAnchor = True<br>
+With ActiveDocument.ActiveWindow.View<br>
+&nbsp;&nbsp;&nbsp;
+.Type = wpsPrintView<br>
+&nbsp;&nbsp;&nbsp;
+.ShowObjectAnchors = True<br>
+End With</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html><head>
+<title>BottomMargin</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将活动文档的下边距设置为 72 磅（即 1 英寸），上边距设置为 2 英寸。<br>
+InchesToPoints 方法用来将英寸转化为磅值。 <p>With ActiveDocument.PageSetup <br>&nbsp;&nbsp;&nbsp; .BottomMargin = 72 <br>&nbsp;&nbsp;&nbsp; .TopMargin = InchesToPoints(2) <br>End With 
+<p>　<p>本示例返回所选部分第一节的下边距。<br>
+PointsToInches 方法用来将结果转换为英寸。 
+<p>Dim sngMargin As Single <br>sngMargin = Selection.Sections(1).PageSetup.BottomMargin <br>MsgBox PointsToInches(sngMargin) & " inches" 
+</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>CEILING</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="CEILING">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>CEILING</h1>
+<p>将参数 Number 向上舍入（沿绝对值增大的方向）为最接近的 <i>舍入基数</i> 的倍数。例如，如果您不愿意使用像“分”这样的零钱，而所要购买的商品价格为 
+￥4.42，可以用公式 =CEILING(4.42,0.1) 将价格向上舍入为以“角”表示。</p>
+<p><b>语法</b></p>
+<p><b>CEILING（number，significance）</b></p>
+<p>Number&nbsp;&nbsp;&nbsp;&nbsp;要四舍五入的数值。</p>
+<p>Significance&nbsp;&nbsp;&nbsp;&nbsp;是需要四舍五入的乘数。</p>
+<p><b>说明</b></p>
+<ul>
+<li>如果参数为非数值型，CEILING 返回错误值 #VALUE!。</li>
+<li>无论数字符号如何，都按远离 0 的方向向上舍入。如果数字已经为 Signficance 的倍数，则不进行舍入。</li>
+<li>如果 Number 和 Signficance 符号不同，CEILING 返回错误值 #Num!。 </li>
+</ul>
+
+
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class ="ll">=CEILING(2.5, 1)</td>
+		<td class ="ll">将 2.5 向上舍入到最接近的 1 的倍数 (3)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>3</b></td>
+		<td class ="ll">=CEILING(-2.5, -2)</td>
+		<td class ="ll">将 -2.5 向上舍入到最接近的 -2 的倍数 (-4)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>4</b></td>
+		<td class ="ll">=CEILING(-2.5, 2)</td>
+		<td class ="ll">返回错误值，因为 -2.5 和 2 的符号不同 (#Num!)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>5</b></td>
+		<td class ="ll">=CEILING(1.5, 0.1)</td>
+		<td class ="ll">将 1.5 向上舍入到最接近的 0.1 的倍数 (1.5)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>6</b></td>
+		<td class ="ll">=CEILING(0.234, 0.01)</td>
+		<td class ="ll">将 0.234 向上舍入到最接近的 0.01 的倍数 (0.24)</td>
+	</tr>
+
+</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_Math.htm">数学与三角函数</a></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.compare_views" component="wps">
+	<commands>
+		<KxWpsLockSideBySideCommand aid="7873" icon="LockSideBySide" id="LockSideBySide" customTip="LockSideBySide" spaceHint="suitable" text="@Synchronous Scrolling" rbHotKey="VS"/>
+		<KxWpsVerbSideBySideCommand aid="7874" icon="VerbSideBySide" id="VerbSideBySide" customTip="VerbSideBySide" spaceHint="suitable" text="@Reset Window Position" rbHotKey="T"/>
+		<KxWpsCmpSideBySideCommand hotKey="b" aid="7698" id="CmpSideBySide" dialogHint="1" text="@View Side by Side"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Compare Views">
+			<command idQ="LockSideBySide"/>
+			<command idQ="VerbSideBySide"/>
+			<command idQ="CmpSideBySide"/>
+		</subcommand>
+	</subcommands>
+</shell>

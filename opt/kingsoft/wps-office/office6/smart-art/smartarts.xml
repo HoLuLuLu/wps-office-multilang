@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<smartarts>
+    <categorys>
+        <category name="All" text="All" flag="all" order="0" icon="sacall"/>
+    </categorys>
+    <!--list-->
+    <smartart layoutType="default" name="default" text="Basic Block List" defaultCategory="list" defaultOrder="0" icon="sa-default-item" thumbnail="sa-default-thumbnail">
+        <orders>
+            <order category="all" value="1"/>
+            <order category="list" value="0"/>
+        </orders>
+        <description>Use to show non-sequential or grouped blocks of information. Maximizes both horizontal and vertical display space for shapes.</description>
+    </smartart>
+    <smartart layoutType="vList2" name="vList2" text="Vertical Bullet List" defaultCategory="list" defaultOrder="5" icon="sa-vList2-item" thumbnail="sa-vList2-thumbnail">
+        <orders>
+            <order category="all" value="2"/>
+            <order category="list" value="5"/>
+        </orders>
+        <description>Use to show non-sequential or grouped blocks of information. Works well for lists with long headings or top level information.</description>
+    </smartart>
+    <smartart layoutType="list1" name="list1" text="Vertical Box List" defaultCategory="list" defaultOrder="6" icon="sa-list1-item" thumbnail="sa-list1-thumbnail">
+        <orders>
+            <order category="all" value="3"/>
+            <order category="list" value="6"/>
+        </orders>
+        <description>Use to show several groups of information, especially groups with large amounts of Level 2 text. A good choice for bulleted lists of information.</description>
+    </smartart>
+    <smartart layoutType="vList5" name="vList5" text="Vertical Block List" defaultCategory="list" defaultOrder="22" icon="sa-vList5-item" thumbnail="sa-vList5-thumbnail">
+        <orders>
+            <order category="all" value="4"/>
+            <order category="list" value="22"/>
+        </orders>
+        <description>Use to show groups of information or steps in a task, process, or workflow. Works well with large amounts of Level 2 text. A good choice for text with a main point and multiple sub-points.</description>
+    </smartart>
+    <smartart layoutType="hList3" name="hList3" text="Table List" defaultCategory="list" defaultOrder="34" icon="sa-hList3-item" thumbnail="sa-hList3-thumbnail">
+        <orders>
+            <order category="all" value="5"/>
+            <order category="list" value="32"/>
+        </orders>
+        <description>Use to show grouped or related information of equal value. The first Level 1 line of text corresponds to the top shape and its Level 2 text is used for the subsequent lists.</description>
+    </smartart>
+    <smartart layoutType="hList1" name="hList1" text="Horzontal Bullet List" defaultCategory="list" defaultOrder="10" icon="sa-hList1-item" thumbnail="sa-hList1-thumbnail">
+        <orders>
+            <order category="all" value="6"/>
+            <order category="list" value="34"/>
+        </orders>
+        <description>Use to show non-sequential or grouped lists of information. Works well with large amounts of text. All text has the same level of emphasis, and direction is not implied.</description>
+    </smartart>
+    <smartart layoutType="vList4" name="vList4" text="Vertical Picture List" defaultCategory="list" defaultOrder="22" icon="sa-vList4-item" thumbnail="sa-vList4-thumbnail">
+        <orders>
+            <order category="all" value="7"/>
+            <order category="list" value="22"/>
+        </orders>
+        <description>Use to show non-sequential or grouped blocks of information. The small shapes on the left are designed to contain pictures.</description>
+    </smartart>
+    <smartart layoutType="hList6" name="hList6" text="Trapezoid List" defaultCategory="list" defaultOrder="32" icon="sa-hList6-item" thumbnail="sa-hList6-thumbnail">
+        <orders>
+            <order category="all" value="8"/>
+            <order category="list" value="27"/>
+        </orders>
+        <description>Use to show grouped or related information of equal value. Works well with large amounts of text.</description>
+    </smartart>
+    <!--process-->
+    <smartart layoutType="process1" name="process1" text="Basic Process" defaultCategory="process" defaultOrder="1" icon="sa-process1-item" thumbnail="sa-process1-thumbnail">
+        <orders>
+            <order category="all" value="10"/>
+            <order category="process" value="1"/>
+        </orders>
+        <description>Use to show a progression or sequential steps in a task, process, or workflow.</description>
+    </smartart>
+    <smartart layoutType="process3" name="process3" text="Accent Process" defaultCategory="process" defaultOrder="4" icon="sa-process3-item" thumbnail="sa-process3-thumbnail">
+        <orders>
+            <order category="all" value="11"/>
+            <order category="process" value="4"/>
+        </orders>
+        <description>Use to show a progression, a timeline, or sequential steps in a task, process, or workflow. Works well for illustrating both Level 1 and Level 2 text.</description>
+    </smartart>
+    <!--cycle-->
+    <smartart layoutType="radial3" name="radial3" text="Radial Venn" defaultCategory="cycle" defaultOrder="13" icon="sa-radial3-item" thumbnail="sa-radial3-thumbnail">
+        <orders>
+            <order category="all" value="12"/>
+            <order category="cycle" value="13"/>
+        </orders>
+        <description>Use to show both overlapping relationships and the relationship to a central idea in a cycle. The first line of Level 1 text corresponds to the central shape and the lines of Level 2 text correspond to the surrounding circular shapes. Unused text does not appear, but remains available if you switch layouts.</description>
+    </smartart>
+    <!--hierarchy-->
+    <smartart layoutType="orgChart1" name="orgChart1" text="Organization Chart" defaultCategory="hierarchy" defaultOrder="1" icon="sa-orgChart1-item" thumbnail="sa-orgChart1-thumbnail">
+        <orders>
+            <order category="all" value="0"/>
+            <order hierarchy="cycle" value="1"/>
+        </orders>
+        <description>Use to show hierarchical information or reporting relationships in an organization. The assistant shape and the Org Chart hanging layouts are available with this layout.</description>
+    </smartart>
+    <!--relationship-->
+    <smartart layoutType="radial4" name="radial4" text="Converging Radial" defaultCategory="relationship" defaultOrder="25" icon="sa-radial4-item" thumbnail="sa-radial4-thumbnail">
+        <orders>
+            <order category="all" value="10"/>
+            <order category="relationship" value="25"/>
+        </orders>
+        <description>Use to show relationships of concepts or components to a central idea in a cycle. The first line of Level 1 text corresponds to the central circular shape and the lines of Level 2 text correspond to the surrounding rectangular shapes. Unused text does not appear, but remains available if you switch layouts.</description>
+    </smartart>
+    <smartart layoutType="radial5" name="radial5" text="Diverging Radial" defaultCategory="relationship" defaultOrder="31" icon="sa-radial5-item" thumbnail="sa-radial5-thumbnail">
+        <orders>
+            <order category="all" value="9"/>
+            <order category="relationship" value="25"/>
+        </orders>
+        <description>Use to show relationships to a central idea in a cycle. The first Level 1 line of text corresponds to the central circular shape. Emphasizes the surrounding circles rather than the central idea. Unused text does not appear, but remains available if you switch layouts.</description>
+    </smartart>
+    <!--matrix-->
+    <smartart layoutType="cycle4" name="cycle4" text="Crycle Matrix" defaultCategory="matrix" defaultOrder="4" icon="sa-cycle4-item" thumbnail="sa-cycle4-thumbnail">
+        <orders>
+            <order category="all" value="14"/>
+            <order category="matrix" value="4"/>
+        </orders>
+        <description>Use to show the relationship to a central idea in a cyclical progression. Each of the first four lines of Level 1 text corresponds to a wedge or pie shape, and Level 2 text appears in a rectangular shape to the side of the wedge or pie shape. Unused text does not appear, but remains available if you switch layouts.</description>
+    </smartart>
+    <!--pyramid-->
+    <!--picture-->
+    <!--officecom-->
+</smartarts>

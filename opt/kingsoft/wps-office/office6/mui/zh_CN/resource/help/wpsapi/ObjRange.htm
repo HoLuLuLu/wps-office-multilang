@@ -1,0 +1,379 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>对象模型--Range</title>
+<style type="text/css">
+<!--
+
+.yy{
+	font-weight: bold;
+	background-color: #FFFF99;
+	border: 1pt solid #2A3F00;
+	height: 15px;
+	width: 110pt;
+	font-size: 9pt;
+	padding: 0 0.2cm ;
+
+	
+}
+.bb{
+	font-weight: bold;
+	background-color: #00FFFF;
+	border: 1pt solid #2A3F00;
+	height: 15px;
+	width: 110pt;
+	font-size: 9pt;
+	padding: 0 0.2cm ;
+}
+
+.smallyy{
+	background-color: yellow;
+	border: 1pt solid #2A3F00;
+	height: 12px;
+	width: 12pt;
+	font-size: 9pt;
+}
+.smallbb{
+	background-color: #00FFFF;
+	border: 1pt solid #2A3F00;
+	height: 12px;
+	width: 12pt;
+	font-size: 9pt;
+}
+
+.xx{
+	font-weight: bold;
+	background-color: #00FFFF;
+	border: 1pt solid #2A3F00;
+	height: 15px;
+	width: 450pt;
+	font-size: 9pt;
+	padding: 0 0.2cm ;
+
+}
+
+
+
+.level1y{
+	background-image: url('images/beeline.gif');
+	background-repeat: no-repeat;
+	WIDTH: 20px;HEIGHT: 20px
+}
+
+.levelcross{
+	background-image: url('images/crossline.gif');
+	background-repeat: no-repeat;
+	WIDTH: 25px;HEIGHT: 20px
+}
+
+.level90{
+	background-image: url('images/90line.gif');
+	background-repeat: no-repeat;
+	WIDTH: 25px;HEIGHT: 20px
+}
+
+
+-->
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<p><b><font style="font-size: 11pt">WPS 对象模型 --</font></b><span style="font-size: 11pt"><b> Range</b></span></p>
+
+	
+	<table border="0" width="746" cellspacing="0" cellpadding="0">
+		<tr>
+			<td colspan="11" height = 20><span class = "xx"> 
+            <a href="objs/r/range.htm"><font color="#2A3F00">Range</font></a></span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><font class="yy">
+          <a href="objs/b/Bookmarks.htm"><font color="#2A3F00">Bookmarks</font></a></font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td colspan="3" height="20"><span class = "bb"> ListFormat</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td width="21" height="20"><span class= "level90"></span></td>
+		  <td  height="20" colspan="3"><span class = "bb"> 
+          <a href="objs/b/Bookmark.htm"><font color="#2A3F00">Bookmark</font></a></span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td width="20" height="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="2"><span class = "bb"> List</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><span class="yy">Borders</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td height="20"><span class= "level90"></span></td>
+			<td height="20" colspan="2"><span class="yy">ListTemplates</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td  height="20" colspan="3"><span class = "bb"> Border</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><font class="yy">ListParagraphs</font></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td height="20" colspan="4"><font class="yy">Cells</font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td height="20" ><span class= "level90"></span></td>
+			<td colspan="2"><span class = "bb">Paragraph</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><font class="yy">Columns</font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><span class = "bb"> 
+            <a href="objs/p/PageSetup.htm"><font color="#2A3F00">PageSetup</font></a></span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td height="20" colspan="3"><span class = "bb"> Column</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td width="20" height="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="2"><span class = "bb"> LineNumbering</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20">　</td>
+		  <td width="21" height="20"> <span class= "levelcross"></span></td>
+		  <td height="20" colspan="2"><font class="yy">Borders</font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td height="20"><span class= "level90"></span></td>
+			<td height="20" colspan="2"><span class="yy">TextColumns</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20">　</td>
+		  <td height="20"> <span class= "level1y"></span></td>
+		  <td width="20" height="20"><span class= "level90"></span> </td>
+		  <td width="189" height="20"><span class = "bb"> Border</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td height="20">　</td>
+			<td width="20" height="20"><span class= "level90"></span></td>
+			<td height="20" width="370"><span class = "bb"> TextColumn</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20">　</td>
+		  <td height="20"> <span class= "levelcross"></span></td>
+		  <td height="20" colspan="2"><font class="yy">Cells</font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><span class = "bb"> 
+            <a href="objs/p/ParagraphFormat.htm"><font color="#2A3F00">ParagraphFormat</font></a></span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20">　</td>
+		  <td height="20"> <span class= "level90"></span> </td>
+		  <td height="20" colspan="2"><span class = "bb"> Shading</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><span class="yy">Paragraphs</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><font class="yy">
+          <a href="objs/c/Comments.htm"><font color="#2A3F00">Comments</font></a></font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><a href="objs/r/Revisions.htm">
+			<font class="yy"><font color="#2A3F00">Revisions</font></font></a></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td height="20" colspan="3"><span class = "bb"> 
+          <a href="objs/c/Comment.htm"><font color="#2A3F00">Comment</font></a></span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td width="20" height="20"><span class= "level90"></span></td>
+			<td height="20" colspan="2"><span class = "bb"> <a href="objs/r/Revision.htm">
+			<font color="#2A3F00">Revision</font></a></span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><font class="yy">EndnoteOptions</font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><font class="yy">Rows</font></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><span class="yy">Endnotes</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level1y"></span></td>
+			<td height="20"><span class= "level90"></span></td>
+			<td colspan="2"><span class = "bb"> Row</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td  height="20" colspan="3"><span class = "bb"> Endnote</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><a href="objs/s/Sections.htm">
+			<font class="yy"><font color="#2A3F00">Sections</font></font></a></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"><span class= "levelcross"></span></span></td>
+		  <td colspan="4" height="20"><span class="yy">
+          <a href="objs/f/Fields.htm"><font color="#2A3F00">Fields</font></a></span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><span class="yy">Shading</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td  height="20" colspan="3"><span class = "bb"> 
+          <a href="objs/f/Field.htm"><font color="#2A3F00">Field</font></a></span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><font class="yy"><font color="#2A3F00"> <a href="objs/s/ShapeRange.htm"><font color="#2A3F00">ShapeRange</font></a>(<a href="objs/s/Shape.htm"><font color="#2A3F00">Shape</font></a>)</font></font></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20" colspan="4"><span class = "bb"> Find</span>　</td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "levelcross"></span></td>
+			<td height="20" colspan="3"><span class = "bb"> 
+            <a href="objs/s/Style.htm"><font color="#2A3F00">Style</font></a></span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><span class = "bb"> 
+          <a href="objs/f/Font.htm"><font color="#2A3F00">Font</font></a></span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"><span class= "level90"></span></td>
+			<td height="20" colspan="3"><span class="yy">Tables</span></td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><span class = "bb"> FootnoteOptions</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"></td>
+			<td height="20" colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"><span class= "levelcross"></span></span> </td>
+		  <td colspan="4" height="20"><span class="yy">Footnodes</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"></td>
+			<td height="20" colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td  height="20" colspan="3"><span class = "bb"> Footnode</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20"></td>
+			<td height="20" colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><font class="yy">FormFields</font></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20">　</td>
+			<td colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><span class="yy">Frames</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20">　</td>
+			<td colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td  height="20" colspan="3"><span class = "bb"> Frame</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20">　</td>
+			<td colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "levelcross"></span></td>
+		  <td colspan="4" height="20"><span class="yy">Hyperlinks</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20">　</td>
+			<td colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level1y"></span></td>
+		  <td height="20"><span class= "level90"></span></td>
+		  <td  height="20" colspan="3"><span class = "bb"> Hyperlink</span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20">　</td>
+			<td colspan="3">　</td>
+		</tr>
+		<tr>
+		  <td width="21" height="20"><span class= "level90"></span></td>
+		  <td colspan="4" height="20"><span class="yy">
+          <a href="objs/i/InlineShapes.htm"><font color="#2A3F00">InlineShapes</font></a></span></td>
+			<td width="21">　</td>
+			<td width="23">　</td>
+			<td width="20">　</td>
+			<td colspan="3">　</td>
+		</tr>
+		</table>
+	
+
+	
+	
+	
+<p><font size="2"><a href="Objs.htm">Application 对象</a></font>
+</body>
+
+</html>

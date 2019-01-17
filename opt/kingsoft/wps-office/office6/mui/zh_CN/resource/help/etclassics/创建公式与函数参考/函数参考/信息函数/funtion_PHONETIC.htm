@@ -1,0 +1,86 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>ISODD</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="ISODD">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+<span style="font-size: 10.5000pt; font-family: 宋体; font-weight: 700">PHONETIC</span></p>
+<p>提取文本字符串中的拼音字符。</p>
+<p><b>语法</b></p>
+<p><b>PHONETIC(reference)</b></p>
+<p>reference 引用:需要了解其信息的单元格。</p>
+<p><b>说明</b></p>
+<div id="m_divBody" name="client-body">
+	<div class="cdclvSection">
+		<div id="m_article" class="cntArticleBody">
+			<ul class="cntIndent36" type="disc">
+				<li>如果 reference 为单元格区域，则返回区域左上角单元格中的 furigana 文本字符串。</li>
+				<li>如果 reference 为不相邻单元格的区域，将返回错误值 #N/A。</li>
+				<li>如果单元格中存在公式或引用，则不会提取该单元格字符串</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="418">
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">字符</td>
+		<td class = "th2">公<b>式（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class="ll">文本</td>
+		<td class="ll">　</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">合并</td>
+		<td class="ll">=PHONETIC(A2:A3)(文本合并)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_information.htm">信息函数</a></p>
+
+
+
+</body>
+
+</html>

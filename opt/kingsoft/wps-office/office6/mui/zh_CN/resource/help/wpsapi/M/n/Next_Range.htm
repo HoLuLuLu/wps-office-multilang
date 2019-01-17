@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>Next_Range</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>返回 <b><a href="../../objs/r/Range.htm">Range</a></b> 对象，该对象代表相对于指定区域的指定单元。 </P>  
+</p><br>
+    <P><b>语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.Next</b><i>([Unit], [Count])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >  必需。该表达式返回 <b>Range</b> 对象。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Unit  </i></td>
+            <td width="59%" height=15 > 可选，<b>WpsUnits</b> 常量。统计的单元类型。默认值为 <b>wpsCharacter</b> 
+   			常量值。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Count  </i></td>
+            <td width="59%" height=15 > 可选，<b>Long </b>类型。可以向上移动的单元数，默认值是 1。    </td>
+          </tr>
+    </table><br>
+    <br><P><b>说明</b></P>
+    <P>如果 <b>Range</b> 或 <b><a href="../../objs/s/Selection.htm">Selection</a></b> 恰好在指定的 <b>Unit</b> 之前，则 <b>Range</b> 或 <b><b>Select</b>ion</b> 将移至下一个单元。例如，如果 <b><b>Select</b>ion</b> 恰好在一个词前面，则下面的指令可将 <b><b>Select</b>ion</b> 移至该词之后。 <br>Selection.Next(Unit:=wpsWps, Count:=1).Select </P>
+    </div>
+</body>
+</html>

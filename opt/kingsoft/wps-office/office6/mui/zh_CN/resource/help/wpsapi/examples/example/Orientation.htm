@@ -1,0 +1,11 @@
+<html><head>
+<title>Orientation</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例先改变文档的方向，再打印该文档。本示例然后将文档的方向恢复为纵向。<p>Set myDoc = Application.ActiveDocument<br>With myDoc<br>    &nbsp;&nbsp;&nbsp;    .PageSetup.Orientation = wpsOrientLandscape<br>    &nbsp;&nbsp;&nbsp;    .PrintOut<br>    &nbsp;&nbsp;&nbsp;    .PageSetup.Orientation = wpsOrientPortrait<br>End With
+</div>
+</body>
+</html>

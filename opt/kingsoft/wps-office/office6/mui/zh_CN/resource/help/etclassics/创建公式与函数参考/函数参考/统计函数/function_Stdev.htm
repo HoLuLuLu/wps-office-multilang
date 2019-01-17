@@ -1,0 +1,134 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>STDEV</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="STDEV">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>STDEV</h1>
+<p>估算样本的标准偏差。标准偏差反映相对于平均值 (mean) 的离散程度。</p>
+<p><b>语法</b></p>
+<p><b>STDEV</b>(<b>number1</b>,number2,...)</p>
+<p>Number1,number2,...&nbsp;&nbsp; 为对应于总体样本的 1 到 30 个参数。也可以不使用这种用逗号分隔参数的形式，而用单个数组或对数组的引用。 
+</p>
+<p><b>说明</b> </p>
+<ul>
+	<li>函数 STDEV 假设其参数是总体中的样本。如果数据代表全部样本总体，则应该使用函数 Stdeva 来计算标准偏差。 
+	</li>
+	<li>此处标准偏差的计算使用“无偏差”或“n-1”方法。 
+	</li>
+	<li>函数 STDEV 的计算公式如下： </li>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="../../../images/function_stdev1.gif" width="120" height="52"></p>
+<li>忽略逻辑值（TRUE 或 FALSE）和文本。如果不能忽略逻辑值和文本，请使用 Stdeva 工作表函数。 </li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">强度</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">2</td>
+		<td class="ll">1345</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll" height="20">1301</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td class="ll" height="18">1368</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">5</td>
+		<td class="ll">1322</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">6</td>
+		<td class="ll">1310</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">7</td>
+		<td class="ll">1370</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">8</td>
+		<td class="ll">1318</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">9</td>
+		<td class="ll">1350</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">10</td>
+		<td class="ll">1303</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">11</td>
+		<td class="ll">1299</td>
+	</tr>
+
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2" width="146"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=STDEV(A2:A11)</td>
+		<td class="ll">抗断强度的标准偏差 (27.46391572)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

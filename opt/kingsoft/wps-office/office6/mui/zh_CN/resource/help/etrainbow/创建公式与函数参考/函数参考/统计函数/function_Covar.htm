@@ -1,0 +1,119 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>COVAR</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="COVAR">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">COVAR</font></b></p>
+<p>返回协方差，即每对数据点的偏差乘积的平均数，利用协方差可以决定两个数据集之间的关系。例如，可利用它来检验教育程度与收入档次之间的关系。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">COVAR</b>(<b class="bterm">array1</b>,<b class="bterm">array2</b>)</p>
+<p>Array1&nbsp;&nbsp; 第一个所含数据为整数的单元格区域。</p>
+<p>Array2&nbsp;&nbsp; 第二个所含数据为整数的单元格区域。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>参数必须是数字，或者是包含数字的名称、数组或引用。 
+	</li>
+	<li>若 array1 和 array2 当中有一个为空，则 COVAR 返回错误值#DIV/0!。 
+	</li>
+	<li>若 array1 和 array2 所含数据点的个数不等，则 COVAR 返回错误值 #N/A。 </li>
+	<li>若数组或引用参数包含文本、逻辑值以及空白单元格，则这些值将被忽略；但包含零值的单元格将计算在内。</li>
+	<li>协方差计算公式为<p>
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/151/721/ZA006051128.gif" border="0"></p>
+<p class="cntIndent36">其中 x 和 y 
+是样本平均值 AVERAGE(array1) 和 AVERAGE(array2)，且 n 是样本大小。</p>
+	</li>
+</ul>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="660" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="253"><font face="宋体">A</font></th>
+	    <th class="th1" width="374"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">数据1</font></td>
+		<td class = "th1" width="374"><b class="bterm">数据 2</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">5</p>
+		</td>
+		<td class="ll" width="374">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">8</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="253">12</td>
+		<td class="ll" width="374">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">67</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="253">4</td>
+		<td class="ll" width="374">
+		23</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">5</font></td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="374"><font face="宋体">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10"><font face="宋体">6</font></td>
+		<td class="ll" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">=COVAR(A2:A4, 
+		B2:B4)</p>
+		</td>
+		<td class="ll" width="374">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		协方差，即上述每对数据点的偏差乘积的平均数 (83.3333333)</p>
+		</td>
+	</tr>
+    	
+</table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+<html><head>
+<title>BookmarkID</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+如果在文档的开始位置没有设置书签，则本示例添加一个名为“temp”的书签。<p>Set myRange = ActiveDocument.Content <br>myRange.Collapse Direction:=wpsCollapseStart <br>If myRange.BookmarkID = 0 Then <br>&nbsp;&nbsp;&nbsp; ActiveDocument.Bookmarks.Add Name:="temp", Range:=myRange <br>End If
+</p>
+<p>　</p>
+<p>本示例显示位于选定部分的开始位置的书签编号。 </p>
+<p>MsgBox "Bookmark " & Selection.BookmarkID 
+</div>
+</body>
+</html>

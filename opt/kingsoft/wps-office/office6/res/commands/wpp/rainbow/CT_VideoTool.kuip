@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.ct_videotool" component="wpp">
+	<commands>
+		<KListCommand id="Media_Play">
+			<KxWppVideoPlayCommand icon="MediaPlay" customTip="MediaPlay" text="@media play"/>
+			<separator/>
+		</KListCommand>
+		<KListCommand id="Media_Vol">
+			<KListCommand icon="MediaVol" customTip="MediaVol" text="@media vol" qtspyName="MediaVol" rbHotKey="I">
+				<KxWppVideoVolCommand index="3" text="@hight" qtspyName="MediaVolHight"/>
+				<KxWppVideoVolCommand index="2" text="@mid" qtspyName="MediaVolMid"/>
+				<KxWppVideoVolCommand index="1" text="@low" qtspyName="MediaVolLow"/>
+				<KxWppVideoVolCommand index="0" text="@mute" qtspyName="MediaVolMute"/>
+			</KListCommand>
+		</KListCommand>
+		<KListCommand id="Media_Trim">
+			<KxLegacyTriggerCommand ksoCmd="TrimMovie" icon="MediaTrim" customTip="MediaTrim" text="@media trim"/>
+			<separator/>
+		</KListCommand>
+		<KxListCommand id="Media_Play_Setting" customTip="FormatObjectSize" text="@Size" rbFileMenuEmbed="1">
+			<KxWppVideoFullSceenCommand customTip="FullScreenPlay" spaceHint="suitable" text="@full screen paly" leftSpace="2" qtspyName="FullSceen"/>
+			<KxWppVideoHideCommand customTip="HideMedia" spaceHint="suitable" text="@hidden when stop" leftSpace="2" qtspyName="HideMedia"/>
+			<KxWppVideoLoopCommand customTip="LoopMedia" spaceHint="suitable" text="@Loop until stopped" qtspyName="LoopMedia" rbHotKey="G"/>
+			<KxWppVideoRewindCommand customTip="RewindMedia" spaceHint="suitable" text="@Rewind movie when done playing" qtspyName="RewindMedia" rbHotKey="G"/>
+		</KxListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_VideoTool">
+			<command idQ="Media_Play"/>
+			<command idQ="Media_Vol"/>
+			<separator/>
+			<command idQ="Media_Trim"/>
+			<command idQ="Media_Play_Setting"/>
+		</subcommand>
+	</subcommands>
+</shell>

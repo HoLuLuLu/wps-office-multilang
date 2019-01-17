@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=7" />
+		<meta name="author" content="kingsoft-WPS" />
+		<meta name="Copyright" content="kingsoft" />		
+		<title>WPS在线模板--WPS Office官方网站</title>
+		<style type="text/css">
+		html {color:#000;height:100%;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {margin:0;padding:0;}h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}ol,ul {list-style:none;} fieldset,img {border:0;} a:link,a:visited,a:hover,a:active{text-decoration:none;}a:hover{text-decoration:underline;}.fl{float:left;}.fr{float:right;}.tc{text-align:center;}.cb{clear:both;}.cb:after {visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0;}
+		input,input:focus{ outline:none; }
+		
+		/* CSS Document */
+		body{font-size:12px; font-family:'SimSun',Arial,Helvetica,sans-serif;line-height:20px;   padding:17px; background:url(./kzone-img/bg.png) repeat-x;}	
+
+		.warning,.menu_logo,.main li{background-image:url(./kzone-img/ui_img.png); background-repeat:no-repeat;}
+		.layout{margin:0 auto;}
+		.top{background:#788aad;width:100%; height:40px; line-height:40px; color:#fff; position:relative;}
+		.link_docer{color:#fff; font-family:'Microsoft YaHei'; position:absolute; left:20px; top:0;}
+		.warning{margin:0 auto; width:160px; height:40px; background-position:0 -19px; padding-left:32px;}
+		.new_btn{width:92px; height:31px; line-height:31px; padding-left:40px; margin-top:4px;position:absolute; right:20px; top:0; color:#fff; background:url(./kzone-img/button.png) no-repeat 0 0;}
+		.new_btn:hover{background-position:0 -40px;text-decoration:none;}
+		.new_btn:active{background-position:0 -40px;}
+		.content_top{text-align:center; margin:50px 0 65px;}
+		.menu_logo{position:absolute;width:19px; height:18px;background-position:0 0;}
+		.main{margin:0 auto; border:1px solid #cbcbcb; background:#f9fcfd; padding-top:15px; height:285px; }
+		.main li{ padding:0 12px 0 55px; margin-top:20px;}
+		.main h3{color:#000;}
+		.main span{color:#717171;}
+		.main_s{width:574px; }
+		.s_1{background-position:22px -700px;}
+		.s_2{background-position:22px -740px;}
+		.s_3{background-position:22px -780px;}
+		.s_4{background-position:22px -820px;}
+		.s_5{background-position:22px -860px;}
+		.s_6{background-position:22px -900px;}
+		.s_7{background-position:22px -940px;}
+		.s_8{background-position:22px -980px;}
+		.footer{display:block;margin:10px 0;border-top:1px solid #cbcbcb; padding-top:7px;}
+		.footer input{float:left; margin:3px 8px 0 28px;}
+		.footer label{float:left;}
+		</style>	
+	</head>
+	<body>
+		<div class="layout">
+			<div class="top">
+				<a href="http://docer.wps.cn/" target="_blank" class="link_docer" hidefocus="true">docer.wps.cn</a>
+				<div class="warning">您的网络可能出现问题了哟！</div>
+				<a id="newDoc" href="http://userparams?mod=template2&act=newdoc" class="new_btn">新建空白文档</a>
+			</div>
+			<div class="content">
+				<p class="content_top">
+					快去检查下网络链接，或请稍后再试。<br /> 网络正常时，可通过菜单栏&nbsp;<span class="menu_logo"></span>&nbsp;&nbsp;&nbsp;&nbsp;访问Docer-在线模板
+				</p>
+				
+				<div class="main main_s">
+					<ul class="fl">
+						<li class="s_1">
+							<h3>表格样式</h3>
+							<span>色彩搭配，轻松美化表格。</span>
+						</li>
+						<li class="s_3">
+							<h3>重复值操作</h3>
+							<span>清除重复值，简化表格操作。</span>
+						</li>
+						<li class="s_5">
+							<h3>计算个税</h3>
+							<span>个人理财就让WPS来帮手。</span>
+						</li>
+						<li class="s_7">
+							<h3>标签切换</h3>
+							<span>支持标签拖拽操作，行云流水。</span>
+						</li>
+					</ul>
+					<ul class="fr">
+						<li class="s_2">
+							<h3>人民币大写</h3>
+							<span>适应财务大写数字书写习惯。</span>
+						</li>
+						<li class="s_4">
+							<h3>编辑框折叠</h3>
+							<span>编辑框提供折叠功能，方便阅读、编辑。</span>
+						</li>
+						<li class="s_6">
+							<h3>阅读模式</h3>
+							<span>高亮标示，快速定位当前单元格。</span>
+						</li>
+						<li class="s_8">
+							<h3>跨列合并</h3>
+							<span>支持多行多列合并。</span>
+						</li>
+					</ul>
+					<div class="cb"></div>
+				
+					<span class="footer"><input type="checkbox" id="new" onclick="checked_onclick(this);" onfocus="this.blur()" /><label for="new">下次启动直接新建空白文档</label></span>
+					<script type="text/javascript">
+						var set=function(el){
+							homepageapi.setAutoStartTemplate(!el.checked);
+						}
+						set(document.getElementById("new"));
+						function checked_onclick(el){
+							set(el);
+						}
+					</script>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

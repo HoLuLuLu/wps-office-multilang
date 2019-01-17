@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.ole_options" component="et">
+	<commands/>
+	<subcommands>
+		<subcommand id="OLE Options">
+			<KxEtOleSetDisplayAreaCommand detail="@Set Display Area" aid="92001" text="@Set Display Area" qtspyName="92001"/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,138 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>EXPONDIST</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="EXPONDIST">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1><span style="font-weight: bold; font-family: 宋体">EXPONDIST</span></h1>
+<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt"><font face="宋体">
+返回指数分布。使用函数&nbsp;</font><span style="font-family: Times New Roman"><font face="宋体">EXPONDIST&nbsp;可以建立事件之间的时间间隔模型，例如，在计算银行自动提款机支付一次现金所花费的时间时，可通过函数&nbsp;EXPONDIST&nbsp;来确定这一过程最长持续&nbsp;1&nbsp;分钟的发生概率。</font></span></p>
+<p><b>语法</b></p>
+<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+<span style="font-family: 宋体; font-weight: 700">EXPONDIST(x,lambda,cumulative)</span></p>
+<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">　</p>
+<p class="p0" style="text-autospace: ideograph-other; border-bottom: medium none; margin-top: 0pt; margin-bottom: 0pt; padding-left: 0pt; padding-right: 0pt; padding-top: 0pt; padding-bottom: 6pt">
+<span style="letter-spacing: 0.5500pt; font-family: 宋体">&nbsp;X&nbsp;&nbsp; 函数的值。</span></p>
+<p class="p0" style="text-autospace: ideograph-other; border-bottom: medium none; margin-top: 0pt; margin-bottom: 0pt; padding-left: 0pt; padding-right: 0pt; padding-top: 0pt; padding-bottom: 6pt">
+<span style="letter-spacing: 0.5500pt; font-weight: bold; font-family: 宋体">&nbsp;</span><span style="letter-spacing: 0.5500pt; font-family: 宋体">Lambda&nbsp;&nbsp; 
+参数值。</span></p>
+<p class="p0" style="text-autospace: ideograph-other; border-bottom: medium none; margin-top: 0pt; margin-bottom: 0pt; padding-left: 0pt; padding-right: 0pt; padding-top: 0pt; padding-bottom: 6pt">
+<span style="letter-spacing: 0.5500pt; font-family: 宋体">&nbsp;Cumulative&nbsp;&nbsp; 
+一逻辑值，指定要提供的指数函数的形式。如果&nbsp;cumulative&nbsp;为&nbsp;TRUE，函数&nbsp;EXPONDIST&nbsp;返回累积分布函数；如果&nbsp;cumulative&nbsp;为&nbsp;FALSE，返回概率密度函数。</span></p>
+<p><b>说明</b> </p>
+<ul>
+	<li><span style="letter-spacing: 0.5500pt; font-family: 宋体">
+	若&nbsp;x&nbsp;或&nbsp;lambda&nbsp;为非数值型，则&nbsp;EXPONDIST&nbsp;返回错误值&nbsp;#VALUE!。</span></li>
+	<li><span style="letter-spacing: 0.5500pt; font-family: 宋体">若出现以下任一情况&nbsp;，则&nbsp;EXPONDIST&nbsp;返回错误值&nbsp;#NUM!。</span><p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+	<span style="letter-spacing: 0.5500pt; font-family: 宋体">&nbsp;</span><span style="font-family: 宋体">&nbsp;&nbsp;&nbsp;1<font face="宋体">、</font>x&nbsp;&lt;&nbsp;0</span></p>
+	<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+	<span style="font-family: 宋体">&nbsp;&nbsp;&nbsp;&nbsp;2<font face="宋体">、</font>lambda&nbsp;≤&nbsp;0</span></p>
+	</li>
+	<li><span style="letter-spacing: 0.5500pt; font-family: 宋体">累积分布函数的计算公式为：</span><img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/960/590/ZA006051268.gif" border="0"> </li>
+	<li><span style="letter-spacing: 0.5500pt; font-family: 宋体">概率密度函数的计算公式为：</span><img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/676/500/ZA006051267.gif" border="0"> </li>
+</ul>
+<p></p>
+<p></p>
+
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="460" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="186">A</th>
+	    <th class="th1" width="241">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="186"><font face="宋体">数据</font></td>
+		<td class = "th1" width="241">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="186">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">0.6</span></p>
+		</td>
+		<td class="ll" width="241">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">函数的值</span></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="186">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">20</span></p>
+		</td>
+		<td class="ll" width="241">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">参数值</span></p>
+		</td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10"><font face="宋体">4</font></td>
+		<td class = "th1" width="186"><font face="宋体"><b>公式</b></font></td>
+		<td class = "th2"><font face="宋体"><b>说明（结果）</b></font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">5</font></td>
+		<td class="ll" width="186">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">=EXPONDIST(A2,A3,TRUE)</span></p>
+		</td>
+		<td class="ll" width="241">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">累积指数分布函数&nbsp;（</span><span style="color: rgb(0,0,0); font-weight: normal; font-style: normal; font-family: 宋体">0.999993856)</span></p>
+		</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">6</font></td>
+		<td class="ll" width="186">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">=EXPONDIST(0.6,20,FALSE)</span></p>
+		</td>
+		<td class="ll" width="241">
+		<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+		<span style="font-family: 宋体">概率指数分布函数（</span><span style="color: rgb(0,0,0); font-weight: normal; font-style: normal; font-family: 宋体">0.000122884</span><span style="font-family: 宋体">）</span></p>
+		</td>
+	</tr>
+
+</table>
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

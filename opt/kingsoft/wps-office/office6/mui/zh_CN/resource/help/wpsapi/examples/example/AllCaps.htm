@@ -1,0 +1,15 @@
+<html><head>
+<title>AllCaps</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例检查活动文档第三段的文本格式是否设置为全部字母大写。 
+<p>If ActiveDocument.Paragraphs(3).Range.Font.AllCaps = True Then <br>&nbsp;&nbsp;&nbsp; MsgBox "第三段的所有文字都是大写的。&quot; <br>Else <br>&nbsp;&nbsp;&nbsp; MsgBox "第三段存在不是大写的文字。&quot; <br>End if</p>
+<p>　</p>
+<p>本示例将选定文本的字体格式设置为全部字母大写。 </p>
+<p>If Selection.Type = wpsSelectionNormal Then <br>&nbsp;&nbsp;&nbsp; Selection.Font.AllCaps = True <br>Else <br>&nbsp;&nbsp;&nbsp; MsgBox "请选择一些文字以执行操作。&quot; <br>End If 
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>AddComment</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p class="T">本示例将演示在指定了查找（Find）和查找下一个（FindNext）命令之后，如果继续执行Find启动的搜索。</p>
+<p class="T">Set fc = Worksheets(&quot;Sheet1&quot;).Columns(&quot;B&quot;).Find(what:=&quot;kingsoft&quot;)</p>
+<p class="T">MsgBox &quot;第一次出现&quot; &amp; fc.Address</p>
+<p class="T">Set fc = Worksheets(&quot;Sheet1&quot;).Columns(&quot;B&quot;).FindNext(after:=fc)</p>
+<p class="T">MsgBox &quot;第二次出现 &quot; &amp; fc.Address</p>
+<p class="T">Set fc = Worksheets(&quot;Sheet1&quot;).Columns(&quot;B&quot;).FindPrevious(after:=fc)</p>
+<p class="T">MsgBox &quot;回到第一次查找到kingsoft的单元格&quot; &amp; fc.Address</div>
+
+</body>
+
+</html>

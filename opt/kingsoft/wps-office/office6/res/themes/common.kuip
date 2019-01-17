@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<theme>
+		<style class="QTextEdit">
+			<color value="#FFFFFF" name="background"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="1" value="#FFFFFF"/>
+			</linearGradient>
+			<color value="#232d30" name="text"/>
+			<color value="#00000000" name="text-shadow"/>
+			<color value="#a3b6da" name="text-highlight"/>
+		</style>
+		<style base="common" class="KShadowBorder">
+			<linearGradient spread="pad" end="0,0" name="border-left" start="0,1">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="border-top" start="0,0">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,0" name="border-right" start="0,1">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,0" name="border-bottom" start="1,0">
+				<color position="0" value="#0000001f"/>
+				<color position="0.1" value="#0000001f"/>
+				<color position="0.5" value="#00000010"/>
+				<color position="1" value="#00000000"/>
+			</linearGradient>
+			<radialGradient radius="1" spread="pad" center="1,1" name="border-topleft" focal="1,1">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="0,1" name="border-topright" focal="0,1">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="1,0" name="border-bottomleft" focal="1,0">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+			<radialGradient radius="1" spread="pad" center="0,0" name="border-bottomright" focal="0,0">
+				<color position="0" value="#00000019"/>
+				<color position="0.4" value="#00000006"/>
+				<color position="1" value="#00000000"/>
+			</radialGradient>
+		</style>
+	</theme>
+</shell>

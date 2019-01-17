@@ -1,0 +1,81 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>REPLACEB</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="REPLACEB">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et2
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">REPLACE</font></b><b class="bterm"><font size="3">B</font></b></p>
+<p>使用其他文本字符串并根据所指定的字符数替换某文本字符串中的部分文本。此函数专为双字节字符使用。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">REPLACEB</b>(<b class="bterm">old_text</b>,<b class="bterm">start_num</b>,<b class="bterm">num_bytes</b>,<b class="bterm">new_text</b>)</p>
+<p>Old_text&nbsp;&nbsp;&nbsp;&nbsp; 要替换其部分字符的文本。</p>
+<p>Start_num&nbsp;&nbsp;&nbsp;&nbsp; 要用 new_text 替换的 old_text 中字符的位置。</p>
+<p>Num_bytes&nbsp;&nbsp;&nbsp;&nbsp; 希望 REPLACEB 使用 new_text 替换 old_text 中字节的个数。</p>
+<p>New_text&nbsp;&nbsp;&nbsp;&nbsp; 要用于替换 old_text 中字符的文本。</p>
+<div class="cdclvSection" jQuery1281497238671="12">
+	<div class="cntArticleBody" id="m_article">
+		<font face="宋体"><b class="bterm">示例 </b></font><p>
+		<font face="宋体">在下面的示例中，REPLACEB 返回“北&nbsp;花飘”，因为每个字符按 2 
+	计数；第二个参数指定第四个字节处的一个起点，即第二个字符，第三个参数指定四个字节的长度，即两个字符。 </font></div>
+</div>
+<p><code><font face="宋体">=REPLACEB(&quot;北风吹雪&quot;,4,4,&quot;花飘&quot;)</font></code><font face="宋体"> 
+等于“北&nbsp;花飘”</font></p>
+<p>　</p>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+
+
+
+</body>
+
+</html>

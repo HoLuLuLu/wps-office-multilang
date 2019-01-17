@@ -1,0 +1,164 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>STDEVPA</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="STDEVPA">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et5
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">STDEVPA</font></b></p>
+<p>返回以参数形式给出的整个样本总体的标准偏差，包含文本和逻辑值。标准偏差反映数值相对于平均值 (mean) 的离散程度。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">STDEVPA</b>(<b class="bterm">value1</b>,value2,...)</p>
+<p>Value1,value2,...&nbsp;&nbsp;&nbsp;&nbsp; 对应于样本总体的一组值，数值的个数可以为 1 到 30 
+个。也可以用单一数组或对某个数组的引用来代替用逗号分隔的参数。 </p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>包含 TRUE 的参数作为 1 计算；包含文本或 FALSE 的参数作为 0 计算。若在计算中不能包含文本值或逻辑值，请使用 STDEVP 
+	工作表函数来代替。</li>
+	<li>函数 STDEVPA 假设参数即为样本总体。若数据代表的是总体的一个样本，则必须使用函数 STDEVA 来估算标准偏差。 
+	</li>
+	<li>对于大样本容量，函数 STDEVA 和函数 STDEVPA 的返回值大致相等。 
+	</li>
+	<li>此处标准偏差的计算使用“有偏差”和“n”方法。 
+	</li>
+	<li>函数 STDEVPA 的计算公式如下： </li>
+</ul>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/263/528/ZA006051249.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其中 
+x 是样本平均值 AVERAGE(value1,value2,…) 且 n 是样本大小。</p>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="250" id="table8">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="220"><font face="宋体">A</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="220">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<b class="bterm">强度</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="220">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">1452</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="220"><font size="2">1413</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="220"><font size="2">1498</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">5</font></td>
+		<td class="ll" width="220"><font size="2">1401</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">6</font></td>
+		<td class="ll" width="220"><font size="2">1408</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">7</td>
+		<td class="ll" width="220"><font size="2">1492</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">8</td>
+		<td class="ll" width="220"><font size="2">1475</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">9</td>
+		<td class="ll" width="220"><font size="2">1426</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">10</td>
+		<td class="ll" width="220"><font size="2">1416</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">11</td>
+		<td class="ll" width="220"><font size="2">1314</font></td>
+	</tr>
+	    	
+</table>
+
+<table width="656" id="table9">
+	<tr>
+		<td class="tdSeqence" width="10">12</td>
+		<td class = "th1" width="222">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="401"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10">13</td>
+		<td class="ll" width="222">
+		<font size="2">=STDEVPA(A2:A11)</font></td>
+		<td class="ll" width="401">
+		<font size="2">假定仅生产了 10 件工具，其抗断强度的标准偏差 (51.241096788)</font></td>
+	</tr>
+    	
+    </table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

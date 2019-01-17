@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="etrainbow" component="et" name="rainbow">
+	<style name="rainbow"/>
+	<theme path="themes/rainbowet.kuip"/>
+	<attributes path="attributes.kuip"/>
+	<tips path="tips/ettips.kuip"/>
+	<import path="common.kuip"/>
+	<import path="etcommon.kuip"/>
+	<mainwindow tc="mainwindow" caption="@Spreadsheets" frameless="1">
+		<commands tc="commands">
+			<KWindowTitleBarButtonCommand visible="0" id="Worksheet Menu Bar">
+				<command idQ="FileMenu"/>
+				<command idQ="EditMenu"/>
+				<command idQ="ViewMenu"/>
+				<command idQ="InsertMenu"/>
+				<command idQ="FormatMenu"/>
+				<command idQ="ToolsMenu"/>
+				<command idQ="DataMenu"/>
+				<command idQ="ChartMenu"/>
+				<command idQ="WindowMenu"/>
+				<command idQ="HelpMenu"/>
+			</KWindowTitleBarButtonCommand>
+			<KWindowTitleButtonGroupCommand id="sysbuttongroup">
+				<KMinButtonCommand icon="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable" text="@Minimize Window" qtspyName="TitleMinButton;TitleMinButton-hover;TitleMinButton-down;TitleMinButton-disable"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KMaxButtonCommand customTip2="@Restore Window" icon="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" customTip="@Maximize Window" text="@Maximize Window" iconMax="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable" iconRestore="TitleRestoreButton;TitleRestoreButton-hover;TitleRestoreButton-down;TitleRestoreButton-disable" qtspyName="TitleMaxButton;TitleMaxButton-hover;TitleMaxButton-down;TitleMaxButton-disable"/>
+				<KTitleGroupSpaceCommand space="-1"/>
+				<KCloseButtonCommand icon="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable" text="@Close Window" qtspyName="TitleCloseButton;TitleCloseButton-hover;TitleCloseButton-down;TitleCloseButton-disable"/>
+			</KWindowTitleButtonGroupCommand>
+			<kxServiceExpireTipQuiteMenuCommand ksoCmd="KServiceExpireTipQuiteMenuCommand" id="KServiceExpireTipQuiteMenuCommand" text="@Service Expired"/>
+			<kxKOSUserLoginQuiteMenuCommand hotKey="T" ksoCmd="KOSUserLoginQuiteMenuCmd" filter="support:WPSCloudLogin=true;support:EnableAccount=true" id="KOSUserLoginQuiteMenuCmd" text="@Sign in" rbHotKey="T"/>
+			<kxKOSUserGiftMenuCommand id="kxKOSUserGiftMenuCmd"/>
+			<KUserCenterCommand id="userCenterCmd" giftCommand="kxKOSUserGiftMenuCmd"/>
+			<kxKOSRechargeCommand hotKey="R" ksoCmd="KOSRechargeCmd" icon="OS_Recharge" id="KOSRechargeCmd" text="@Recharge" rbHotKey="R"/>
+			<kxKOSLogoutCommand hotKey="X" ksoCmd="KOSLogoutCommand" icon="OS_Login" id="KOSLogoutCommand" customTip="KOSLogoutTip" text="@Sign out" rbHotKey="X"/>
+			<KUserCenterMenuCommand id="UserCenterMenuCmd">
+				<KxOpenPersonalCenterCommand icon="OS_ViewUserInfo" id="OpenPersonalCenterCmd" text="@Personal Center"/>
+				<command idQ="KOSLogoutCommand"/>
+			</KUserCenterMenuCommand>
+			<KxSwitchLangCommand tc="KxSwitchLangCommand" hotKey="X" aid="88888" idMso="SetLanguage" icon="switchLang" controlType="0" id="switchLangDlg" dialogHint="1" text="@Switch Language"/>
+			<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" hotKey="y" newSkinIcon="switchUINewSkinFound" aid="92020" filter="category=personal;oem_SwitchFace!=0" visible="@true" icon="switchUI;switchUI-hover;switchUI-down" id="switchFaceDlg" text="@Switch UI@Personal Version" serverNewSkinFound="false"/>
+			<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" hotKey="y" newSkinIcon="switchUINewSkinFound" aid="92020" filter="category!=personal;oem_SwitchFace!=0" visible="@true" idMso="SwitchFace" icon="switchUI;switchUI-hover;switchUI-down" id="switchFaceDlg" text="@Switch UI@Professional Version" serverNewSkinFound="false"/>
+			<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" hotKey="q" newSkinIcon="switchUI" filter="category=personal;oem_SwitchFace!=0" visible="@true" icon="switchUI;switchUI-hover;switchUI-down" id="switchFaceDlgOnFileMenu" text="@Switch UI@Personal Version" rbHotKey="Q" serverNewSkinFound="false"/>
+			<KSwitchFaceDlgCommand tc="KSwitchFaceDlgCommand" normalIcon="switchUI" hotKey="q" newSkinIcon="switchUI" filter="category!=personal;oem_SwitchFace!=0" visible="@true" icon="switchUI;switchUI-hover;switchUI-down" id="switchFaceDlgOnFileMenu" text="@Switch UI@Professional Version" rbHotKey="Q" serverNewSkinFound="false"/>
+			<KxKsoHomepageCommand hotKey="E" ksoCmd="HomepagePlugin" aid="2000022" icon="wpshome" id="HomepagePlugin" text="@Online Templates"/>
+			<KWhatNewCommand ksoCmd="WhatNew" filter="lang=zh_CN;category=personal" icon="WhatNew" id="WhatNew" text="@What's New"/>
+			<KProxyCommand targetId="KWpsPackagePlugin" delayLoadLib="false" hotKey="P" delayloadPath="commands/et/rainbow/ProxyCommands.kuip" ksoCmd="KWpsPackagePlugin" targetModule="kwpspackage" filter="category=personal" visible="false" icon="WpsPackage" id="KWpsPackagePlugin" text="@WpsPackagePlugin"/>
+			<KxMinisiteCommand hotKey="M" ksoCmd="MinisitePlugin" aid="40040" icon="minisite" id="MinisitePlugin" text="@Minisite"/>
+			<KNewsCommand filter="lang=zh_CN;category=personal" icon="NewsMailer" id="News" text="@News"/>
+			<KListCommand id="RightCorner" text="@Popup Menu">
+				<command idQ="KServiceExpireTipQuiteMenuCommand"/>
+				<command idQ="News"/>
+				<command idQ="KOSUserLoginQuiteMenuCmd"/>
+				<command idQ="UserCenterMenuCmd"/>
+				<command idQ="userCenterCmd"/>
+				<KRbLogicGroupVisibleToggleCommand iconStick="iconStick" icon="iconHide" iconHide="iconHide" textExtent="@Show the Toolbar" textStick="@Pin the Toolbar" text="@Show/Hide Toolbar" iconExtent="iconExtent" qtspyName="iconHide" textHide="@Hide Toolbar"/>
+				<command idQ="HomepagePlugin"/>
+				<command idQ="KWpsPackagePlugin"/>
+				<command idQ="MinisitePlugin" filter="lang=zh_CN;category=personal"/>
+				<command idQ="switchFaceDlg" filter="oem_SwitchFace!=0"/>
+				<command idQ="UserFeedback" filter="support:FeedbackOnBar=true"/>
+				<command idQ="MailFeedBack"/>
+				<command idQ="TComCS"/>
+				<KxEnterpriseMicroblogCommand filter="support:Microblog=true" ksourl="Product:EnterpriseMicroblogUrl" icon="EnterpriseMicroblog" id="EnterpriseMicroblog" text="@WPS After-sale Microblog"/>
+				<command idQ="HelpMenu"/>
+			</KListCommand>
+			<KxLegacyTriggerCommand hotKey="t" ksoCmd="Options" idMso="ApplicationOptionsDialog" icon="Options" id="m_rbOptions" dialogHint="1" text="@Options" rbHotKey="T"/>
+			<KxRecentFilePageCommand hotKey="R" ksoCmd="RecentFileList" id="RecentFilePageCMD" text="@Recently used files" rbFileMenuEmbed="1"/>
+			<KRbFileMenuCommand quitCommand="Exit" recentFileCommand="RecentFilePageCMD" hotKey="F" curentProject="et" delayloadPath="commands/et/rainbow/CT_File.kuip" classicCommand="Worksheet Menu Bar" skinSwitchCommand="switchFaceDlgOnFileMenu" customCommand="m_rbOptions" icon="TabFileButtonIcon-S" newSkinFlash="false" id="CT_File" text="" rbHotKey="F"/>
+			<KRbTabWidgetCommand rightCornerCommand="sysbuttongroup" fileCommand="CT_File" rightCornerExtentCommand="RightCorner" id="tabwidget" text="@test Rb Tab Widget" customAttribute="IF(patent:LogicGroupShowExtensionButton=false){titleVisible=0;arrowVisible=0}">
+				<KRbTabCommand hotKey="H" delayloadPath="commands/et/rainbow/CT_Home.kuip" idMso="TabHome" controlType="12" id="CT_Home" text="@Home" rbHotKey="h"/>
+				<KRbTabCommand hotKey="N" delayloadPath="commands/et/rainbow/CT_Insert.kuip" idMso="TabInsert" controlType="12" id="CT_Insert" text="@Insert" rbHotKey="N"/>
+				<KRbTabCommand hotKey="P" delayloadPath="commands/et/rainbow/CT_Layout.kuip" idMso="TabPageLayoutExcel" controlType="12" id="CT_Layout" text="@Page Layout" rbHotKey="P"/>
+				<KRbTabCommand hotKey="M" delayloadPath="commands/et/rainbow/CT_Formulas.kuip" idMso="TabFormulas" controlType="12" id="CT_Formulas" text="@Formulas" rbHotKey="M"/>
+				<KRbTabCommand hotKey="A" delayloadPath="commands/et/rainbow/CT_Data.kuip" idMso="TabData" controlType="12" id="CT_Data" text="@Data" rbHotKey="A"/>
+				<KRbTabCommand hotKey="R" delayloadPath="commands/et/rainbow/CT_Review.kuip" idMso="TabReview" controlType="12" id="CT_Review" text="@Review" rbHotKey="R"/>
+				<KRbTabCommand hotKey="W" delayloadPath="commands/et/rainbow/CT_View.kuip" idMso="TabView" controlType="12" id="CT_View" text="@View" rbHotKey="W"/>
+				<KxEtPrintPreviewContext rbContextTableButton="0xb457fc" delayloadPath="commands/et/rainbow/CT_PrintPreview.kuip" visibleRaise="1" idMso="TabPrintPreview" controlType="12" id="CT_PrintPreview" visibleAlone="1" text="@Print Preview" rbHotKey="P"/>
+				<KxAddOnsContext hotKey="X" delayloadPath="commands/et/rainbow/CT_AddOns.kuip" idMso="TabAddIns" controlType="12" id="CT_AddOns" text="@Add-Ins" rbHotKey="X"/>
+				<KxDevelopToolsContext rbContextTableButton="0xff61f6" delayloadPath="commands/et/rainbow/CT_DevelopTools.kuip" idMso="TabDeveloper" controlType="12" id="CT_DevelopTools" text="@Developer" rbHotKey="L"/>
+				<KxShapeToolContext rbContextTableButton="0x05cbe2" delayloadPath="commands/et/rainbow/CT_DrawingTools.kuip" id="CT_DrawingTools" text="@Drawing Tools" rbHotKey="JD"/>
+				<KxShapeToolContext_Vml rbContextTableButton="0x05cbe2" delayloadPath="commands/et/rainbow/CT_DrawingTools_Vml.kuip" id="CT_DrawingTools_Vml" text="@Drawing Tools" rbHotKey="JD"/>
+				<KxTextToolContext rbContextTableButton="0x05cbe2" delayloadPath="commands/et/rainbow/CT_TextTool.kuip" id="CT_TextTool" text="@Text Tool" rbHotKey="JE"/>
+				<KxShapeToolContext_Vml rbContextTableButton="0x05cbe2" delayloadPath="commands/et/rainbow/CT_shadowDrawingTools_Vml.kuip" id="CT_shadowDrawingTools_Vml" text="@Formats" rbHotKey="JS"/>
+				<KxPictureToolContext rbContextTableButton="0xdf57fc" delayloadPath="commands/et/rainbow/CT_PictureTool.kuip" idMso="TabPictureToolsFormat" controlType="12" id="CT_PictureTool" text="@Picture Tools" rbHotKey="JP"/>
+				<KxPictureToolContext_Vml rbContextTableButton="0xdf57fc" delayloadPath="commands/et/rainbow/CT_PictureTool_Vml.kuip" id="CT_PictureTool_Vml" text="@Picture Tools" rbHotKey="JP"/>
+				<KxWordArtContext rbContextTableButton="0xffd800" delayloadPath="commands/et/rainbow/CT_WordArt.kuip" id="CT_WordArt" text="@WordArt" rbHotKey="JW"/>
+				<KxWordArtContext rbContextTableButton="0xffd800" delayloadPath="commands/et/rainbow/CT_WAshadowDrawingTools.kuip" id="CT_WAshadowDrawingTools" text="@Formats" rbHotKey="JA"/>
+				<KxChartToolContext rbContextTableButton="0x9cff00" delayloadPath="commands/et/rainbow/CT_ChartTools.kuip" id="CT_ChartTools" text="@Chart Tools" rbHotKey="JC"/>
+				<KxEtPivotTableOptions rbContextTableButton="0x0591e2" delayloadPath="commands/et/rainbow/CT_PivotTableOptions.kuip" id="CT_PivotTableOptions" text="@PivotTable Options" rbHotKey="JT"/>
+				<KxEtPivotTableDesign rbContextTableButton="0x0591e2" delayloadPath="commands/et/rainbow/CT_PivotTableDesign.kuip" id="CT_PivotTableDesign" text="@PivotTable Design" rbHotKey="JY"/>
+				<KxWorkspaceContext rbContextTableButton="0x05cbe2" hotKey="K" delayloadPath="commands/et/rainbow/CT_WorkSpace.kuip" id="CT_WorkSpace" text="@Special Features" rbHotKey="K"/>
+				<KxEtTableToolContext rbContextTableButton="0x0591e2" delayloadPath="commands/et/rainbow/CT_TableTool.kuip" id="CT_TableTool" text="@Table Tools" rbHotKey="JT"/>
+				<KxEtSlicerOptions rbContextTableButton="0x0591e2" delayloadPath="commands/et/ongmani/CT_SlicerOptions.kuip" id="CT_SlicerOptions" text="@Slicer Tools" rbHotKey="JO"/>
+				<KxEtAutoFilterToolsContext rbContextTableButton="0x0591e2" delayloadPath="commands/et/rainbow/CT_AutoFilterTools.kuip" id="CT_AutoFilterTools" text="@Filter Tools" rbHotKey="JF"/>
+			</KRbTabWidgetCommand>
+			<KxLegacyTriggerCommand hotKey="f" ksoCmd="ExportPDF" aid="80004" icon="ExportToPDF" id="PrintToPDF" dialogHint="1" customTip="ExportToPDF" text="@Export to PDF"/>
+			<KListCommand id="QAT_Menu" text="@Recent Documents">
+				<command idQ="NewDefaultFile"/>
+				<command idQ="OpenFile"/>
+				<command idQ="SaveFile"/>
+				<command idQ="PrintToPDF"/>
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+				<command idQ="PrintPreview"/>
+				<command idQ="TouchUiMode"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+				<KxOptionsDlgTabCommand ksoCmd="OptionsDlgTab" tabName="opeQat" id="QAT_MoreCommands"/>
+			</KListCommand>
+			<KListCommand id="QAT">
+				<command idQ="OpenFile"/>
+				<command idQ="SaveFile"/>
+				<command idQ="PrintToPDF"/>
+				<command idQ="Print"/>
+				<command idQ="PrintDirect"/>
+				<command idQ="PrintPreview"/>
+				<command idQ="Undo"/>
+				<command idQ="Redo"/>
+			</KListCommand>
+			<KProxyCommand targetId="TextToSpeechOption" relatedKsoCmd="InsertPictureFromFile" delayloadPath="commands/et/rainbow/ProxyCommands.kuip" targetModule="wpsspeaker" speakingTip="TextSpeech2" icon="TextSpeech" id="ProxyTextToSpeechOption" customTip="TextSpeech" text="@Text Speech"/>
+		</commands>
+		<dock cmd="ClassicalTaskpane"/>
+		<dock cmd="Clipboardpane" dockArea="dockArea_left"/>
+		<krbtabwidget cmd="tabwidget"/>
+		<KRbQuicktoolCommand cmd="QAT" menu="QAT_Menu"/>
+		<menubar cmd="Worksheet Menu Bar" delay="1" sysMenuBtn="0"/>
+		<KNoTabPageCommand cmd="NoTabPage"/>
+		<shortcuts>
+			<shortcut cmd="Help" filter="lang=zh_CN,ja_JP" key="F1"/>
+			<shortcut cmd="WPSSpreadsheetOnlineHelp" filter="lang=en_US" key="F1"/>
+			<shortcut cmd="ShortCutNewDefaultFile" key="Ctrl+N"/>
+			<shortcut cmd="rRunMacro" key="Alt+F8"/>
+			<shortcut cmd="rVisualBasicEditor" key="Alt+F11"/>
+		</shortcuts>
+	</mainwindow>
+</shell>

@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="ongmani.proxycommands" component="wps">
+	<modules>
+		<module name="wpsspeaker">
+			<KxWpsSpeakListCommand hotKey="RL" speakingTip="TextSpeech2" icon="TextSpeech" id="TextToSpeechOption" customTip="TextSpeech" text="@Text Speech" rbHotKey="RL">
+				<KxWpsSpeakAllCommand hotKey="a" icon="TextSpeechAll" id="TextToSpeechAll" text="@Full-Text Speech" rbHotKey="A"/>
+				<KxWpsSpeakSelectionCommand hotKey="s" icon="TextSpeechSelect" id="TextToSpeechSelect" text="@Selection Speech" rbHotKey="S"/>
+				<KxWpsSpeakOutputCommand hotKey="o" icon="TextSpeechOutput" id="TextToSpeechOutput" text="@Output Voice" rbHotKey="O"/>
+				<separator/>
+				<KxWpsSpeakToolBarCommand hotKey="d" id="TextToSpeechToolBar" text="@Show Toolbar" rbHotKey="D"/>
+			</KxWpsSpeakListCommand>
+		</module>
+		<module name="kpdf2word">
+			<KPDF2WordCommand hotKey="PW" icon="PDFToWord" id="PDF2Word" customTip="PDFToWord" text="@PDF to Word" rbHotKey="PW"/>
+		</module>
+		<module name="kpdf2wordv2">
+			<KPDF2WordV2Command hotKey="PW" icon="PDFToWord" id="PDF2WordV2" customTip="PDFToWord" text="@PDF to Word" rbHotKey="PW"/>
+		</module>
+		<module name="konlinepicture">
+			<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" hotKey="I" customShortcutEnabled="false" aid="100071" filter="support:IntranetVersion=false" icon="onlinepicture" id="InsertOnlinePictureFromFileInInsertTab" dialogHint="1" customTip="InsertOnlinePictureFromFile" text="@Online Pictures" qtspyName="onlinepicture" rbHotKey="SI"/>
+			<KOnlinePicturePaddingCommand relatedKsoCmd="FillColor" hotKey="o" icon="onlinepicture" id="FillPictureFromOnline" text="@Online Pictures"/>
+			<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" hotKey="o" customShortcutEnabled="false" aid="100056" filter="support:IntranetVersion=false" icon="onlinepicture" id="FromOnline" customTip="InsertOnlinePicture" text="@Online Pictures" rbHotKey="SI"/>
+			<KOnlinePictureCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert online Picture" filter="support:IntranetVersion=false" icon="onlinepicture" id="InsertOnlinePictureFromFileInPictureToolTab" customTip="InsertOnlinePictureFromFile" text="@Online Picture" qtspyName="onlinepicture" rbHotKey="SI"/>
+		</module>
+		<module name="ktranslation">
+			<command idQ="Translation"/>
+			<KTranslationListCommand hotKey="PR" icon="translation" id="TranslationMenu" customTip="Translation" text="@Translation" referenceCommand="Translation" rbHotKey="PR">
+				<command idQ="Translation"/>
+				<KTranslationOptionCommand hotKey="d" icon="translationoption" qtspyName="translationoption"/>
+				<KxTranslationSelectCommand place="0" hotKey="h" icon="selection_translate" text="@Translate selected text" qtspyName="translationselect"/>
+			</KTranslationListCommand>
+			<KxTranslationSelectCommand place="1" hotKey="PS" icon="selection_translate" id="TranslationSelect" customTip="TranslationSelect" text="@Translate selected text" qtspyName="translationselect" rbHotKey="PS"/>
+			<KxTranslationInitCommand id="TranslationInit"/>
+			<KTranslationCommand hotKey="t" filter="support:WPSTranslation=true" icon="translation" id="Translation" customTip="Translation" rbHotKey="T"/>
+			<KxTpTranslationCommand defaultVisible="false" filter="support:WPSTranslation=true" alias="TpTranslation" icon="itranslation;itranslation-mos;itranslation-down;itranslation-dis" id="TpTranslation"/>
+		</module>
+		<module name="kocrtool">
+			<KOCRToolCommand hotKey="PT" icon="PictureToText" id="OCRToolCmd" customTip="PictureToText" text="@Picture to Text" rbHotKey="PT"/>
+		</module>
+		<module name="kfproofread">
+			<KfProofreadCommand icon="KfProofread" id="KfProofreadCmd" customTip="Proofread" text="@Proofread"/>
+		</module>
+		<module name="kdocumentfix">
+			<KDocumentFixCommand hotKey="RF" icon="DocumentFix" id="DocumentFix" customTip="DocumentFix" text="@Document Fix" rbHotKey="RF"/>
+		</module>
+		<module name="photo2pdfentry">
+			<Photo2PdfContextMenuCommand_ConvertOne hotKey="d" icon="photo2pdf" id="Photo2PdfConvertOne" customTip="Photo2PdfConvertOne" text="@Photo2PdfConvertOne" qtspyName="Photo2PdfConvertOne" rbHotKey="D"/>
+			<Photo2PdfContextMenuCommand_ConvertAll hotKey="d" icon="photo2pdf" id="Photo2PdfConvertAll" customTip="Photo2PdfConvertAll" text="@Photo2PdfConvertAll" qtspyName="Photo2PdfConvertAll" rbHotKey="D"/>
+			<Photo2PdfCommand hotKey="d" icon="photo2pdf" from="tools" id="Photo2Pdf" customTip="Photo2Pdf" text="@Photo2Pdf" qtspyName="Photo2Pdf" rbHotKey="D"/>
+			<Photo2PdfCommand hotKey="d" icon="photo2pdf" from="picinsert" id="Photo2Pdf_PicInsert" customTip="Photo2Pdf" text="@Photo2Pdf" qtspyName="Photo2Pdf" rbHotKey="D"/>
+			<Photo2PdfCommand hotKey="d" icon="photo2pdf" from="pictool" id="Photo2Pdf_PicTool" customTip="Photo2Pdf" text="@Photo2Pdf" qtspyName="Photo2Pdf" rbHotKey="D"/>
+		</module>
+		<module name="processonentry">
+			<ProcessOnCommand hotKey="f" icon="Process" id="ProcessOnEntry" customTip="ProcessOnEntry" text="@ProcessOnEntry" qtspyName="ProcessOnEntry" rbHotKey="F"/>
+		</module>
+		<module name="kbarcode">
+			<KxInsertBarcodeCommand relatedKsoCmd="InsertPictureFromFile" hotKey="f" icon="Process" id="InsertBarcode" customTip="InsertBarcode" text="@InsertBarcode" qtspyName="InsertBarcode" rbHotKey="F"/>
+		</module>
+		<module name="advancedexportpdf">
+			<KxAdvancedExportPdfCommand id="AdvancedExportPdf"/>
+			<KxCmdAdvancedExportPdfCommand id="CmdAdvancedExportPdf"/>
+		</module>
+		<module name="sendbyqq">
+			<KxSendByQQCommand id="SendByQQ"/>
+		</module>
+		<module name="kglobalsearch">
+			<KxGlobalSearchCommand hotKey="OG" icon="GlobalSearch" id="GlobalSearch" customTip="GlobalSearch" text="@Global Search" rbHotKey="OG"/>
+		</module>
+		<module name="wpsxiede">
+			<KXieDeUrlWithSidCommand hotKey="x" entrance="feature" filter="kstyle!=classic" icon="XieDe" id="WpsXieDe" customTip="XieDeTip" text="@Xie De" rbHotKey="x"/>
+			<KXieDeMoreItemsGalleryCommand hotKey="x" entrance="feature" filter="kstyle!=classic" icon="XieDe" id="WpsXieDeGalleryMenu" customTip="XieDeTip" text="@Xie De" rbHotKey="x"/>
+			<KXieDeUrlWithSidCommand hotKey="x" entrance="tab" filter="kstyle!=classic" icon="XieDe_Menu" id="WpsXieDeQuickMenu" text="@Xie De Menu" rbHotKey="x"/>
+			<KXieDeMenuUrlWithSidCommand hotKey="x" entrance="menu" filter="kstyle!=classic" icon="XieDe_Menu" id="WpsXieDeFileMenu" text="@Xie De Menu" rbHotKey="x"/>
+			<KXieDePictureStyleCommand hotKey="x" filter="kstyle!=classic" icon="PictureStyle" id="WpsXieDePictureStyle" customTip="PictureStyleTip" text="@Picture Style" rbHotKey="x"/>
+		</module>
+		<module name="kgeogebra">
+			<KxGeogebraCommand relatedKsoCmd="InsertPictureFromFile" hotKey="rg" icon="Geogebra" id="InsertGeogebra" customTip="InsertGeogebra" text="@Geogebra" qtspyName="InsertGeogebra" rbHotKey="RG"/>
+		</module>
+		<module name="khomedesign">
+			<KHomeDesignCommand relatedKsoCmd="InsertPictureFromFile" hotKey="q" icon="Map" id="InsertHomeDesign" customTip="InsertQRCode" text="@HomeDesign" qtspyName="InsertQRCode" rbHotKey="Q"/>
+		</module>
+		<module name="kprintinfocol">
+			<KxWpsPrintInfoCommand hookIds="Print;PrintDirect;PrintPreview" id="HookPrinter"/>
+		</module>
+		<module name="konlineshapes">
+			<KxTpWPSAutoShapeCommand dynamicShapeCmd="DynamicShape" changeAutoShapeCmd="ChangeAutoShape" filter="support:OnlineShapes=true" alias="TpAutoShape" icon="ishape;ishape-mos;ishape-down;ishape-dis" shortHint="@Shapes" id="TpAutoShape" text="@AutoShapes"/>
+		</module>
+		<module name="kfeedback">
+			<KxTpDonateMoneyCommand hotKey="M" screenGrabCmd="screenGrabEx" filter="support:DonateMoney=true" alias="TpDonateMoney" icon="DonateMoney" shortHint="@Donate" id="TpDonate" customTip="DonateMoney" text="@Donate" rbHotKey="M"/>
+			<KxTpFeedbackCommand screenGrabCmd="screenGrabEx" filter="category!=personal;support:IntranetVersion=false" alias="TpFeedback" icon="ifeedback;ifeedback-mos;ifeedback-down;ifeedback-dis" shortHint="@Feedback" id="TpFeedback" text="@Feedback and Advice"/>
+			<KxTpQAndACommand screenGrabCmd="screenGrabEx" filter="support:IntranetVersion=false" alias="TpQAndA" icon="iqanda;iqanda-mos;iqanda-down;iqanda-dis" shortHint="@Help" id="TpQAndA" text="@Help And QA"/>
+			<KxTabbarQAndACommand filter="category=personal" shortcutHint="Alt+Q" id="TabbarQAndA"/>
+			<KFBMessageCommand normalIcon="notification" filter="lang=zh_CN;category=personal" icon="notification" id="feedBackMessage" text="@News" newsIcon="notification_new"/>
+		</module>
+		<module name="konlinechart">
+			<KxOnlineChartGalleryCommand ksoCmd="OnlineChart" filter="lang=zh_CN;category=personal" icon="OnlineChart" id="OnlineChart" customTip="OnlineChart" text="@Online Chart" qtspyName="OnlineChart" rbHotKey="SO"/>
+			<KxInsertOnlineChartGalleryCommand ksoCmd="OnlineChart" filter="lang=zh_CN;category=personal" icon="OnlineChart" id="InsertOnlineChart" customTip="OnlineChart" spaceHint="suitable" text="@Online Chart" qtspyName="OnlineChart" rbHotKey="SO"/>
+		</module>
+		<module name="kphonepicture">
+			<KxInsertPhonePictureCommand hotKey="m" icon="PhonePicture" id="InsertPictureFromPhonePicture" dialogHint="1" text="@From Phone" rbHotKey="M"/>
+			<KxTpPhonePictureCommand alias="TpPhonePicture" icon="iphonepicture;iphonepicture-mos;iphonepicture-down;iphonepicture-dis" id="TpPhonePicture" shortHint="@Send pictures" text="@Insert Pictures From Phone"/>
+		</module>
+		<module name="docerrecommend">
+			<KxTpDocerRecommendCommand alias="TpDocerRecommend" id="TpDocerRecommend"/>
+		</module>
+		<module name="kweibo">
+			<KxWeiboCommand text2="@Share to Microblog" hotKey="W" ksoCmd="WeiboCmd" icon="cweibo32" id="WeiboCmd" text="@Share to Microblog" rbHotKey="W"/>
+			<KxPdf2PhotoCommand text2="@Export as Image" detail="cloudsvr" hotKey="OD" ksoCmd="Pdf2PhotoCmd" icon="pdf2photo" id="Pdf2PhotoCmd" customTip="Pdf2PhotoCmd" text="@Export as Image" rbHotKey="OD"/>
+			<KxExportWeiboImageCommand text2="@Export as Image" detail="cloudsrv" hotKey="OP" ksoCmd="ExportWeiboImageCmd" idMso="SaveAsPicture" icon="exporttopicture32" controlType="0" id="ExportWeiboImageCmd" dialogHint="1" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="OP"/>
+			<KxOpenWebWeiboCommand text2="@Share to Microblog Webpage" hotKey="O" ksoCmd="OpenWebWeiboCmd" icon="weibowebshare" id="OpenWebWeiboCmd" text="@Share to Microblog Webpage" rbHotKey="O"/>
+			<KxWpsWeiboLayoutCommand text2="@WPS Microblog Layout" hotKey="P" ksoCmd="WpsWeiboLayoutCmd" icon="PivotTableShowFieldList" id="WpsWeiboLayoutCmd" text="@WPS Microblog Layout" rbHotKey="P"/>
+			<KxFileMenuExportWeiboImageCommand text2="@Export as Image" detail="wpsmenu" hotKey="G" ksoCmd="ExportWeiboImageCmd" icon="exporttopicture32" id="RbFileMenuExportWeiboImage" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="G"/>
+			<KxExportWeiboImageCommand text2="@Export as Image" detail="shortcutbar" hotKey="OP" ksoCmd="ExportWeiboImageCmd" icon="exporttopicture32" id="ShortcutBarExportImage" dialogHint="1" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="OP"/>
+			<KxExportWeiboImageCommand text2="@Export as Image" detail="filemenu" hotKey="OP" ksoCmd="ExportWeiboImageCmd" icon="exporttopicture32" id="FileMenuExportImage" dialogHint="1" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="OP"/>
+			<KxSaveAsExportWeiboImageCommand text2="@Export as Image" detail="wpsmenu" hotKey="G" ksoCmd="SaveAsExportWeiboImageCmd" idMso="SaveAsPicture" icon="exporttopicture32" controlType="0" id="SaveAsExportWeiboImage" customTip="ExportWeiboImageCmd" text="@Export as Image" rbHotKey="G"/>
+		</module>
+		<module name="kscreensaver">
+			<KScreenSaverCommand hotKey="q" icon="screensaver" id="screensaver" dialogHint="true" text="@ScreenSaver"/>
+			<KScreenSaverExecuteCommand id="screensavereShortCut"/>
+		</module>
+		<module name="kwpspackage">
+			<KWpsPackageCommand hotKey="P" ksoCmd="KWpsPackagePlugin" icon="WpsPackage" id="KWpsPackagePlugin" text="@WpsPackagePlugin"/>
+		</module>
+		<module name="kbackupcenter">
+			<KxBackupCenterCommand icon="BackupCenter" id="BackupCenter" text="@Backup Center"/>
+			<KxFileMenuBackupCenterCommand hotKey="k" infoId="9" icon="BackupCenter" id="BackupCenterFileMenu" dialogHint="1" text="@Backup Center"/>
+			<KxBackupCenterCommand hotKey="k" id="BackupCenterPopupMenu" dialogHint="1" text="@Backup Center"/>
+		</module>
+		<module name="keversheet">
+			<KEverSheetCommand entryName="homepage" hotKey="RF" productName="storage_eversheet" appID="YP00002" icon="EverSheet" id="EverSheetStorage" customTip="EverSheet" text="@Ever Sheet" rbHotKey="RF"/>
+			<KEverSheetCommand entryName="homepage" hotKey="RF" productName="member_eversheet" appID="YP00703" icon="EverSheet" id="EverSheetMember" customTip="EverSheet" text="@Ever Sheet" rbHotKey="RF"/>
+			<KEverSheetCommand entryName="homepage" hotKey="RF" productName="contract_eversheet" appID="YP00504" icon="EverSheet" id="EverSheetContract" customTip="EverSheet" text="@Ever Sheet" rbHotKey="RF"/>
+		</module>
+		<module name="kwpsassistlegacy">
+			<KOnlinePictureUnpersonalCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" hotKey="o" customShortcutEnabled="false" filter="support:IntranetVersion=false;category!=personal" icon="onlinepicture" id="FromOnline" customTip="InsertOnlinePicture" text="@Online Pictures" rbHotKey="SI"/>
+			<KOnlinePictureUnpersonalCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert Online Pictures" hotKey="I" customShortcutEnabled="false" filter="support:IntranetVersion=false;category!=personal" icon="onlinepicture" id="InsertOnlinePictureFromFileInInsertTabUnpersonal" dialogHint="1" customTip="InsertOnlinePictureFromFile" text="@Online Pictures" qtspyName="onlinepicture" rbHotKey="SI"/>
+			<KOnlinePictureUnpersonalCommand relatedKsoCmd="InsertPictureFromFile" detail="@Insert online Picture" hotKey="n" filter="support:IntranetVersion=false;category!=personal" icon="onlinepicture" id="OnlinePictureInPictureToolTab" customTip="InsertOnlinePictureFromFile" text="@Online Picture" qtspyName="onlinepicture" rbHotKey="SI"/>
+			<KPictureFillFromOnlineCommand relatedKsoCmd="FillColor" hotKey="o" icon="onlinepicture" id="FillPictureFromOnlineUnpersonal" text="@Online Pictures"/>
+		</module>
+	</modules>
+	<proxycommands>
+		<proxycommand targetId="TextToSpeechOption" id="ProxyTextToSpeechOption"/>
+		<proxycommand targetId="PDF2Word" id="ProxyPDF2Word"/>
+		<proxycommand targetId="PDF2WordV2" visible="false" id="ProxyPDF2WordV2"/>
+		<proxycommand targetId="InsertOnlinePictureFromFileInInsertTab" id="ProxyInsertOnlinePictureFromFileInInsertTab"/>
+		<proxycommand targetId="TranslationMenu" id="ProxyTranslationMenu"/>
+		<proxycommand targetId="TranslationSelect" id="ProxyTranslationSelect"/>
+		<proxycommand targetId="TranslationInit" id="ProxyTranslationInit"/>
+		<proxycommand targetId="OCRToolCmd" id="ProxyOCRToolCmd"/>
+		<proxycommand targetId="DocumentFix" id="ProxyDocumentFix"/>
+		<proxycommand targetId="WpsXieDe" id="ProxyWpsXieDe"/>
+		<proxycommand targetId="WpsXieDeQuickMenu" id="ProxyWpsXieDeQuickMenu"/>
+		<proxycommand targetId="WpsXieDeFileMenu" id="ProxyWpsXieDeFileMenu"/>
+		<proxycommand targetId="WpsXieDePictureStyle" id="ProxyWpsXieDePictureStyle"/>
+		<proxycommand targetId="WpsXieDeGalleryMenu" id="ProxyWpsXieDeGalleryMenu"/>
+		<proxycommand targetId="InsertGeogebra" id="ProxyInsertGeogebra"/>
+		<proxycommand targetId="InsertHomeDesign" id="ProxyInsertHomeDesign"/>
+		<proxycommand targetId="Photo2Pdf" id="ProxyPhoto2Pdf"/>
+		<proxycommand targetId="HookPrinter" id="ProxyHookPrinter"/>
+		<proxycommand targetId="TpAutoShape" id="ProxyTpAutoShape"/>
+		<proxycommand targetId="ProcessOnEntry" id="ProxyProcessOnEntry"/>
+		<proxycommand targetId="InsertBarcode" id="ProxyInsertBarcode"/>
+		<proxycommand targetId="GlobalSearch" id="ProxyGlobalSearch"/>
+		<proxycommand targetId="BackupCenter" id="ProxyBackupCenter"/>
+		<proxycommand targetId="BackupCenterFileMenu" id="ProxyBackupCenterFileMenu"/>
+		<proxycommand targetId="BackupCenterPopupMenu" id="ProxyBackupCenterPopupMenu"/>
+		<proxycommand targetId="KfProofreadCmd" id="ProxyKfProofreadCmd"/>
+		<proxycommand targetId="EverSheetStorage" id="ProxyEverSheetStorage"/>
+		<proxycommand targetId="EverSheetMember" id="ProxyEverSheetMember"/>
+		<proxycommand targetId="EverSheetContract" id="ProxyEverSheetContract"/>
+	</proxycommands>
+</shell>

@@ -1,0 +1,27 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>AddComment</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p class="T">本示例在消息框中显示剪切或复制模式的状态。</p>
+<p class="T">Select Case Application.CutCopyMode</p>
+<p class="T">Case Is = False</p>
+<p class="T">MsgBox &quot;Not in Cut or Copy mode&quot;</p>
+<p class="T">Case Is = etCopy</p>
+<p class="T">MsgBox &quot;In Copy mode&quot;</p>
+<p class="T">Case Is = etCut</p>
+<p class="T">MsgBox &quot;In Cut mode&quot;</p>
+<p class="T">End Select</p>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<html><head>
+<title>AcceptAll</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例向 <code>myDocument</code> 中添加两个矩形，用一个连接符连接这两个矩形，并自动将连接符路径修改为最短路径，然后断开矩形间的连接符。<p>
+Set myDocument = ActiveDocument<br>
+Set s = myDocument.Shapes<br>
+Set firstRect = s.AddShape(ksoShapeRectangle, 100, 50, 200, 100)<br>
+Set secondRect = s.AddShape(ksoShapeRectangle, 300, 300, 200, 100)<br>
+With s.AddConnector(ksoConnectorCurve, 0, 0, 0, 0).ConnectorFormat<br>
+&nbsp;&nbsp;&nbsp;
+.BeginConnect firstRect, 1<br>
+&nbsp;&nbsp;&nbsp;
+.EndConnect secondRect, 1<br>
+&nbsp;&nbsp;&nbsp;
+.BeginDisconnect<br>
+&nbsp;&nbsp;&nbsp;
+.EndDisconnect<br>
+End With</div>
+</body>
+</html>

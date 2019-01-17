@@ -1,0 +1,72 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>CALL</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="EVALUATE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>CALL</h1>
+<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+<span style="font-family: 宋体">调用动态链接库或代码源中的过程。</span></p>
+<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Simsun; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px; ">
+<span class="Apple-style-span" style="font-family: 宋体; font-size: 12px; letter-spacing: 2px; line-height: 20px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px">
+</span></span>
+<p><b>语法</b></p>
+<p><b>CALL</b>(<b>module_text,procedure,type_text,</b>[argument1],...])</p>
+<p>Module_text&nbsp; 带引号的文本，用于指定动态链接库 (DLL) 的名称。</p>
+<p>Procedure&nbsp;&nbsp; 用于指定 Windows 的 DLL 中的函数名称的文本。还可以使用函数的序数值，该值来自模块定义文件 
+(.DEF) 中的 EXPORTS 语句。序数值不能为文本形式。</p>
+<p>Type_text&nbsp; 指定返回值的数据类型以及 DLL 或代码源的所有参数的数据类型的文本。Type_text 的首字母指定返回值。</p>
+<p>Argument1&nbsp;&nbsp; 要传递到过程的参数。</p>
+<p>　</p>
+<p><b>说明</b></p>
+<ul>
+	<li>此函数只供高级用户使用。如果不能正确使用函数 CALL，将会引起错误，而需要重新启动计算机。此函数只在宏表中可用。</li>
+</ul>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+<p>下面的宏公式可注册 32 位 Microsoft Windows 中的 GetTickCount 函数。GetTickCount 函数以毫秒为单位返回 
+Microsoft Windows 的运行时间。<br>
+<br>
+REGISTER(&quot;Kernel32&quot;,&quot;GetTickCount&quot;,&quot;J&quot;)</p>
+<p>假设函数 REGISTER 在单元格 A5 中，在宏注册 GetTickCount 函数之后，可用 CALL 函数返回已经运行的毫秒数： </p>
+<p>CALL(A5)</p>
+<span class="Apple-style-span" style="border-collapse: separate; color: rgb(0, 0, 0); font-family: Simsun; font-size: medium; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: 2; text-align: auto; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-border-horizontal-spacing: 0px; -webkit-border-vertical-spacing: 0px; -webkit-text-decorations-in-effect: none; -webkit-text-size-adjust: auto; -webkit-text-stroke-width: 0px">
+<span class="Apple-style-span" style="font-family: 宋体; font-size: 12px; letter-spacing: 2px; line-height: 20px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px">
+
+
+
+<p>　</p>
+</span></span>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_macrosheet.htm">宏表函数</a></p>
+
+
+
+</body>
+
+</html>

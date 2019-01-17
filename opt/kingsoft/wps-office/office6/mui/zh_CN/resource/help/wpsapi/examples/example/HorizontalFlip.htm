@@ -1,0 +1,10 @@
+<html><head>
+<title>HorizontalFlip</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将活动文档中所有曾进行水平或垂直翻转的图形还原至初始状态。<p>Dim shpFlip As Shape<br>    For Each shpFlip In ActiveDocument.Shapes<br>        &nbsp;&nbsp;&nbsp;        If shpFlip.HorizontalFlip Then shpFlip.Flip ksoFlipHorizontal<br>        &nbsp;&nbsp;&nbsp;        If shpFlip.VerticalFlip Then shpFlip.Flip ksoFlipVertical<br>    Next<br>　</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="rainbow.ct_file" component="wpp">
+	<commands>
+		<KxRbFileMenuPopupPaneCommand title="@New Presentation" hotKey="n" ksoCmd="NewBlankFile" infoId="0" icon="NewFile" id="RbFileMenuNewFileMenu" text="@New">
+			<KxFileMenuLegacyTriggerCommand hotKey="n" ksoCmd="NewBlankFile" infoId="b" idMso="FileNewBlankDocument" icon="NewFile" controlType="0" id="RbFileMenuFileNewBlankPresentation" text="@New" rbHotKey="N"/>
+			<KxFileMenuTemplateOnLineCommand hotKey="i" toggle="false" ksoCmd="HomepagePlugin" infoId="e" filter="support:NewFromOlineTemplates/FileMenu=true;lang=zh_CN|support:NewFromOlineTemplates/FileMenu=true;lang!=zh_CN;platform!=unix" icon="wpphome" text="@New from Online Templates"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="m" ksoCmd="TemplatesOnMyComputer" infoId="c" icon="TemplatesOnMyComputer" id="RbFileMenuNewFileFromTemplates" dialogHint="1" text="@New from Other Templates"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="t" ksoCmd="NewFileFromDefaultTemplate" aid="10" infoId="d" filter="support:NewFromDefaultTemplate=true" faceid="2" icon="WppNewFileFromDefaultTemplate" id="RbFileMenuNewFileFromDefaultTemplate" text="@New from Default Template"/>
+			<KxFileMenuOpenUrlCommand hotKey="d" filter="support:DocerEntrance=true;lang!=zh_TW" url="http://www.docer.com/?from=wps_func_wppcreat3" icon="DocerURLEntrance" id="RbFileMenuDocerURLEntrance" text="@Docer Entrance" rbHotKey="D"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand title="@Save a Copy of the Document" hotKey="a" ksoCmd="SaveAs" infoId="4" idMso="FileSaveAsMenu" icon="SaveAs" controlType="15" id="RbFileMenuSaveAsMenu" text="@Save As" rbHotKey="A">
+			<KxWppFileMenuFormatSaveAsCommand icon="SaveAsDps" id="RbFileMenuSaveAsDps" text="@WPS Presentation File" fileFormat="1"/>
+			<KxWppFileMenuFormatSaveAsCommand icon="SaveAsDpt" id="RbFileMenuSaveAsDpt" text="@WPS Presentation Template" fileFormat="2"/>
+			<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPpt" text="@Microsoft PowerPoint Presentation" fileFormat="6"/>
+			<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPpt" id="RbFileMenuSaveAsPpt" text="@Microsoft PowerPoint 97-2003 Presentation" fileFormat="3"/>
+			<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPot" id="RbFileMenuSaveAsPot" text="@Microsoft PowerPoint 97-2003 Presentation Template" fileFormat="4"/>
+			<KxWppFileMenuFormatSaveAsCommand icon="SaveAsPps" id="RbFileMenuSaveAsPps" text="@Microsoft PowerPoint 97-2003 Show" fileFormat="5"/>
+			<command idQ="FormatRangeVideo"/>
+			<command idQ="FormatRangeImage"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="f" ksoCmd="PrintToPDF" icon="ExportToPDF" id="RbFileMenuExportToPDF" text="@Export to PDF"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="g" ksoCmd="PrintToOFD" filter="support:ExportToOFD=true" icon="ExportToOFD" text="@Export to OFD"/>
+			<KWPP2WPSCommand hotKey="h" filter="platform=win32;lang!=zh_TW" visible="@true" icon="wpp2doc" id="RbFileMenuPpt2Doc" text="@Transfer to WPS Writer Document" isInFileMenu="true"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="m" ksoCmd="SaveAs" icon="SaveAsOtherFormat" id="RbFileMenuSaveAsOtherFormat" text="@Other Formats"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand title="@File Package" hotKey="r" icon="FilePackage" id="RbFileMenuPackageMenu" text="@File Package" rbHotKey="R">
+			<KxPackgeCommand hotKey="h" icon="fmPackageIntoFolder" id="RbFileMenuPackageIntoFolder" text="@Package into Folder" isInFileMenu="true"/>
+			<KxPackgeToZipCommand hotKey="z" icon="fmPackageIntoZip" id="RbFileMenuPackageIntoZip" text="@Package into Compressed File"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuFileSharePopupPaneCommand title="@File Share" disableTrigger="true" infoId="s" icon="SendMail" id="RbFileMenuShareMenu" text="@File Share">
+			<KxFileMenuLegacyTriggerCommand hotKey="d" ksoCmd="SendMail" infoId="7" filter="platform=win32" icon="SendMail" id="RbFileMenuSendMail" text="@Send E-mail"/>
+		</KxRbFileMenuFileSharePopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand title="@Document Protection and Properties" hotKey="F" disableTrigger="true" ksoCmd="Properties" infoId="8" icon="RbFileMenuDocInfoMenu" id="RbFileMenuDocInfoMenu" text="@File Protection">
+			<KxFileMenuLegacyTriggerCommand hotKey="y" ksoCmd="Encrypt" infoId="g" icon="Encrypt" id="RbFileMenuEncrypt" text="@Encryption"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="g" ksoCmd="ViewPermission" filter="support:RightsManagementServices=true" icon="ViewPermission" text="@View Permissions"/>
+			<KxFileMenuPermissionCommand menuHotKey="B" triggerText="@View Permissions" menuIcon="RestrictPermission" menuText="@Restrict Permission by People" triggerHotKey="B" triggerIcon="ViewPermission" ksoCmd="RestrictPermission" filter="support:RightsManagementServices=true" customTip2="" id="RestrictPermission" customTip="Restrict Permission by People">
+				<KxLegacyTriggerCommand hotKey="u" ksoCmd="UnrestrictedAccess" infoId="i" text="@Unrestricted Access"/>
+				<KxLegacyTriggerCommand hotKey="r" ksoCmd="RestrictedAccess" infoId="i" text="@Restricted Access"/>
+				<KxLegacyTriggerCommand hotKey="m" ksoCmd="ManageCredentials" infoId="i" text="@Manage Credentials"/>
+			</KxFileMenuPermissionCommand>
+			<KxFileMenuLegacyTriggerCommand hotKey="i" ksoCmd="Properties" infoId="h" icon="Properties" id="RbFileMenuProperties" text="@Properties" rbHotKey="I"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand title="@Backup Management and Data Recovery" hotKey="k" disableTrigger="true" ksoCmd="BackupManagement" infoId="9" icon="BackupManagement" id="RbFileMenuBackupManagement" text="@Backup and Recover">
+			<KxFileMenuLegacyTriggerCommand hotKey="k" ksoCmd="BackupManagement" infoId="9" icon="BackupManagement" id="RbFileMenuBackupManagementBtn" text="@Backup Management"/>
+			<KxFileMenuDataRecoverCommand hotKey="r" infoId="r" filter="support:DataRecoveryMaster=true;lang!=zh_TW" ksourl="L10N:DATA_RECOVER_URL" icon="DataRecover" id="RbFileMenuDataRecover" customTip="DataRecover" text="@Data Recovery" processName="@WPS Data Recovery Master"/>
+			<KxFileMenuDocumentHistoryCommand hotKey="h" filter="support:FileMenuDocumentHistory=true" icon="DocumentFix" id="RbFileMenuDocumentHistory" text="@Document History"/>
+		</KxRbFileMenuPopupPaneCommand>
+		<KxRbFileMenuPopupPaneCommand groupindex="5" title="@Feedback and Product Information" hotKey="h" infoId="a" icon="Help" shortcutHint="F1" id="RbFileMenuHelpMenu" text="@Help">
+			<KFileMenuHelpDocumentCommand tc="Help" hotKey="h" ksoCmd="Help" filter="lang=zh_CN,ja_JP" icon="Help" id="RbFileMenuHelp" text="@WPS Presentation Help"/>
+			<KxFileMenuOpenUrlCommand hotKey="S" ksourl="Product:WPSStudyOnlinePage" icon="StudyOnline" id="RbFileMenuStudyOnline" text="@Study Online"/>
+			<KxFileMenuFeedbackCommand showIconAndText="1" hotKey="F" filter="support:FeedbackByWebInMenu=true" ksourl="Product:UserFeedbackPage" icon="OS_CloudFeedback" id="UserFeedbackByWeb" text="@User Feedback"/>
+			<KxFileMenuFeedbackCommand showIconAndText="1" hotKey="b" filter="support:FeedbackByMailInMenu=true" ksourl="Product:UserFeedbackMail" icon="UserFeedbackByMail" id="UserFeedbackByMail" text="@Feedback by Email"/>
+			<KxFileMenuOpenUrlCommand hotKey="m" infoId="i" ksourl="Product:MicroblogUrl" icon="MicroblogFeedback" id="RbFileMenuMicroblogFeedback" text="@Seek Help via Microblog"/>
+			<KxFileMenuOpenUrlCommand hotKey="f" infoId="j" ksourl="Product:ForumUrl" icon="WPSBBS" id="RbFileMenuWPSBBS" text="@WPS Office Forum"/>
+			<KxFileMenuOpenUrlCommand hotKey="h" ksourl="Product:HelpPage" icon="Help" shortcutHint="F1" id="RbFileMenuHelp" text="@WPS Presentation Help"/>
+			<KxFileMenuOpenUrlCommand featureid="16777258" hotKey="o" aid="1388" ksourl="Product:HomePage" faceid="326" icon="KingsoftOffice" id="RbFileMenuOfficeHomepage" text="@WPS Office Homepage"/>
+			<KxFileMenuOpenUrlCommand hotKey="c" ksourl="Product:CommunityHomePage" icon="WPSCommunity" id="RbFileMenuWPSCommunity" text="@WPS Office Community"/>
+			<KxFileMenuOpenUrlCommand hotKey="f" filter="oem_linux_domestic=1" ksourl="Product:WPSFacebook" icon="KingsoftOfficeFacebook" id="RbFileMenuKingsoftOfficeFacebook" text="@WPS Office Facebook"/>
+			<KxNewFeaturesFileMenuCommand hotKey="n" filter="lang=zh_CN;category=personal" icon="NewFeatures" id="RbFileMenuNewFeatures" text="@WPS Office New Features"/>
+			<KxFileMenuOpenUrlCommand hotKey="c" ksourl="Product:ProductCenterUrl" icon="ProductCenter" id="RbFileMenuProductCenter" text="@WPS Office Product Center"/>
+			<KxFileMenuUpdateOnlineCommand hotKey="u" infoId="k" filter="platform=win32;support:Update=true" url="../wtoolex/wpsupdate" icon="UpdateOnline" id="RbFileMenuUpdateOnline" args="-from=manual" text="@Check for Updates"/>
+			<KxFileMenuChangeVersionCommand hotKey="g" filter="platform=win32" infoId="l" icon="ChangeVersion" text="@Change Version"/>
+			<KxFileMenuOpenUrlCommand featureid="16777262" hotKey="m" filter="support:ProductManagementCenter=true;support:AppDataToMyDocuments=false" url="ksomisc" icon="ProductManagementCenter" id="RbFileMenuProductManagementCenter" args="-snmanager" text="@Product Management Center"/>
+			<KxFileMenuOpenUrlCommand featureid="16777262" hotKey="m" filter="support:ProductManagementCenter=true;support:AppDataToMyDocuments=true" url="ksomisc" icon="ProductManagementCenter" id="RbFileMenuProductManagementCenter" args="-snmanager -forceperusermode" text="@Product Management Center"/>
+			<KxFileMenuTrialToolCommand hotKey="p" filter="support:EnbleCart=true" ksourl="Auth:ProBuySerialNumberUrl" icon="PurchaseSerialNumber" id="RbFileMenuPurchaseSerialNumber" text="@Purchase Serial Number"/>
+			<KxFileMenuQingActiveCodeCommand hotKey="I" icon="EnterActivationCode" id="RbFileMenuEnterActivationCode" text="@Enter Activation Code"/>
+			<KxFileMenuDonateCommand hotKey="S" filter="support:DonateMoney=true" icon="DonateMoney" text="@Support WPS"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="a" ksoCmd="About" aid="3" icon="About" id="RbFileMenuAbout" text="@About WPS Presentation"/>
+		</KxRbFileMenuPopupPaneCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_File">
+			<command idQ="RbFileMenuNewFileMenu"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="o" ksoCmd="OpenFile" infoId="1" icon="OpenFile" id="RbFileMenuOpenFileMenu" text="@Open" rbHotKey="O"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="s" ksoCmd="SaveFile" infoId="2" icon="SaveFile" id="RbFileMenuSaveFileMenu" text="@Save" rbHotKey="S"/>
+			<command idQ="RbFileMenuSaveAsMenu"/>
+			<command idQ="RbFileMenuPackageMenu"/>
+			<separator startEndTransparent="1"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="p" ksoCmd="Print" infoId="5" idMso="FilePrintMenu" icon="Print" controlType="5" id="RbFileMenuPrintMenu" text="@Print" rbHotKey="P"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="v" ksoCmd="PrintPreview" infoId="6" icon="PrintPreview" id="RbFileMenuPrintPreview" text="@Print Preview"/>
+			<separator startEndTransparent="1"/>
+			<command idQ="RbFileMenuShareMenu"/>
+			<command idQ="RbFileMenuDocInfoMenu"/>
+			<KxFileMenuLegacyTriggerCommand hotKey="k" ksoCmd="BackupManagement" infoId="9" filter="lang!=zh_CN" icon="BackupManagement" id="RbFileMenuBackupManagement" text="@Backup Management"/>
+			<command idQ="RbFileMenuBackupManagement" filter="lang=zh_CN"/>
+			<separator startEndTransparent="1"/>
+			<command idQ="RbFileMenuHelpMenu"/>
+		</subcommand>
+	</subcommands>
+</shell>

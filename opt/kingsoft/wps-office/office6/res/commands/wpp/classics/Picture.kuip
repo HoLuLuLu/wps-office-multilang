@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.picture" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="InsertPictureFromFile" aid="931" faceid="4" icon="InsertPictureFromFile" id="InsertPictureFromFile" text="@Insert Picture"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="PictureMoreContrast" aid="1064" faceid="225" icon="PictureMoreContrast" id="PictureMoreContrast" text="@More Contrast"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="PictureLessContrast" aid="1065" faceid="226" icon="PictureLessContrast" id="PictureLessContrast" text="@Less Contrast"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="PictureMoreBrightness" aid="1066" faceid="227" icon="PictureMoreBrightness" id="PictureMoreBrightness" text="@More Brightness" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="PictureLessBrightness" aid="1067" faceid="228" icon="PictureLessBrightness" id="PictureLessBrightness" text="@Less Brightness" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="PictureCrop" aid="732" faceid="229" icon="PictureCrop" id="PictureCrop" customTip="PictureCrop" text="@Crop" rbHotKey="V"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="RotateLeft" aid="199" faceid="154" idMso="ObjectRotateLeft90" icon="RotateLeft" controlType="0" id="RotateLeft" text="@Rotate Left 90°" rbHotKey="L"/>
+		<KxLineStyleStaticGalleryCommand hotKey="w" column="1" ksoCmd="LineStylePalette" aid="692" icon="LineStyleMenu" id="LineStyle" text="@Weight" rbHotKey="W">
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_0" galleryItemHeight="16" index="0" text="@0.25 pt" qtspyName="LineStyle_0"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_1" galleryItemHeight="16" index="1" text="@0.5 pt" qtspyName="LineStyle_1"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_2" galleryItemHeight="16" index="2" text="@0.75 pt" qtspyName="LineStyle_2"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_3" galleryItemHeight="16" index="3" text="@1 pt" qtspyName="LineStyle_3"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_4" galleryItemHeight="16" index="4" text="@1.5 pt" qtspyName="LineStyle_4"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_5" galleryItemHeight="16" index="5" text="@2.25 pt" qtspyName="LineStyle_5"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_6" galleryItemHeight="16" index="6" text="@3 pt" qtspyName="LineStyle_6"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_7" galleryItemHeight="16" index="7" text="@4.5 pt" qtspyName="LineStyle_7"/>
+			<KxStaticGalleryLabItemCommand galleryItemWidth="165" icon="LineStyle_8" galleryItemHeight="16" index="8" text="@6 pt" qtspyName="LineStyle_8"/>
+			<KxPropComposeCommand tabIndex="0" hotKey="m" ksoCmd="MoreLines" aid="390" id="MoreLines" dialogHint="1" text="@More Lines" rbHotKey="M"/>
+		</KxLineStyleStaticGalleryCommand>
+		<KxLegacyTriggerCommand hotKey="o" customShortcutEnabled="false" ksoCmd="FormatObject" aid="92130" faceid="203" icon="ChartObjects" id="FormatObject" dialogHint="1" text="@Format Object"/>
+		<KxLegacyTriggerCommandEx hotKey="s" ksoCmd="PictureSetTransparentColor" aid="2827" faceid="230" icon="PictureSetTransparentColor" id="PictureSetTransparentColor" text="@Set Transparent Color" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="J" ksoCmd="ChangePicture" aid="92165" faceid="247" icon="ChangePicture" id="ChangePicture" dialogHint="1" text="@Change Picture"/>
+		<KxListCommand ksoCmd="ResetPicture" aid="1362" faceid="231" icon="ResetPicture" id="ResetPicture" customTip="ResetPicture" text="@Reset Picture" rbHotKey="Q">
+			<KxPropComposeCommand hotKey="r" ksoCmd="ResetPicture" icon="ResetPicture" text="@Reset Picture" qtspyName="ResetPicture" rbHotKey="R"/>
+			<KxPropComposeCommand hotKey="s" ksoCmd="ResetPictureAndSize" icon="ResetPictureAndSize" text="@Reset Picture and Size" qtspyName="ResetPictureAndSize" rbHotKey="S"/>
+		</KxListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="Picture">
+			<separator/>
+			<command idQ="InsertPictureFromFile"/>
+			<separator/>
+			<KListCommand aid="542" icon="PictureColorMenu" text="@Color" qtspyName="PictureColorMenu">
+				<KxValueCommand hotKey="a" ksoCmd="PictureColor" aid="543" index="0" text="@Automatic" qtspyName="PictureColor"/>
+				<KxValueCommand hotKey="g" ksoCmd="PictureColor" aid="544" index="1" text="@Grayscale" qtspyName="PictureColor"/>
+				<KxValueCommand hotKey="b" ksoCmd="PictureColor" aid="545" index="2" text="@Black and White" qtspyName="PictureColor"/>
+				<KxValueCommand hotKey="w" ksoCmd="PictureColor" aid="546" index="3" text="@Washout" qtspyName="PictureColor"/>
+			</KListCommand>
+			<command idQ="PictureMoreContrast"/>
+			<command idQ="PictureLessContrast"/>
+			<command idQ="PictureMoreBrightness"/>
+			<command idQ="PictureLessBrightness"/>
+			<separator/>
+			<command idQ="PictureCrop"/>
+			<command idQ="ImagePreview"/>
+			<command idQ="RotateLeft"/>
+			<command idQ="LineStyle"/>
+			<command idQ="CompressPictures"/>
+			<command idQ="FormatObject"/>
+			<command idQ="PictureSetTransparentColor"/>
+			<separator/>
+			<command idQ="ChangePicture"/>
+			<command idQ="ResetPicture"/>
+		</subcommand>
+	</subcommands>
+</shell>

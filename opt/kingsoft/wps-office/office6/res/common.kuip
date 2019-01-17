@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<libraries>
+		<library path="." name="kdbgconsole"/>
+		<library path="." filter="support:HomePagePlugin=true;lang=zh_CN|support:HomePagePlugin=true;lang!=zh_CN;platform!=unix" name="khomepage"/>
+		<library path="./addons/kcloudpage" filter="support:HomePagePlugin=true" name="kcloudpage"/>
+		<library path="./addons/knewfile" filter="category=personal" name="knewfile"/>
+		<library path="." name="kglobalmenu"/>
+		<library path="./addons/officespace" filter="support:IsDisableLoadCloudDocLib=false" name="officespace"/>
+		<library path="./addons/touchkeyboard" name="ktouchkeyboard"/>
+		<library path="./addons/docpermission" filter="support:DocPermission=true|support:EnterpriseDocpermission=true" name="docpermission"/>
+		<library path="./addons/krubytemplate" filter="category=personal" name="krubytemplate"/>
+		<library path="./addons/accountmenuwidget" filter="category=personal" name="accountmenuwidget"/>
+	</libraries>
+	<commands tc="commands">
+		<KInfoCollUICommand aid="40001" id="KInfoCollUICommand"/>
+		<KxFontFetcherCommand aid="40002" id="fontFetcherCommand"/>
+		<KxSystemCheckerCommand filter="platform!=win32" id="KxSystemCheckerCommand"/>
+		<KxCheckUpdateCommand filter="platform!=win32" id="KxCheckUpdateCommand"/>
+		<KxQingAuthCommand filter="category!=personal|lang!=zh_CN" id="QingAuth"/>
+	</commands>
+	<mainwindow>
+		<commands tc="commands">
+			<KGlobalMenuCommand id="KGlobalMenuCommand"/>
+			<KProxyCommand relatedKsoCmd="InsertPictureFromFile" delayLoadLib="false" targetModule="kdemoalert" autoLoad="true" visible="false"/>
+		</commands>
+	</mainwindow>
+</shell>

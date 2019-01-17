@@ -1,0 +1,83 @@
+name: wps-office-multilang-no-internet
+version: '10.1.0.6757'
+summary:  WPS Office Suite multilanguage with no internet connection
+description: |
+   ABOUT WPS OFFICE
+   WPS Office, is an office productivity suite. WPS Office including Writer, Presentation and Spreadsheets, is a powerful office suite, which is able to process word file, produce wonderful slides, and analyse data as well. It is deeply compatible with all of the latest Microsoft Office file formats. It can easily open and read the documents created with Microsoft Office. This is the Linux version, and it's now a TESTING package.
+Website: http://wps-community.org
+
+   ABOUT THIS PACKAGE
+   WPS-office snap package is shipped by default only with English and Chinese. Due to the non modifiable aspect of snap packages, it is currently impossible to install other languages and spellchecker.
+   Supported Interface Languages:
+   - Chinese (CN)
+   - English (GB, US)
+   - French (FR)
+   - German (DE)
+   - Portuguese (BR, PT)
+   - Russian (RU)
+
+   Supported Spellcheck Languages:
+   - Dutch (NL)
+   - English (AU, GB, US)
+   - French (FR)
+   - German (DE)
+   - Polish (PL)
+   - Portuguese (BR, PT)
+   - Russian (RU)
+   - Spanish (ES, MX)
+
+   The internet plug of wps-office is deactivated in this package to save your privacy.
+   The files used to create this packages are available at https://github.com/cyrpaut/wps-office-all-lang-no-internet. Please feel free to help me upgrading this package.
+architectures:
+- amd64
+confinement: strict
+grade: stable
+base: core18
+icon: gui/icon.png
+
+parts:
+  wps-office-all-lang-no-internet:
+    source: ./wps-office-bin/
+    plugin: dump
+    stage-packages: [libpng16-16]
+
+apps:
+  et:
+    command: usr/bin/et
+    desktop: gui/et.desktop
+    plugs:
+    - alsa
+    - cups-control
+    - desktop
+    - home
+    - opengl
+    - pulseaudio
+    - removable-media
+    - wayland
+    - x11
+  wpp:
+    command: usr/bin/wpp
+    desktop: gui/wpp.desktop
+    plugs:
+    - alsa
+    - cups-control
+    - desktop
+    - home
+    - opengl
+    - pulseaudio
+    - removable-media
+    - wayland
+    - x11
+  wps:
+    command: usr/bin/wps
+    desktop: gui/wps.desktop
+    plugs:
+    - gsettings
+    - home
+    - pulseaudio
+    - unity7
+    - x11
+    - opengl
+    - cups-control
+    - alsa
+    - desktop

@@ -1,0 +1,864 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="WPS文字功能概述 ">
+		<param name="Name" value="新增功能">
+		<param name="Local" value="WPS%20Office%20金山文字新增功能/introduce.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="新建文件">
+		<param name="Local" value="管理文件/new_file.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="打开文件">
+		<param name="Local" value="管理文件/open_file.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="保存文件">
+		<param name="Local" value="管理文件/save_file.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关闭文件">
+		<param name="Local" value="管理文件/close_file.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文档属性">
+		<param name="Local" value="管理文件/file_property.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文件恢复">
+		<param name="Local" value="管理文件/file_copy.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="输出PDF文件">
+		<param name="Local" value="管理文件/Tool_PDF.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文件定时备份">
+		<param name="Local" value="管理文件/file_autosave.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入页码">
+		<param name="Name" value="插入页码">
+		<param name="Local" value="文档的基本元素/页码设置/insert_pagenumber.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="首页页码设置">
+		<param name="Name" value="首页页码设置">
+		<param name="Local" value="文档的基本元素/页码设置/page_setup_homepage.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="重新编号">
+		<param name="Name" value="重新编号">
+		<param name="Local" value="文档的基本元素/页码设置/restart_numbering.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="并排比较">
+		<param name="Name" value="并排比较">
+		<param name="Local" value="实用工具/并排比较/compare.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于页面">
+		<param name="Local" value="文档的基本元素/页面设置/PageSetup_Page.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="页面方向">
+		<param name="Local" value="文档的基本元素/页面设置/PageSetup_Direction.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="浮动工具栏">
+		<param name="Name" value="浮动工具栏">
+		<param name="Local" value="实用工具/Floating%20toolbar.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="选择纸张大小">
+		<param name="Local" value="文档的基本元素/页面设置/select_paper_size.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="显示或隐藏页面空白区域">
+		<param name="Local" value="文档的基本元素/页面设置/show_hide.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于页眉和页脚">
+		<param name="Local" value="文档的基本元素/页眉页脚/About_HeaderFooter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="拆分窗口">
+		<param name="Name" value="拆分窗口">
+		<param name="Local" value="实用工具/Tool_Splitwindow.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="取色器">
+		<param name="Name" value="取色器">
+		<param name="Local" value="实用工具/Color_picker.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="审阅窗格">
+		<param name="Name" value="审阅窗格">
+		<param name="Local" value="协作/标记/cooper_Reviewpane.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="主题">
+		<param name="Name" value="主题">
+		<param name="Local" value="文档的基本元素/Theme.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入页眉和页脚">
+		<param name="Local" value="文档的基本元素/页眉页脚/insert_HeaderFooter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="粘贴选项">
+		<param name="Name" value="粘贴选项">
+		<param name="Local" value="文档的基本元素/复制粘贴/copy_PasteLink.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="页眉页脚的同前性">
+		<param name="Local" value="文档的基本元素/页眉页脚/HeaderFooter_LinkToPre.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="页眉页脚的位置">
+		<param name="Local" value="文档的基本元素/页眉页脚/HeaderFooter_Position.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入与改写">
+		<param name="Local" value="文档的基本元素/输入文本/insert_overwrite.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入当前日期和时间">
+		<param name="Local" value="文档的基本元素/输入文本/insertNow_dateTime.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="即点即输">
+		<param name="Local" value="文档的基本元素/输入文本/click_input.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于符号和特殊字符">
+		<param name="Local" value="文档的基本元素/输入文本/符号和字符/about_emblemeEspecially.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="画布">
+		<param name="Local" value="对象/自选图形/Obj_Canvas.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入符号">
+		<param name="Local" value="文档的基本元素/输入文本/符号和字符/insert_emblem.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入特殊字符">
+		<param name="Local" value="文档的基本元素/输入文本/符号和字符/insert_especially.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="章节导航">
+		<param name="Name" value="章节导航">
+		<param name="Local" value="多格式与长文档应用/chapter_navigation.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="选定文本">
+		<param name="Local" value="文档的基本元素/选定文本和图形/choose_text.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="大纲视图">
+		<param name="Name" value="大纲工具栏">
+		<param name="Local" value="文档的基本元素/设置文本格式/段落/outline_toolbar.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="选定图形">
+		<param name="Local" value="文档的基本元素/选定文本和图形/choose_graphics.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="复制或移动文字">
+		<param name="Local" value="文档的基本元素/复制粘贴/copy_cut_text.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="复制或移动图形对象">
+		<param name="Local" value="文档的基本元素/复制粘贴/copy_cut_graphic.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="复制表格">
+		<param name="Local" value="文档的基本元素/复制粘贴/copy_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="复制或移动链接文本框">
+		<param name="Local" value="文档的基本元素/复制粘贴/copy_cut_LinkTextBox.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="应用加粗格式">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/app_b_format.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="应用删除线格式">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/app_delLine_format.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置文本下划线">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/set_txt_downLine.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置文字的大小写">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/set_txt_UpLo.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改文本颜色">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/change_txt_color.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改字体">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/change_font.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改字号">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/change_font_size.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改文字方向">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/change_direction.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="回到上一次编辑位置">
+		<param name="Name" value="回到上一次编辑位置">
+		<param name="Local" value="多格式与长文档应用/Returns_lasttime.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="改写">
+		<param name="Name" value="改写">
+		<param name="Local" value="多格式与长文档应用/Rewrite.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="隐藏文字">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/hide_txt.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="字符间距">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/txt_space.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="字符缩放比">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/txt_zoom.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="为字符设置上下标">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/super_subscript.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="突出显示">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/highlight.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="首字下沉">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/drop_cap.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="拼音指南">
+		<param name="Local" value="文档的基本元素/设置文本格式/字符/phonetic_guide.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文本对齐方式">
+		<param name="Local" value="文档的基本元素/设置文本格式/段落/txt_snap.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置行距">
+		<param name="Local" value="文档的基本元素/设置文本格式/段落/set_rowSpace.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="段落缩进">
+		<param name="Local" value="文档的基本元素/设置文本格式/段落/sect_retract.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于制表位">
+		<param name="Local" value="文档的基本元素/设置文本格式/段落/about_tab.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置制表位">
+		<param name="Local" value="文档的基本元素/设置文本格式/段落/set_tab.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="大纲视图">
+		<param name="Local" value="文档的基本元素/设置文本格式/段落/outline_toolbar.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何快速设置页边距？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何整体控制文档的单位？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2b.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何添加和删除页眉页脚中的横线？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2c.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何在页眉页脚中快速实现左中右对齐？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2d.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何从文档的中间页开始页码编号？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2e.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何只给文字加上下划线？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2f.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何只在偶数页页眉插入图片？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2g.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何同时选择多个图形？">
+		<param name="Local" value="文档的基本元素/疑难解答/question2i.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于项目符号和编号列表">
+		<param name="Local" value="项目符号和自动编号/about_bullets.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="添加或删除项目符号和编号">
+		<param name="Local" value="项目符号和自动编号/add_bullets.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="自定义多级编号">
+		<param name="Local" value="项目符号和自动编号/customsiz_enumbering.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="改变编号级别">
+		<param name="Local" value="项目符号和自动编号/change_lever.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="正规编号">
+		<param name="Name" value="正规编号">
+		<param name="Local" value="项目符号和自动编号/regular_number.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="调整项目符号或编号与文本的间距">
+		<param name="Local" value="项目符号和自动编号/change_bullets_txtSpace.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何更改项目编号顺序？">
+		<param name="Local" value="项目符号和自动编号/疑难解答/question3a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何只修改部分或单个项目符号和编号?">
+		<param name="Local" value="项目符号和自动编号/疑难解答/question3c.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="编号后的空位过大，如何调整？ ">
+		<param name="Local" value="项目符号和自动编号/疑难解答/question3b.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于表格">
+		<param name="Local" value="表格/about_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="创建表格">
+		<param name="Local" value="表格/create_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="选中表格">
+		<param name="Local" value="表格/choose_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="为表格添加行、列和单元格">
+		<param name="Local" value="表格/add_line.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="为表格删除行、列和单元格">
+		<param name="Local" value="表格/delete_line.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="拆分表格">
+		<param name="Local" value="表格/split_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置标题行">
+		<param name="Local" value="表格/repeat_headingline.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="表格环绕">
+		<param name="Local" value="表格/around_table.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="合并与拆分单元格">
+		<param name="Local" value="表格/merge_cell.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="移动或复制表格内容">
+		<param name="Local" value="表格/cut_copy_tableTxt.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="显示或隐藏表格中的虚框">
+		<param name="Local" value="表格/hide_virtualRim.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="对表格中的单元格进行编号">
+		<param name="Local" value="表格/table_bullets.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置表格尺寸">
+		<param name="Local" value="表格/set_tablesize.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="绘制斜线表头">
+		<param name="Local" value="表格/draw_mutidiagonalcell.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="移动表格线">
+		<param name="Local" value="表格/Table_MoveLines.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="表格中的数据计算">
+		<param name="Local" value="表格/table_formular.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何使表格跨页断行？ ">
+		<param name="Local" value="表格/疑难解答/question4a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何在表格前插入文本？ ">
+		<param name="Local" value="表格/疑难解答/question4b.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何在一个大表里套入一份小表？">
+		<param name="Local" value="表格/疑难解答/question4c.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于对象">
+		<param name="Local" value="对象/Obj_About.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="旋转对象">
+		<param name="Local" value="对象/Obj_Circ.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="对象组合">
+		<param name="Local" value="对象/Obj_Grouping.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="对象的对齐和分布">
+		<param name="Local" value="对象/Obj_AlignDistribute.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置对象等高等宽">
+		<param name="Local" value="对象/Obj_Same_HeigWid.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置对象的环绕方式">
+		<param name="Local" value="对象/Obj_Circle.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置对象效果">
+		<param name="Local" value="对象/Obj_Set3D.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="绘制自选图形">
+		<param name="Local" value="对象/自选图形/Obj_DrawGraphics.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="为自选图形添加文字">
+		<param name="Local" value="对象/自选图形/Obj_AddText.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="由一种图形转换成另一种图形">
+		<param name="Local" value="对象/自选图形/Obj_Change.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="连接符">
+		<param name="Local" value="对象/自选图形/Obj_Connectors.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改任意多边形或曲线的形状">
+		<param name="Local" value="对象/自选图形/Obj_ChangeGrapShape.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入艺术字">
+		<param name="Local" value="对象/艺术字/Obj_InsertArt.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入图片">
+		<param name="Local" value="对象/图片/Obj_InsertPic.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改图片大小">
+		<param name="Local" value="对象/图片/Obj_ChangePicSize.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="图片效果处理">
+		<param name="Local" value="对象/图片/Obj_PicEffect.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置边框">
+		<param name="Local" value="对象/边框和底纹/Obj_Border.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置底纹">
+		<param name="Local" value="对象/边框和底纹/Obj_Shading.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如果不希望对象重叠在一起，如何操作？">
+		<param name="Local" value="对象/疑难解答/question7a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于样式">
+		<param name="Local" value="多格式与长文档应用/样式/about_style.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="创建新样式">
+		<param name="Local" value="多格式与长文档应用/样式/new_style.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="应用样式">
+		<param name="Local" value="多格式与长文档应用/样式/use_style.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改样式">
+		<param name="Local" value="多格式与长文档应用/样式/change_style.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="删除样式">
+		<param name="Local" value="多格式与长文档应用/样式/del_style.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于交叉引用">
+		<param name="Local" value="多格式与长文档应用/交叉引用/about_acrossRef.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="创建交叉引用">
+		<param name="Local" value="多格式与长文档应用/交叉引用/creat_acrossRef.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改交叉引用">
+		<param name="Local" value="多格式与长文档应用/交叉引用/change_acrossRef.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="格式刷">
+		<param name="Local" value="多格式与长文档应用/format_painter.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="目录">
+		<param name="Local" value="多格式与长文档应用/list.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="脚注尾注">
+		<param name="Local" value="多格式与长文档应用/foot_endnote.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="分页符和分节符">
+		<param name="Local" value="多格式与长文档应用/page2section_break.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文档结构图">
+		<param name="Local" value="多格式与长文档应用/DocumentMap.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="“样式和格式”任务窗格中未显示所有的样式">
+		<param name="Local" value="多格式与长文档应用/疑难解答/question5b.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="对文档进行了修改，目录中为何不显示该项修改？">
+		<param name="Local" value="多格式与长文档应用/疑难解答/question5c.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何在一篇文档中设置不同的纸张大小和页面方向？ ">
+		<param name="Local" value="多格式与长文档应用/疑难解答/question5a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="通过网格设置公文">
+		<param name="Local" value="公文与报刊排版/Arch_Gridding.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="通过模板创建公文">
+		<param name="Local" value="公文与报刊排版/Arch_Templet.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="分栏">
+		<param name="Local" value="公文与报刊排版/column.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入文本框">
+		<param name="Local" value="公文与报刊排版/文本框/Insert_TextBox.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文本框竖排">
+		<param name="Local" value="公文与报刊排版/文本框/Obj_ErectTextBox.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="文本框绕排">
+		<param name="Local" value="公文与报刊排版/文本框/Obj_CircleTextbox.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="链接文本框">
+		<param name="Local" value="公文与报刊排版/文本框/Link_TextBox.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置文本框的格式">
+		<param name="Local" value="公文与报刊排版/文本框/formate_textbox.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何为选定文本设置分栏？">
+		<param name="Local" value="公文与报刊排版/疑难解答/question6b.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何快速设置每页22行，每行28字？">
+		<param name="Local" value="公文与报刊排版/疑难解答/question6a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="使用公文模板时，红头位置为何会有蓝色的线条闪动？">
+		<param name="Local" value="公文与报刊排版/疑难解答/question6c.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何通过模板创建联合发文的文件？">
+		<param name="Local" value="公文与报刊排版/疑难解答/question6d.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置打印机">
+		<param name="Local" value="打印/Print_Set.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="检查打印作业的进度">
+		<param name="Local" value="打印/Print_Schedule.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="打印预览">
+		<param name="Local" value="打印/Print_Preview.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="选择纸张">
+		<param name="Local" value="打印/Print_SelPaper.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="打印到文件">
+		<param name="Local" value="打印/Print_File.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置打印范围">
+		<param name="Local" value="打印/Print_Extension.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置打印份数">
+		<param name="Local" value="打印/Print_Copies.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="缩放打印">
+		<param name="Local" value="打印/Print_Zoom.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="双面打印">
+		<param name="Local" value="打印/Print_Duplex.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="反片打印">
+		<param name="Local" value="打印/Print_Reverse.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="书籍折页">
+		<param name="Name" value="书籍折页">
+		<param name="Local" value="打印/Print_Foldpaper.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置套打输出">
+		<param name="Local" value="打印/Print_TaoDa.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="在一页纸上打印多页">
+		<param name="Local" value="打印/Print_appose.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="使用不同纸张打印同一篇文档的不同部分">
+		<param name="Local" value="打印/Print_groove.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="打印的高级选项有哪些？">
+		<param name="Local" value="打印/疑难解答/question8a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="如何从最后一页开始打印文档？">
+		<param name="Local" value="打印/疑难解答/question8b.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="使用本地模板">
+		<param name="Local" value="模板/Template_Local.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置默认模板">
+		<param name="Local" value="模板/Template_Default.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="使用在线模板">
+		<param name="Local" value="模板/Template_Web.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于域">
+		<param name="Local" value="域应用/Field_About.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Hyperlink">
+		<param name="Local" value="域应用/Field_Hyperlink.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Page">
+		<param name="Local" value="域应用/Field_Page.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="PageRef">
+		<param name="Local" value="域应用/Field_PageRef.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="SectionPages">
+		<param name="Local" value="域应用/Field_SectionPages.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Seq">
+		<param name="Local" value="域应用/Field_Seq.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TC">
+		<param name="Local" value="域应用/Field_Tc.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Time">
+		<param name="Local" value="域应用/Field_Datetime.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="TOC">
+		<param name="Local" value="域应用/Field_Toc.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="NumPages">
+		<param name="Local" value="域应用/Field_NumPages.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="分节后如何重新开始页码编号？ ">
+		<param name="Local" value="域应用/疑难解答/question10a.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于修订和批注">
+		<param name="Local" value="协作/标记/cooper_AboutInvision.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="显示修订和批注">
+		<param name="Local" value="协作/标记/cooper_DisplayInvision.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="编辑时标记修订">
+		<param name="Local" value="协作/标记/cooper_MarkIvision.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关闭修订">
+		<param name="Local" value="协作/标记/cooper_CloseInvision.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="审阅修订和批注">
+		<param name="Local" value="协作/标记/cooper_CheckInvision.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="插入批注">
+		<param name="Local" value="协作/标记/cooper_Insertcomment.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="修改批注">
+		<param name="Local" value="协作/标记/cooper_Modifycomment.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="删除批注">
+		<param name="Local" value="协作/标记/cooper_Delcomment.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更改修订和批注的外观">
+		<param name="Local" value="协作/标记/cooper_ModifyDisplay.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="编号的修订">
+		<param name="Name" value="修订编号">
+		<param name="Local" value="协作/标记/cooper_NumberRecord.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="拖放修订">
+		<param name="Name" value="拖放修订">
+		<param name="Local" value="协作/标记/cooper_TowWords.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="查找和替换文字">
+		<param name="Local" value="实用工具/查找和替换/Tool_FindTxt.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="使用通配符">
+		<param name="Local" value="实用工具/查找和替换/Tool_Wildcard.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="设置稿纸方式">
+		<param name="Local" value="实用工具/Paper_manuscript.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="发送邮件">
+		<param name="Local" value="实用工具/sendmail.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="中文简繁转换">
+		<param name="Local" value="实用工具/Tool_CHI.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="配置工具">
+		<param name="Local" value="实用工具/Tool_Configuration.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="保护文档">
+		<param name="Local" value="实用工具/DOCProtect.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于拼写检查">
+		<param name="Local" value="实用工具/拼写检查/check_spelling.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="自定义词典">
+		<param name="Local" value="实用工具/拼写检查/customized_dictionary.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="窗体设计">
+		<param name="Name" value="窗体设计">
+		<param name="Local" value="实用工具/窗体域/Tool_windowpage.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="窗体保护">
+		<param name="Name" value="保护窗体">
+		<param name="Local" value="实用工具/窗体域/Tool_Prowindow.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="公式编辑器简介">
+		<param name="Name" value="公式编辑器简介">
+		<param name="Local" value="实用工具/公式编辑器/Tool_EquationEditor01.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="使用公式编辑器">
+		<param name="Name" value="使用公式编辑器">
+		<param name="Local" value="实用工具/公式编辑器/Tool_EquationEditor02.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于邮件合并">
+		<param name="Local" value="实用工具/邮件合并/about_merge_mail.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="使用邮件合并">
+		<param name="Local" value="实用工具/邮件合并/merge_mail_step.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="关于邮件合并的数据源">
+		<param name="Local" value="实用工具/邮件合并/deta_source.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="快捷键列表">
+		<param name="Local" value="快捷键列表/keyboard%20shortcuts.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="更换界面风格">
+		<param name="Local" value="更换界面风格/About_Interface.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="产品技术支持">
+		<param name="Local" value="wps_support.htm">
+		</OBJECT>
+</UL>
+</BODY></HTML>

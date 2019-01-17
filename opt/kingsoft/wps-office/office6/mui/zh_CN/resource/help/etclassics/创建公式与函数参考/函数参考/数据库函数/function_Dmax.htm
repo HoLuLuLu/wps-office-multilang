@@ -1,0 +1,247 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>DMAX</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="DMAX">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>DMAX</h1>
+<p>返回选择的数据库条目满足指定条件的最大值。</p>
+<p><b>语法</b></p>
+<p><strong>DMAX</strong>(<strong>database</strong>,<strong>field</strong>,<strong>criteria</strong>)</p>
+<p>database&nbsp;&nbsp;&nbsp;构成列表或数据库的单元格区域。数据库是包含一组相关数据的列表，其中包含相关信息的行为记录，而包含数据的列为字段。列表的第一行包含着每一列的标志。<br>
+<br>
+<span lang="en-us"></span>field&nbsp;&nbsp;&nbsp;指定函数所使用的数据列。列表中的数据列必须在第一行具有标志项。Field 可以是文本，即两端带引号的标志项，如“树龄”或“产量”。此外，Field 也可以是代表列表中数据列位置的数字：1 表示第一列，2 表示第二列，等等。<br>
+<br>
+criteria&nbsp;&nbsp;&nbsp;为一组包含给定条件的单元格区域。可以为参数 criteria 指定任意区域，只要它至少包含一个列标志和列标志下方用于设定条件的单元格。</p>
+<p>
+
+
+
+
+<TABLE  cols=3 width="412" height="77"> 
+		
+			<TR VALIGN="top"> 
+			<TH class = "th1" width="43" height="12"></TH> 
+			<TH  class = "th2" width="241" height="12">A</TH> 
+            <TH  class = "th2" width="241" height="12">B</TH> 
+            <TH  class = "th2" width="241" height="12">C</TH> 
+            <TH  class = "th2" width="241" height="12">D</TH> 
+            <TH  class = "th2" width="241" height="12">E</TH> 
+            <TH  class = "th2" width="241" height="12">F</TH> 
+			</TR> 
+			 
+			<TR VALIGN="top"> 
+			<td class="tdSeqence"><b>1</b></td> 
+			<td  class="bottomLine" height="4" width="237">茶种</TD> 
+            <td  class="bottomLine" height="4" width="237">树高</TD> 
+            <td  class="bottomLine" height="4" width="237">树龄</TD> 
+            <td  class="bottomLine" height="4" width="237">产量</TD> 
+            <td  class="bottomLine" height="4" width="237">利润</TD> 
+            <td  class="bottomLine" height="4" width="237">树高</TD> 
+			</TR> 
+			 
+			<TR VALIGN="top"> 
+			<td class="tdSeqence"><b>2</b></td> 
+			<td  width="237"class="bottomLine" height="25">铁观音</TD> 
+            <td  width="237"class="bottomLine" height="25">&gt;50</TD> 
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD> 
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD> 
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD> 
+            <td  width="237"class="bottomLine" height="25">&lt;60</TD> 
+            
+  </TR> 
+			 <TR VALIGN="top"> 
+			<td class="tdSeqence"><b>3</b></td> 
+			<td  class="bottomLine" height="4" width="237">普洱</TD> 
+            <td  class="bottomLine" height="4" width="237">&nbsp;</TD>
+            <td  class="bottomLine" height="4" width="237">&nbsp;</TD>
+            <td  class="bottomLine" height="4" width="237">&nbsp;</TD>
+            <td  class="bottomLine" height="4" width="237">&nbsp;</TD>
+            <td  class="bottomLine" height="4" width="237">&nbsp;</TD>
+  </TR> 
+			 
+			<TR VALIGN="top"> 
+			<td class="tdSeqence"><b>4</b></td> 
+			<td  width="237"class="bottomLine" height="25">茶种</TD> 
+            <td  width="237"class="bottomLine" height="25">树高</TD> 
+            <td  width="237"class="bottomLine" height="25">树龄</TD> 
+            <td  width="237"class="bottomLine" height="25">产量</TD> 
+            <td  width="237"class="bottomLine" height="25">利润</TD> 
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD> 
+            
+  </TR> 
+            <TR VALIGN="top"> 
+			<td class="tdSeqence"><b>5</b></td> 
+			<td  width="237"class="bottomLine" height="25">铁观音</TD>
+            <td  width="237"class="bottomLine" height="25">61</TD> 
+            <td  width="237"class="bottomLine" height="25">30</TD> 
+            <td  width="237"class="bottomLine" height="25">24</TD> 
+            <td  width="237"class="bottomLine" height="25">150</TD> 
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD>  
+  </TR> 
+            <TR VALIGN="top"> 
+			<td class="tdSeqence"><b>6</b></td> 
+			<td  width="237"class="bottomLine" height="25">普洱</TD> 
+            <td  width="237"class="bottomLine" height="25">57</TD>
+            <td  width="237"class="bottomLine" height="25">22</TD>
+            <td  width="237"class="bottomLine" height="25">20</TD>
+            <td  width="237"class="bottomLine" height="25">142</TD>
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD>
+  </TR> 
+            <TR VALIGN="top"> 
+			<td class="tdSeqence"><b>7</b></td> 
+			<td  width="237"class="bottomLine" height="25">龙井</TD>
+            <td  width="237"class="bottomLine" height="25">55</TD>
+            <td  width="237"class="bottomLine" height="25">24</TD>
+            <td  width="237"class="bottomLine" height="25">19</TD>
+            <td  width="237"class="bottomLine" height="25">132</TD>
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD> 
+  </TR> 
+            <TR VALIGN="top"> 
+			<td class="tdSeqence"><b>8</b></td> 
+			<td  width="237"class="bottomLine" height="25">铁观音</TD>
+            <td  width="237"class="bottomLine" height="25">53</TD>
+            <td  width="237"class="bottomLine" height="25">25</TD>
+            <td  width="237"class="bottomLine" height="25">20</TD>
+            <td  width="237"class="bottomLine" height="25">97</TD>
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD> 
+  </TR> 
+            <TR VALIGN="top"> 
+			<td class="tdSeqence"><b>9</b></td> 
+			<td  width="237"class="bottomLine" height="25">普洱</TD> 
+            <td  width="237"class="bottomLine" height="25">49</TD>
+            <td  width="237"class="bottomLine" height="25">18</TD>
+            <td  width="237"class="bottomLine" height="25">18</TD>
+            <td  width="237"class="bottomLine" height="25">85.3</TD>
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD>
+  </TR> 
+            <TR VALIGN="top"> 
+			<td class="tdSeqence"><b>10</b></td> 
+			<td  width="237"class="bottomLine" height="25">铁观音</TD> 
+            <td  width="237"class="bottomLine" height="25">46</TD>
+            <td  width="237"class="bottomLine" height="25">19</TD>
+            <td  width="237"class="bottomLine" height="25">16</TD>
+            <td  width="237"class="bottomLine" height="25">75</TD>
+            <td  width="237"class="bottomLine" height="25">&nbsp;</TD>
+  </TR> 
+
+</TABLE>
+
+
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+<p>（注：如果在拷贝示例进行学习的过程中发现计算结果不正确，可能是因为一些被引用的空单元格中存在‘空格’所导致。）</p>
+
+<table>
+
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DCOUNT(A4:E10,&quot;树龄&quot;,A1:F2)</td>
+		<td class ="ll">此函数查找高度在50到60厘米之间的铁观音的记录，并且计算这些记录中“树龄”字段包含数字的单元格数目。(1)</td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DCOUNTA(A4:E10,&quot;利润&quot;,A1:F2)</td>
+		<td class ="ll">此函数查找高度为50到60厘米之间的铁观音记录，并计算这些记录中“利润”字段为非空的单元格数目。(1)</td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DMAX(A4:E10,&quot;利润&quot;,A1:A3)</td>
+		<td class ="ll">此函数查找铁观音和普洱的最大利润。(150)</td>
+        </tr>
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DMIN(A4:E10,&quot;利润&quot;,A1:B2)</td>
+	        <td class ="ll">此函数查找高度在50厘米以上的铁观音的最小利润。(97)</td>
+        </tr>
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DPRODUCT(A4:E10,"产量",A1:B2)</td>
+	        <td class ="ll">此函数计算铁观音的总利润。(480)</td>
+        </tr>
+        <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DSUM(A4:E10,"利润",A1:F2)</td>
+	        <td class ="ll">此函数计算高度在50到60厘米之间的铁观音的总利润。(97)</td>
+        </tr> 
+        <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DPRODUCT(A4:E10,"产量",A1:B2)</td>
+	        <td class ="ll">此函数计算高度大于50厘米的铁观音产量的乘积。(480)</td>
+        </tr>
+        <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DAVERAGE(A4:E10,&quot;产量&quot;,A1:B2)</td>
+	        <td class ="ll">此函数计算高度在50厘米以上的铁观音的平均产量。(22)</td>
+        </tr>
+        <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DAVERAGE(A4:E10,3,A4:E10)</td>
+                <td class ="ll">此函数计算数据库中所有树种的平均树龄。(23)</td>
+        </tr>
+        <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DSTDEV(A4:E10,&quot;产量&quot;,A1:A3)</td>
+                <td class ="ll">如果数据库中的数据只是整个茶园的一个样本，则此值是铁观音和普洱产量的估算标准偏差。(2.97)</td>
+      </tr>
+      <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DSTDEVP(A4:E10,&quot;产量&quot;,A1:A3)</td>
+                <td class ="ll">如果数据库中的数据为整个茶园的样本总体，则此值是铁观音和普洱产量的真实标准偏差。(2.65)</td>
+      </tr>
+      <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DVAR(A4:E10,"产量",A1:A3)</td>
+	        <td class ="ll">如果数据库中的数据只是整个茶园的一个样本，那么此值是铁观音和普洱产量的估算方差。(8.8)</td>
+      </tr>
+      <tr>
+		<td class ="tdEmpty" ></td>
+		<td valign="top" class ="ll">=DVARP(A4:E10,"产量",A1:A3)</td>
+	        <td class ="ll">如果数据库中的数据为整个茶园的样本总体，则此值是铁观音和普洱产量的真实方差。(7.04)</td>
+      </tr>		
+</table>
+
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_database.htm">数据库函数</a></p>
+
+<p>　</p>
+
+
+
+</body>
+
+</html>

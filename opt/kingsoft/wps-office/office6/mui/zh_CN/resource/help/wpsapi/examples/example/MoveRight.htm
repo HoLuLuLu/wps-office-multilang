@@ -1,0 +1,17 @@
+<html><head>
+<title>MoveRight</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将所选内容移至前一个批注之前，然后为第一个批注添加内容。<p>With Selection<br>
+&nbsp;&nbsp;&nbsp; Set MyRange = .GoTo(wpsGoToComment, wpsGoToPrevious)<br>
+&nbsp;&nbsp;&nbsp; .MoveRight Unit:=wpsWord, Count:=1, Extend:=wpsExtend<br>
+&nbsp;&nbsp;&nbsp; If Selection.Comments.Count &gt;= 1 Then<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Selection.Comments(1).Range = &quot;this 
+is Test!&quot;<br>
+&nbsp;&nbsp;&nbsp; End If<br>
+End With</div>
+</body>
+</html>

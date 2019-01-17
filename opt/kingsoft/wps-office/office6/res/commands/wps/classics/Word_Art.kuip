@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.word_art" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="w" ksoCmd="InsertWordArt" aid="1031" icon="InsertWordArt" id="InsertWordArtOnToolBar" customTip="InsertWordArt" text="@Insert WordArt" rbHotKey="FT"/>
+		<KxLegacyTriggerCommand hotKey="x" disableCustomRibbon="true" ksoCmd="EditWordArtText" aid="2094" id="EditWordArtText" dialogHint="1" text="@Edit Text"/>
+		<KxLegacyTriggerCommand ksoCmd="WordArtGallery" aid="1606" icon="WordArtGallery" id="WordArtGallery" customTip="WordArtGallery" text="@WordArt Gallery" rbHotKey="G"/>
+		<KxLegacyTriggerCommand ksoCmd="FormatWordArt" aid="85001" icon="ChartObjects" id="FormatWordArt" text="@Format WordArt"/>
+		<KxStaticGalleryCommand column="8" ksoCmd="WordArtShapePalette" aid="1058" icon="WordArtShapeMenu" id="WordArtShapePalette" customTip="WordArtShapePalette" spaceHint="suitable" name="WordArt Shape" text="@WordArt Shape" rbHotKey="AP">
+			<KxStaticGalleryItemCommand detail="@Plain Text" icon="wordartshapes_0" index="0" text="" qtspyName="wordartshapes_0"/>
+			<KxStaticGalleryItemCommand detail="@Stop" icon="wordartshapes_1" index="1" text="" qtspyName="wordartshapes_1"/>
+			<KxStaticGalleryItemCommand detail="@Triangle Up" icon="wordartshapes_2" index="2" text="" qtspyName="wordartshapes_2"/>
+			<KxStaticGalleryItemCommand detail="@Triangle Down" icon="wordartshapes_3" index="3" text="" qtspyName="wordartshapes_3"/>
+			<KxStaticGalleryItemCommand detail="@Chevron Up" icon="wordartshapes_4" index="4" text="" qtspyName="wordartshapes_4"/>
+			<KxStaticGalleryItemCommand detail="@Chevron Down" icon="wordartshapes_5" index="5" text="" qtspyName="wordartshapes_5"/>
+			<KxStaticGalleryItemCommand detail="@Ring Inside" icon="wordartshapes_6" index="6" text="" qtspyName="wordartshapes_6"/>
+			<KxStaticGalleryItemCommand detail="@Ring Outside" icon="wordartshapes_7" index="7" text="" qtspyName="wordartshapes_7"/>
+			<KxStaticGalleryItemCommand detail="@Arch Up (Curve)" icon="wordartshapes_8" index="8" text="" qtspyName="wordartshapes_8"/>
+			<KxStaticGalleryItemCommand detail="@Arch Down (Curve)" icon="wordartshapes_9" index="9" text="" qtspyName="wordartshapes_9"/>
+			<KxStaticGalleryItemCommand detail="@Circle (Curve)" icon="wordartshapes_10" index="10" text="" qtspyName="wordartshapes_10"/>
+			<KxStaticGalleryItemCommand detail="@Button (Curve)" icon="wordartshapes_11" index="11" text="" qtspyName="wordartshapes_11"/>
+			<KxStaticGalleryItemCommand detail="@Arch Up (Pour)" icon="wordartshapes_12" index="12" text="" qtspyName="wordartshapes_12"/>
+			<KxStaticGalleryItemCommand detail="@Arch Down (Pour)" icon="wordartshapes_13" index="13" text="" qtspyName="wordartshapes_13"/>
+			<KxStaticGalleryItemCommand detail="@Circle (Pour)" icon="wordartshapes_14" index="14" text="" qtspyName="wordartshapes_14"/>
+			<KxStaticGalleryItemCommand detail="@Button (Pour)" icon="wordartshapes_15" index="15" text="" qtspyName="wordartshapes_15"/>
+			<KxStaticGalleryItemCommand detail="@Curve Up" icon="wordartshapes_16" index="16" text="" qtspyName="wordartshapes_16"/>
+			<KxStaticGalleryItemCommand detail="@Curve Down" icon="wordartshapes_17" index="17" text="" qtspyName="wordartshapes_17"/>
+			<KxStaticGalleryItemCommand detail="@Can Up" icon="wordartshapes_18" index="18" text="" qtspyName="wordartshapes_18"/>
+			<KxStaticGalleryItemCommand detail="@Can Down" icon="wordartshapes_19" index="19" text="" qtspyName="wordartshapes_19"/>
+			<KxStaticGalleryItemCommand detail="@Wave 1" icon="wordartshapes_20" index="20" text="" qtspyName="wordartshapes_20"/>
+			<KxStaticGalleryItemCommand detail="@Wave 2" icon="wordartshapes_21" index="21" text="" qtspyName="wordartshapes_21"/>
+			<KxStaticGalleryItemCommand detail="@Double Wave 1" icon="wordartshapes_22" index="22" text="" qtspyName="wordartshapes_22"/>
+			<KxStaticGalleryItemCommand detail="@Double Wave 2" icon="wordartshapes_23" index="23" text="" qtspyName="wordartshapes_23"/>
+			<KxStaticGalleryItemCommand detail="@Inflate" icon="wordartshapes_24" index="24" text="" qtspyName="wordartshapes_24"/>
+			<KxStaticGalleryItemCommand detail="@Deflate" icon="wordartshapes_25" index="25" text="" qtspyName="wordartshapes_25"/>
+			<KxStaticGalleryItemCommand detail="@Inflate Bottom" icon="wordartshapes_26" index="26" text="" qtspyName="wordartshapes_26"/>
+			<KxStaticGalleryItemCommand detail="@Deflate Bottom" icon="wordartshapes_27" index="27" text="" qtspyName="wordartshapes_27"/>
+			<KxStaticGalleryItemCommand detail="@Inflate Top" icon="wordartshapes_28" index="28" text="" qtspyName="wordartshapes_28"/>
+			<KxStaticGalleryItemCommand detail="@Deflate Top" icon="wordartshapes_29" index="29" text="" qtspyName="wordartshapes_29"/>
+			<KxStaticGalleryItemCommand detail="@Deflate Inflate" icon="wordartshapes_30" index="30" text="" qtspyName="wordartshapes_30"/>
+			<KxStaticGalleryItemCommand detail="@Deflate Inflate Deflate" icon="wordartshapes_31" index="31" text="" qtspyName="wordartshapes_31"/>
+			<KxStaticGalleryItemCommand detail="@Fade Right" icon="wordartshapes_32" index="32" text="" qtspyName="wordartshapes_32"/>
+			<KxStaticGalleryItemCommand detail="@Fade Left" icon="wordartshapes_33" index="33" text="" qtspyName="wordartshapes_33"/>
+			<KxStaticGalleryItemCommand detail="@Fade Up" icon="wordartshapes_34" index="34" text="" qtspyName="wordartshapes_34"/>
+			<KxStaticGalleryItemCommand detail="@Fade Down" icon="wordartshapes_35" index="35" text="" qtspyName="wordartshapes_35"/>
+			<KxStaticGalleryItemCommand detail="@Slant Up" icon="wordartshapes_36" index="36" text="" qtspyName="wordartshapes_36"/>
+			<KxStaticGalleryItemCommand detail="@Slant Down" icon="wordartshapes_37" index="37" text="" qtspyName="wordartshapes_37"/>
+			<KxStaticGalleryItemCommand detail="@Cascade Up" icon="wordartshapes_38" index="38" text="" qtspyName="wordartshapes_38"/>
+			<KxStaticGalleryItemCommand detail="@Cascade Down" icon="wordartshapes_39" index="39" text="" qtspyName="wordartshapes_39"/>
+		</KxStaticGalleryCommand>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="WrappingInLineWithText" aid="5934" icon="WrappingInLineWithText" id="WrappingInLineWithText" text="@In Line with Text"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="WrappingSquare" aid="1369" icon="WrappingSquare" id="WrappingSquare" text="@Square" rbHotKey="S"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="WrappingTight" aid="1370" icon="WrappingTight" id="WrappingTight" text="@Tight@Wrapping" rbHotKey="T"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="WrappingBehindText" aid="4000" icon="WrappingBehindText" id="WrappingBehindText" text="@Behind Text" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="WrappingInFrontofText" aid="4001" icon="WrappingInFrontofText" id="WrappingInFrontofText" text="@In Front of Text" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="WrappingTopandBottom" aid="2766" icon="WrappingTopandBottom" id="WrappingTopandBottom" text="@Top and Bottom" rbHotKey="O"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="WrappingThrough" aid="2767" icon="WrappingThrough" id="WrappingThrough" text="@Through" rbHotKey="H"/>
+		<KListCommand hotKey="t" aid="1404" barid="4297" icon="WrappingInFrontofText" id="Wrapping" name="Text Wrapping" text="@Wrap Text">
+			<command idQ="WrappingInLineWithText"/>
+			<separator/>
+			<command idQ="WrappingSquare"/>
+			<command idQ="WrappingTight"/>
+			<command idQ="WrappingBehindText"/>
+			<command idQ="WrappingInFrontofText"/>
+			<separator/>
+			<command idQ="WrappingTopandBottom"/>
+			<command idQ="WrappingThrough"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="WordArtSameLetterHeights" aid="1063" icon="WordArtSameLetterHeights" id="WordArtSameLetterHeights" spaceHint="suitable" text="@WordArt Same Letter Heights" rbHotKey="AH"/>
+		<KxLegacyTriggerCommand ksoCmd="WordArtVerticalText" aid="1061" icon="WordArtVerticalText" id="WordArtVerticalText" spaceHint="suitable" text="@WordArt Vertical Text" rbHotKey="AV"/>
+		<KxValueCommand hotKey="l" ksoCmd="WordArtAlignment" aid="85002" icon="AlignLeft" id="WordArtLeftAlign" index="0" text="@Left Align"/>
+		<KxValueCommand hotKey="c" ksoCmd="WordArtAlignment" aid="1109" icon="AlignCenter" id="WordArtCenterAlign" index="1" text="@Center Align"/>
+		<KxValueCommand hotKey="r" ksoCmd="WordArtAlignment" aid="85003" icon="AlignRight" id="WordArtRightAlign" index="2" text="@Right Align"/>
+		<KxValueCommand hotKey="w" ksoCmd="WordArtAlignment" aid="1354" icon="AlignJustify" id="WordArtWordJustify" index="3" text="@Word Justify"/>
+		<KxValueCommand hotKey="t" ksoCmd="WordArtAlignment" aid="1353" icon="WordArtLetterJustify" id="WordArtLetterJustify" index="4" text="@Letter Justify"/>
+		<KxValueCommand hotKey="s" ksoCmd="WordArtAlignment" aid="1355" icon="WordArtStretchJustify" id="WordArtStretchJustify" index="5" text="@Stretch Justify"/>
+		<KxValueCommand hotKey="i" ksoCmd="WordArtCharacterSpacing" aid="1356" id="WordArtSpacingVeryTight" index="0" text="@Very Tight"/>
+		<KxValueCommand hotKey="t" ksoCmd="WordArtCharacterSpacing" aid="1357" id="WordArtSpacingTight" index="1" text="@Tight@Spacing"/>
+		<KxValueCommand hotKey="n" ksoCmd="WordArtCharacterSpacing" aid="1358" id="WordArtSpacingNormal" index="2" text="@Normal"/>
+		<KxValueCommand hotKey="l" ksoCmd="WordArtCharacterSpacing" aid="1359" id="WordArtSpacingLoose" index="3" text="@Loose"/>
+		<KxValueCommand hotKey="v" ksoCmd="WordArtCharacterSpacing" aid="1360" id="WordArtSpacingVeryLoose" index="4" text="@Very Loose"/>
+	</commands>
+	<subcommands>
+		<subcommand id="WordArt">
+			<command idQ="InsertWordArtOnToolBar"/>
+			<separator/>
+			<command idQ="EditWordArtText"/>
+			<separator/>
+			<command idQ="WordArtGallery"/>
+			<command idQ="FormatWordArt"/>
+			<command idQ="WordArtShapePalette"/>
+			<command idQ="Wrapping"/>
+			<separator/>
+			<command idQ="WordArtSameLetterHeights"/>
+			<command idQ="WordArtVerticalText"/>
+			<KListCommand aid="1059" icon="AlignCenter" id="WordArtAlignmentMenu" text="@WordArt Alignment">
+				<command idQ="WordArtLeftAlign"/>
+				<command idQ="WordArtCenterAlign"/>
+				<command idQ="WordArtRightAlign"/>
+				<command idQ="WordArtWordJustify"/>
+				<command idQ="WordArtLetterJustify"/>
+				<command idQ="WordArtStretchJustify"/>
+			</KListCommand>
+			<KListCommand aid="1060" icon="WordArtCharacterSpacingMenu" id="WordArtCharacterSpacingMenu" name="WordArt Alignment" text="@WordArt Character Spacing">
+				<command idQ="WordArtSpacingVeryTight"/>
+				<command idQ="WordArtSpacingTight"/>
+				<command idQ="WordArtSpacingNormal"/>
+				<command idQ="WordArtSpacingLoose"/>
+				<command idQ="WordArtSpacingVeryLoose"/>
+				<KxInputDialogCommand hotKey="c" ksoCmd="WordArtCharacterSpacingCustom" aid="1621" id="WordArtCharacterSpacingCustom" dialogHint="1" text="@Custom"/>
+			</KListCommand>
+		</subcommand>
+	</subcommands>
+</shell>

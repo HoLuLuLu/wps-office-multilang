@@ -1,0 +1,146 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>SMALL</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="SMALL">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>SMALL</h1>
+<p>返回数据集中第 k 个最小值。使用此函数可以返回数据集中特定位置上的数值。</p>
+<p><b>语法</b></p>
+<p><b>SMALL</b>(<b>array</b>,<b>k</b>)</p>
+<p>Array&nbsp;&nbsp; 为需要找到第 k 个最小值的数组或数字型数据区域。</p>
+<p>K&nbsp;&nbsp; 为返回的数据在数组或数据区域里的位置（从小到大）。</p>
+<p><b>说明</b> </p>
+<ul>
+	<li>如果 array 为空，函数 SMALL 返回错误值 #NUM!。 
+	</li>
+	<li>如果 k ≤ 0 或 k 超过了数据点个数，函数 SMALL 返回错误值 #NUM!。 
+	</li>
+	<li>如果 n 为数组中的数据点个数，则 SMALL(array,1) 等于最小值，SMALL(array,n) 等于最大值。 
+	</li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+	    <th class="th1">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">数据</td>
+		<td class = "th1">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">2</td>
+		<td class="ll">3</td>
+		<td class="ll">1</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">4</td>
+		<td class="ll">4</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td class="ll">5</td>
+		<td class="ll">8</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">5</td>
+		<td class="ll">2</td>
+		<td class="ll">3</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">6</td>
+		<td class="ll">3</td>
+		<td class="ll">7</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">7</td>
+		<td class="ll">4</td>
+		<td class="ll">12</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">8</td>
+		<td class="ll">6</td>
+		<td class="ll">54</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">9</td>
+		<td class="ll">44</td>
+		<td class="ll">8</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">10</td>
+		<td class="ll">7</td>
+		<td class="ll">23</td>
+	</tr>
+
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2" width="146"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=SMALL(A2:A10,4)</td>
+		<td class="ll">第一列中第四个最小值 (4)</td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=SMALL(B2:B10,2)</td>
+		<td class="ll">第二列中第二个最小值 (3)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

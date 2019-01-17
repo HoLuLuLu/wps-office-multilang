@@ -1,0 +1,11 @@
+<html><head>
+<title>VerticalFlip</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将 myDocument 中所有曾进行水平或垂直翻转的图形还原至初始状态。<p>For Each s In ActiveDocument.Shapes<br>    &nbsp;&nbsp;&nbsp;    If s.HorizontalFlip Then s.Flip ksoFlipHorizontal<br>    &nbsp;&nbsp;&nbsp;    If s.VerticalFlip Then s.Flip ksoFlipVertical<br>Next
+</div>
+</body>
+</html>

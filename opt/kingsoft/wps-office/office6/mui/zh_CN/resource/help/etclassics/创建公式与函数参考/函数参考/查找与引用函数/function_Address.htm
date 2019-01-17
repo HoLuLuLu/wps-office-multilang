@@ -1,0 +1,146 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>ADDRESS</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="ADDRESS">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>ADDRESS</h1>
+<p>按照给定的行号和列标，建立文本类型的单元格地址。</p>
+<p><b>语法</b></p>
+<p><b>ADDRESS</b>(<span lang="en-us"><b>r</b></span><b>ow_num</b>,<b>column_num</b>,<b>abs_num</b>,<b>a1</b>,<b>sheet_text</b>)</p>
+<p>Row_num&nbsp;&nbsp;&nbsp; 在单元格引用中使用的行号。<br>
+<br>
+<span lang="en-us">Column</span>_num&nbsp;&nbsp;&nbsp; 在单元格引用中使用的列标。<br>
+<br>
+A<span lang="en-us">bs</span>_num&nbsp;&nbsp;&nbsp; 指定返回的引用类型。</p>
+<p>
+
+
+
+
+<TABLE  cols=3 width="412" height="77"> 
+		
+			<TR VALIGN="top"> 
+			<TH class = "th1" width="43" height="12">ABS_num</TH> 
+			<TH  class = "th2" width="241" height="12">返回的引用类型</TH> 
+			</TR> 
+			 
+			<TR VALIGN="top"> 
+			<td  class="bottomLine" height="4" width="157">1或省略</TD> 
+			<td  class="bottomLine" height="4" width="237">绝对引用</TD> 
+			</TR> 
+			 
+			<TR VALIGN="top"> 
+			<td width="157" class="bottomLine" height="25">2</TD> 
+			<td  width="237"class="bottomLine" height="25">绝对行号，相对列标</TD> 
+			</TR> 
+			 <TR VALIGN="top"> 
+			<td  class="bottomLine" height="4" width="157">3</TD> 
+			<td  class="bottomLine" height="4" width="237">相对行号，绝对列标</TD> 
+			</TR> 
+			 
+			<TR VALIGN="top"> 
+			<td width="157" class="bottomLine" height="25">4</TD> 
+			<td  width="237"class="bottomLine" height="25">相对引用</TD> 
+			</TR> 
+
+			</TABLE>
+
+
+<p>
+A1&nbsp;&nbsp; 用以指定 A1 或 R1C1 引用样式的逻辑值。如果 A1 为 TRUE 或省略，函数 ADDRESS 返回 A1 样式的引用。如果 A1 为 
+FALSE，函数 ADDRESS 返回 R1C1 样式的引用。 <br>
+<br>
+Sheet_text&nbsp;&nbsp; 为一文本，指定作为外部引用的工作表的名称，如果省略 sheet_text，则不使用任何工作表名。
+</p>
+
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td valign="top" class ="ll">=ADDRESS(2,3)</td>
+		<td class ="ll">绝对引用 ($C$2)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td valign="top" class ="ll">=ADDRESS(2,3,2)</td>
+		<td class ="ll">绝对行号，相对列标 (C$2)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td valign="top" class ="ll">=ADDRESS(2,3,2,FALSE)</td>
+		<td class ="ll">在 R1C1 引用样式中的绝对行号，相对列标 (R2C[3])</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">5</td>
+		<td valign="top" class ="ll">=ADDRESS(2,3,1,FALSE,&quot;[Book1]Sheet1&quot;)</td>
+		<td class ="ll">对其他工作表的绝对引用 ([Book1]Sheet1!R2C3)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">6</td>
+		<td valign="top" class ="ll">=ADDRESS(2,3,1,FALSE,&quot;ET SHEET&quot;)</td>
+		<td class ="ll">对其他工作表的绝对引用 ('ET SHEET'!R2C3)</td>
+	</tr>
+		
+</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_lookup.htm">查找与引用函数</a></p>
+
+
+
+<p><a href="function_Column.htm">COLUMN</a></p>
+
+
+
+<p><a href="function_Offset.htm">OFFSET</a></p>
+
+
+
+<p><a href="function_Row.htm">ROW</a></p>
+
+
+
+</body>
+
+</html>

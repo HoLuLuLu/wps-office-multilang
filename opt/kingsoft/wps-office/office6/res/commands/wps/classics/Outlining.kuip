@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.outlining" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="PromoteToHighestLevelOnOutlining" aid="6214" icon="PromoteToHighestLevelOnOutlining" id="PromoteToHighestLevelOnOutlining" text="@Promote to Heading 1" rbHotKey="R"/>
+		<KxWpsComboBoxCommand ksoCmd="OutLineLevelComboOnOutlining" aid="6116" fixedWidth="133" items="@Level 1;Level 2;Level 3;Level 4;Level 5;Level 6;Level 7;Level 8;Level 9;Body Text" id="OutLineLevelComboOnOutlining" customTip="OutLineLevelComboOnOutlining" text="@Outline Level" rbHotKey="O"/>
+		<KxLegacyTriggerCommand ksoCmd="RelocateDownOnOutlining" aid="135" icon="RelocateDownOnOutlining" id="RelocateDownOnOutlining" text="@Move Down" rbHotKey="D"/>
+		<KxWpsComboBoxCommand ksoCmd="ShowLevelOnOutlining" aid="6117" fixedWidth="100" items="@Show Level 1;Show Level 2;Show Level 3;Show Level 4;Show Level 5;Show Level 6;Show Level 7;Show Level 8;Show Level 9;Show All Levels" id="ShowLevelOnOutlining" customTip="ShowLevelOnOutlining" spaceHint="suitable" text="@Show Level" rbHotKey="V"/>
+		<KxLegacyTriggerCommand ksoCmd="ShowFirstLineOnOutlining" aid="251" icon="ShowFirstLineOnOutlining" id="ShowFirstLineOnOutlining" spaceHint="suitable" text="@Show First Line Only" rbHotKey="F"/>
+		<KxLegacyTriggerCommand ksoCmd="ShowTextFormateOnOutlining" aid="252" icon="ShowTextFormateOnOutlining" id="ShowTextFormateOnOutlining" spaceHint="suitable" text="@Show Formatting" rbHotKey="T"/>
+		<KxLegacyTriggerCommand showIconAndText="3" hotKey="u" ksoCmd="UpdateTocOnOutlining" aid="6115" icon="UpdateTocOnOutlining" id="UpdateTocOnOutlining" text="@Update TOC"/>
+		<KxLegacyTriggerCommand ksoCmd="GotoTocOnOutlining" aid="6114" icon="GotoTocOnOutlining" id="GotoTocOnOutlining" customTip="GotoTocOnOutlining" text="@Go to TOC" rbHotKey="G"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Outlining">
+			<command idQ="PromoteToHighestLevelOnOutlining"/>
+			<command idQ="PromoteOnOutlining"/>
+			<command idQ="OutLineLevelComboOnOutlining"/>
+			<command idQ="DemoteOnOutlining"/>
+			<command idQ="DemoteToLowestLevelOnOutlining"/>
+			<separator/>
+			<command idQ="RelocateUpOnOutlining"/>
+			<command idQ="RelocateDownOnOutlining"/>
+			<separator/>
+			<command idQ="ExpandOnOutlining"/>
+			<command idQ="CollapseOnOutlining"/>
+			<separator/>
+			<command idQ="ShowLevelOnOutlining"/>
+			<command idQ="ShowFirstLineOnOutlining"/>
+			<command idQ="ShowTextFormateOnOutlining"/>
+			<separator/>
+			<command idQ="UpdateTocOnOutlining"/>
+			<command idQ="GotoTocOnOutlining"/>
+		</subcommand>
+	</subcommands>
+</shell>

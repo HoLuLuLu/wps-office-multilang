@@ -1,0 +1,10 @@
+<html><head>
+<title>AddShape</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在新文档中添加一个红色矩形。<p>Dim docNew As Document<br>    'Create a new document and adds a shape<br>    Set docNew = Documents.Add<br>    docNew.Shapes.AddShape Type:=ksoShapeRectangle, _<br>        Left:=50, Top:=50, Width:=100, Height:=200<br>    'Format the shape<br>    docNew.Shapes(1).Fill.ForeColor _<br>        .RGB = RGB(Red:=200, Green:=15, Blue:=95)</div>
+</body>
+</html>

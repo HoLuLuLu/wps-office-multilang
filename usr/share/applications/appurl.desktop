@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=TerminalURL
+#Exec=/home/zhangpeng/workspace/wps/build_debug/WPSOffice/office6/parsecloudfiletool %u
+Exec=/opt/kingsoft/wps-office/office6/parsecloudfiletool %u
+Type=Application
+NoDisplay=true
+Categories=System;
+MimeType=x-scheme-handler/ksoqing;
+

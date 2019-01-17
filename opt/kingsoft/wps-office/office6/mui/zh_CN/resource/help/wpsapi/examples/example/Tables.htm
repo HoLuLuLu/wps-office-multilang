@@ -1,0 +1,14 @@
+<html><head>
+<title>Tables</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在活动文档第1个表格的第4列中插入数值和文本。<p>Dim i As Integer<br>
+For i = 1 To ActiveDocument.Tables(1).Columns(4).Cells.Count<br>
+&nbsp;&nbsp;&nbsp; ActiveDocument.Tables(1).Columns(4).Cells(i).Range.Text = num 
+&amp; &quot;Sample&quot;<br>
+Next i</div>
+</body>
+</html>

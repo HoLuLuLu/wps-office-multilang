@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.review" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="ShowHideMark" aid="6547" icon="Markup" id="ShowHideMark" customTip="ShowHideMark" text="@Show/Hide Markup" rbHotKey="h"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="NewComment" aid="92195" icon="InsertComment" id="NewComment" customTip="NewComment" text="@New Comment" rbHotKey="m"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditComment" aid="2056" icon="EditComment" id="EditComment" text="@Edit Comment"/>
+		<KxLegacyTriggerCommand ksoCmd="PreComment" aid="92167" icon="PreviousComment" id="PreComment" customTip="PreviousComment" text="@Previous" rbHotKey="p"/>
+		<KxLegacyTriggerCommand ksoCmd="NextComment" aid="92168" icon="NextComment" id="NextComment" customTip="NextComment" text="@Next" rbHotKey="n"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="DelSlideComment" aid="6544" icon="DelComment" id="DelSlideComment" text="@Delete" rbHotKey="t"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="DelSlideMark" aid="92078" icon="DeleteSlideMark" id="DelSlideMark" text="@Delete All Markup on the Current Slide" rbHotKey="k"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="DelPresentationMark" aid="92079" icon="DeletePresentationMark" id="DelPresentationMark" text="@Delete All Markup in this Presentation" rbHotKey="n"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Review">
+			<command idQ="ShowHideMark"/>
+			<separator/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="NewComment" aid="92195" icon="InsertComment" customTip="NewComment" text="@New Comment" qtspyName="NewComment" rbHotKey="m"/>
+			<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditComment" aid="2056" icon="EditComment" text="@Edit Comment" qtspyName="EditComment"/>
+			<separator/>
+			<command idQ="PreComment"/>
+			<command idQ="NextComment"/>
+			<separator/>
+			<KListCommand aid="6544" icon="DeleteComment" id="Delete Comment" text="@Delete">
+				<command idQ="DelSlideComment"/>
+				<command idQ="DelSlideMark"/>
+				<command idQ="DelPresentationMark"/>
+			</KListCommand>
+		</subcommand>
+	</subcommands>
+</shell>

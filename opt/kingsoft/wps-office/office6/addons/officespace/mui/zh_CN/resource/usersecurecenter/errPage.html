@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport"
+          content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <style>
+            /*reset*/
+            html, button{font: 12px/20px "Microsoft YaHei", "微软雅黑", Helvetica, Tahoma, Arial, SimSun, "宋体", sans-serif;color:#000;outline:none; }
+
+            body,div,dl,dt,dd,ul,ol,li,menu,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;outline:none; }table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}a{text-decoration: none;}
+            a:hover{ text-decoration: underline; }
+            a{ color:#486f97; cursor: pointer; }
+            div:focus, input:focus, a:focus, button:focus{ outline:none; }
+
+            body{ outline:none; word-wrap: break-word; word-break: normal; }
+            #wrap, a{ outline:none; }
+            textarea{ resize:none; }
+            img{ border:none; }
+
+            /*position*/
+            .tl{text-align:left}
+            .tc{text-align:center}
+            .tr{text-align:right}
+            .fl{float:left;display:inline}
+            .fr{float:right;display:inline}
+
+        </style>
+        <style>
+            html,body{
+                width: 100%;
+                height:100%;
+                background-color:#f8f8f8;
+            }
+            .wrap {
+                position: relative;
+                height: 100%;
+                width: 658px;
+                margin: 0 auto
+            }
+
+            .head {
+                text-align: center;
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
+
+            .f_logo {
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 5px;
+                height: 45px;
+                width: 45px;
+                background-position: -255px 0;
+            }
+
+            .f_title {
+                display: inline-block;
+                vertical-align: top;
+                height: 55px;
+                line-height: 55px;
+                color: #444;
+                font-size: 18px;
+                font-weight: 700;
+                margin-left: 8px;
+            }
+
+            .f_icon {
+                background-image: url(fail.png)
+            }
+
+            .c_right{
+                overflow: hidden;
+                padding-top: 20px;
+                color: #888;
+                text-align: left;
+                width: 258px;
+            }
+
+            .c_r_h2{
+                color: #444;
+                padding-top: 20px;
+                line-height: 22px;
+                font-size: 16px;
+            }
+
+            .c_r_list{
+                color: #666;
+                margin-top: 12px;
+                list-style: disc inside;
+            }
+
+            .c_r_item{
+                line-height: 22px;
+                font-size: 14px;
+                height: 22px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .c_r_btn, .c_r_btn:visited{
+                display: inline-block;
+                height: 35px;
+                width: 120px;
+                border-radius: 3px;
+                border-color: #3b7aca;
+                margin-top: 30px;
+                background-color: #3b7aca ;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            .c_r_btn:hover {
+                background-color: #4389e6;
+                border-color: #4389e6;
+            }
+
+            .c_r_btn:active {
+                background-color: #346bb3;
+                border-color: #346bb3;
+            }
+
+            .c_r_btn_img{
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                vertical-align: top;
+                margin-top: 10px;
+                margin-right: 2px;
+                background-position: -284px -50px;
+            }
+
+            .c_r_btn_txt{
+                display: inline-block;
+                height: 35px;
+                line-height: 35px;
+                color: #fff;
+                font-size: 14px;
+            }
+
+            .c_left{
+                float: left;
+                width: 250px;
+                text-align: right;
+                height: 210px;
+                margin-right: 20px;
+            }
+
+            .c_left_img{
+                display: inline-block; 
+                width: 210px;
+                height: 210px;
+                background-position: 0 0;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="wrap">
+            <div class="head" style="visibility: hidden">
+                <span class="f_logo f_icon"></span>
+                <span class="f_title">使用WPS，请先登录账号</span>
+            </div>
+            <div>
+                <span class="c_left">
+                    <span class="c_left_img f_icon"></span>
+                </span>
+                <span class="c_right">
+                    <div class="c_r_h2">抱歉，您的网络好像断了哟~</div>
+                    <ul class="c_r_list">
+                        <li class="c_r_item">请尝试刷新页面</li>
+                        <li class="c_r_item">请检查网络连接是否正常</li>
+                        <li class="c_r_item">请检查您的代理服务器设置</li>
+                    </ul>
+                    <div class="c_r_btn" onclick="window.reflesh();">
+                        <span class="c_r_btn_img f_icon"></span>
+                        <span class="c_r_btn_txt">刷新页面</span>
+                    </div>
+                </span>
+                
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.reflesh = function(){
+                var params = {
+                    method:'reloadPage'
+                }
+                if(typeof(clientAPI) != "undefined"){
+                    clientAPI.jsAsynCall(JSON.stringify(params));
+                }else{
+                    window.cefQuery({
+                        request: "jsAsynCall('" + JSON.stringify(params) + "')",
+                        persistent: false,
+                        onSuccess: function (response) {
+                            
+                        },
+                        onFailure: function (error_code, error_message) {
+                            
+                        }
+                    })
+                }
+
+            }
+
+        </script>
+    </body>
+</html>

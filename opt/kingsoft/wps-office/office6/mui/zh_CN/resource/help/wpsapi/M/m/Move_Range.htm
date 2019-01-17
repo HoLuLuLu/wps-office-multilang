@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>Move_Range</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>将指定区域折叠到开始或结束位置，然后将折叠的对象移动指定数量的单位。</P>
+	<P>本方法返回的 <b>Long</b> 值表明对象实际移动的单位数。如果移动失败，则本方法返回 0（零）。 </P><br>
+    返回<b> Long </b>类型。  
+</p><br>
+    <P><b>语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.Move</b><i>([Unit], [Count])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >  必需。该表达式返回 <b>
+			<a href="../../objs/r/Range.htm">Range</a></b> 对象。 
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Unit  </i></td>
+            <td width="59%" height=15 > 可选，<b>Variant </b>类型。折叠的区域移动的单位。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Count  </i></td>
+            <td width="59%" height=15 > 可选，<b>Variant </b>类型。指定的区域移动的单位数。如果  
+			<b>Count</b> 是一个正数，则对象折叠到结束位置，并在文档中向前移动指定的单位数；如果 <b>Count</b> 是一个负数，则对象折叠到开始位置，并向后移动指定的单位数。默认值是 1。在使用 Move 方法之前也可以使用  
+			<b>Collapse</b> 方法控制折叠的方向。如果区域位于一个单位的中间，或者不能折叠，则将区域向前或向后移动整个的单位。    </td>
+          </tr>
+    </table><br>
+    <br><P><b>说明</b></P>
+    <P>折叠的区域或所选内容的开始和结束位置相同。 </P>
+	<P>将 <b>Move</b> 方法应用于一个区域并不重新排列文档中的文字，取而代之的是，这个方法重新定义区域，以引用文档中的一个新位置。 </P>
+	<P>如果将 <b>Move</b> 方法应用于不是 <b>Range</b> 对象变量（例如，Selection.Paragraphs(3).Range.Move）的任何区域，则本方法不起作用。 <br>　</P>
+    </div>
+</body>
+</html>

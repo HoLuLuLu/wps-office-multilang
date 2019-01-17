@@ -1,0 +1,116 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>MODE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="MODE">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>MODE</h1>
+<p>返回在某一数组或数据区域中出现频率最多的数值。MODE  是一个位置测量函数。</p>
+<p><b>语法</b></p>
+<p><b>MODE</b>(<b>number1</b>,number2,...)</p>
+<p>Number1, number2, ...&nbsp;&nbsp; 是用于众数计算的 1 到 30 个参数，也可以使用单一数组（即对数组区域的引用）来代替由逗号分隔的参数。</p>
+<p><b>说明</b> </p>
+<ul>
+	<li>参数可以是数字，或者是包含数字的名称、数组或引用。 
+	</li>
+	<li>如果数组或引用参数包含文本、逻辑值或空白单元格，则这些值将被忽略；但包含零值的单元格将计算在内。 
+	</li>
+	<li>如果数据集合中不含有重复的数据，则 MODE 数返回错误值 N/A。 </li>
+</ul>
+<p>
+在一组数值中，众数是出现频率最高的数值，而中位数是位于中间的值，平均数是平均后的值，所有这些求中函数都不能单独地完全描绘所有数据。例如，假设数据分布在三个区域中，其中一半分布在一个较小数值区中，另外一半分布在两个较大数值区中。函数 
+AVERAGE 和函数 MEDIAN 可能会返回位于数据点稀疏处的中间值；而函数 MODE 则会返回位于数据点密集处的较小值。</p>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">2</td>
+		<td class="ll">5.6</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">4</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td class="ll">4</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">5</td>
+		<td class="ll">3</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">6</td>
+		<td class="ll">2</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence">7</td>
+		<td class="ll">4</td>
+	</tr>
+
+</table>
+
+<br>
+
+<table>
+
+	<tr>
+		<td class ="tdEmpty" ></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2" width="146"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty">　</td>
+		<td class="ll">=MODE(A2:A7)</td>
+		<td class="ll">上面数据中的众数，也即出现频率最多的数 (4)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

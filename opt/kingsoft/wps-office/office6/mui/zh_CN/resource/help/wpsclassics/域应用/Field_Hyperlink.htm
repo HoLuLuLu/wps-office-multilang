@@ -1,0 +1,104 @@
+<html>
+<script src="../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb_2312-80">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 6.0">
+<title>Hyperlink</title>
+
+
+</HEAD>
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>Hyperlink</h1>
+<p>超链接是一个“热点”，可以从一个位置跳转至其他位置。这种位置可包括硬盘或局域网上的其他文件（如 金山文档或金山工作表）、Internet 地址（如 
+http://www.kingsoft.com/）、书签或幻灯片。此域包括提示文字，一般为蓝色并带有下划线，用户可单击此处跳转至指定位置。</p>
+<ul>
+	<li>
+<p>通过普通方式建立超链接<br>
+请按照如下步骤：</p>
+<ol>
+  <li>选中需要添加超链接的文字。</li>在“常用”工具栏上单击“插入超链接”<img border="0" src="../images/Btn_Hyperlink.png" width="23" height="23">，如下图所示：<br>
+	<img border="0" src="../images/Field_1.png" width="769" height="331"></li>
+  <li>单击“确定”。</li>
+</ol>
+</li>
+<li>
+<P>通过 <b>Hyperlink</b> 域方式建立超链接<br>
+<b>{</b> <b>Hyperlink</b> &quot;FileName&quot; [<i> Switches </i>] <b>}</b></P>
+<p><span id="mydiv1" class="charr1"></span>
+<a href="javascript:viewsample1()" style="text-decoration: none">&nbsp;</a><a href="javascript:viewsample1()"><span style="text-decoration: none">说明</span></a></p>
+<div id="sample1" style="display: none">
+ <table border="0" width="100%">
+	<tr>
+		<td width="78" valign="top">
+		<p align="center"><span style="vertical-align: super"><b>“FileName”</b></span></td>
+		<td>要跳转到的目标的位置。如果其中包含较长的带空格文件名，请用引号引住。以双反斜杠替代单反斜杠指定路径。例如：“C:\\My 
+		Documents\\kingsoft.wps”<br>
+		对于 Internet 地址，则包含与 URL 一样的协议和语法，例如：“<a href="http://www.kingsoft.com/news/index.shtml">http://www.kingsoft.com/news/index.shtml</a>”。</td>
+	</tr>
+	</table>
+</div>
+
+<p><span id="mydiv2" class="charr1"></span>
+<a href="javascript:viewsample2()" style="text-decoration: none">
+&nbsp;开关</a></p>
+<div id="sample2" style="display: none">
+  <table border="0" width="100%">
+	<tr>
+		<td width="88" align="left" valign="top"><b>\l</b></td>
+		<td>指定此超链接跳转到的文件中的位置，如书签等。</td>
+	</tr>
+	<tr>
+		<td width="88" align="left" valign="top"><b>\o</b></td>
+		<td>指定超链接的屏幕提示文字。</td>
+	</tr>
+	</table>
+</div>
+
+<p><span id="mydiv6" class="charr1"></span>
+<a href="javascript:viewsample6()" style="text-decoration: none">
+&nbsp;</a><a href="javascript:viewsample6()"><span style="text-decoration: none">示例</span></a></p>
+<div id="sample6" style="display: none">
+<p>下面的<a href="javascript:viewsamplea()" style="text-decoration: none">域代码</a><font color="#339933"><span id="samplea" style="display: none">（域代码：为占位符文本，显示数据源的指定信息的显示位置。或者为生成字段结果的字段中的元素。域代码包括字段字符、字段类型和指令。）</span></font>实现对“第一季度.wps”文档的链接，屏幕提示文字为：“第一季度的工作目标”： </p>
+
+   		<TABLE cellpadding=4 cellspacing=4 cols=3 width="100%" height="77"> 
+		
+			<TR VALIGN="top"> 
+			<TH class = "th1" width="176" height="12"><b>域代码</b></TH> 
+			<TH  class = "th2" width="114" height="12"><b>域结果</b></TH> 
+			</TR> 
+			 
+			<TR VALIGN="top"> 
+			<td td width="60%" class="bottomLine" height="4">参考<b>{ Hyperlink</b>
+            <b>\l</b> &quot;C:\\2007工作目录\\第一季度.wps&quot; <b>\o</b> &quot;第一季度的工作目标&quot;<b>&nbsp;}</b>文档</TD> 
+			<td td width="40%" class="bottomLine" height="4">参考<u><font color="#0000FF"><a title="第一季度的工作目标" >工作目标</a></font></u>文档</TD> 
+			</TR> 
+			 
+			</TABLE>
+    </div>
+</li>
+</ul>
+<P><span id="mydiv3" class="charr1"></span><a href="javascript:viewsample3()" style="text-decoration: none">&nbsp;提示</a></P>
+<div id="sample3" style="display=none">
+如果您觉得上面的示例复杂，可以单击“插入”下的“域”菜单项，在“域”对话框中选择“Hyperlink”，在域代码框中键入相关值，达到超链接的效果。</div>
+<p><b>&nbsp;</b></p>
+<p><b>相关功能</b></p>
+<p><a href="Field_About.htm">关于域</a>
+<P>　</P>
+
+
+</BODY>
+</HTML>

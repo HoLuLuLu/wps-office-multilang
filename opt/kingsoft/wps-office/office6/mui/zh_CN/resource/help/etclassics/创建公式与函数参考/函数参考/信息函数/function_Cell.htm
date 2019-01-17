@@ -1,0 +1,265 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>CELL</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="CELL">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>CELL</h1>
+<p>返回某一引用区域的左上角单元格的格式、位置或内容等信息。</p>
+<p><b>语法</b></p>
+<p><b class="bterm">CELL</b>(<b class="bterm">info_type</b>,reference)</p>
+<p><b class="runinhead">Info_type</b>&nbsp;&nbsp;&nbsp;&nbsp;一个文本值，指定所需要的单元格信息的类型。下面列出 info_type 
+的可能值及相应的结果。</p>
+
+<table width="1142">
+	<tr>
+	    <th class="th1"><b class="bterm">Info_type</b></th>
+   	    <th class="th2"><b class="bterm">返回</b></th>
+	</tr>
+	<tr class="ll">
+		<td class="ll">&quot;address&quot;</td>
+		<td class="ll">引用中第一个单元格的引用，文本类型。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;col&quot;</td>
+		<td class="ll">引用中单元格的列标。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;color&quot;</td>
+		<td class="ll">如果单元格中的负值以不同颜色显示，则为 1，否则返回 0。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;contents&quot;</td>
+		<td class="ll">引用中左上角单元格的值：不是公式。</td>
+  </tr>
+	<tr class="ll">
+		<td height="20" class="ll">&quot;filename&quot;</td>
+		<td height="20" class="ll">包含引用的文件名（包括全部路径），文本类型。如果包含目标引用的工作表尚未保存，则返回空文本 
+		(&quot;&quot;)。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;format&quot;</td>
+		<td class="ll">
+		与单元格中不同的数字格式相对应的文本值。下表列出不同格式的文本值。如果单元格中负值以不同颜色显示，则在返回的文本值的结尾处加“-”。如果单元格中为正值或所有单元格均加括号，则在文本值的结尾处返回“()”。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;parentheses&quot;</td>
+		<td class="ll">如果单元格中为正值或全部单元格均加括号，则为 1，否则返回 0。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;prefix&quot;</td>
+		<td class="ll">与单元格中不同的“标志前缀”相对应的文本值。如果单元格文本左对齐，则返回单引号 
+		(')。如果单元格文本右对齐，则返回双引号 (&quot;)。如果单元格文本居中，则返回插入字符 (^)。如果单元格文本两端对齐，则返回反斜线 
+		(\)。如果是其他情况，则返回空文本 (&quot;&quot;)。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;protect&quot;</td>
+		<td class="ll">如果单元格没有锁定，则为 0。如果单元格锁定，则为 1。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;row&quot;</td>
+		<td class="ll">引用中单元格的行号。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;type&quot;</td>
+		<td class="ll">
+		与单元格中的数据类型相对应的文本值。如果单元格为空，则返回“b”。如果单元格包含文本常量，则返回“l”。如果单元格包含其他内容，则返回“v”。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">&quot;width&quot;</td>
+		<td class="ll">取整后的单元格的列宽。列宽以默认字号的一个字符的宽度为单位。</td>
+  </tr>
+</table>
+
+
+
+<p><b class="runinhead">Reference</b>&nbsp;&nbsp;&nbsp;&nbsp; 表示要获取其有关信息的单元格。若忽略，则在 info_type 
+中所指定的信息将返回给最后更改的单元格。下表描述 info_type 为“format”，以及引用为用内置数字格式设置的单元格时，函数 CELL 返回的文本值。</p>
+
+<table width="465" id="table1">
+	<tr>
+	    <th class="th1" width="98"><b class="bterm">若 WPS 表格的格式为</b></th>
+   	    <th class="th2"><b class="bterm">CELL 返回值</b></th>
+	</tr>
+	<tr class="ll">
+		<td class="ll">常规&nbsp;&nbsp;&nbsp;&nbsp; </td>
+		<td class="ll">&quot;G&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">0</td>
+		<td class="ll">&quot;F0&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">#,##0</td>
+		<td class="ll">&quot;,0&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">0.00</td>
+		<td class="ll">&quot;F2&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">#,##0.00</td>
+		<td class="ll">&quot;,2&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">$#,##0_);($#,##0)</td>
+		<td class="ll">&quot;C0&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td height="20" class="ll">$#,##0_);[Red]($#,##0)</td>
+		<td height="20" class="ll">&quot;C0-&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">$#,##0.00_);($#,##0.00)</td>
+		<td class="ll">&quot;C2&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">$#,##0.00_);[Red]($#,##0.00)</td>
+		<td class="ll">&quot;C2-&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">0%</td>
+		<td class="ll">&quot;P0&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">0.00%</td>
+		<td class="ll">&quot;P2&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">0.00E+00</td>
+		<td class="ll">&quot;S2&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll"># ?/? 或 # ??/??</td>
+		<td class="ll">&quot;G&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">yy-m-d 或 yy-m-d h:mm 或 dd-mm-yy</td>
+		<td class="ll">&quot;D4&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">d-mmm-yy 或 dd-mmm-yy</td>
+		<td class="ll">&quot;D1&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">d-mmm 或 dd-mmm</td>
+		<td class="ll">&quot;D2&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">mmm-yy</td>
+		<td class="ll">&quot;D3&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">dd-mm</td>
+		<td class="ll">&quot;D5&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">h:mm AM/PM</td>
+		<td class="ll">&quot;D7&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">h:mm:ss AM/PM</td>
+		<td class="ll">&quot;D6&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">h:mm</td>
+		<td class="ll">&quot;D9&quot;</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">h:mm:ss</td>
+		<td class="ll">&quot;D8&quot;</td>
+  </tr>
+</table>
+<p>若 CELL 公式中的 info_type 参数为“format”，而且以后又用自定义格式设置了单元格，则必须重新计算工作表以更新 CELL 公式。</p>
+
+
+
+<p><b>说明</b> </p>
+<ul>
+	<li>函数 CELL 用于与其他电子表格程序兼容。</li>
+</ul>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+    <p><b>示例</b></p>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">2</td>
+		<td class="ll">TOTAL</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">GOOD</td>
+  </tr>
+	</table>
+	<br>
+	<table width="547">
+	
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="141"><b>公式</b></th>
+   	    <th class="th2" width="166"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="148" valign="top">=CELL(&quot;row&quot;,A10)</td>
+		<td class ="ll" width="365">单元格 A10 的行号 (10)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="148" valign="top">
+		=CELL(&quot;format&quot;, A2)</td>
+		<td class ="ll" width="365">第一个字符串的格式代码（G,请参见上面的信息）</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="148" valign="top">
+		=CELL(&quot;contents&quot;, A3)</td>
+		<td class ="ll" width="365">单元格 A3 的内容 (GOOD)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_information.htm">信息函数</a></p>
+
+
+
+</body>
+
+</html>

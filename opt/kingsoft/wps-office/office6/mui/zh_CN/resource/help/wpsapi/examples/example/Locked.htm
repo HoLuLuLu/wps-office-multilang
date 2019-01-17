@@ -1,0 +1,11 @@
+<html><head>
+<title>Locked</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在所选内容的开始插入一个 DATE 域，然后锁定该域。<p>Selection.Collapse Direction:=wpsCollapseStart<br>Set myField = ActiveDocument.Fields.Add(Range:=Selection.Range, _<br>    &nbsp;&nbsp;&nbsp;    Type:=wpsFieldDate)<br>myField.Locked = True <p>　<p>如果活动文档中的部分域处于锁定状态，则本示例将显示一条消息。<p>Set theFields = ActiveDocument.Fields<br>If theFields.Locked = wpsUndefined Then<br>    &nbsp;&nbsp;&nbsp;    MsgBox "Some fields are locked"<br>ElseIf theFields.Locked = False Then<br>    &nbsp;&nbsp;&nbsp;    MsgBox "No fields are locked"<br>ElseIf theFields.Locked = True Then<br>    &nbsp;&nbsp;&nbsp;    MsgBox "All fields are locked"<br>End If   <br>
+</div>
+</body>
+</html>

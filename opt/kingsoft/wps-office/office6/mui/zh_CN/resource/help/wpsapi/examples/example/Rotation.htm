@@ -1,0 +1,12 @@
+<html><head>
+<title>Rotation</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将 myDocument 中所有图形的旋转量设置为与图形 1 一致。<p>Set myDocument = ActiveDocument<br>With myDocument.Shapes<br>    &nbsp;&nbsp;&nbsp;    sh1Rotation = .Item(1).Rotation<br>    &nbsp;&nbsp;&nbsp;    For 
+i = 1 To .Count<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        .Item(i).Rotation = sh1Rotation<br>    &nbsp;&nbsp;&nbsp;    Next<br>End With
+</div>
+</body>
+</html>

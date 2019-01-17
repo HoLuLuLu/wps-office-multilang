@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>ScaleWidth_ShapeRange</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>根据指定的系数缩放图形宽度。对于图片和 OLE 对象来说，可指明图形缩放是根据原尺寸还是当前尺寸。对于图片和 OLE 对象以外的其他图形来说，总是相对于当前宽度进行缩放。</P><br>
+    <P><b>语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.ScaleWidth</b><i>((Factor), (RelativeToOriginalSize), 
+		[Scale])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >      必需。该表达式返回 <b>
+			<a href="../../objs/s/ShapeRange.htm">ShapeRange</a></b> 对象。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Factor  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。指定重置尺寸后的图形宽度与当前或原宽度的比例。例如，设置此参数为 1.5 可使矩形放大 50%。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>RelativeToOriginalSize  </i></td>
+            <td width="59%" height=15 > 必需，<b>KsoTriState</b> 常量。如果此参数为 <b>True</b>，则相对于原始尺寸缩放图形。如果为 
+			<b>False</b>， 则相对于当前尺寸缩放。只有当指定的图形为图片或 OLE 对象时，才能将此参数设置为 <b>True</b>。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Scale  </i></td>
+            <td width="59%" height=15 > 可选，<b>KsoScaleFrom </b>常量。在缩放图形时，图形中位置不变的部分。   </td>
+          </tr>
+    </table><br>
+    </div>
+</body>
+</html>

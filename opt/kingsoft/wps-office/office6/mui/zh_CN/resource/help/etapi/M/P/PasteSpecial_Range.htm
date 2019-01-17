@@ -1,0 +1,107 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>PasteSpecial_Range</title>
+<style>@import url(../../css/ksHelpStyle.css);
+</style>
+<base target="_parent">
+</head>
+
+<body>
+
+<div class="ind">
+  <b>描述</b><p class="ofvbaDescription">将剪贴板中的 <b>
+  <a href="../../objs/R/Range.htm">Range</a></b> 对象粘贴到指定区域中。</p>
+<P>　</P>
+<P><b>语法</b></P>
+<div class=vbasyn>
+<P><i>expression</i>.<b>PasteSpecial</b><i>([Paste], [Operation], [SkipBlanks], 
+[Transpose])</i></P>
+</div>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2">
+  <tr>
+    <td width="16%" align="center" bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+    <td width="50%" align="center" bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+  </tr>
+  <tr>
+    <td width="16%"><i>expression</i></td>
+    <td width="50%">必需。该表达式返回一个 <b>Range</b> 对象。</td>
+  </tr>
+  <tr>
+    <td width="16%"><i>Paste</i></td>
+    <td width="50%"><b>EtPasteType</b> 类型，可选。指定要粘贴的区域部分。</td>
+  </tr>
+  <tr>
+    <td width="16%"><i>Operation</i> </td>
+    <td width="50%"><b>EtPasteSpecialOperation</b> 类型，可选。指定粘贴操作。</td>
+  </tr>
+  <tr>
+    <td width="16%"><i>SkipBlanks</i></td>
+    <td width="50%">
+    <p class="ofvbaArgDesc"><b>Variant</b> 类型，可选。若为 <b>True</b>，则不将剪贴板上区域中的空白单元格粘贴到目标区域中。默认值为 
+    <b>False</b>。</td>
+  </tr>
+  <tr>
+    <td width="16%"><i>Transpose</i></td>
+    <td width="50%"><b>Variant</b> 类型，可选。若为 <b>True</b>，则粘贴区域时转置行和列。默认值为 <b>
+    False</b>。</td>
+  </tr>
+</table>
+<P>　<P><b>设置</b><p>EtPasteType 可为以下 EtPasteType 常量之一：</p>
+  <table class="ind">
+    <tr>
+      <td class="noborder">etPasteAll <i>默认值</i></td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteAllExceptBorders</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteColumnWidths</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteComments</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteFormats</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteFormulas</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteFormulasAndNumberFormats</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteValidation</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteValues</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteValuesAndNumberFormats</td>
+    </tr>
+  </table>
+  <P>EtPasteSpecialOperation 可为以下 EtPasteSpecialOperation 常量之一：<table class="ind">
+    <tr>
+      <td class="noborder">etPasteSpecialOperationAdd</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteSpecialOperationDivide</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteSpecialOperationMultiply</td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteSpecialOperationNone <i>默认值</i></td>
+    </tr>
+    <tr>
+      <td class="noborder">etPasteSpecialOperationSubtract</td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.shadow_settings" component="et">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="S" ksoCmd="ShadowOnOff" aid="2175" icon="ShadowOnOff" id="ShadowOnOff" customTip="ShadowOnOff" spaceHint="compact" text="@Shadow On/Off" rbHotKey="z"/>
+		<KxLegacyTriggerCommand hotKey="N" ksoCmd="NudgeShadowUp" aid="1068" icon="NudgeShadowUp" id="NudgeShadowUp" text="@Nudge Shadow Up"/>
+		<KxLegacyTriggerCommand hotKey="N" ksoCmd="NudgeShadowDown" aid="1069" icon="NudgeShadowDown" id="NudgeShadowDown" text="@Nudge Shadow Down"/>
+		<KxLegacyTriggerCommand hotKey="N" ksoCmd="NudgeShadowLeft" aid="1070" icon="NudgeShadowLeft" id="NudgeShadowLeft" text="@Nudge Shadow Left"/>
+		<KxLegacyTriggerCommand hotKey="N" ksoCmd="NudgeShadowRight" aid="1071" icon="NudgeShadowRight" id="NudgeShadowRight" text="@Nudge Shadow Right"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SemitransparentShadow" aid="1859" id="SemitransparentShadow" text="@Semitransparent Shadow"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Shadow Settings">
+			<command idQ="ShadowOnOff"/>
+			<separator/>
+			<command idQ="NudgeShadowUp"/>
+			<command idQ="NudgeShadowDown"/>
+			<command idQ="NudgeShadowLeft"/>
+			<command idQ="NudgeShadowRight"/>
+			<separator/>
+			<KxEtShadowThemeCommand hotKey="S" ksoCmd="ShadowColor" aid="1693" icon="ShadowColor" id="ShadowColor" text="@Shadow Color" ksoTriggerCmd="RecentShadowColor">
+				<KxEtMoreColorThemeCommand hotKey="m" ksoCmd="ShadowColor" aid="1072" icon="MoreColor" id="MoreShadowColors" dialogHint="1" text="@More Shadow Colors"/>
+				<KxEtSnapColorCommand hotKey="e" ksoCmd="ShadowColor" aid="100138" icon="SnapperFill" forceEnabled="1" id="SnapShadowColors" text="@Snapper" rbHotKey="E"/>
+				<command idQ="SemitransparentShadow"/>
+			</KxEtShadowThemeCommand>
+		</subcommand>
+	</subcommands>
+</shell>

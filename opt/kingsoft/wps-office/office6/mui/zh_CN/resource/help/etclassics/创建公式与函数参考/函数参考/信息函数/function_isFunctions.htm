@@ -1,0 +1,226 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>IS类函数</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="IS">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>IS 类函数</h1>
+<p>本部分描述了用来检验数值或引用类型的九个工作表函数。</p>
+<p>这些函数，概括为 IS 类函数，可以检验数值的类型并根据参数取值返回 TRUE 或 
+FALSE。例如，如果数值为对空白单元格的引用，函数 ISBLANK 返回逻辑值 TRUE，否则返回 FALSE。</p>
+<p><b>语法</b></p>
+<p><b>ISBLANK</b>(<b>value</b>)<br>
+<b>ISERR</b>(<b>value</b>)<br>
+<b>ISERROR</b>(<b>value</b>)<br>
+<b>ISLOGICAL</b>(<b>value</b>)<br>
+<b>ISNA</b>(<b>value</b>)<br>
+<b>ISNONTEXT</b>(<b>value</b>)<br>
+<b>ISNUMBER</b>(<b>value</b>)<br>
+<b>ISREF</b>(<b>value</b>)<br>
+<b>ISTEXT</b>(<b>value</b>)</p>
+<p>VALUE&nbsp;&nbsp; 为需要进行检验的数值。分别为：空白（空白单元格）、错误值、逻辑值、文本、数字、引用值或对于以上任意参数的名称引用。</p>
+
+<table>
+	<tr>
+	    <th class="th1">函数</th>
+   	    <th class="th2">如果为下面的内容，则返回 TRUE</th>
+	</tr>
+	<tr class="ll">
+		<td class="ll">ISBLANK</td>
+		<td class="ll">值为空白单元格。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">ISERR</td>
+		<td class="ll">值为任意错误值（除去 #N/A）。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">ISERROR</td>
+		<td class="ll">值为任意错误值（#N/A、#VALUE!、#REF!、#DIV/0!、#NUM!、#NAME? 或 #NULL!）。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">ISLOGICAL</td>
+		<td class="ll">值为逻辑值。</td>
+  </tr>
+	<tr class="ll">
+		<td height="20" class="ll">ISNA</td>
+		<td height="20" class="ll">值为错误值 #N/A（值不存在）。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">ISNONTEXT</td>
+		<td class="ll">值为不是文本的任意项（注意此函数在值为空白单元格时返回 TRUE）。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">ISNUMBER</td>
+		<td class="ll">值为数字。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">ISREF</td>
+		<td class="ll">值为引用。</td>
+  </tr>
+	<tr class="ll">
+		<td class="ll">ISTEXT</td>
+		<td class="ll">值为文本。</td>
+  </tr>
+</table>
+
+
+
+<p><b>说明</b> </p>
+<ul>
+	<li>IS 类函数的参数 value 是不可转换的。例如，在其他大多数需要数字的函数中，文本值“19”会被转换成数字 
+	19。然而在公式 ISNUMBER(&quot;19&quot;) 中，“19”并不由文本值转换成别的类型的值，函数 ISNUMBER 返回 FALSE。 
+	</li>
+	<li>IS 类函数在用公式检验计算结果时十分有用。当它与函数 IF 
+	结合在一起使用时，可以提供一种方法用来在公式中查出错误值（请参阅下面的示例）。 </li>
+</ul>
+<p>　</p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<p><b>示例1</b></p>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">2</td>
+		<td class="ll">=ISLOGICAL(TRUE)</td>
+		<td class="ll">检查 TRUE 是否为逻辑值 (TRUE)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">=ISLOGICAL(&quot;TRUE&quot;)</td>
+		<td class="ll">检查 &quot;TRUE&quot; 是否为逻辑值 (TRUE)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td class="ll">=ISNUMBER(4)</td>
+		<td class="ll">检查 4 是否为数值 (TRUE)</td>
+	</tr>
+</table>
+    <p><b>示例2</b></p>
+
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">2</td>
+		<td class="ll">Gold</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">Region1</td>
+  </tr>
+	<tr>
+		<td class="tdSeqence">4</td>
+		<td class="ll">#REF!</td>
+  </tr>
+	<tr>
+		<td class="tdSeqence">5</td>
+		<td class="ll">330.92</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">6</td>
+		<td class="ll">#N/A</td>
+	</tr>
+</table>
+	<br>
+	<table width="547">
+	
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="141"><b>公式</b></th>
+   	    <th class="th2" width="166"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="148" valign="top">=ISBLANK(A2)</td>
+		<td class ="ll" width="365">检查单元格 C2 是否为空白 (FALSE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="148" valign="top">
+		=ISERROR(A4)</td>
+		<td class ="ll" width="365">检查 #REF! 是否为错误值 (TRUE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="148" valign="top">
+		=ISNA(A4)</td>
+		<td class ="ll" width="365">检查 #REF! 是否为错误值 #N/A (FALSE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="148" valign="top">
+		=ISNA(A6)</td>
+		<td class ="ll" width="365">检查 #N/A 是否为错误值 #N/A (TRUE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="148" valign="top">
+		=ISERR(A6)</td>
+		<td class ="ll" width="365">检查 #N/A 是否为错误值 (FALSE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="148" valign="top">
+		=ISNUMBER(A5)</td>
+		<td class ="ll" width="365">检查 330.92 是否为数值 (TRUE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="148" valign="top">
+		=ISTEXT(A3)</td>
+		<td class ="ll" width="365">检查 Region1 是否为文本 (TRUE)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_information.htm">信息函数</a></p>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/wps-office.xls">
+		<comment>Microsoft Excel Spreadsheet</comment>
+		<comment xml:lang="en">Microsoft Excel Spreadsheet</comment>
+		<comment xml:lang="zh_CN">Microsoft Excel 工作表</comment>
+		<alias type="application/vnd.ms-excel"/>
+		<alias type="application/msexcel"/>
+		<alias type="application/x-msexcel"/>
+		<alias type="application/vnd.ms-excel.sheet.macroenabled.12"/>
+		<generic-icon name="wps-office-xls"/>
+		<glob pattern="*.xls" weight="60"/>
+		<glob pattern="*.xlsm" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.xlt">
+		<comment>Microsoft Excel Template</comment>
+		<comment xml:lang="zh_CN">Microsoft Excel 模板</comment>
+		<alias type="application/vnd.ms-excel.template.macroenabled.12"/>
+		<sub-class-of type="application/vnd.ms-excel"/>
+		<generic-icon name="wps-office-xlt"/>
+		<glob pattern="*.xlt" weight="60"/>
+		<glob pattern="*.xltm" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.xltx">
+		<comment>Microsoft Excel Template</comment>
+		<comment xml:lang="zh_CN">Microsoft Excel 模板</comment>
+		<alias type="application/vnd.openxmlformats-officedocument.spreadsheetml.template"/>
+		<generic-icon name="wps-office-xlt"/>
+		<glob pattern="*.xltx" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.xlsx">
+		<comment>Microsoft Excel Spreadsheet</comment>
+		<comment xml:lang="zh_CN">Microsoft Excel 工作表</comment>
+		<alias type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+		<generic-icon name="wps-office-xls"/>
+		<glob pattern="*.xlsx" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.et">
+		<comment>WPS Spreadsheets Workbook</comment>
+		<comment xml:lang="zh_CN">WPS表格 工作簿</comment>
+		<generic-icon name="wps-office-et"/>
+		<glob pattern="*.et" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.ett">
+		<comment>WPS Spreadsheets Template</comment>
+		<comment xml:lang="zh_CN">WPS表格 模板</comment>
+		<generic-icon name="wps-office-ett"/>
+		<glob pattern="*.ett" weight="60"/>
+	</mime-type>
+</mime-info>

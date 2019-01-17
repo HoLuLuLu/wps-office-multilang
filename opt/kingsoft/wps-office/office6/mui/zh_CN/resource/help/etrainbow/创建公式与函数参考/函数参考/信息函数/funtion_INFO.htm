@@ -1,0 +1,124 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>ISODD</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="ISODD">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p class="p0" style="margin-bottom:0pt; margin-top:0pt; ">
+<span style="font-family: 宋体; font-weight: 700; font-size: 10.5pt">INFO</span></p>
+<p>返回有关当前操作环境的信息。</p>
+<p><b>语法</b></p>
+<p><b>INFO(type_text)</b></p>
+<p>type_text 信息类型：指定所要获取的信息类型。</p>
+<p>INFO<span style="font-family: 宋体; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18.003999710083008px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)"><font size="2">具有下列</font></span><a class="glossary" style="text-decoration: none; font-family: 宋体; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 18.003999710083008px; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)" href="javascript:AppendPopup(this,'856003804_2')"><font size="2" color="#000000">参数</font></a>：</p>
+
+<table width="502">
+	<tr>
+	    <th class="th1">type_text</th>
+   	    <th class="th2">返回</th>
+	</tr>
+	<tr>
+		<td class="ll">&quot;directory&quot;</td>
+		<td class="ll">当前目录或文件夹的路径</td>
+	</tr>
+	<tr>
+		<td class="ll">&quot;numfile&quot;</td>
+		<td class="ll"><font face="宋体">打开的工作簿中活动工作表的数目。</font></td>
+	</tr>
+	<tr>
+		<td class="ll">&quot;origin&quot;</td>
+		<td class="ll"><font face="宋体">
+		以当前滚动位置为基准，返回窗口中可见的左上角单元格的绝对单元格引用，如带前缀“$A:”的文本。此值与 Lotus 1-2-3 3.x 
+		版兼容。返回的实际值取决于当前的引用样式设置。以 D9 为例，返回值为：<br>
+		&nbsp;&nbsp;&nbsp;
+		A1&nbsp; 引用样式 &quot;$A:$D$9&quot;<br>
+		&nbsp;&nbsp;&nbsp;
+		R1C1 引用样式 &quot;$A:R9C4&quot;</font></td>
+	</tr>
+	<tr>
+		<td class="ll">&quot;osversion&quot;</td>
+		<td class="ll">
+		<font face="宋体">当前操作系统的版本号，文本值。</font></td>
+	</tr>
+	<tr>
+		<td class="ll">&quot;recalc&quot;</td>
+		<td class="ll">
+		<font face="宋体">当前的重新计算模式，返回“自动”或“手动”。</font></td>
+	</tr>
+	<tr>
+		<td class="ll"><font face="宋体">&quot;system&quot;</font></td>
+		<td class="ll">
+		<span style="font-family: '宋体'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+		<font size="2">操作系统名称：</font></span><font size="2"><br clear="all" style="font-family: '宋体'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<font face="宋体">
+		<span style="font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none; background-color: rgb(255, 255, 255)">Macintosh =“mac”</span></font><span style="font-family: 'Microsoft YaHei UI', Arial, Verdana; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline; float: none; background-color: rgb(255, 255, 255)"><br clear="all" style="font-family: '宋体'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255)">
+		<span style="font-family: '宋体'; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; display: inline !important; float: none; background-color: rgb(255, 255, 255)">
+		Windows =“pcdos”</span></span></font></td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="499">
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1" width="172">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1" width="172">字符</td>
+		<td class = "th2">公<b>式（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class="ll">=INFO(&quot;numfile&quot;)</td>
+		<td class="ll">活动工作表数目（可变）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class="ll">=INFO(&quot;recalc&quot;)</td>
+		<td class="ll">工作簿的重新计算模式（“自动”或“手动”）</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_information.htm">信息函数</a></p>
+
+
+
+</body>
+
+</html>

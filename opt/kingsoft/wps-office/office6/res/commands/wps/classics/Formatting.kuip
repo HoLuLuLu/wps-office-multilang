@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.formatting" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="StyleFormat" aid="5757" icon="StyleFormat" id="StyleFormatToolBar" dialogHint="1" text="@Styles and Formatting"/>
+		<KxWpsStyleComboBoxCommand hotKey="s" ksoCmd="Style" aid="1732" id="Style" text="@Styles"/>
+		<KxWpsFontComboBoxCommand hotKey="f" ksoCmd="FontName" aid="1728" fixedWidth="130" icon="FontName" id="FontNameToolbar" text="@Font"/>
+		<KxFontSizeComboboxCommand hotKey="f" ksoCmd="FontSize" aid="1731" icon="FontSize" fontSizeList="@5;5.5;6.5;7.5;8;9;10;10.5;11;12;14;16;18;20;22;26;28;36;48;56;72" id="FontSizeToolbar" text="@Font Size"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling200" index="200" text="@200%"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling150" index="150" text="@150%"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling100" index="100" text="@100%"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling90" index="90" text="@90%"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling80" index="80" text="@80%"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling66" index="66" text="@66%"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling50" index="50" text="@50%"/>
+		<KxValueCommand ksoCmd="CharacterScalingNumber" aid="746" id="CharacterScaling33" index="33" text="@33%"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="CharacterScalingMore" aid="746" id="CharacterScalingMore" dialogHint="1" text="@More"/>
+		<KxValueCommand ksoCmd="LineSpacingNumber" aid="746" shortcutHint="Ctrl+1" id="LineSpacing1_0" index="10" text="@1.0"/>
+		<KxValueCommand ksoCmd="LineSpacingNumber" aid="746" id="LineSpacing1_5" index="15" text="@1.5"/>
+		<KxValueCommand ksoCmd="LineSpacingNumber" aid="746" shortcutHint="Ctrl+2" id="LineSpacing2_0" index="20" text="@2.0"/>
+		<KxValueCommand ksoCmd="LineSpacingNumber" aid="746" id="LineSpacing2_5" index="25" text="@2.5"/>
+		<KxValueCommand ksoCmd="LineSpacingNumber" aid="746" id="LineSpacing3_0" index="30" text="@3.0"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="LineSpacingMore" aid="80063" id="LineSpacingMore" dialogHint="1" text="@More"/>
+		<KxStaticGalleryCommand tc="Num" hotKey="n" column="4" ksoCmd="NumberingPalette" aid="11" filter="lang!=zh_CN" icon="Numbering" customTip2="Numbering2" id="Numbering" customTip="Numbering" spaceHint="suitable" text="@Numbering" ksoTriggerCmd="RecentNumbering" rbHotKey="N">
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_0" galleryItemHeight="70" index="0" customTip="@None" qtspyName="wps_numbering_0" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_1" galleryItemHeight="70" index="1" customTip="@1.2.3." qtspyName="wps_numbering_1" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_2" galleryItemHeight="70" index="2" customTip="@With The Circle Number." qtspyName="wps_numbering_2" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_3" galleryItemHeight="70" index="3" customTip="@Ⅰ.Ⅱ.Ⅲ." qtspyName="wps_numbering_3" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_4" galleryItemHeight="70" index="4" customTip="@A.B.C." qtspyName="wps_numbering_4" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_5" galleryItemHeight="70" index="5" customTip="@a).b).c)." qtspyName="wps_numbering_5" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_6" galleryItemHeight="70" index="6" customTip="@a.b.c." qtspyName="wps_numbering_6" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxStaticGalleryUnCheckableItemCommand galleryItemWidth="70" icon="wps_numbering_7" galleryItemHeight="70" index="7" customTip="@Pictographic Number, Wide End" qtspyName="wps_numbering_7" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoreNumbering" aid="92130" icon="MoreNumbering" id="MoreNumbering" dialogHint="1" text="@More Numbering"/>
+		</KxStaticGalleryCommand>
+		<KxWpsNumberingGalleryCommand tc="Num" hotKey="n" ksoCmd="NumberingPalette" galleryWidth="266" aid="80064" filter="lang=zh_CN" icon="Numbering" customTip2="Numbering2" id="Numbering" customTip="Numbering" spaceHint="suitable" text="@Numbering" ksoTriggerCmd="RecentNumbering" rbHotKey="N">
+			<KxWpsChangeListLevelGalleryCommand bLikePopuMenu="1" hotKey="e" ksoCmd="ChangeListLevel" icon="ChangeListLevel" id="ChangeListLevel" text="@ChangeListLevel"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoreNumbering" icon="MoreNumbering" id="MoreNumbering" dialogHint="1" text="@More Numbering"/>
+		</KxWpsNumberingGalleryCommand>
+		<KxWpsBulletsGalleryCommand hotKey="b" column="4" ksoCmd="BulletsPalette" aid="12" icon="BulletsNumber" customTip2="Bullets2" id="Bullets" customTip="Bullets" spaceHint="suitable" text="@Bullets" ksoTriggerCmd="RecentBullets" rbHotKey="U">
+			<KxWpsBulletsGalleryItemCommand icon="wps_numbering_0" index="0" customTip="@None" qtspyName="wps_numbering_0" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxWpsBulletsGalleryItemCommand icon="wps_bullets_0" index="1" customTip="@With Filling Effect Of Large Round-Shaped Bullets" qtspyName="wps_bullets_0" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxWpsBulletsGalleryItemCommand icon="wps_bullets_1" index="2" customTip="@With Filling Effect Of Large Square-Shaped Bullets" qtspyName="wps_bullets_1" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxWpsBulletsGalleryItemCommand icon="wps_bullets_2" index="3" customTip="@With Filling Effect Of Diamond-Shaped Bullets" qtspyName="wps_bullets_2" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxWpsBulletsGalleryItemCommand icon="wps_bullets_3" index="4" customTip="@Bold Square-Hollow Bullets" qtspyName="wps_bullets_3" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxWpsBulletsGalleryItemCommand icon="wps_bullets_4" index="5" customTip="@Sagittate Bullet " qtspyName="wps_bullets_4" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxWpsBulletsGalleryItemCommand icon="wps_bullets_5" index="6" customTip="@The Check Mark-shaped Bullets" qtspyName="wps_bullets_5" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxWpsBulletsGalleryItemCommand icon="wps_bullets_6" index="7" customTip="@With Filling Effect Of Round-Shaped Bullets" qtspyName="wps_bullets_6" customAttribute="IF(lang=en_US){customTip=}"/>
+			<KxLegacyTriggerCommand hotKey="m" ksoCmd="MoreBullets" aid="92131" icon="MoreNumbering" id="MoreBullets" dialogHint="1" text="@More Bullets"/>
+		</KxWpsBulletsGalleryCommand>
+		<KxHighlightColorCommand hotKey="h" ksoCmd="HighlightColor" aid="80068" barid="44551" icon="Highlighter" customTip2="HighlightColor2" id="HighlightColor" customTip="HighlightColor" text="@Highlight" ksoTriggerCmd="RecentHighlightColor" rbHotKey="i"/>
+		<KxWpsMoreFontColorCommand hotKey="m" ksoCmd="FontColor" aid="1005" icon="MoreColor" id="MoreFontColors" dialogHint="1" text="@More Font Colors"/>
+		<KxWpsSnapColorCommand hotKey="e" ksoCmd="FontColor" aid="100073" icon="SnapperFill" forceEnabled="1" id="SnapFontColors" text="@Snapper" rbHotKey="E"/>
+		<KxWpsFontColorCommand hotKey="f" ksoCmd="FontColor" aid="401" barid="4481" icon="ChartFontColor" id="FontColorToolbar" spaceHint="suitable" name="Font Color" text="@Font Color" ksoTriggerCmd="RecentFontColor">
+			<command idQ="MoreFontColors"/>
+			<command idQ="SnapFontColors"/>
+		</KxWpsFontColorCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="Formatting">
+			<command idQ="StyleFormatToolBar"/>
+			<command idQ="Style"/>
+			<command idQ="FontNameToolbar"/>
+			<command idQ="FontSizeToolbar"/>
+			<separator/>
+			<command idQ="Bold"/>
+			<command idQ="Italic"/>
+			<command idQ="Underline"/>
+			<KxStaticGalleryCommand hotKey="c" ksoCmd="CharacterScalingNumber" aid="386" icon="CharacterScaling" id="CharacterScaling" text="@Character Scaling" rbFileMenuEmbed="1" ksoTriggerCmd="CharacterScaling">
+				<command idQ="CharacterScaling200"/>
+				<command idQ="CharacterScaling150"/>
+				<command idQ="CharacterScaling100"/>
+				<command idQ="CharacterScaling90"/>
+				<command idQ="CharacterScaling80"/>
+				<command idQ="CharacterScaling66"/>
+				<command idQ="CharacterScaling50"/>
+				<command idQ="CharacterScaling33"/>
+				<command idQ="CharacterScalingMore"/>
+			</KxStaticGalleryCommand>
+			<separator/>
+			<command idQ="FormatAlignLeft"/>
+			<command idQ="FormatAlignCenter"/>
+			<command idQ="FormatAlignRight"/>
+			<command idQ="FormatAlignJustify"/>
+			<command idQ="FormatAlignDistributed"/>
+			<KxListCommand hotKey="l" ksoCmd="LineSpacing" aid="5734" icon="LineSpacing" id="LineSpacing" text="@Line Spacing">
+				<command idQ="LineSpacing1_0"/>
+				<command idQ="LineSpacing1_5"/>
+				<command idQ="LineSpacing2_0"/>
+				<command idQ="LineSpacing2_5"/>
+				<command idQ="LineSpacing3_0"/>
+				<command idQ="LineSpacingMore"/>
+			</KxListCommand>
+			<separator/>
+			<command idQ="Numbering"/>
+			<command idQ="Bullets"/>
+			<command idQ="DecreaseIndent"/>
+			<command idQ="IncreaseIndent"/>
+			<separator/>
+			<command idQ="HighlightColor"/>
+			<command idQ="FontColorToolbar"/>
+			<command idQ="GrowFont"/>
+			<command idQ="ShrinkFont"/>
+			<command idQ="Superscript"/>
+			<command idQ="Subscript"/>
+		</subcommand>
+	</subcommands>
+</shell>

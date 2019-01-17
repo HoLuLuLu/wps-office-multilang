@@ -1,0 +1,134 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>DDB</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="DDB">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>DDB</h1>
+<p>使用双倍余额递减法或其他指定方法，计算一笔资产在给定期间内的折旧值。</p>
+<p><b>语法</b></p>
+<p><b>DDB</b>(<b>cost,salvage,life,period</b>,factor)</p>
+<p>cost 为资产原值。</p>
+<p>salvage 为资产在折旧期末的价值（也称为资产残值）。</p>
+<p>life 为折旧期限（有时也称作资产的使用寿命）。</p>
+<p>period 为需要计算折旧值的期间。Period 必须使用与 life 相同的单位。</p>
+<p>factor 为余额递减速率。如果 factor 被省略，则假设为 2（双倍余额递减法）。</p>
+<p><b>注意</b> 这五个参数都必须为正数。</p>
+<p><b>说明</b> </p>
+<ul>
+    <li>双倍余额递减法以加速的比率计算折旧。折旧在第一阶段是最高的，在后继阶段中会减少。DDB 使用下面的公式计算一个阶段的折旧值： <br>
+    ((资产原值-资产残值) - 前面阶段的折旧总值) * (余额递减速率/生命周期) 
+    </li>
+    <li>如果不想使用双倍余额递减法，更改余额递减速率。
+    </li>
+    <li>当折旧大于余额递减计算值时，如果希望转换到直线余额递减法，请使用 <a href="function_VDB.htm">VDB</a> 函数。
+    </li>
+</ul>
+<div border="0">
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="759">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="122">A</th>
+	    <th class="th1" width="106">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20"><b>1</b></td>
+		<td class = "th1" width="122">数据</td>
+		<td class = "th1" width="106">说明</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">2</td>
+		<td class="ll" width="183">1,800,000</td>
+		<td class="ll" width="542">资产原值</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">3</td>
+		<td class="ll" height="20" width="183">200,000</td>
+		<td class="ll" height="20" width="542">资产残值 </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">4</td>
+		<td class="ll" height="18" width="183">6</td>
+		<td class="ll" height="18" width="542">使用寿命 </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">5</td>
+		<td class = "th1" width="122">公式</td>
+		<td class = "th1" width="106">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">6</td>
+		<td class="ll" width="183">=DDB(A2, A3, A4*365, 1)</td>
+		<td class="ll" width="542">计算第一天的折旧值。WPS表格 自动将 factor 设置为 2。(1,643.84) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">7</td>
+		<td class="ll" width="183">=DDB(A2, A3, A4*12, 1, 2) </td>
+		<td class="ll" width="542">计算第一个月的折旧值 (50,000.00)</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">8</td>
+		<td class="ll" width="183">=DDB(A2, A3, A4, 1, 2) </td>
+		<td class="ll" width="542">计算第一年的折旧值 (600,000.00) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">9</td>
+		<td class="ll" width="183">=DDB(A2, A3, A4, 2, 1.5) </td>
+		<td class="ll" width="542">计算第二年的折旧值，使用了 1.5 的余额递减速率，而不用双倍余额递减法 
+        (337,500.00) </td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20">10</td>
+		<td class="ll" width="183">=DDB(A2, A3, A4, 6) </td>
+		<td class="ll" width="542">计算第六年的折旧值，WPS表格 自动将 factor 设置为 2 
+        (37,037.04) </td>
+	</tr>
+		
+</table>
+
+	<p>
+
+<b>注意</b> 结果将四舍五入到两位小数。</p>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

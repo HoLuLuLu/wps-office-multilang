@@ -1,0 +1,206 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>AVERAGEIF</title>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="table1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1><font size="3">AVERAGEIF</font></h1>
+<div class="cdclvSection" jQuery1299317343953="12">
+	<div class="cntArticleBody" id="m_article">
+		<font size="2">返回某个区域内满足给定条件的所有单元格的平均值（算术平均值）。</font></div>
+</div>
+<p><b><font size="2">语法</font></b></p>
+<div class="cdclvSection" jQuery1299317343953="12">
+	<div class="cntArticleBody" id="m_article0">
+		<b class="bterm"><font size="2">AVERAGEIF</font></b><font size="2">(<b class="bterm">range</b>,<b class="bterm">criteria</b>,average_range)</font><p>
+		<font size="2">range&nbsp;&nbsp;&nbsp;&nbsp;要计算平均值的一个或多个单元格，其中包括数字或包含数字的名称、数组或引用。</font></p>
+		<p><font size="2">criteria&nbsp;&nbsp;&nbsp;&nbsp;数字、表达式、单元格引用或文本形式的条件，用于定义要对哪些单元格计算平均值。如，条件可以表示为 
+		41、&quot;&gt;41&quot;、D3、&quot;香蕉&quot; 或 &quot;41&quot;。</font></p>
+		<p><font size="2">average_range&nbsp;&nbsp;&nbsp;&nbsp;要计算平均值的实际单元格集。若忽略，则使用 
+		range。</font></div>
+</div>
+<p><b><font size="2">说明</font></b><font size="2"> </font> </p>
+<div border="0">
+	<div class="cdclvSection" jQuery1299317343953="12">
+		<div class="cntArticleBody" id="m_article2">
+			<ul class="cntIndent36" type="disc">
+				<li>
+				<p style="line-height: 150%"><font size="2">忽略区域中包含 TRUE 或 FALSE 的单元格。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若 average_range 中的单元格为空单元格，AVERAGEIF 将忽略它。 
+				</font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若 range 为空值或文本值，则 AVERAGEIF 会返回 #DIV0! 错误值。 
+				</font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若条件中的单元格为空单元格，AVERAGEIF 就会将其视为 0 值。 </font>
+				</li>
+				<li>
+				<p style="line-height: 150%"><font size="2">若区域中没有满足条件的单元格，则 AVERAGEIF 会返回 #DIV/0! 错误值。 
+				</font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">您可以在条件中使用通配符，即问号 (?) 和星号 
+				(*)。问号匹配任一单个字符；星号匹配任一字符序列。若要查找实际的问号或星号，请在字符前键入波形符 (~)。 </font>
+				</li>
+				<li>
+				<p style="line-height: 150%"><font size="2">Average_range 不必与 range 
+				的大小和形状相同。求平均值的实际单元格是通过使用 average_range 中左上方的单元格作为起始单元格，然后加入与 
+				range 的大小和形状相对应的单元格确定的。例如： </font></li>
+			</ul>
+			<div class="cntIndent36" id="tableoverflow">
+				<table class="collapse" id="table4">
+					<tr class="trbgeven">
+						<th bgcolor="#C0C0C0"><b class="bterm"><font size="2">如果 
+						range 是</font></b></th>
+						<th bgcolor="#C0C0C0"><b class="bterm"><font size="2">且 
+						average_range 为</font></b></th>
+						<th bgcolor="#C0C0C0"><b class="bterm"><font size="2">
+						则计算的实际单元格为</font></b></th>
+					</tr>
+					<tr class="trbgodd">
+						<td><font size="2">A1:A5</font></td>
+						<td><font size="2">B1:B5</font></td>
+						<td><font size="2">B1:B5</font></td>
+					</tr>
+					<tr class="trbgeven">
+						<td><font size="2">A1:A5</font></td>
+						<td><font size="2">B1:B3</font></td>
+						<td><font size="2">B1:B5</font></td>
+					</tr>
+					<tr class="trbgodd">
+						<td><font size="2">A1:B4</font></td>
+						<td><font size="2">C1:D4</font></td>
+						<td><font size="2">C1:D4</font></td>
+					</tr>
+					<tr class="trbgeven">
+						<td><font size="2">A1:B4</font></td>
+						<td><font size="2">C1:C2</font></td>
+						<td><font size="2">C1:D4</font></td>
+					</tr>
+				</table>
+			</div>
+			<p><font size="2">注释<b class="cntnote">&nbsp;</b></font><font size="2">&nbsp;&nbsp;AVERAGEIF 
+			函数用于计算趋中性，趋中性是统计分布中一组数中间的位置。三种最常见的趋中性计算方法是：</font></p>
+			<ul class="cntIndent36" type="disc">
+				<li>
+				<p style="line-height: 150%"><font size="2">平均值&nbsp;&nbsp;&nbsp;&nbsp; 
+				算数平均，其计算方法是先对一组数求和再除以这组数的个数。例如，2、3、3、5、7 和 10 的平均值是 5，即用 30 除以 
+				6。 </font></li>
+				<li>
+				<p style="line-height: 150%"><font size="2">中值&nbsp;&nbsp;&nbsp;&nbsp; 
+				一组数的中间数，这组数的一半大于中值，另一半小于中值。例如，2、3、3、5、7 和 10 的中值是 4。 </font>
+				</li>
+				<li>
+				<p style="line-height: 150%"><font size="2">众数&nbsp;&nbsp;&nbsp;&nbsp; 
+				在一组数中出现频率最高的数。例如，2、3、3、5、7 和 10 的众数为 3。 </font></li>
+			</ul>
+			<p><font size="2">
+			对于对称分布的一组数来说，这三种趋中性计算方法是相同的。对于偏态分布的一组数来说，这三种趋中性计算方法可能不同。</font></div>
+	</div>
+<p><b class="bterm"><font size="2">示例</font></b></p>
+<p><font size="2">如果您将示例复制到空白工作表中，可能会更易于理解该示例。</font></p>
+
+<table id="table8" width="231">
+	<tr>
+		<th class="thEmpty" width="21"></th>
+	    <th class="th1" bgcolor="#C0C0C0" align="left"><font size="2">A</font></th>
+	    <th class="th1" bgcolor="#C0C0C0" align="left"><font size="2">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="21"><b>
+		<font size="2">1</font></b></td>
+		<td class = "th1" bgcolor="#C0C0C0"><b><font size="2">财产值</font></b></td>
+		<td class = "th1" bgcolor="#C0C0C0"><b><font size="2">佣金</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="21"><b>
+		<font size="2">2</font></b></td>
+		<td class="ll"><font size="2">110,000</font></td>
+		<td class="ll"><font size="2">7,100</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="21"><b>
+		<font size="2">3</font></b></td>
+		<td class="ll"><font size="2">210,000</font></td>
+		<td class="ll"><font size="2">14，100</font></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="21"><b>
+		<font size="2">4</font></b></td>
+		<td class="ll"><font size="2">310,000</font></td>
+		<td class="ll"><font size="2">21,100</font></td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" bgcolor="#C0C0C0" align="center" width="21"><b>
+		<font size="2">5</font></b></td>
+		<td class="ll"><font size="2">410,000</font></td>
+		<td class="ll"><font size="2">28,100</font></td>
+	</tr>
+
+	</table>
+
+　<table id="table9">
+
+	<tr>
+		<td class ="tdEmpty" width="15" ></td>
+		<td class = "th1" bgcolor="#C0C0C0"><b><font size="2">公式</font></b></td>
+		<td class = "th2" width="146" bgcolor="#C0C0C0"><b><font size="2">说明（结果）</font></b></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" width="15">　</td>
+		<td class="ll"><font size="2">=AVERAGEIF(B2:B5,&quot;&lt;23100&quot;)</font></td>
+		<td class="ll"><font size="2">求所有佣金小于 23,100 的平均值 (14,100)</font></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" width="15">　</td>
+		<td class="ll"><font size="2">=AVERAGEIF(A2:A5,&quot;&lt;95100&quot;)</font></td>
+		<td class="ll"><font size="2">求所有财产值小于 95,100 的平均值 (#DIV/0!)</font></td>
+	</tr>
+	<tr>
+		<td class ="tdEmpty" width="15">　</td>
+		<td class="ll"><font size="2">=AVERAGEIF(A2:A5,&quot;&gt;250100&quot;,B2:B5)</font></td>
+		<td class="ll"><font size="2">求所有财产值大于 250,100 的佣金的平均值 (24,600)</font></td>
+	</tr>
+	</table>
+
+
+
+	<p>　</div>
+<p><b><font size="2">相关功能</font></b></p>
+<p><a href="functionlist_stat.htm"><font size="2">统计函数</font></a></p>
+
+
+
+</body>
+
+</html>

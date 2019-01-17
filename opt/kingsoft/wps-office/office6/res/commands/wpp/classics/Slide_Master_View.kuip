@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.slide_master_view" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand text2="@New Slide
+Master" hotKey="w" ksoCmd="NewSlideMaster" aid="1126" faceid="114" icon="NewSlideMaster" shortcutHint="Ctrl+M" id="NewSlideMaster" customTip="NewSlideMaster" text="@New Slide Master" rbHotKey="N"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="NewSlideLayout" aid="92241" faceid="115" icon="NewTitleMaster" id="NewSlideLayout" customTip="NewTitleMaster" text="@New Slide Layout" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DeleteMaster" aid="92212" faceid="116" icon="DeleteMaster" id="DeleteMaster" customTip="DeleteMaster" text="@Delete Master" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="PreserveMaster" aid="6013" faceid="117" icon="PreserveMaster" id="PreserveMaster" customTip="PreserveMaster" text="@Preserve Master" rbHotKey="V"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="RenameMaster" aid="6014" faceid="118" icon="RenameMaster" id="RenameMaster" customTip="RenameMaster" text="@Rename Master" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="l" ksoCmd="MasterLayout" aid="92225" faceid="119" icon="MasterLayout" id="MasterLayout" dialogHint="1" customTip="MasterLayout" text="@Master Layout" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="SlideMasterClose" aid="1567" id="SlideMasterClose" text="@Close Master View"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Slide Master View">
+			<command idQ="NewSlideMaster"/>
+			<command idQ="NewSlideLayout"/>
+			<command idQ="DeleteMaster"/>
+			<command idQ="PreserveMaster"/>
+			<command idQ="RenameMaster"/>
+			<command idQ="MasterLayout"/>
+			<separator/>
+			<command idQ="SlideMasterClose"/>
+		</subcommand>
+	</subcommands>
+</shell>

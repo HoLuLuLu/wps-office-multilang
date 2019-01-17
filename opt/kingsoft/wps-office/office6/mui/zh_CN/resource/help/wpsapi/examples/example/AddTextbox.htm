@@ -1,0 +1,18 @@
+<html><head>
+<title>AddTextbox</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在新文档中添加一个包含文字“Test”的文本框。<p>Dim docNew As Document<br>
+Dim newTextbox As Shape<br>
+'创建一个新文档，并添加一个文本框<br>
+Set docNew = Documents.Add<br>
+Set newTextbox = docNew.Shapes.AddTextbox _<br>
+(Orientation:=ksoTextOrientationHorizontal, _<br>
+Left:=100, Top:=100, Width:=300, Height:=200)<br>
+'为文本框添加文字“Test”<br>
+newTextbox.TextFrame.TextRange = &quot;Test&quot;</div>
+</body>
+</html>

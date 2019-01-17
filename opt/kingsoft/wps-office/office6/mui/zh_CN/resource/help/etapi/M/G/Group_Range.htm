@@ -1,0 +1,98 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Group_Range</title>
+<style>@import url(../../css/ksHelpStyle.css);
+</style>
+<base target="_parent">
+</head>
+
+<body>
+
+<div class="ind">
+  <b>描述</b><p>当 <b><a href="../../objs/R/Range.htm">Range</a></b> 对象代表数据透视表字段的数据区域中的单个单元格时，<b>Group</b> 
+  方法在该字段中执行基于数字或日期的组合。</p>
+<P>　</P>
+<P><b>语法</b></P>
+<div class=vbasyn>
+<P><i>expression</i>.<b>Group</b><i>([Start], [End], [By], [Periods]<b>)</b></i></P>
+</div>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="1">
+  <tr>
+    <td width="13%" align="center" bgcolor="#E1F1F7" height="12"><b>部&nbsp; 分</b></td>
+    <td width="53%" align="center" bgcolor="#E1F1F7" height="12"><b>描&nbsp; 述</b></td>
+  </tr>
+  <tr>
+    <td width="13%" style="vertical-align: top" height="1"><i>expression</i></td>
+    <td width="53%" style="vertical-align: middle" height="1">必需。该表达式返回一个 <b>
+    Range</b> 对象。</td>
+  </tr>
+  <tr>
+    <td width="13%" style="vertical-align: top" height="1"><i>Start</i></td>
+    <td width="53%" style="vertical-align: middle" height="1"><b>Variant</b> 
+    类型，可选。要组合的第一个值。如果省略或为 <b>True</b>，则使用字段中的第一个值。</td>
+  </tr>
+  <tr>
+    <td width="13%" style="vertical-align: top" height="1"><i>End</i></td>
+    <td width="53%" style="vertical-align: middle" height="1"><b>Variant</b> 
+    类型，可选。要组合的最后一个值。如果省略或为 <b>True</b>，则使用字段中的最后一个值。</td>
+  </tr>
+  <tr>
+    <td width="13%" style="vertical-align: top" height="28"><i>By</i></td>
+    <td width="53%" style="vertical-align: middle" height="28"><b>Variant</b> 
+    类型，可选。如果字段为数字，则该参数指定每个组合的大小。如果字段是日期，当 <b><i>Periods</i></b> 数组中的元素 4 为 <b>
+    True</b>，而其他所有元素为 <b>False</b> 时，本参数指定每个组合中的天数。其他情况下，忽略本参数。如果参数被忽略，ET 将自动选择一个默认的组合大小。</td>
+  </tr>
+  <tr>
+    <td width="13%" style="vertical-align: top" height="12"><i>Periods</i>&nbsp;</td>
+    <td width="53%" style="vertical-align: middle" height="12"><b>Variant</b> 
+    类型，可选。布尔值数组，指定组合的期限，如下表所示。</td>
+  </tr>
+</table>
+  <p>　</p>
+  <p><b>设置</b></p>
+  <p><i><b>Periods </b></i>的设置值有：</p>
+  <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="89">
+  <tr>
+    <td width="106" align="center" bgcolor="#E1F1F7" height="11"><b>数组元素</b></td>
+    <td width="451" align="center" bgcolor="#E1F1F7" height="11"><b>说&nbsp; 明</b></td>
+  </tr>
+  <tr>
+    <td width="106" style="vertical-align: middle" height="12">&nbsp;1</td>
+    <td width="451" style="vertical-align: middle" height="12">秒</td>
+  </tr>
+  <tr>
+    <td width="106" style="vertical-align: middle" height="12">&nbsp;2</td>
+    <td width="451" style="vertical-align: middle" height="12">分</td>
+  </tr>
+  <tr>
+    <td width="106" style="vertical-align: middle" height="12">&nbsp;3</td>
+    <td width="451" style="vertical-align: middle" height="12">小时</td>
+  </tr>
+  <tr>
+    <td width="106" style="vertical-align: middle" height="12">&nbsp;4</td>
+    <td width="451" style="vertical-align: middle" height="12">日</td>
+  </tr>
+  <tr>
+    <td width="106" style="vertical-align: middle" height="12">&nbsp;5</td>
+    <td width="451" style="vertical-align: middle" height="12">月</td>
+  </tr>
+  <tr>
+    <td width="106" style="vertical-align: middle" height="12">&nbsp;6</td>
+    <td width="451" style="vertical-align: middle" height="12">季度</td>
+  </tr>
+  <tr>
+    <td width="106" style="vertical-align: middle" height="12">&nbsp;7</td>
+    <td width="451" style="vertical-align: middle" height="12">年</td>
+  </tr>
+</table>
+  <P>如果数组中的元素为 <b>True</b>，则为相应的时间创建组合；如果元素为 <b>False</b>，则不创建组合。当字段不是日期字段时，忽略该参数。<P>　<P><b>说明</b><p>
+  <b>Range</b> 对象必须是数据透视表字段的数据区域中的单个单元格。如果试图对多个单元格应用该方法，将会失败（不显示错误消息）。</div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<html><head>
+<title>WrapFormat</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在活动文档中,指定文档文字环绕该椭圆(图形 1)外接矩形的左右两侧。本示例将文档文字与该外接矩形四边之间的边距设置为 0.1 英寸。<p>Set myOval = ActiveDocument.Shapes(1)<br>With myOval.WrapFormat<br>    &nbsp;&nbsp;&nbsp;    .Type = wpsWrapSquare<br>    &nbsp;&nbsp;&nbsp;    .Side = wpsWrapBoth<br>    &nbsp;&nbsp;&nbsp;    .DistanceTop = InchesToPoints(0.1)<br>    &nbsp;&nbsp;&nbsp;    .DistanceBottom = InchesToPoints(0.1)<br>    &nbsp;&nbsp;&nbsp;    .DistanceLeft = InchesToPoints(0.1)<br>    &nbsp;&nbsp;&nbsp;    .DistanceRight = InchesToPoints(0.1)<br>End With
+</div>
+</body>
+</html>

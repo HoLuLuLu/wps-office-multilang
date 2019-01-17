@@ -1,0 +1,22 @@
+<html><head>
+<title>AcceptAll</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例删除了 <code>myDocument</code> 中所有的连接符。<p>Set myDocument = ActiveDocument<br>
+With myDocument.Shapes<br>
+&nbsp;&nbsp;&nbsp;
+For i = .Count To 1 Step -1<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+With .Item(i)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+If .Connector Then .Delete<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+End With<br>
+&nbsp;&nbsp;&nbsp;
+Next<br>
+End With</div>
+</body>
+</html>

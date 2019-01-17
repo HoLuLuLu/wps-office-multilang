@@ -1,0 +1,33 @@
+<html><head>
+<title>AcceptAll</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例向 <code>myDocument</code> 
+中添加两个矩形，并且用两个连接符连接这两个矩形。<br>
+两个连接符的起始点都连到第一个矩形上的第一个连接部位；连接符的终止点分别连到第二个矩形上的第一个和最后一个连接部位上。<p>
+Set myDocument = ActiveDocument<br>
+Set s = myDocument.Shapes<br>
+Set firstRect = s.AddShape(ksoShapeRectangle, 100, 50, 200, 100)<br>
+Set secondRect = s.AddShape(ksoShapeRectangle, 300, 300, 200, 100)<br>
+lastsite = secondRect.ConnectionSiteCount<br>
+With s.AddConnector(kmsoConnectorCurve, 0, 0, 100, 100).ConnectorFormat<br>
+&nbsp;&nbsp;&nbsp;
+.BeginConnect ConnectedShape:=firstRect, ConnectionSite:=1<br>
+&nbsp;&nbsp;&nbsp;
+.EndConnect ConnectedShape:=secondRect, ConnectionSite:=1<br>
+End With<br>
+With s.AddConnector(ksoConnectorCurve, 0, 0, 100, 100) _<br>
+&nbsp;&nbsp;&nbsp;
+.ConnectorFormat<br>
+&nbsp;&nbsp;&nbsp;
+.BeginConnect ConnectedShape:=firstRect, ConnectionSite:=1<br>
+&nbsp;&nbsp;&nbsp;
+.EndConnect ConnectedShape:=secondRect, _<br>
+&nbsp;&nbsp;&nbsp;
+ConnectionSite:=lastsite<br>
+End With</div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>GAMMADIST</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="GAMMADIST">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et2
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">GAMMADIST</font></b></p>
+<p>返回伽玛分布。可以使用此函数来研究具有偏态分布的变量。伽玛分布通常用于排队分析。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">GAMMADIST</b>(<b class="bterm">x</b>,<b class="bterm">alpha</b>,<b class="bterm">beta</b>,<b class="bterm">cumulative</b>)</p>
+<p>X&nbsp;&nbsp;&nbsp;&nbsp; 用来计算分布的值。</p>
+<p>Alpha&nbsp;&nbsp;&nbsp;&nbsp; 分布参数。</p>
+<p>Beta&nbsp;&nbsp;&nbsp;&nbsp; 分布参数。若 beta = 1，则 GAMMADIST 返回标准伽玛分布。</p>
+<p>Cumulative&nbsp;&nbsp;&nbsp;&nbsp; 一逻辑值，决定函数的形式。若 cumulative 为 TRUE，则 GAMMADIST 返回累积分布函数；若为 
+FALSE，则返回概率密度函数。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>若 x、alpha 或 beta 为非数值型，则 GAMMADIST 返回错误值 #VALUE!。 
+	</li>
+	<li>若 x <font face="华文仿宋">&lt;</font> 0，则 GAMMADIST 返回错误值 #NUM!。 
+	</li>
+	<li>若 alpha ≤ 0 或 beta ≤ 0，则 GAMMADIST 返回错误值 #NUM!。 
+	</li>
+	<li>伽玛概率密度函数的计算公式如下： </li>
+</ul>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/413/583/ZA006051146.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+标准伽玛概率密度函数为：</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/004/778/ZA006051147.gif" border="0">
+</p>
+<ul class="cntIndent36" type="disc">
+	<li>当 alpha = 1 时，函数 GAMMADIST 返回如下的指数分布： </li>
+</ul>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/492/141/ZA006051148.gif" border="0">
+</p>
+<ul class="cntIndent36" type="disc">
+	<li>对于正整数 n，当 alpha = n/2，beta = 2 且 cumulative = TRUE 时，函数 GAMMADIST 以自由度 n 
+	返回 (1-CHIDIST(X))。 
+	</li>
+	<li>当 alpha 为正整数时，函数 GAMMADIST 也称为爱尔朗 (Erlang) 分布。 </li>
+</ul>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="590" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="253"><font face="宋体">A</font></th>
+	    <th class="th1" width="304"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">数据</font></td>
+		<td class = "th1" width="304"><b class="bterm"><font size="2">说明</font></b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">16</p>
+		</td>
+		<td class="ll" width="304">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">用来计算分布的值</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="253"><font size="2">6</font></td>
+		<td class="ll" width="304">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">Alpha 分布参数</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="253"><font size="2">2</font></td>
+		<td class="ll" width="304">
+		<font size="2">Beta 分布参数</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">5</font></td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="304"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10"><font face="宋体">6</font></td>
+		<td class="ll" width="253">
+		<font size="2">=GAMMADIST(A2,A3,A4,FALSE)</font></td>
+		<td class="ll" width="304">
+		<font size="2">在上述条件下的概率伽玛分布 (0.045801830796)</font></td>
+	</tr>
+    	
+    <tr>
+		<td class="tdSeqence" width="10">7</td>
+		<td class="ll" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		=GAMMADIST(A2,A3,A4,TRUE)</p>
+		</td>
+		<td class="ll" width="304">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		在上述条件下的累积伽玛分布 (0.80876393792)</p>
+		</td>
+	</tr>
+    	
+</table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

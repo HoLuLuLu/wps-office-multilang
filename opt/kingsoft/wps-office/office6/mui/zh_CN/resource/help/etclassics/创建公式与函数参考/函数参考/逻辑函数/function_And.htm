@@ -1,0 +1,152 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>AND</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="AND">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>AND</h1>
+<p>所有参数的逻辑值为真时，返回 TRUE。只要一个参数的逻辑值为假，即返回 FLASE。</p>
+<p><b>语法</b></p>
+<p class="SYN"><b>AND</b>(<b>logical1</b>,logical2, ...)</p>
+<p class="DT1">Logical1, logical2, ...&nbsp;&nbsp; 表示待检测的 1 到 30 个条件值，各条件值可为 TRUE 或 FALSE。 
+</p>
+<p><b>说明</b></p>
+<ul>
+  <li>参数必须是逻辑值 TRUE 或 FALSE, 或者包含逻辑值的<a href="javascript:viewsamplea()" style="text-decoration: none">数组</a><font color="#339933"><span id="samplea" style="display: none">（
+  用于建立可生成多个结果或可对在行和列中排列的一组参数进行运算的单个公式。数组区域共用一个公式。数组常量是用作参数的一组常量）</span></font>或引用。 </li>
+  <li>如果数组或引用参数中包含文本或空白单元格，则这些值将被忽略。 </li>
+  <li class="DT2">如果指定的单元格区域内包括非逻辑值，则 AND 将返回错误值 #VALUE!。</li>
+</ul>
+<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+
+<ul>
+  <li>示例一：
+  <br>
+  <table width="445">
+	<tr>
+		<th class="thEmpty" width="19"></th>
+	    <th class="th1" width="170">A</th>
+	    <th class="th1" width="261">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>1</b></td>
+		<td class = "th1" width="170">公式</td>
+		<td class = "th1" width="261"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="19"><b>2</b></td>
+		<td class ="ll" width="173">=AND(TRUE, TRUE)</td>
+		<td class ="ll" width="208">所有参数的逻辑值为真 (TRUE)</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="19">3</td>
+		<td class ="ll" width="173">=AND(TRUE, FALSE)</td>
+		<td class ="ll" width="208">一个参数的逻辑值为假 (FALSE)</td>
+	</tr>
+
+	<tr>
+		<td class="tdSeqence" width="19">4</td>
+		<td class ="ll" width="173">=AND(2+2=4, 2+3=5)</td>
+		<td class ="ll" width="208">所有参数的计算结果为真 (TRUE)</td>
+	</tr>
+	</table>
+
+  </li>
+  <li>示例二：
+  
+  <br>
+  <table width="216">
+	<tr>
+		<th class="thEmpty" width="6"></th>
+	    <th class="th1" width="88">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="6"><b>1</b></td>
+		<td class = "th1" width="88">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="6"><b>2</b></td>
+		<td class ="ll" width="159">50</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="6">3</td>
+		<td class ="ll" width="159">104</td>
+	</tr>
+
+	</table>
+	</br>
+	<table width="486">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="87"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=AND(1&lt;A2, A2&lt;100)</td>
+		<td class ="ll" width="302">因为 50 介于 1 到 100 之间 (TRUE)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(AND(1&lt;A3, A3&lt;100), A3, 
+        &quot;数值超出范围&quot;)</td>
+		<td class ="ll" width="302">如果上面的第二个数字介于 1 到 100 
+        之间，则显示该数字，否则显示信息（数值超出范围）</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=IF(AND(1&lt;A2, A2&lt;100), A2, 
+        &quot;数值超出范围&quot;)</td>
+		<td class ="ll" width="302">如果上面的第一个数字介于 1 到 100 之间，则显示该数字，否则显示信息 (50)</td>
+	</tr>
+	</table>
+
+  </li>
+</ul>
+
+
+
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_logcial.htm">逻辑函数</a></p>
+<p><a href="function_Not.htm">NOT</a></p>
+<p><a href="function_or.htm">OR</a></p>
+<p><a href="function_True.htm">TRUE</a></p>
+<p><a href="function_false.htm">FALSE</a></p>
+<p>　</p>
+
+
+
+</body>
+
+</html>

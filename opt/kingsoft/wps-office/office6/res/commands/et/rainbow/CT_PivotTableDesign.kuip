@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="rainbow.ct_pivottabledesign" component="et">
+	<subcommands>
+		<subcommand id="CT_PivotTableDesign">
+			<command idQ="PivotTableStyleOptions"/>
+			<separator/>
+			<command idQ="PivotTableStyles"/>
+		</subcommand>
+	</subcommands>
+</shell>

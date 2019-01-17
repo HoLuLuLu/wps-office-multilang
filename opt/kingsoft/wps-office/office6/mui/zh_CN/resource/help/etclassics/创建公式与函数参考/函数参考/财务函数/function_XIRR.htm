@@ -1,0 +1,144 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>MIRR</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="MIRR">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>XIRR</h1>
+<p>
+返回一组不一定定期发生的现金流的内部收益率。</p>
+<p><b>语法</b></p>
+<p><b>XIRR(values, dates, [guess])</b></p>
+
+<p>values 现金流：一个数组，或对包含用来计算返回内部报酬率的数字的单元格的引用。</p>
+
+<p>dates<b> </b>日期流：一个数组，与现金流支付相对应的支付日期表。</p>
+
+<p>guess<b> </b>预估值：内部报酬率的猜测值。如果忽略，则为0.1（百分之十）。</p>
+
+<p><b>说明</b> </p>
+
+<div border="0">
+	<div id="m_divBody" name="client-body">
+		<div class="cdclvSection">
+			<div id="m_article" class="cntArticleBody">
+				<ul class="cntIndent36" type="disc">
+					<li>WPS表格可将日期存储为序列号，以便可以在计算中使用它们。默认情况下，1900 年 1 月 1 日的序列号是 
+					1，而 2008 年 1 月 1 日的序列号是 39448，这是因为它距 1900 年 1 月 1 日有 39,448 
+					天。</li>
+					<li>Dates 中的数值将被截尾取整。</li>
+					<li>函数 XIRR 要求至少有一个正现金流和一个负现金流，否则函数 XIRR 返回错误值 #NUM!。</li>
+					<li>如果 dates 中的任一数值不是合法日期，函数 XIRR 返回错误值 #VALUE!。</li>
+					<li>如果 dates 中的任一数字先于开始日期，函数 XIRR 返回错误值 #NUM!。</li>
+					<li>如果 values 和 dates 所含数值的数目不同，函数 XIRR 返回错误值 #NUM!。</li>
+					<li>多数情况下，不必为函数 XIRR 的计算提供 guess 值，如果省略，guess 值假定为 0.1 
+					(10%)。</li>
+					<li>函数 XIRR 与净现值函数 XNPV 密切相关。函数 XIRR 计算的收益率即为函数 XNPV = 0 
+					时的利率。</li>
+					<li>使用迭代法计算函数 XIRR。通过改变收益率（从 guess 开始），不断修正计算结果，直至其精度小于 
+					0.000001%。如果函数 XIRR 运算 100 次，仍未找到结果，则返回错误值 #NUM!。函数 XIRR 
+					的计算公式如下： </li>
+				</ul>
+				<p class="cntIndent36">&nbsp;&nbsp;&nbsp;
+				<img title="公式" border="0" alt="公式" src="../../../images/function_XIRR.gif">
+				</p>
+				<p class="cntIndent36">&nbsp; 式中：</p>
+				<ul class="cntIndent72" type="disc">
+					<li>di = 第 i 个或最后一个支付日期。</li>
+					<li>d1 = 第 0 个支付日期。</li>
+					<li>Pi = 第 i 个或最后一个支付金额。</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<p><b>示例 </b>
+	<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。<p>　</div>
+
+<table width="759" height="238">
+	<tr>
+		<th class="thEmpty" width="20" height="15"></th>
+	    <th class="th1" width="137" height="15">A</th>
+	    <th class="th1" width="91" height="15">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16"><b>1</b></td>
+		<td class = "th1" width="137" height="16">数据</td>
+		<td class = "th1" width="91" height="16">日期</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16">2</td>
+		<td class="ll" width="223" height="16">-10,000</td>
+		<td class="ll" width="502" height="16">2012-1-1</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16">3</td>
+		<td class="ll" height="16" width="223">2,750</td>
+		<td class="ll" height="16" width="502">2012-3-1</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16">4</td>
+		<td class="ll" height="16" width="223">4,250</td>
+		<td class="ll" height="16" width="502">2012-10-30</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16">5</td>
+		<td class="ll" height="16" width="223">3,250</td>
+		<td class="ll" height="16" width="502">2013-2-15</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16">6</td>
+		<td class="ll" height="16" width="223">2,750</td>
+		<td class="ll" height="16" width="502">2013-4-1</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16">7</td>
+		<td class = "th1" width="137" height="16">公式</td>
+		<td class = "th1" width="91" height="16">说明（结果）</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="20" height="16">8</td>
+		<td class="ll" width="223" height="16">=XIRR(A2:A6,B2:B6,0.1)</td>
+		<td class="ll" width="502" height="16">返回内部收益率(0.373362534 或 37.34%)</td>
+	</tr>
+					
+</table>
+
+	<p>
+
+<br>
+
+</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_fina.htm">财务函数</a></p>
+
+
+
+</body>
+
+</html>

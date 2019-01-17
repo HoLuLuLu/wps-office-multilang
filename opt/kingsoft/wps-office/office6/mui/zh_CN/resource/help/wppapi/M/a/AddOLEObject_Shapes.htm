@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>AddOLEObject_Shapes</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>创建 OLE 对象。返回一个代表新 OLE 对象的 <b><a href="../../objs/s/Shape.htm">Shape</a></b> 对象。</P><br>
+    返回<b> Shape </b>对象。  
+</p><br>
+    <P><b>语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.AddOLEObject</b><i>([Left], [Top], [Width], 
+		[Height], [ClassName], [FileName], [DisplayAsIcon], [IconFileName], [IconIndex], 
+		[IconLabel], [Link])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >  必需。该表达式返回一个 <b>
+			<a href="../../objs/s/Shapes.htm">Shapes</a></b> 集合。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Left,Top</i></td>
+            <td width="59%" height=15 > 可选。<b>Float</b> 类型。新对象左上角相对于幻灯片左上角的位置，以磅为单位。默认值为 0（零）。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Width,Height</i></td>
+            <td width="59%" height=15 > 可选。<b>Float</b> 类型。OLE 对象的初始尺寸，以磅为单位。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>ClassName  </i></td>
+            <td width="59%" height=15 > 可选。<b>String</b> 类型。OLE 长类名或要创建对象的 ProgID。必须为该对象指定 
+			<b>ClassName</b> 或 <b>FileName</b> 参数，但不能同时指定两个。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>FileName  </i></td>
+            <td width="59%" height=15 > 可选。<b>String</b> 类型。创建对象所依据的文件。如果未指定路径，则使用当前工作文件夹。必须为该对象指定  
+			<b>ClassName</b> 或 <b>FileName</b> 参数，但不能同时指定两个。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>DisplayAsIcon  </i></td>
+            <td width="59%" height=15 >  可选。<b>ksoTriState</b> 常量。决定是否将 OLE 对象显示为图标。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>IconFileName  </i></td>
+            <td width="59%" height=15 >  可选。<b>String</b> 类型。包含要显示的图标的文件。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>IconIndex  </i></td>
+            <td width="59%" height=15 > 可选。<b>Integer</b> 类型。<b>IconFileName</b> 中的图标索引。指定文件中的图标顺序对应于图标在“更改图标”对话框（选中“显示为图标”复选框时，从“插入对象”对话框访问）中显示的顺序。文件中第一个图标的索引序号是 0（零）。如果  
+			<b>IconFileName</b> 中不存在给定索引序号的图标，则使用索引序号为 1 的图标（文件中的第二个图标）。默认值为 0（零）。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>IconLabel  </i></td>
+            <td width="59%" height=15 >  可选。<b>String</b> 类型。要在图标下显示的标签（标题）。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Link  </i></td>
+            <td width="59%" height=15 > 可选。<b>ksoTriState</b> 常量。决定是否将 OLE 对象链接到创建该对象的文件。如果已指定  
+			<b>ClassName</b> 的值，此参数必须是 <b>ksoFalse</b> 常量。   </td>
+          </tr>
+    </table><br>
+    </div>
+</body>
+</html>

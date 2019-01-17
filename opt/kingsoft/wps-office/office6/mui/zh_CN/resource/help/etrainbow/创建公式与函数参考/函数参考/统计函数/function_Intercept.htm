@@ -1,0 +1,152 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>INTERCEPT</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="INTERCEPT">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et2
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">INTERCEPT</font></b></p>
+<p>利用现有的 x 值与 y 值计算直线与 y 轴的截距。截距为穿过已知的 known_x's 和 known_y's 数据点的线性回归线与 y 
+轴的交点。当自变量为 0（零）时，使用 INTERCEPT 函数可以决定因变量的值。例如，当所有的数据点都是在室温或更高的温度下取得的，可以用 
+INTERCEPT 函数预测在 0°C 时金属的电阻。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">INTERCEPT</b>(<b class="bterm">known_y's</b>,<b class="bterm">known_x's</b>)</p>
+<p>Known_y's&nbsp;&nbsp;&nbsp;&nbsp; 因变的观察值或数据的集合。</p>
+<p>Known_x's&nbsp;&nbsp;&nbsp;&nbsp; 自变的观察值或数据的集合。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>参数可以是数字，或者是包含数字的名称、数组或引用。 
+	</li>
+	<li>若数组或引用参数包含文本、逻辑值或空白单元格，则这些值将被忽略；但包含零值的单元格将计算在内。</li>
+	<li>若 known_y's 和 known_x's 所包含的数据点个数不相等或不包含任何数据点，则 INTERCEPT 返回错误值 #N/A。 
+	</li>
+	<li>回归线 a 的截距公式为： </li>
+</ul>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/555/344/ZA006051174.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 公式中斜率 b 
+计算如下：</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/392/717/ZA006051175.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 其中 x 和 y 
+为样本平均数 AVERAGE(known_x's) 和 AVERAGE(known_y's)。</p>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="703" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="253"><font face="宋体">A</font></th>
+	    <th class="th1" width="417"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		已知y</td>
+		<td class = "th1" width="417"><font size="2">已知x</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">1</p>
+		</td>
+		<td class="ll" width="417">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">5</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="253"><font size="2">4</font></td>
+		<td class="ll" width="417">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">2</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="253"><font size="2">8</font></td>
+		<td class="ll" width="417">
+		<font size="2">8</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">5</font></td>
+		<td class="ll" width="253"><font size="2">2</font></td>
+		<td class="ll" width="417">
+		<font size="2">12</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">6</font></td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="417"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10">7</td>
+		<td class="ll" width="253">
+		<font size="2">=INTERCEPT(A2:A5, B2:B5)</font></td>
+		<td class="ll" width="417">
+		<font size="2">利用上面已知的 x 值与 y 值计算直线与 y 轴的截距 (3.7808219178)</font></td>
+	</tr>
+    	
+</table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

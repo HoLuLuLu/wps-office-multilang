@@ -1,0 +1,19 @@
+<html><head>
+<title>Lists</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p class="T">本示例插入一个偶数页分节符，将活动窗口切换到页面视图，显示当前页眉，然后切换到前一个页眉。<p class="T">Selection.Collapse Direction:=wpsCollapseStart <br>
+Selection.InsertBreak Type:=wpsSectionBreakEvenPage <br>
+With ActiveDocument.ActiveWindow.View <br>
+&nbsp;&nbsp;&nbsp;
+.Type = wpsPrintView <br>
+&nbsp;&nbsp;&nbsp;
+.SeekView = wpsSeekCurrentPageHeader <br>
+&nbsp;&nbsp;&nbsp;
+.PreviousHeaderFooter <br>
+End With</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+	<mime-type type="application/wps-office.doc">
+		<comment>Microsoft Word</comment>
+		<alias type="application/msword"/>
+		<alias type="application/vnd.ms-word"/>
+		<alias type="application/x-msword"/>
+		<alias type="application/vnd.ms-word.document.macroenabled.12"/>
+		<generic-icon name="wps-office-doc"/>
+		<glob pattern="*.doc" weight="60"/>
+		<glob pattern="*.docm" weight="60"/>
+		<glob pattern="*.rtf" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.dot">
+		<comment>Microsoft Word Template</comment>
+		<alias type="application/msword-template"/>
+		<alias type="application/vnd.ms-word.template.macroenabled.12"/>
+		<sub-class-of type="application/msword"/>
+		<generic-icon name="wps-office-dot"/>
+		<glob pattern="*.dot" weight="60"/>
+		<glob pattern="*.dotm" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.dotx">
+		<comment>Microsoft Word Template</comment>
+		<alias type="application/vnd.openxmlformats-officedocument.wordprocessingml.template"/>
+		<generic-icon name="wps-office-dot"/>
+		<glob pattern="*.dotx" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.docx">
+		<comment>Microsoft Word</comment>
+		<alias type="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+		<generic-icon name="wps-office-doc"/>
+		<glob pattern="*.docx" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.wps">
+		<comment>WPS Writer Document</comment>
+		<comment xml:lang="zh_CN">WPS文字 文档</comment>
+		<alias type="application/vnd.ms-works"/>
+		<generic-icon name="wps-office-wps"/>
+		<glob pattern="*.wps" weight="60"/>
+	</mime-type>
+	<mime-type type="application/wps-office.wpt">
+		<comment>WPS Writer Template</comment>
+		<comment xml:lang="zh_CN">WPS文字 模板</comment>
+		<generic-icon name="wps-office-wpt"/>
+		<glob pattern="*.wpt" weight="60"/>
+	</mime-type>
+</mime-info>

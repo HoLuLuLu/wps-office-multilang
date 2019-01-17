@@ -1,0 +1,12 @@
+<html><head>
+<title>InsertParagraphAfter</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在活动段落开头将文本作为一个新段落插入。 
+<p>Set myRange = ActiveDocument.Range(0, 0) <br>With myRange <br>    &nbsp;&nbsp;&nbsp;    .InsertBefore "Title" <br>    &nbsp;&nbsp;&nbsp;    .ParagraphFormat.Alignment = wpsAlignParagraphCenter <br>    &nbsp;&nbsp;&nbsp;    .InsertParagraphAfter <br>End With 
+</div>
+</body>
+</html>

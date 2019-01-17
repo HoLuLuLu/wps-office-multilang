@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>Add</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在当前演示文稿的开始处添加一张包含标题占位符的幻灯片。<p>ActivePresentation.Slides.Add&nbsp;Index:=1,&nbsp;Layout:=wpLayoutTitleOnly</p>
+<p>　</p>
+<p>本示例在当前演示文稿的末尾添加一张空白幻灯片。</p>
+<p>With&nbsp;ActivePresentation.Slides<br>&nbsp;&nbsp;&nbsp;&nbsp;.Add&nbsp;Index:=.Count&nbsp;+&nbsp;1,&nbsp;Layout:=wpLayoutBlank<br>End&nbsp;With
+</div>
+</body>
+</html>

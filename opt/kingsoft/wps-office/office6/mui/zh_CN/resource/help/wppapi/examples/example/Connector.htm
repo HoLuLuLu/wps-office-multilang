@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Connector</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在第一个窗口中判断选中的项是否为连接符，如果是则将线条设为绿色，否则设为浅蓝色。<p>With 
+Windows(1).Selection.ShapeRange<br>
+&nbsp;&nbsp;&nbsp; If .Connector Then<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Line.ForeColor.RGB = RGB(100, 200, 
+10)<br>
+&nbsp;&nbsp;&nbsp; Else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Line.ForeColor.RGB = RGB(100, 240, 
+240)<br>
+&nbsp;&nbsp;&nbsp; End If<br>
+End With
+</div>
+</body>
+</html>

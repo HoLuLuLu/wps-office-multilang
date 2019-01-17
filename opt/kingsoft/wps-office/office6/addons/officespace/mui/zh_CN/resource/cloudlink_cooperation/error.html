@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>404</title>
+    <link rel="stylesheet" type="text/css" href="./client.css" media="all" />
+</head>
+<body>
+<div id="main">
+	<div class="error-icon"></div>
+	<div class="descript">无法连接到服务器，请检查网络。</div>
+	<div class="again">
+		<i class="refresh-icon"></i>
+		<a onclick="window.reload();" href="javascript:void(0)">刷新试试</a>
+	</div>
+</div>
+</body>
+
+<script type="text/javascript">
+	window.reload = function(){
+		var params = {
+             method:'reload'
+        }
+        window.cefQuery({
+            request: "jsAsynCall('" + JSON.stringify(params) + "')",
+            persistent: false,
+            onSuccess: function (response) {
+                
+            },
+            onFailure: function (error_code, error_message) {
+                
+            }
+        })
+	}
+</script>
+
+</html>

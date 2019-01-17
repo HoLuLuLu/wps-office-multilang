@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.align" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="BringToFront" aid="166" icon="BringToFront" id="BringToFrontInToolBar" text="@Bring to Front"/>
+		<KxLegacyTriggerCommand hotKey="k" ksoCmd="SendToBack" aid="167" icon="SendToBack" id="SendToBackInToolBar" text="@Send to Back"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="BringForward" aid="170" icon="BringForward" id="BringForwardInToolBar" text="@Bring Forward"/>
+		<KxLegacyTriggerCommand hotKey="b" ksoCmd="SendBackward" aid="171" icon="SendBackward" id="SendBackwardInToolBar" text="@Send Backward"/>
+		<KxLegacyTriggerCommand hotKey="g" ksoCmd="Group" aid="164" icon="Group" id="GroupInToolBar" text="@Group"/>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="UnGroup" aid="165" icon="UnGroup" id="UnGroupInToolBar" text="@Ungroup"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="BringInFrontOfText" aid="168" icon="BringInFrontOfText" id="BringInFrontOfText" text="@Bring in Front of Text"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="SendBehindText" aid="169" idMso="ObjectSendBehindText" icon="SendBehindText" id="SendBehindText" text="@Send Behind Text" rbHotKey="H"/>
+		<KxValueCommand hotKey="l" ksoCmd="DrawAlign" aid="664" icon="DrawAlignLeft" id="DrawAlignLeft" index="0" text="@Align Left" rbHotKey="L"/>
+		<KxValueCommand hotKey="c" ksoCmd="DrawAlign" aid="668" icon="DrawAlignCenter" id="DrawAlignCenter" index="1" text="@Align Center" rbHotKey="C"/>
+		<KxValueCommand hotKey="r" ksoCmd="DrawAlign" aid="121" icon="DrawAlignRight" id="DrawAlignRight" index="2" text="@Align Right" rbHotKey="R"/>
+		<KxValueCommand hotKey="t" ksoCmd="DrawAlign" aid="666" icon="DrawAlignTop" id="DrawAlignTop" index="3" text="@Align Top" rbHotKey="T"/>
+		<KxValueCommand hotKey="m" ksoCmd="DrawAlign" aid="669" icon="DrawAlignMiddle" id="DrawAlignMiddle" index="4" text="@Align Middle" rbHotKey="M"/>
+		<KxValueCommand hotKey="b" ksoCmd="DrawAlign" aid="667" icon="DrawAlignBottom" id="DrawAlignBottom" index="5" text="@Align Bottom" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="AlignDistributeHori" aid="408" icon="AlignDistributeHori" id="AlignDistributeHori" text="@Distribute Horizontally"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="AlignDistributeVert" aid="465" icon="AlignDistributeVert" id="AlignDistributeVert" text="@Distribute Vertically"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Align">
+			<command idQ="BringToFrontInToolBar"/>
+			<command idQ="SendToBackInToolBar"/>
+			<command idQ="BringForwardInToolBar"/>
+			<command idQ="SendBackwardInToolBar"/>
+			<separator/>
+			<command idQ="GroupInToolBar"/>
+			<command idQ="UnGroupInToolBar"/>
+			<separator/>
+			<command idQ="BringInFrontOfText"/>
+			<command idQ="SendBehindText"/>
+			<separator/>
+			<command idQ="DrawAlignLeft"/>
+			<command idQ="DrawAlignCenter"/>
+			<command idQ="DrawAlignRight"/>
+			<command idQ="DrawAlignTop"/>
+			<command idQ="DrawAlignMiddle"/>
+			<command idQ="DrawAlignBottom"/>
+			<separator/>
+			<command idQ="AlignDistributeHori"/>
+			<command idQ="AlignDistributeVert"/>
+		</subcommand>
+	</subcommands>
+</shell>

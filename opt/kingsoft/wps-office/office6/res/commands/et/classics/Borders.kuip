@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.borders" component="et">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="d" ksoCmd="DrawBorder" aid="6206" icon="DrawBorder" id="DrawBorder" text="@Draw Border"/>
+		<KxLegacyTriggerCommand hotKey="D" ksoCmd="DrawGrid" aid="6207" icon="DrawGrid" id="DrawGrid" customTip="DrawGrid" text="@Draw Border Grid" rbHotKey="G"/>
+		<KxLegacyTriggerCommand hotKey="E" ksoCmd="EraserForDrawBorder" aid="6049" icon="EraserForDrawBorder" id="EraserForDrawBorder" customTip="Eraseborder" text="@Erase Border" rbHotKey="E"/>
+		<KxEtBorderLineStyleCommand hotKey="L" ksoCmd="BorderLineStyleCombo" aid="6050" icon="TableBorderStyle" id="BorderLineStyleCombo" text="@Line Style" rbHotKey="Y"/>
+		<KxEtCellBorderThemeCommand hotKey="L" ksoCmd="BorderLineColor" aid="6051" icon="LineColor" id="BorderLineColor" text="@Line Color" ksoTriggerCmd="RecentBorderLineColor" rbHotKey="I">
+			<KxEtMoreColorThemeCommand hotKey="m" aid="100128" colorUsage="CellBorderColor" icon="MoreColor" id="MoreCellBorderColors" dialogHint="1" text="@More Border Colors" rbHotKey="M"/>
+			<KxEtSnapColorCommand hotKey="e" aid="100140" colorUsage="CellBorderColor" icon="SnapperFill" forceEnabled="1" id="SnapperBorderColor" text="@Snapper" rbHotKey="E"/>
+		</KxEtCellBorderThemeCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="Borders">
+			<KxEtAutoCheckQuickMenuCommand aid="6206" barid="5610" id="DrawBorderRef" name="Draw Border" referenceCommand="DrawBorder">
+				<command idQ="DrawBorder"/>
+				<command idQ="DrawGrid"/>
+			</KxEtAutoCheckQuickMenuCommand>
+			<command idQ="EraserForDrawBorder"/>
+			<command idQ="BorderLineStyleCombo"/>
+			<command idQ="BorderLineColor"/>
+		</subcommand>
+	</subcommands>
+</shell>

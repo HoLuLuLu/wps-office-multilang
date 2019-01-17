@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>AddPlaceholder_Shapes</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>恢复幻灯片上以前已删除的占位符。</P>
+    <P>返回一个 <b><a href="../../objs/s/Shape.htm">Shape</a></b> 代表已恢复占位符的对象。</P><br>
+    返回<b> Shape </b>对象。  
+</p><br>
+    <P><b>语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.AddPlaceholder</b><i>((Type), [Left], [Top], [Width], 
+		[Height])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >  必需。该表达式返回一个 <b>
+			<a href="../../objs/s/Shapes.htm">Shapes</a></b> 集合。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Type  </i></td>
+            <td width="59%" height=15 > 必需。<b>wpPlaceholderType </b>常量。占位符的类型。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Left  </i></td>
+            <td width="59%" height=15 >  可选。<b>Single</b> 类型。占位符左边缘相对于幻灯片左边缘的位置（以磅为单位）。
+   </td>
+          </tr>
+			<tr>
+            <td width="9%" height=15 ><i>Top  </i></td>
+            <td width="59%" height=15 >  可选。<b>Single</b> 类型。占位符上边缘相对于幻灯片上边缘的位置（以磅为单位）。
+   </td>
+          </tr>
+			<tr>
+            <td width="9%" height=15 ><i>Width  </i></td>
+            <td width="59%" height=15 >  可选。<b>Single</b> 类型。占位符的宽度（以磅为单位）。
+   </td>
+          </tr>
+			<tr>
+            <td width="9%" height=15 ><i>Height  </i></td>
+            <td width="59%" height=15 >  可选。<b>Single</b> 类型。占位符的高度（以磅为单位）。   </td>
+          </tr>
+    </table><br>
+    <br><P><b>说明</b></P>
+    <P>如果未曾删除指定的占位符，此方法导致出错。</P>
+	<P>如果从幻灯片中删除了多个指定类型的占位符，<b>AddPlaceholder</b> 方法将它们依次放回到幻灯片中，从原来索引号最小的占位符开始。</P>
+    </div>
+</body>
+</html>

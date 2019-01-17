@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.control_tool_box" component="wps">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="CTB_DesignMode" aid="1605" icon="CTB_DesignMode" id="CTB_DesignMode" text="@Design Mode" rbHotKey="DM"/>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="CTB_Property" aid="222" icon="FTB_Property" id="CTB_Property" text="@Properties" rbHotKey="J"/>
+		<KxLegacyTriggerCommand hotKey="v" ksoCmd="CTB_ViewCode" aid="1561" icon="CTB_ViewCode" id="CTB_ViewCode" text="@View Code"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_Checkbox" aid="1848" icon="CTB_Checkbox" id="CTB_Checkbox" spaceHint="compact" text="@Check Box"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_TextBox" aid="1850" icon="CTB_TextBox" id="CTB_TextBox" spaceHint="compact" text="@Text Box"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_CommandButton" aid="1851" icon="CTB_CommandButton" id="CTB_CommandButton" spaceHint="compact" text="@Command Button"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_OptionButton" aid="1852" icon="CTB_OptionButton" id="CTB_OptionButton" spaceHint="compact" text="@Option Button"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_ListBox" aid="1853" icon="CTB_ListBox" id="CTB_ListBox" spaceHint="compact" text="@List Box"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_ComboBox" aid="1854" icon="CTB_ComboBox" id="CTB_ComboBox" spaceHint="compact" text="@Combo Box"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_ToggleButton" aid="1855" icon="CTB_ToggleButton" id="CTB_ToggleButton" spaceHint="compact" text="@Toggle Button"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_SpinButton" aid="1856" icon="CTB_SpinButton" id="CTB_SpinButton" spaceHint="compact" text="@Spin Button"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_ScrollBar" aid="1857" icon="CTB_ScrollBar" id="CTB_ScrollBar" spaceHint="compact" text="@Scroll Bar"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_Label" aid="1858" icon="CTB_Label" id="CTB_Label" spaceHint="compact" text="@Label"/>
+		<KxLegacyTriggerCommand ksoCmd="CTB_Image" aid="2089" icon="InsertPictureFromFile" id="CTB_Image" spaceHint="compact" text="@Image"/>
+		<KxListCommand disableTrigger="true" hideArrowHint="true" ksoCmd="CTB_MoreControls" aid="642" icon="CTB_MoreControls" id="CTB_MoreControls" spaceHint="compact" text="@More Controls">
+			<KxControlsListCommand ksoCmd="CTB_ControlsList" aid="92099" id="CTB_ControlsList" text="@Control List"/>
+		</KxListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="Control Tool Box">
+			<command idQ="CTB_DesignMode"/>
+			<command idQ="CTB_Property"/>
+			<command idQ="CTB_ViewCode"/>
+			<separator/>
+			<command idQ="CTB_Checkbox"/>
+			<command idQ="CTB_TextBox"/>
+			<command idQ="CTB_CommandButton"/>
+			<command idQ="CTB_OptionButton"/>
+			<command idQ="CTB_ListBox"/>
+			<command idQ="CTB_ComboBox"/>
+			<command idQ="CTB_ToggleButton"/>
+			<command idQ="CTB_SpinButton"/>
+			<command idQ="CTB_ScrollBar"/>
+			<command idQ="CTB_Label"/>
+			<command idQ="CTB_Image"/>
+			<separator/>
+			<command idQ="CTB_MoreControls"/>
+		</subcommand>
+	</subcommands>
+</shell>

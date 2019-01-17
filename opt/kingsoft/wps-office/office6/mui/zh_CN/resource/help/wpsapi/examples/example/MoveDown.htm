@@ -1,0 +1,17 @@
+<html><head>
+<title>MoveDown</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将所选内容向下扩展一行。<p>Selection.MoveDown Unit:=wpsLine, Count:=1, Extend:=wpsExtend</p>
+<p>　<p>本示例将所选内容向下移动三个段落。如果移动成功，则在插入点插入“Company”。<p>unitsMoved = 
+Selection.MoveDown(Unit:=wpsParagraph, _<br>
+&nbsp;&nbsp;&nbsp;
+Count:=3, Extend:=wpsMove)<br>
+If unitsMoved = 3 Then<br>
+&nbsp;&nbsp;&nbsp; Selection.Text = &quot;Company&quot;<br>
+End If</div>
+</body>
+</html>

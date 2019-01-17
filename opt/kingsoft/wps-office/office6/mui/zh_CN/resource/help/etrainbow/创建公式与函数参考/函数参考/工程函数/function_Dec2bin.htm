@@ -1,0 +1,122 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>DEC2BIN</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="DEC2BIN">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et6
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">DEC2BIN</font></b></p>
+<p>将十进制数转换为二进制数。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">DEC2BIN</b>(<b class="bterm">number</b>,places)</p>
+<p>Number&nbsp;&nbsp;&nbsp;&nbsp; 待转换的十进制数。若参数 number 是负数，则省略 places。函数 DEC2BIN 返回 10 
+位二进制数，最高位为符号位，其余 9 位是数字位。负数用二进制数的补码表示。</p>
+<p>Places&nbsp;&nbsp;&nbsp;&nbsp; 所要使用的字符数。若省略 places，函数 DEC2BIN 用能表示此数的最少字符来表示。当需要在返回的数值前置零时，places 
+尤其有用。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>若 number<font face="华文宋体"> &lt;</font><font face="华文隶书"> </font>-512 或 number<font face="方正舒体">&nbsp;
+	</font><font face="华文宋体">&gt;&nbsp; </font><font face="华文隶书">&nbsp;</font>511，则 DEC2BIN 返回错误值 #NUM!。 
+	</li>
+	<li>若参数 number 为非数值型，则 DEC2BIN 返回错误值 #VALUE!。 
+	</li>
+	<li>若函数 DEC2BIN 需要比 places 指定的更多的位数，将返回错误值 #NUM!。 
+	</li>
+	<li>若 places 不是整数，将截尾取整。 
+	</li>
+	<li>若 places 为非数值型，则 DEC2BIN 返回错误值 #VALUE!。 
+	</li>
+	<li>若 places 为负值，则 DEC2BIN 返回错误值 #NUM!。 </li>
+</ul>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="553" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="186"><font face="宋体">A</font></th>
+	    <th class="th1" width="334"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="186">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="334"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="186">
+		<font size="2">=DEC2BIN(12, 4)</font></td>
+		<td class="ll" width="334">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		将十进制数 12 转换为 4 个字符的二进制数 (1100)</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="186">
+		<font size="2">=DEC2BIN(-60)</font></td>
+		<td class="ll" width="334">
+		<font size="2">将十进制数 -60 转换为二进制数 (1111000100)</font></td>
+	</tr>
+    
+</table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_Project.htm">工程函数</a></p>
+
+
+
+</body>
+
+</html>

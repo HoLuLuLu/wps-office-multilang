@@ -1,0 +1,110 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>LEFTB</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="LEFTB">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>LEFTB</h1>
+<p>LEFTB 基于所指定的字节数返回文本字符串中的第一个或前几个字符。此函数用于双字节字符。</p>
+<p><b>语法</b></p>
+<p class="SYN"><b>LEFTB</b>(<b>text</b>,num_bytes)</p>
+<p class="DT1">T<span lang="en-us">ext</span>&nbsp;&nbsp; 是包含要提取字符的文本字符串。</p>
+<p class="0" style="margin-bottom:5.0000pt; margin-top:5.0000pt; layout-grid-mode:char; text-align:justify; ">
+<span style="font-size: 10.5000pt; font-family: Times New Roman">Num_bytes&nbsp;<font face="宋体"> 按字节数指定由LEFTB提取的字符数。</font></span>
+</p>
+
+<ul>
+  <li>
+	<p>
+	Num_bytes&nbsp;必须大于或等于0。</p>
+	</li>
+	<li>
+	<p>
+	如果 
+	Num_bytes&nbsp; 大于文本长度，则 LEFT 返回所有文本。</p>
+	</li>
+	<li>如果省略 
+	Num_bytes&nbsp;，则假定其为 1。</li>
+</ul>
+	<p><b>示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="298">
+	<tr>
+		<th class="thEmpty" width="7"></th>
+	    <th class="th1" width="127">A</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="7"><b>1</b></td>
+		<td class = "th1" width="127">数据</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="7"><b>2</b></td>
+		<td class ="ll" width="144">Sale Price</td>
+	</tr>
+		<tr>
+		<td class="tdSeqence" width="7">3</td>
+		<td class ="ll" width="144">电脑爱好者</td>
+	</tr>
+
+	
+	</table>
+	</br>
+	<table width="547">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><b>公式</b></th>
+   	    <th class="th2" width="148"><b>说明（结果）</b></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=LEFTB(A2,4)</td>
+		<td class ="ll" width="363">返回第一个字符串中的前四个字节 (Sale)</td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top">=LEFTB(A3,2)</td>
+		<td class ="ll" width="363">返回第二个字符串中的前两个字节 (电)</td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_text.htm">文本函数</a></p>
+<p><a href="function_left.htm">LEFT</a></p>
+<p><a href="function_Mid.htm">MID</a></p>
+<p>　</p>
+
+
+
+</body>
+
+</html>

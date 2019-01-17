@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>ChildShapeRange</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在组合对象中判断选定的子形状是否为文本框，如果是则将该子形状的边框线条设为红色，否则设为蓝色。<p>With 
+ActiveWindow.Selection.ChildShapeRange<br>
+&nbsp;&nbsp;&nbsp; If .Type = ksoTextBox Then<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Line.ForeColor.RGB = RGB(200, 15, 
+10)<br>
+&nbsp;&nbsp;&nbsp; Else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; .Line.ForeColor.RGB = RGB(10, 15, 
+200)<br>
+&nbsp;&nbsp;&nbsp; End If<br>
+End With</div>
+</body>
+</html>

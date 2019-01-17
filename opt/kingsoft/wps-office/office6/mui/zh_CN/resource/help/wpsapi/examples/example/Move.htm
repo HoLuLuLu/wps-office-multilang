@@ -1,0 +1,12 @@
+<html><head>
+<title>Move</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将 Range1 设置为活动文档的第一个段落，然后将该区域向前移动三个段落。该宏运行之后，插入点将位于第四个段落的开头。  
+<p>Set Range1 = ActiveDocument.Paragraphs(1).Range <br>With Range1 <br>    &nbsp;&nbsp;&nbsp;    .Collapse Direction:=wpsCollapseStart <br>    &nbsp;&nbsp;&nbsp;    .Move Unit:=wpsParagraph, Count:=3 <br>    &nbsp;&nbsp;&nbsp;    .Select <br>End With 
+</div>
+</body>
+</html>

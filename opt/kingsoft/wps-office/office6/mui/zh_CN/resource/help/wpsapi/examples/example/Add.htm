@@ -1,0 +1,16 @@
+<html><head>
+<title>Add</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例为活动文档中的所选区域添加名为 myplace 的书签。 
+<p>' Select some text in the active document prior <br>        ' to execution. <br>        ActiveDocument.Bookmarks.Add _ <br>            Name:="myplace", Range:=Selection.Range
+</p>
+<p>　</p>
+<p><br>本示例在 sample.wps 中的第三段添加名为 third_para 的书签。然后在活动窗口中显示该文档的所有书签。 </p>
+<p>Dim myDoc As Document <br>        ' To best illustrate this example,<br>        ' sample.wps must be opened, not active, <br>        ' and contain more than 3 paragraphs. <br>        Set myDoc = Documents("sample.wps") <br>        myDoc.Bookmarks.Add Name:="third_para", _ <br>            Range:=myDoc.Paragraphs(3).Range <br>        myDoc.ActiveWindow.View.ShowBookmarks = True 
+</div>
+</body>
+</html>

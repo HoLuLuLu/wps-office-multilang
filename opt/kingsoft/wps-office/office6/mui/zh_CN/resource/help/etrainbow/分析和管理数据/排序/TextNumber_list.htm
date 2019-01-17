@@ -1,0 +1,113 @@
+<html>
+<script src="../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>当数字为文本形式时的处理</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="文本数字">
+  <param name="Keyword" value="文本形式">
+  <param name="Keyword" value="数字">
+    <param name="Keyword" value="数字形式">
+  <param name="Keyword" value="转换">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>当数字为文本形式时的处理</h1>
+<p>数字存储在单元格中有两种存储方式，一种是以数字形式存储，一种是以文本方式存储。</p>
+
+<p>WPS表格在对包含数字形式和文本形式的数字进行排序时，会区分数字的类型，进行排序。</p>
+
+			
+		<TABLE border=0 cellpadding=4 cellspacing=4 width="100%">
+		 <TR>
+		 <TH class="th1">数据</TH>
+		 <TH class="th2">数据类型</TH>
+		 </TR>
+		 <TR valign=top>
+		 <TD class="bottomLine" align="right"><div align="right">2</div></TD>
+		 <td class="bottomLine">数字</TD>
+		 </TR>
+		 <TR valign=top>
+		 <TD class="bottomLine" align="right"><div align="right">7</div></TD>
+		 <td class="bottomLine">数字</TD>
+		 </TR>
+		 <TR valign=top>
+		 <td class="bottomLine">11</TD>
+		 <td class="bottomLine">按文本存储的数字</TD>
+		 </TR>
+		 <TR valign=top>
+		 <td class="bottomLine">5</TD>
+		 <td class="bottomLine">按文本存储的数字</TD>
+		 </TR>
+		</TABLE>
+
+	
+
+<p><span id="mydiv1" class="charr1"></span>
+<a href="javascript:viewsample1()" style="text-decoration: none">
+&nbsp;如何判断数字是以什么形式存储的
+</a>
+
+</p>
+<div id="sample1" style="display: none">
+<p>您可以使用函数 IsText 来测试数字是否是以文本存储方式存储。</p>
+<p>您可以使用函数 IsNumber 来测试数字是否是以数字存储方式存储。</P>
+ 例如：=IsText(A1)    用来判断单元格 A1 值的存储格式是否为“文本”。<br>
+ 如果是则返回“True”，否则返回“False”
+</div>
+
+
+<p><span id="mydiv2" class="charr1"></span>
+<a href="javascript:viewsample2()" style="text-decoration: none">
+&nbsp;如何转换数字的存储形式
+</a></p>
+<div id="sample2" style="display: none">
+<ul>
+	<li><p>如果您想把 以文本形式存储的数字 转换为 以数字形式存储的数字。您可以进行以下操作：<br>
+	<ol>
+	  <li>选中单元格。</li>
+		<li>在“开始”选项卡上，选择“格式”下拉列表中的“文本转换成数值”。</li>
+	</ol>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	或者，您可以使用 Value函数转换您的数据。
+	</li>
+	<li>
+	<p>如果您想把以数字形式存储的数字转换为以文本形式存储的数字，那么您需要先把单元格的格式设置为“文本”，然后重新键入数据。<br>
+	或者，您可以使用 Text函数转换您的数据。
+	</p>
+  </ul></li>
+</div>
+
+
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="default_sort.htm">默认排序次序</a></p>
+<p><a href="sort_list.htm">对数据清单排序</a></p>
+
+
+
+</body>
+
+</html>

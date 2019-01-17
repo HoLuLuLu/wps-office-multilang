@@ -1,0 +1,148 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>NEGBINOMDIST</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="NEGBINOMDIST">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}.et6
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">NEGBINOMDIST</font></b></p>
+<p>返回负二项式分布。当成功概率为常量 probability_s 时，函数 NEGBINOMDIST 返回在到达 number_s 次成功之前，出现 
+number_f 次失败的概率。此函数与二项式分布相似，只是它的成功次数固定，试验总数为变量。与二项式分布类似的是，试验次数被假设为自变量。</p>
+<p>例如，如果要找 10 个反应敏捷的人，且已知具有这种特征的候选人的概率为 0.3。函数 NEGBINOMDIST 将计算出在找到 10 
+个合格候选人之前，需要对给定数目的不合格候选人进行面视的概率。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">NEGBINOMDIST</b>(<b class="bterm">number_f</b>,<b class="bterm">number_s</b>,<b class="bterm">probability_s</b>)</p>
+<p>Number_f&nbsp;&nbsp;&nbsp;&nbsp; 失败次数。</p>
+<p>Number_s&nbsp;&nbsp;&nbsp;&nbsp; 成功的极限次数。</p>
+<p>Probability_s&nbsp;&nbsp;&nbsp;&nbsp; 成功的概率。</p>
+<p><b class="bterm">说明</b></p>
+<ul class="cntIndent36" type="disc">
+	<li>Number_f 和 number_s 将被截尾取整。 
+	</li>
+	<li>若任一参数为非数值型，则 NEGBINOMDIST 返回错误值 #VALUE!。 
+	</li>
+	<li>若 probability_s <font face="华文仿宋">&lt;</font> 0 或 probability 
+	<font face="华文仿宋">&gt;</font> 1，则 NEGBINOMDIST 返回错误值 #NUM!。 
+	</li>
+	<li>若 number_f <font face="华文仿宋">&lt;</font> 0 或 number_s <font face="华文仿宋">&lt;</font> 1，则 NEGBINOMDIST 返回错误值 #NUM!。 
+	</li>
+	<li>负二项式分布的计算公式如下： </li>
+</ul>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img title="公式" alt="公式" src="http://officeimg.vo.msecnd.net/zh-cn/files/891/845/ZA006051210.gif" border="0">
+</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 式中：</p>
+<p class="cntIndent36">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; x 是 
+number_f，r 是 number_s，且 p 是 probability_s。</p>
+<p><b class="bterm">示例</b></p>
+<p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+
+<table width="646" id="table1">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="253"><font face="宋体">A</font></th>
+	    <th class="th1" width="360"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		数据</td>
+		<td class = "th1" width="360"><font size="2">说明</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">3</p>
+		</td>
+		<td class="ll" width="360">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">失败次数</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="253"><font size="2">6</font></td>
+		<td class="ll" width="360">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">成功的极限次数</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="253"><font size="2">0.5</font></td>
+		<td class="ll" width="360">
+		<font size="2">成功的概率</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">5</td>
+		<td class = "th1" width="253">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="360"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+    <tr>
+		<td class="tdSeqence" width="10">6</td>
+		<td class="ll" width="253">
+		<font size="2">=NEGBINOMDIST(A2,A3,A4)</font></td>
+		<td class="ll" width="360">
+		<font size="2">在上述条件下的负二项式分布值 (0.109375)</font></td>
+	</tr>
+    	
+</table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_stat.htm">统计函数</a></p>
+
+
+
+</body>
+
+</html>

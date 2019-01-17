@@ -1,0 +1,11 @@
+<html><head>
+<title>MoveLeft</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+<p>本示例激活选中域的域底纹功能，插入 DATE 域，然后将所选内容向左移动，以选定该域。<p>ActiveDocument.ActiveWindow.View.FieldShading = _<br>    &nbsp;&nbsp;&nbsp;    wpsFieldShadingWhenSelected<br>With Selection<br>    &nbsp;&nbsp;&nbsp;    .Fields.Add Range:=Selection.Range, Type:=wpsFieldDate<br>    &nbsp;&nbsp;&nbsp;    .MoveLeft Unit:=wpsWord, Count:=1<br>End With
+</div>
+</body>
+</html>

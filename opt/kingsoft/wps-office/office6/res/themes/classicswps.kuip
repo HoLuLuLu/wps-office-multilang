@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='utf-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<import path="classicscommon.kuip"/>
+	<theme>
+		<style base="button" class="KxWpsSmartPageNumButton"/>
+		<style class="KxWpsSmartParaLayoutButton">
+			<color value="#fcd26d" name="border-hover"/>
+			<color value="#efc256" name="border-down"/>
+			<color value="#fef6af" name="background-hover"/>
+			<color value="#ffea86" name="background-down"/>
+		</style>
+		<style class="KxSmartPageNumSeparatorMenuItem">
+			<color value="#eeeeee" name="line-color"/>
+		</style>
+		<style class="KxWpsSmartPageNumPaneHLine">
+			<color value="#d6d5d2" name="line-color"/>
+			<color value="#f5f5f5" name="line-light"/>
+		</style>
+		<style class="KxWpsSmartPageNumPaneButton">
+			<color value="#f2f0ed" name="background"/>
+			<color value="#e5f1fb" name="background-hover"/>
+			<color value="#cce4f7" name="background-down"/>
+			<color value="#adadad" name="border"/>
+			<color value="#0078d7" name="border-hover"/>
+			<color value="#005499" name="border-down"/>
+		</style>
+		<style class="KxWpsSmartPageNumAlign">
+			<linearGradient spread="pad" end="1,0" name="background-hover" start="0,0">
+				<color position="0" value="#f9eec4"/>
+				<color position="0.5" value="#ffefb1"/>
+				<color position="1" value="#f9eec4"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="background-down" start="0,0">
+				<color position="0" value="#fef1bd"/>
+				<color position="0.5" value="#f5e697"/>
+				<color position="1" value="#fef1bd"/>
+			</linearGradient>
+			<color value="#e2b778" name="border-hover"/>
+			<color value="#d89430" name="border-down"/>
+			<color value="#ffffff" name="border-light"/>
+			<color value="#d6d5d2" name="border"/>
+		</style>
+		<style base="common" class="KxWpsBrowserModelItem">
+			<color value="#ffc000" name="border-hover"/>
+			<color value="#fffccd" name="background-hover"/>
+			<color value="#ffb400" name="border-check"/>
+			<color value="#fbf590" name="background-check"/>
+		</style>
+		<style base="common" class="DocmapTab">
+			<color dv="12" value="#e7e7e4" name="Background-hover" ds="1"/>
+			<color dv="12" value="#e2e1dc" name="Background-normal" ds="1"/>
+			<color value="#afafaf" name="border"/>
+			<color value="#fef3cb" name="ListItemBg-Hover"/>
+			<color value="#fbe38c" name="ListItemBg-Check"/>
+			<color value="#ffffff" name="ListItemBg-Normal"/>
+			<color value="#dbc23a" name="ListItemBorder"/>
+		</style>
+		<style base="common" class="KxWpsSplitWindowLine">
+			<color value="#bcbec3" name="SplitHandle-border"/>
+			<color value="#ecedef" name="SplitHandle-background"/>
+			<color value="#aaaaaa" name="SplitLine-background"/>
+		</style>
+		<style base="common" class="KxWpsLocateWidget">
+			<color value="#bcbdc2" name="border"/>
+			<color value="#4487d6" name="left-border"/>
+			<color value="#d1d4db" name="line"/>
+			<color value="#0f0f0f" name="welcome-label"/>
+			<color value="#666666" name="content-label"/>
+			<color value="#5d8ce4" name="link-label"/>
+			<color value="#3461b7" name="link-deep-label"/>
+			<color value="#969696" name="time-label"/>
+			<color value="#ce2828" name="close-hover"/>
+		</style>
+		<style base="common" class="KxWpsReviewPane">
+			<color value="#ce2828" name="close-hover"/>
+			<color value="#4487d6" name="paneViewBorder"/>
+		</style>
+		<style base="common" class="KQuickHelpButton">
+			<color value="#ababab" name="border"/>
+			<color value="#5e9deb" name="border-hover"/>
+			<color value="#4586d8" name="border-down"/>
+			<linearGradient spread="pad" end="0,1" name="background" start="0,0">
+				<color position="0" value="#ffffff"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="0,1" name="background-hover" start="0,0">
+				<color position="0" value="#d3e0f8"/>
+			</linearGradient>
+			<linearGradient spread="pad" end="1,0" name="background-down" start="0,0">
+				<color position="0" value="#a3b6da"/>
+			</linearGradient>
+		</style>
+		<style base="common" class="KFormatPropertyTabButton">
+			<color value="#5c8ce4" name="text-act"/>
+		</style>
+		<style base="KxFormatGroupTitleButtonBase" class="KxFormatGroupTitleButton">
+			<color value="#eaf1ff" name="background-select"/>
+			<color value="#4586d8" name="button-select"/>
+		</style>
+		<style base="KFormatSpinSliderButtonBase" class="KFormatSpinSliderButton">
+			<color value="#5c8ce4" name="border-hover"/>
+			<color value="#5c8ce4" name="border-down"/>
+			<color value="#5c8ce4" name="text-hover"/>
+			<color value="#5c8ce4" name="background-down"/>
+		</style>
+		<style base="KFormatSliderExBase" class="KFormatSliderEx">
+			<color value="#5c8ce4" name="bar-active"/>
+			<color value="#5c8ce4" name="text-active"/>
+			<color value="#5c8ce4" name="handle-active"/>
+		</style>
+		<style base="button" class="KMetroPushButton">
+			<color value="#5290de" name="border"/>
+			<color value="#6fa8f0" name="border-hover"/>
+			<color value="#ffffff" name="border-down"/>
+			<color value="#5290de" name="background"/>
+			<color value="#6fa8f0" name="background-hover"/>
+			<color value="#4e82c2" name="background-down"/>
+			<color value="#5290de" name="background-light"/>
+			<color value="#6fa8f0" name="background-light-hover"/>
+			<color value="#4e82c2" name="background-light-down"/>
+			<color value="#afb9c3" name="content-disable"/>
+			<color value="#ffffff" name="content"/>
+			<color value="#ffffff" name="content-light"/>
+		</style>
+		<style base="common" class="KSmartArtCategoryModelItem">
+			<color value="#4e82c3" name="text"/>
+			<color value="#4e82c3" name="checked"/>
+		</style>
+		<style base="common" class="KSmartArtListViewModelItem">
+			<color value="#e3ebf7" name="background-checked"/>
+			<color value="#77a5de" name="border-checked"/>
+			<color value="#ebf1f9" name="background-hover"/>
+			<color value="#77a5de" name="border-hover"/>
+		</style>
+	</theme>
+</shell>

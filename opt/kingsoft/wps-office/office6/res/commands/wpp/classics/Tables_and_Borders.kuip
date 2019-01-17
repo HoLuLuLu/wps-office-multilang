@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="classics.tables_and_borders" component="wpp">
+	<commands>
+		<KxLegacyTriggerCommand hotKey="m" ksoCmd="MergeCells" aid="798" faceid="66" idMso="MergeCells" icon="MergeCells" controlType="0" id="MergeCells" customTip="MergeCells" text="@Merge Cells" rbHotKey="M"/>
+		<KxValueCommand ksoCmd="BaseLine" aid="2061" faceid="23" icon="AlignTop" id="AlignTop" index="-4160" customTip="AlignTop" spaceHint="compact" text="@Align Top" rbHotKey="O"/>
+		<KxValueCommand ksoCmd="BaseLine" aid="2062" icon="CenterVertically" id="AlignCenter" index="-4108" customTip="AlignCenter" spaceHint="compact" text="@Center Vertically" rbHotKey="C"/>
+		<KxValueCommand ksoCmd="BaseLine" aid="2063" faceid="25" icon="AlignBottom" id="AlignBottom" index="-4107" customTip="AlignBottom" spaceHint="compact" text="@Align Bottom" rbHotKey="B"/>
+		<KxWppMoreColorCommand hotKey="m" ksoCmd="FillColor" aid="92042" icon="MoreColor" id="MoreFillColors" dialogHint="1" text="@More Fill Colors" rbHotKey="M"/>
+		<KxWppSnapColorCommand hotKey="e" ksoCmd="FillColor" icon="SnapperFill" forceEnabled="1" id="SnapFillColors" text="@Eyedropper" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="f" ksoCmd="FillEffects" aid="92146" id="FillEffects" dialogHint="1" text="@Fill Effects"/>
+		<KxWppFillColorCommand ksoCmd="FillColor" aid="1691" icon="CellFillColor" id="FillColor" text="@Fill Color" ksoTriggerCmd="RecentFillColor">
+			<command idQ="MoreFillColors"/>
+			<command idQ="SnapFillColors"/>
+			<command idQ="FillEffects"/>
+			<separator/>
+			<command idQ="MoreFill"/>
+		</KxWppFillColorCommand>
+		<KxLegacyTriggerCommand hotKey="i" ksoCmd="InsertTable" aid="92043" idMso="DataTable" icon="DataTable" controlType="16" id="DataTableOnToolBar" dialogHint="1" text="@Insert Table"/>
+		<KxPropComposeCommand hotKey="l" ksoCmd="InsertColumnsLeft" forceVisible="1" aid="92044" icon="InsertColumnsLeft" id="InsertColumnsLeft_AlwaysVisible" customTip="InsertColumnsLeft" text="@Insert Left" rbHotKey="L"/>
+		<KxPropComposeCommand hotKey="r" ksoCmd="InsertColumnsRight" forceVisible="1" aid="92045" icon="InsertColumnsRight" id="InsertColumnsRight_AlwaysVisible" customTip="InsertColumnsRight" text="@Insert Right" rbHotKey="I"/>
+		<KxPropComposeCommand hotKey="a" ksoCmd="InsertRowsAbove" forceVisible="1" aid="92046" icon="InsertRowsAbove" id="InsertRowsAbove_AlwaysVisible" customTip="InsertRowsAbove" text="@Insert Above" rbHotKey="V"/>
+		<KxPropComposeCommand hotKey="b" ksoCmd="InsertRowsBelow" forceVisible="1" aid="92047" icon="InsertRowsBelow" id="InsertRowsBelow_AlwaysVisible" customTip="InsertRowsBelow" text="@Insert Below" rbHotKey="E"/>
+		<KxPropComposeCommand hotKey="c" ksoCmd="DeleteColumns" forceVisible="1" aid="92048" icon="DeleteColumns" id="DeleteColumns_AlwaysVisible" text="@Delete Columns" rbHotKey="C"/>
+		<KxPropComposeCommand hotKey="w" ksoCmd="DeleteRows" forceVisible="1" aid="92049" icon="DeleteRows" id="DeleteRows_AlwaysVisible" text="@Delete Rows" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="p" ksoCmd="SplitCellsUxV" aid="800" icon="SplitCells" id="SplitCell" text="@Split Cells"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="BordersFill" aid="781" id="BordersFill" dialogHint="1" text="@Borders and Fill"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="SelectTable" aid="217" id="SelectTable" text="@Select Table"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="SelectColumn" aid="92147" id="SelectColumn" text="@Select Column"/>
+		<KxLegacyTriggerCommand hotKey="t" ksoCmd="SelectRow" aid="92148" id="SelectRow" text="@Select Row"/>
+		<KListCommand aid="30210" barid="46" id="table" name="Table" text="@Table">
+			<command idQ="DataTableOnToolBar"/>
+			<separator/>
+			<command idQ="InsertColumnsLeft_AlwaysVisible"/>
+			<command idQ="InsertColumnsRight_AlwaysVisible"/>
+			<separator/>
+			<command idQ="InsertRowsAbove_AlwaysVisible"/>
+			<command idQ="InsertRowsBelow_AlwaysVisible"/>
+			<separator/>
+			<command idQ="DeleteColumns_AlwaysVisible"/>
+			<command idQ="DeleteRows_AlwaysVisible"/>
+			<separator/>
+			<command idQ="MergeCells"/>
+			<command idQ="SplitCell"/>
+			<separator/>
+			<command idQ="BordersFill"/>
+			<separator/>
+			<command idQ="SelectTable"/>
+			<command idQ="SelectColumn"/>
+			<command idQ="SelectRow"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand ksoCmd="DistributeRowsEvenly" aid="2068" icon="DistributeRows" id="DistRowSevenly" customTip="DistRowSevenly" spaceHint="suitable" text="@Distribute Rows Evenly" rbHotKey="UR"/>
+		<KxLegacyTriggerCommand ksoCmd="DistributeColumnsEvenly" aid="2067" icon="DistributeColumns" id="DistColumnSevenly" customTip="DistColumnSevenly" spaceHint="suitable" text="@Distribute Columns Evenly" rbHotKey="UC"/>
+		<KListCommand icon="TextDirection" id="TextDirection" customTip="Text Direction" text="@Text Direction" rbHotKey="AX">
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_1" index="1" text="@Horizontal direction" qtspyName="TextDirection_Horizontal" rbHotKey="H"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_2" index="2" text="@Vertical direction" qtspyName="TextDirection_Vertical" rbHotKey="V"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_3" index="3" text="@Rotate all text 90°" qtspyName="TextDirection_Rotate90" rbHotKey="R"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_4" index="4" text="@Rotate all text 270°" qtspyName="TextDirection_Rotate270" rbHotKey="O"/>
+			<KxValueCommand ksoCmd="TextDirection" icon="text_orient_5" index="5" text="@Stacked" qtspyName="TextDirection_Stacked" rbHotKey="S"/>
+			<separator/>
+			<KxValueCommand ksoCmd="TextDirection" icon="TextDirection" index="6" text="@More Options..." qtspyName="TextDirection_More" rbHotKey="M"/>
+		</KListCommand>
+		<KxWppBorderStyleGalleryCommand ksoCmd="TableBorderStyle" icon="TableBorderStyle" id="TableBorderStyle" customTip="TableBorderStyle" text="@Line Style" rbHotKey="L"/>
+		<KxWppBorderWidthGalleryCommand hotKey="b" ksoCmd="TableBorderWidth" icon="TableBorderWidth" id="TableBorderWidth" customTip="TableBorderWidth" text="@Line Weight" rbHotKey="W"/>
+		<KxWppTableBorderColorCommand hotKey="b" ksoCmd="TableBorderColor" icon="LineColor" customTip2="TableBorderColor2" id="TableBorderColor" customTip="TableBorderColor" text="@Border Color" ksoTriggerCmd="RecentTableBorderColor" rbHotKey="O"/>
+	</commands>
+	<subcommands>
+		<subcommand id="Tables and Borders">
+			<command idQ="TableBorderStyle"/>
+			<command idQ="TableBorderWidth"/>
+			<command idQ="TableBorderColor"/>
+			<command idQ="Border"/>
+			<separator/>
+			<command idQ="MergeCells"/>
+			<KxLegacyTriggerCommand ksoCmd="SplitCellsUxV" aid="800" icon="SplitCells" text="@Split Cells" qtspyName="SplitCellsUxV"/>
+			<separator/>
+			<command idQ="AlignTop"/>
+			<command idQ="AlignCenter"/>
+			<command idQ="AlignBottom"/>
+			<separator/>
+			<command idQ="FillColor"/>
+			<separator/>
+			<command idQ="table"/>
+			<separator/>
+			<command idQ="DistRowSevenly"/>
+			<command idQ="DistColumnSevenly"/>
+			<separator/>
+			<command idQ="TextDirection"/>
+		</subcommand>
+	</subcommands>
+</shell>

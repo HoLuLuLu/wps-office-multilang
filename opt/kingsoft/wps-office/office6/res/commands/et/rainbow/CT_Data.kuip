@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shell xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tc="rainbow.ct_data" component="et">
+	<commands>
+		<KxLegacyTriggerCommand ksoCmd="ShowAll" idMso="PivotClearFilters" icon="ClearFilter" controlType="0" id="rShowAll" customTip="ClearFilter" spaceHint="suitable" text="@Show All" rbHotKey="C"/>
+		<KxLegacyTriggerCommand ksoCmd="ShowAll" idMso="SortClear" icon="ClearFilter" controlType="0" id="rShowAll_Filter" customTip="ClearFilter" spaceHint="suitable" text="@Show All" rbHotKey="C"/>
+		<KxLegacyTriggerCommand ksoCmd="AutoFilterAgain" idMso="FilterReapply" icon="ReapplyFilter" controlType="0" id="rAutoFilterAgain" customTip="ReapplyFilter" spaceHint="suitable" text="@Reapply" rbHotKey="Y2"/>
+		<KxLegacyTriggerCommand ksoCmd="AdvancedFilter" idMso="AdvancedFilterDialog" icon="AdvancedFilter" controlType="6" id="rAdvancedFilter" customTip="AdvancedFilter" spaceHint="suitable" text="@Advanced" rbHotKey="Q"/>
+		<KxLegacyTriggerCommand showIconAndText="1" ksoCmd="SortAscending" idMso="SortAscendingExcel" icon="SortAscending" controlType="0" id="rSortAscending" customTip="SortAscending" spaceHint="suitable" text="@Ascending" rbHotKey="SA"/>
+		<KxLegacyTriggerCommand showIconAndText="1" ksoCmd="SortDescending" idMso="SortDescendingExcel" icon="SortDescending" controlType="0" id="rSortDescending" customTip="SortDescending" spaceHint="suitable" text="@Descending" rbHotKey="SD"/>
+		<KListCommand id="RB_Sort_Filter" text="@Sort and Filter" rbFileMenuEmbed="1">
+			<KxLegacyTriggerCommand ksoCmd="AutoFilter" idMso="AutoFilterClassic" icon="AutoFilter" controlType="0" customTip="AutoFilter" text="@AutoFilter" rbHotKey="T"/>
+			<command idQ="rShowAll"/>
+			<command idQ="rAutoFilterAgain"/>
+			<command idQ="rAdvancedFilter"/>
+			<separator/>
+			<command idQ="rSortAscending"/>
+			<command idQ="rSortDescending"/>
+			<KxLegacyTriggerCommand hotKey="s" ksoCmd="DataSort" aid="928" icon="DataSort" id="DataSort" customTip="DataSort" text="@Sort" rbHotKey="SS"/>
+		</KListCommand>
+		<KxListCommand hotKey="v" ksoCmd="Validation" aid="2034" idMso="DataValidation" icon="Validation" controlType="5" id="RbValidation" customTip="Validation" text="@Validation" rbHotKey="V">
+			<KxLegacyTriggerCommandEx hotKey="v" ksoCmd="Validation" idMso="DataValidation" icon="Validation" controlType="6" id="rValidation" text="@Validation" rbHotKey="V"/>
+			<KxLegacyTriggerCommandEx hotKey="i" ksoCmd="ValidationCircle" idMso="DataValidationCircle" icon="ValidationCircle" controlType="6" id="rValidationCircle" text="@Circle Valid Data" rbHotKey="I"/>
+			<KxLegacyTriggerCommandEx hotKey="r" ksoCmd="ValidationCircleClear" idMso="DataValidationCircleClear" icon="ValidationCircleClear" controlType="6" id="rValidationCircleClear" text="@Clear Validation Circles" rbHotKey="R"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand ksoCmd="InsertDropDownList" icon="DropDownList" controlType="0" id="rInsertDropDownList" dialogHint="1" customTip="InsertDropDownList" text="@InsertDropDownList" rbHotKey="L"/>
+		<KxLegacyTriggerCommand hotKey="o" ksoCmd="RecordForm" aid="860" icon="RecordList" id="rRecordList" dialogHint="1" customTip="RecordList" text="@Form" rbHotKey="O"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="TextToColumns" showiconAndText="1" icon="TextToColumns" id="rTextToColumns" customTip="TextToColumns" text="@Text to Columns" rbHotKey="E"/>
+		<KxLegacyTriggerCommand hotKey="n" ksoCmd="Consolidate" showiconAndText="1" idMso="Consolidate" icon="Consolidate" controlType="0" id="rConsolidate" customTip="Consolidate" text="@Consolidate" rbHotKey="N"/>
+		<KProxyCommand targetId="rWhat-If Analysis" relatedKsoCmd="InsertPictureFromFile" delayLoadLib="1" delayloadPath="commands/et/rainbow/ProxyCommands.kuip" targetModule="etsolver" icon="GoalSeek" id="Proxy rWhat-If Analysis" customTip="What-If Analysis" text="@What-If Analysis"/>
+		<KListCommand id="RB_Data_Tools" text="@Data Tools" rbFileMenuEmbed="1">
+			<command idQ="rDuplicates"/>
+			<command idQ="RbValidation"/>
+			<conmand idQ="rInsertDropDownList"/>
+			<command idQ="rRecordList"/>
+			<command idQ="rTextToColumns"/>
+			<command idQ="rConsolidate"/>
+			<command idQ="rWhat-If Analysis" proxyCmdId="Proxy rWhat-If Analysis"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="c" ksoCmd="ClearOutline" aid="905" id="ClearOutline" text="@Clear Outline" rbHotKey="C"/>
+		<KxListCommand hotKey="u" ksoCmd="DataUngroup" forceVisible="1" idMso="OutlineUngroupMenu" icon="DataUnGroup" customTip2="DataUngroup2" controlType="5" shortcutHint="Shift+Alt+Left" id="sp_UnGroup" customTip="DataUngroup" text="@Ungroup" rbHotKey="U">
+			<command idQ="DataUngroup"/>
+			<command idQ="ClearOutline"/>
+			<command idQ="More"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand hotKey="u" ksoCmd="Subtotals" idMso="OutlineSubtotals" icon="Subtotals" controlType="0" id="rSubtotals" customTip="Subtotals" text="@Subtotal" rbHotKey="B"/>
+		<KxLegacyTriggerCommand hotKey="s" ksoCmd="ShowDetail" idMso="OutlineShowDetail" icon="ShowDetail" controlType="0" id="rShowDetail" customTip="ShowDetail" spaceHint="suitable" text="@Show Detail" rbHotKey="J"/>
+		<KxLegacyTriggerCommand hotKey="h" ksoCmd="HideDetail" idMso="OutlineHideDetail" icon="HideDetail" controlType="0" id="rHideDetail" customTip="HideDetail" spaceHint="suitable" text="@Hide Detail" rbHotKey="H"/>
+		<KxListCommand ksoCmd="Settings" id="RB_Outline" customTip="OutlineSettings" text="@Outline" rbFileMenuEmbed="1" rbHotKey="L">
+			<command idQ="DataGroup"/>
+			<command idQ="sp_UnGroup"/>
+			<command idQ="rSubtotals"/>
+			<command idQ="rShowDetail"/>
+			<command idQ="rHideDetail"/>
+		</KxListCommand>
+		<KxLegacyTriggerCommand ksoCmd="ImportData" filter="platform=win32" icon="ImportData" id="rImportData" customTip="ImportData" text="@Import Data" rbHotKey="D"/>
+		<KxLegacyTriggerCommand hotKey="r" ksoCmd="Refresh" aid="459" idMso="Refresh" icon="Refresh" controlType="0" id="Refresh" customTip="Refresh" text="@Refresh Data" rbHotKey="R"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditConnectionProperties" aid="1950" showiconAndText="1" icon="EditConnectionProperties" id="EditConnectionProperties" dialogHint="1" customTip="EditConnectionProperties" spaceHint="suitable" text="@Edit Connection Properties" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="EditTextImport" aid="1950" showiconAndText="1" icon="EditConnectionProperties" id="EditTextImport" dialogHint="1" customTip="EditTextImport" spaceHint="suitable" text="@Edit Text Import" rbHotKey="I"/>
+		<KxLegacyTriggerCommand hotKey="A" ksoCmd="EDRProperties" aid="1951" showiconAndText="1" icon="EDRProperties" id="EDRProperties" dialogHint="1" customTip="EDRProperties" spaceHint="suitable" text="@Data Range Properties" rbHotKey="P"/>
+		<KxLegacyTriggerCommand msoCmd="Connections" ksoCmd="Connections" icon="Connections" id="rConnections" customTip="Connections" text="@Connections"/>
+		<KxLegacyTriggerCommand msoCmd="ExistingConnections" ksoCmd="ExistingConnections" icon="ExistingConnections" id="rExistingConnections" customTip="ExistingConnections" text="@Existing Connections"/>
+		<KListCommand filter="platform=win32" id="RB_Get_Extra_Data" text="@Get External Data" rbFileMenuEmbed="1">
+			<command idQ="rImportData"/>
+			<command idQ="Refresh"/>
+			<command idQ="EditConnectionProperties"/>
+			<command idQ="EditTextImport"/>
+			<command idQ="EDRProperties"/>
+			<command idQ="RefreshAll"/>
+			<separator/>
+			<command idQ="rExistingConnections"/>
+			<command idQ="rConnections"/>
+		</KListCommand>
+		<KxLegacyTriggerCommand hotKey="e" ksoCmd="Settings" aid="906" id="Settings" dialogHint="1" text="@Settings"/>
+		<KListCommand id="DetailedSettings_Data">
+			<KListCommand icon="DetailedSettings" customTip="DetailedSettings_Data" text="@Settings">
+				<command idQ="Settings"/>
+			</KListCommand>
+		</KListCommand>
+	</commands>
+	<subcommands>
+		<subcommand id="CT_Data">
+			<KListCommand id="RB_Table" text="@Tables" rbFileMenuEmbed="1">
+				<KxLegacyTriggerCommand hotKey="p" ksoCmd="PivotTableWizard" icon="PivotTableWizard" id="PivotTableWizardInDataTab" customTip="PivotTable" text="@PivotTable" qtspyName="PivotTableWizard" rbHotKey="W"/>
+			</KListCommand>
+			<separator/>
+			<command idQ="RB_Sort_Filter"/>
+			<separator/>
+			<command idQ="RB_Data_Tools"/>
+			<separator/>
+			<command idQ="RB_Outline"/>
+			<separator/>
+			<command idQ="RB_Get_Extra_Data"/>
+			<separator/>
+			<command idQ="DetailedSettings_Data" filter="patent:LogicGroupShowExtensionButton=false"/>
+		</subcommand>
+	</subcommands>
+</shell>

@@ -1,0 +1,72 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>创建数组公式</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="数组公式">
+    <param name="Keyword" value="创建数组公式">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>创建数组公式</h1>
+
+
+<p><b>创建数组公式（返回单个结果）</b></p>
+
+  
+  <p>可用数组公式执行多个计算而生成单个结果。通过用单个数组公式代替多个不同的公式，可简化工作表模型。 </p>
+  <ol>
+    <li>选择需要键入数组公式的单元格（B1）。 </li>
+    <li>键入数组公式。 <br>
+    例如，下例计算每个分公司年度超额完成情况的总计：<br>
+    <img border="0" src="../../../images/Ribbon/ARrayFormulas1.gif"><br>
+    当将公式 =SUM(C4:C8-B4:B8) 
+    作为数组公式键入时，该公式将每个分公司的“年度实际收入”和“年度销售预算”相减，然后再将这些计算结果相加。 </li>
+    <li>按 Ctrl+Shift+Enter 确定，此时返回一个总计（12000000）。</li>
+  </ol>
+  <p>
+  
+<p><b>创建数组公式（返回多个结果）</b></p>
+
+  <p>如果要使数组公式能计算出多个结果，必须将数组键入到与数组参数具有相同列数和行数的单元格区域中。</p>
+  <ol>
+    <li>选择需要键入数组公式的单元格区域（A10:B10）。 </li>
+    <li>键入数组公式。 <br>
+    例如，某公司在分析下表历史数据时认为其产品销量与广告量有关，欲分析每单位广告的投入带动多少的销量增长，在单元格区域（A10:B10）键入数组公式。 
+    <br>
+    <img border="0" src="../../../images/Ribbon/ArrayFormulas2.gif"><br>
+    当将公式 =LINEST(B3:B7,A3:A7) 作为数组公式键入时，该公式会根据已有的五组数据（广告量和销售量）分析得出Y一组数据：回报率<span lang="en-gb">(A)、基数(B)</span>。 
+    </li>
+    <li>按 Ctrl+Shift+Enter 确定，此时在单元格 A10、B10 分别返回 回报率<span lang="en-gb">(</span>10.5<span lang="en-gb">)、基数(</span>9.2<span lang="en-gb">)</span>。</li>
+  </ol>
+  <p>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="About_ArrayFormulas.htm">关于数组公式和数组常量</a></p>
+<p><a href="change_arrayFormulas.htm">编辑数组公式</a></p>
+
+
+
+</body>
+
+</html>

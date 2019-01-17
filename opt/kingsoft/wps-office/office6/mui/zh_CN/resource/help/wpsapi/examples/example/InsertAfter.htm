@@ -1,0 +1,16 @@
+<html><head>
+<title>InsertAfter</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例在选定内容末尾插入文本，然后将选定内容折叠为插入点。<p>With Selection<br>
+&nbsp;&nbsp;&nbsp; .InsertAfter &quot;appended text&quot;<br>
+&nbsp;&nbsp;&nbsp; .Collapse Direction:=wdCollapseEnd<br>
+End With<br>
+<br><br>本示例将输入框中的文本作为活动文档的第二段插入文档中。 </p>
+<p>response = InputBox("请输入您要插入的内容：")<br>With ActiveDocument.Paragraphs(1).Range<br>    &nbsp;&nbsp;&nbsp;    .InsertAfter "1." & Chr(9) & response<br>End With<br>
+</div>
+</body>
+</html>

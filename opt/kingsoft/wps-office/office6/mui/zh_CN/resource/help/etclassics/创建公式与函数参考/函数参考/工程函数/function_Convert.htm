@@ -1,0 +1,644 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>CONVERT</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="CONVERT">
+  <param name="Keyword" value="函数">
+</object>
+<style>
+<!--
+td
+{color:#000000;
+font-size:12.0pt;
+font-family:宋体;
+font-weight:400;
+font-style:normal;
+text-decoration:none;
+text-align:general;
+vertical-align:middle;
+
+}-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<p><b><font size="3">CONVERT</font></b></p>
+<p>将数字从一个度量系统转换到另一个度量系统中。例如，函数 CONVERT 可以将一个以“英里”为单位的距离表转换成一个以“公里”为单位的距离表。</p>
+<p><b class="bterm">语法</b></p>
+<p><b class="bterm">CONVERT</b>(<b class="bterm">number</b>,<b class="bterm">from_unit</b>,<b class="bterm">to_unit</b>)</p>
+<p>Number&nbsp;&nbsp;&nbsp;&nbsp; 以 from_units 为单位的需要进行转换的数值。</p>
+<p>From_unit&nbsp;&nbsp;&nbsp;&nbsp; 数值 number 的单位。</p>
+<p>To_unit&nbsp;&nbsp;&nbsp;&nbsp; 为结果的单位。函数 CONVERT 接受下面的文本值（引号中）作为 from_unit 和 to_unit。</p>
+	<table width="398" id="table16">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">重量和质量</b></font></th>
+   	    <th class="th2" width="214"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">克</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;g&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">斯勒格</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;sg&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">磅（常衡制）</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;lbm&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">U（原子质量单位）</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;u&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">盎司（常衡制）</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;ozm&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="397" id="table17">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">距离</b></font></th>
+   	    <th class="th2" width="213"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">米</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;m&quot;</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">法定英里</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;mi&quot;</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">海里</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;Nmi&quot;</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">英寸</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;in&quot;</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">英尺</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;ft&quot;</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">码</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;yd&quot;</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">埃</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;ang&quot;</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">宏</font></td>
+		<td class ="ll" width="213"><font size="2">&quot;pica&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="398" id="table18">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">时间</b></font></th>
+   	    <th class="th2" width="214"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">年</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;yr&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">日</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;day&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">小时</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;hr&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">分钟</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;mn&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">秒</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;sec&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="400" id="table19">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">压强</b></font></th>
+   	    <th class="th2" width="216"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">帕斯卡</font></td>
+		<td class ="ll" width="216"><font size="2">&quot;Pa&quot;（或 &quot;p&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">大气压</font></td>
+		<td class ="ll" width="216"><font size="2">&quot;atm&quot;（或 &quot;at&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">毫米汞柱</font></td>
+		<td class ="ll" width="216"><font size="2">&quot;mmHg&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="398" id="table20">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">力</b></font></th>
+   	    <th class="th2" width="214"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">牛顿</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;N&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">达因</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;dyn&quot;（或 &quot;dy&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">磅力</font></td>
+		<td class ="ll" width="214"><font size="2">&quot;lbf&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="399" id="table21">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">能量</b></font></th>
+   	    <th class="th2" width="215"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">焦耳</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;J&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">尔格</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;e&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">热力学卡</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;c&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">IT 卡</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;cal&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="399" id="table27">
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">电子伏</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;eV&quot;（或 &quot;ev&quot;）</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">马力-小时</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;HPh&quot;（或 &quot;hh&quot;）</font></td>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">瓦特-小时</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;Wh&quot;（或 &quot;wh&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20">　</th>
+		<td class ="ll" width="150" valign="top"><font size="2">英尺磅</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;flb&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">BTU</font></td>
+		<td class ="ll" width="215"><font size="2">&quot;BTU&quot;（或 &quot;btu&quot;）</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table22">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">乘幂</b></font></th>
+   	    <th class="th2" width="217"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">马力</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;HP&quot;（或 &quot;h&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">瓦特</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;W&quot;（或 &quot;w&quot;）</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="402" id="table23">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">磁</b></font></th>
+   	    <th class="th2" width="218"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">特斯拉</font></td>
+		<td class ="ll" width="218"><font size="2">&quot;T&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">高斯</font></td>
+		<td class ="ll" width="218"><font size="2">&quot;ga&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table24">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">温度</b></font></th>
+   	    <th class="th2" width="217"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">摄氏度</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;C&quot;（或 &quot;cel&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">华氏度</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;F&quot;（或 &quot;fah&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">开氏温标</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;K&quot;（或 &quot;kel&quot;）</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="402" id="table25">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">液体度量</b></font></th>
+   	    <th class="th2" width="218"><font face="宋体"><b class="bterm">From_unit 或 
+		to_unit</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">茶匙</font></td>
+		<td class ="ll" width="218"><font size="2">&quot;tsp&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">汤匙</font></td>
+		<td class ="ll" width="218"><font size="2">&quot;tbs&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">液量盎司</font></td>
+		<td class ="ll" width="218"><font size="2">&quot;oz&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table28">
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">杯</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;cup&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">U.S. 品脱</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;pt&quot;（或 &quot;us_pt&quot;）</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">U.K. 品脱</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;uk_pt&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table29">
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">夸脱</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;qt&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">加仑</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;gal&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">升</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;l&quot;（或 &quot;lt&quot;）</font></td>
+	</tr>
+	</table>
+
+
+
+<p>下列缩写的单位前缀可以加在任何的公制单位 from_unit 或 to_unit 之前。</p>
+	<table width="401" id="table26">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+	    <th class="th1" width="116"><font face="宋体"><b class="bterm">前缀</b></font></th>
+   	    <th class="th2" width="217"><font face="宋体"><b class="bterm">乘子</b></font></th>
+   	    <th class="th2" width="217"><font face="宋体"><b class="bterm">缩写</b></font></th>
+	</tr>
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">exa</font></td>
+		<td class ="ll" width="217"><font size="2">1E+18</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;E&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">peta</font></td>
+		<td class ="ll" width="217"><font size="2">1E+15</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;P&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">tera</font></td>
+		<td class ="ll" width="217"><font size="2">1E+12</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;T&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table30">
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">giga</font></td>
+		<td class ="ll" width="217"><font size="2">1E+09</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;G&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">mega</font></td>
+		<td class ="ll" width="217"><font size="2">1E+06</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;M&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">kilo</font></td>
+		<td class ="ll" width="217"><font size="2">1E+03</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;k&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table31">
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">hecto</font></td>
+		<td class ="ll" width="217"><font size="2">1E+02</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;h&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">dekao</font></td>
+		<td class ="ll" width="217"><font size="2">1E+01</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;e&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">deci</font></td>
+		<td class ="ll" width="217"><font size="2">1E-01</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;d&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table32">
+		<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">centi</font></td>
+		<td class ="ll" width="217"><font size="2">1E-02</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;c&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">milli</font></td>
+		<td class ="ll" width="217"><font size="2">1E-03</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;m&quot;</font></td>
+	</tr>
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">micro</font></td>
+		<td class ="ll" width="217"><font size="2">1E-06</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;u&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table33">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">nano</font></td>
+		<td class ="ll" width="217"><font size="2">1E-09</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;n&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table36">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">pico</font></td>
+		<td class ="ll" width="217"><font size="2">1E-12</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;p&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table41">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">femto</font></td>
+		<td class ="ll" width="217"><font size="2">1E-15</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;f&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+	<table width="401" id="table42">
+	<tr>
+		<th class="thEmpty" width="20"></th>
+		<td class ="ll" width="150" valign="top"><font size="2">atto</font></td>
+		<td class ="ll" width="217"><font size="2">1E-18</font></td>
+		<td class ="ll" width="217"><font size="2">&quot;a&quot;</font></td>
+	</tr>
+	</table>
+
+
+
+<p>　</p>
+<div class="cdclvSection" jQuery1281513669156="12">
+	<div class="cntArticleBody" id="m_article">
+		<b class="bterm">说明</b><ul class="cntIndent36" type="disc">
+			<li>若输入数据的拼写有误，则 CONVERT 返回错误值 #VALUE!。 
+			</li>
+			<li>若单位不存在，则 CONVERT 返回错误值 #N/A。 
+			</li>
+			<li>若单位不支持缩写的单位前缀，则 CONVERT 返回错误值 #N/A。 
+			</li>
+			<li>若单位在不同的组中，则 CONVERT 返回错误值 #N/A。 
+			</li>
+			<li>单位名称和前缀要区分大小写。 </li>
+		</ul>
+	</div>
+</div>
+<div class="cdclvSection" jQuery1281513669156="12">
+	<div class="cntArticleBody" id="m_article0">
+		<b class="bterm">示例</b><p>如果您将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+		<p>　</div>
+</div>
+
+<table width="594" id="table43">
+	<tr>
+		<th class="thEmpty" width="10"></th>
+	    <th class="th1" width="280"><font face="宋体">A</font></th>
+	    <th class="th1" width="281"><font face="宋体">B</font></th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><font face="宋体">1</font></td>
+		<td class = "th1" width="280">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font face="宋体">公式</font></td>
+		<td class = "th1" width="281"><font face="宋体" size="2">说明（结果）</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">2</font></td>
+		<td class="ll" width="280">
+		<font size="2">=CONVERT(95, &quot;F&quot;, &quot;C&quot;)</font></td>
+		<td class="ll" width="281">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font size="2">将 95 华氏度转换为摄氏度 (35)</font></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10"><font face="宋体">3</font></td>
+		<td class="ll" width="280">
+		<font size="2">=CONVERT(2.0, &quot;lbm&quot;, &quot;g&quot;)</font></td>
+		<td class="ll" width="281">
+		<font size="2">将 2 磅转换为克 (907.1846195)</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">4</td>
+		<td class="ll" width="280">
+		<font size="2">=CONVERT(CONVERT(200,&quot;ft&quot;,&quot;m&quot;),&quot;ft&quot;,&quot;m&quot;)</font></td>
+		<td class="ll" width="281">
+		<font size="2">将 200 平方英尺转换为平方米 (18.580608)</font></td>
+	</tr>
+	<tr>
+		<td class="tdSeqence" width="10">5</td>
+		<td class="ll" width="280">
+		<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt">
+		<font size="2">=CONVERT(7.5, &quot;ft&quot;, &quot;sec&quot;)</font></p>
+		</td>
+		<td class="ll" width="281">
+		<font size="2">由于数据类型不同，因此返回错误值 (#N/A)</font></td>
+	</tr>
+    
+</table>
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_Project.htm">工程函数</a></p>
+
+
+
+</body>
+
+</html>

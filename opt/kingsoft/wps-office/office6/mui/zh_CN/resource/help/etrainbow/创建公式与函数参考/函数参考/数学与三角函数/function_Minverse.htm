@@ -1,0 +1,96 @@
+<html>
+<script src="../../../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../../../css/style.css" type="text/css">
+<link rel="stylesheet" href="../../../css/styleOfTable.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+
+
+<title>MINVERSE</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="SUM">
+  <param name="Keyword" value="函数">
+</object>
+</head>
+
+<body bgcolor="#FFFFFF">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../../images/Ribbon/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../../images/Ribbon/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>MINVERSE</h1>
+<p>返回数组矩阵的逆距阵。</p>
+<p><b>语法</b></p>
+<p><b><strong>MINVERSE</strong>（<strong>array</strong>）</b></p>
+<p>Array &nbsp;&nbsp;&nbsp;&nbsp;是具有相等行数和列数的数值数组。</p>
+<p><b>说明</b></p>
+<ul>
+	<li>Array 可以是单元格区域，例如 B2: D4；数组常量如{1,2,3;4,5,6;7,8,9}；或区域和数组常量的名称。</li>
+	<li>如果在 Array 中单元格是非数值类型，则函数 MINVERSE 返回错误值 #VALUE!。</li>
+	<li>如果 Array 的行和列的数目不相等，则函数 MINVERSE 也返回错误值 #VALUE!。</li>
+    <li>对于返回结果为数组的公式，必须以数组公式的形式键入。</li>
+</ul>
+
+<p><b>示例</b></p>
+<p>如果将示例复制到空白工作表中，可能会更易于理解该示例。</p>
+<table>
+	<tr>
+		<th class="thEmpty"></th>
+	    <th class="th1">A</th>
+   	    <th class="th2">B</th>
+	</tr>
+	<tr>
+		<td class="tdSeqence"><b>1</b></td>
+		<td class = "th1">数据</td>
+		<td class = "th2">数据</td>
+  </tr>
+	<tr>
+		<td class="tdSeqence"><b>2</b></td>
+		<td class ="ll">1</td>
+	    <td class ="ll">-1</td>
+  </tr>
+	<tr>
+		<td class="tdSeqence">3</td>
+		<td class ="ll">3</td>
+	  <td class ="ll">2</td>
+  </tr>   
+</table>
+
+
+<br>
+<table>
+	<tr>
+		<td class="thEmpty"></td>
+		<td class = "th1"><b>公式</b></td>
+		<td class = "th2"><b>说明（结果）</b></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td class ="ll">=MINVERSE(A2:B3)</td>
+	  <td class ="ll">结果为单值（0.4）</td>
+  </tr>
+	
+</table>
+
+
+
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="functionlist_Math.htm">数学与三角函数</a></p>
+
+
+
+</body>
+
+</html>

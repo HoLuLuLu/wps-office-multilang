@@ -1,0 +1,9 @@
+# This file is sourced by Xsession(5), not executed.
+
+if [ -z "$GTK2_MODULES" ] ; then
+	GTK2_MODULES="overlay-scrollbar"
+else
+	GTK2_MODULES="$GTK2_MODULES:overlay-scrollbar"
+fi
+
+export GTK2_MODULES

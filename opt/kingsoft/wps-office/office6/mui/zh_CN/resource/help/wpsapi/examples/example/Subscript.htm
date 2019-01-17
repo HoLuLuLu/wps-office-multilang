@@ -1,0 +1,11 @@
+<html><head>
+<title>Subscript</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例检查所选文本的下标格式。<p>If Selection.Type = wpsSelectionNormal Then<br>    &nbsp;&nbsp;&nbsp;    mySel = Selection.Font.Subscript<br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    If mySel = wpsUndefined Or mySel = True Then<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        MsgBox "Subscript text exists in the selection."<br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    Else<br>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        MsgBox "No subscript text in the selection."<br>    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    End If<br>Else<br>    &nbsp;&nbsp;&nbsp;    MsgBox "You need to select some text."<br>End If
+</div>
+</body>
+</html>

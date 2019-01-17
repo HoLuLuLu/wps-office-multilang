@@ -1,0 +1,11 @@
+<html><head>
+<title>Scope</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例显示与选定内容中第一条备注相关联的文本。<p>If Selection.Comments.Count >= 1 Then <br>    &nbsp;&nbsp;&nbsp;    Set myRange = Selection.Comments(1).Scope <br>    &nbsp;&nbsp;&nbsp;    MsgBox myRange.Text <br>End If<p>　<p>本示例复制与活动文档中最后一条备注相关联的文本。 <br>total = ActiveDocument.Comments.Count <br>If total >= 1 Then ActiveDocument.Comments(total).Scope.Copy 
+</div>
+</body>
+</html>

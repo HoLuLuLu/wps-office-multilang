@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <meta name="ProgId" content="FrontPage.Editor.Document">
+    <title>AddTextEffect_Shapes</title>
+    <style>@import url(../../css/ksHelpStyle.css);
+    </style>
+    <base target="_parent">
+</head>
+
+<body>
+    <div class=ind>
+    <P><b>描述</b></P>
+    <P>在文档上添加一个“艺术字”图形。返回一个 <b><a href="../../objs/s/Shape.htm">Shape</a></b> 对象，该对象代表“艺术字”，并将其添加至 <b>
+    <a href="../../objs/s/Shapes.htm">Shapes</a></b> 集合。</P>
+    <P><b><br>
+    语法</b></P>
+    <div class=vbasyn>
+        <P><i>expression</i><b>.AddTextEffect</b><i>((PresetTextEffect), (Text), (FontName), (FontSize), (FontBold), (FontItalic), (Left), (Top), [Anchor])</i></P></div>
+        <table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#CCCCCC" width="90%" id="AutoNumber2" height="33">
+          <tr>
+            <td width="9%" align="center" height=15 bgcolor="#E1F1F7"><b>部&nbsp; 分</b></td>
+            <td width="59%" align="center" height=15 bgcolor="#E1F1F7"><b>描&nbsp; 述</b></td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>expression  </i></td>
+            <td width="59%" height=15 >  必需。该表达式返回一个<b> Shapes </b>对象集合。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>PresetTextEffect  </i></td>
+            <td width="59%" height=15 > 必需，<b>KsoPresetTextEffect </b>常量。预设的文本效果。<b>KsoPresetTextEffect</b> 常量的值对应于“艺术字库”对话框中所列的格式（按从上到下、从左到右的顺序排列）。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Text  </i></td>
+            <td width="59%" height=15 > 必需，<b>String </b>类型。“艺术字”中的文字。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>FontName  </i></td>
+            <td width="59%" height=15 > 必需，<b>String </b>类型。“艺术字”中所用字体的名称。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>FontSize  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。“艺术字”中所用字体的大小（以磅为单位）。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>FontBold  </i></td>
+            <td width="59%" height=15 > 必需，<b>KsoTriState </b>常量。如果为 <b>KsoTrue</b>，则对“艺术字”字体应用加粗格式。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>FontItalic  </i></td>
+            <td width="59%" height=15 > 必需，<b>KsoTriState </b>常量。如果为 <b>KsoTrue</b>，则对“艺术字”字体应用倾斜格式。</td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Left  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。“艺术字”图形左边缘相对于锁定标记的位置，以磅为单位。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Top  </i></td>
+            <td width="59%" height=15 > 必需，<b>Single </b>类型。“艺术字”图形上边缘相对于锁定标记的位置，以磅为单位。
+   </td>
+          </tr>
+          <tr>
+            <td width="9%" height=15 ><i>Anchor  </i></td>
+            <td width="59%" height=15 > 可选，<b>Variant </b>类型。<b><a href="../../objs/r/Range.htm">Range</a></b> 对象，代表“艺术字”所连接的文本。如果指定了  
+			<b>Anchor</b>，则锁定标记将出现在锁定区域第一段的段首。如果忽略此参数，则自动选定锁定区域，而该“艺术字”将参照页面的上边缘和左边缘定位。   </td>
+          </tr>
+    </table><br>
+    <br><P><b>说明</b></P>
+    <P>向文档添加“艺术字”时，“艺术字”的宽度和高度将根据指定文字的大小和数量自动地进行设置。</P>
+    </div>
+</body>
+</html>

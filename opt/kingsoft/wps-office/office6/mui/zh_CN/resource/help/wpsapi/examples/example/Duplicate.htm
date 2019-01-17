@@ -1,0 +1,12 @@
+<html><head>
+<title>Duplicate</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例将 MyDupFont 变量设为所选内容的字符格式，从 MyDupFont 中删除加粗格式，并添加倾斜格式。然后创建一篇新文档，插入文本，再将 MyDupFont 中保存的格式应用于该文本。 
+<p>Set myDupFont = Selection.Font.Duplicate <br>With myDupFont <br>    &nbsp;&nbsp;&nbsp;    .Bold = False <br>    &nbsp;&nbsp;&nbsp;    .Italic = True <br>End With <br>Documents.Add <br>Selection.InsertAfter "这是我插入的文本。&quot; <br>Selection.Font = myDupFont 
+</div>
+</body>
+</html>

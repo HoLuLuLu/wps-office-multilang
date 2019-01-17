@@ -1,0 +1,65 @@
+<html>
+
+<script src="../../css/help.js" >
+</script>
+
+<head>
+<link rel="stylesheet" href="../../css/style.css" type="text/css">
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>关于循环</title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+
+
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<p>　</p>
+<h1>关于循环</h1>
+<p>
+当一个公式涉及到它本身的数值时，一个循环引用便产生了－－可以是直接或间接的。例如，如果您在单元格中键入<span lang="en-gb"> =</span>A1+A2+A3<span lang="en-gb">
+</span>到单元格A3中，因为公式在A3单元格中，涉及到A3单元格，所以这是一个循环引用。</p>
+<p><b>下面举一个循环引用的实例：</b></p>
+<blockquote>
+	<p><img border="0" src="../../images/cycle.png" width="253" height="107"></p>
+</blockquote>
+<ul>
+  <li>“捐赠”单元格包含以下公式：<span lang="en-gb">=</span>5％×净利润</li>
+  <li>“净利润”单元格包含以下公式：<span lang="en-gb">=</span>收入-开支-捐赠</li>
+</ul>
+<p>在该例中，B3和B4单元格中的公式，循环引用，不断的发生<a href="javascript:viewsamplea()" style="text-decoration: none">迭代</a><font color="#339933"><span id="samplea" style="display: none">（
+重复计算工作表直到满足特定数值条件。）</span></font>计算，直到该公式不再改变。如果不改变默认的迭代设置，WPS表格 将在 100 
+次迭代后或在两次相邻迭代得到的数值的变化小于 0.001 时，停止迭代运算。</p>
+<p><b>可通过以下操作控制“最多迭代次数”和“最大误差”：</b></p>
+<ol>
+  <li>在“工具”菜单下<br>
+，单击“选项”，再单击“重新计算”选项卡。 </li>
+  <li>选中“迭代计算”复选框。 </li>
+  <li>若要设置重新计算的最大次数，请在“最多迭代次数”框中输入迭代次数。迭代次数越高，用于计算工作表的时间越多。 <br>
+  若要设置两次迭代结果之间的最大误差，请在“最大误差”框中输入所需的数值。数值越小，结果越精确，用于计算工作表的时间也越多。 </li>
+</ol>
+<p><span id="mydiv1" class="charr1"></span>
+<a href="javascript:viewsample1()" style="text-decoration: none">
+&nbsp;提示</a></p>
+<div id="sample1" style="display: none">
+  在发生循环引用的工作表中，当激活某个单元格时都会进行一次重算。<p>
+</div>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><font color="#FF0000"><a href="about_formula.htm">关于公式</a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+<html><head>
+<title>Next</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例显示第一个批注和第二个批注的内容<p>Set Range1 = ActiveDocument.Comments(1).Range<br>MsgBox "第一个的批注的内容:  " & Range1<br>Set Range2 = ActiveDocument.Comments(1).Next.Range<br>MsgBox "第二个的批注的内容:  " & Range2
+</div>
+</body>
+</html>

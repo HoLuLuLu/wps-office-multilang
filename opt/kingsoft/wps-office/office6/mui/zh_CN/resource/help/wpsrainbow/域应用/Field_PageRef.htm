@@ -1,0 +1,91 @@
+<html>
+<script src="../css/help.js" >
+</script>
+<head>
+<link rel="stylesheet" href="../css/style.css" type="text/css">
+<!--link rel="stylesheet" href="../css/styleOfTable.css" type="text/css">-->
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>PageRef</title>
+<object type="application/x-oleobject" classid="clsid:1e2gbd0-dab9-11d0-b93a-00c04fc99f9e">
+  <param name="Keyword" value="PageRef">
+  <param name="Keyword" value="书签的页码">
+  
+</object>
+</head>
+<body bgcolor="#FFFFFF">
+<p>　</p>
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; position: absolute; left: 0; top: 0; margin: 0" bordercolor="#111111" width="100%" id="AutoNumber1">
+  <tr>
+    <td width="50%">
+    <img border="0" src="../images/title1.gif" width="312" height="69"></td>
+    <td width="50%">
+    <p align="right">
+    <img border="0" src="../images/logo.gif" width="120" height="26"></td>
+  </tr>
+</table>
+<p>　</p>
+<h1>PageRef</h1>
+ <p><b>{ PageRef</b> Bookmark [\* <i>Format Switch</i> ] <b>}</b></p>
+<p>插入包含指定书签的页码。</p>
+<p>
+<b>说明</b></p>
+<div id="sample1" >
+ <table border="0" width="613">
+	<tr>
+		<td width="90" valign="top">
+		<p align="center"><b>\* 格式开关</b> </td>
+		<td width="513">可选开关，该开关可替代在“页码格式”对话框（单击“插入”菜单中的“页码”命令可显示该对话框）的“数字格式”框中，选择的数字<a href="javascript:viewsamplea()" style="text-decoration: none">样式</a><font color="#339933"><span id="samplea" style="display: none">（
+		样式：字体、字号和缩进等格式设置特性的组合，将这一组合作为集合加以命名和存储。应用样式时，将同时应用该样式中所有的格式设置指令。）</span></font>。</td>
+	</tr>
+	</table>
+</div>
+
+<p>
+<b>开关</b></p>
+<div id="sample2" >
+  <table border="0" width="100%">
+	<tr>
+		<td width="88" align="left" valign="top"><b>\p</b></td>
+		<td>使域显示其相对于源书签的位置。 <br>
+        当 PAGEREF 域不在当前页时使用字符串“on page #”。当 PAGEREF 域在当前页时，省略“on page 
+        #”并且只返回“见上方”或“见下方”。</td>
+	</tr>
+	<tr>
+		<td width="88" align="left" valign="top"><b>\*</b></td>
+		<td>设置图片的开关格式，如：图表1可提供的格式有：图表一、图表<font face="宋体">①</font>、图表<span style="font-family: 宋体">壹</span>、图表甲等等</td>
+	</tr>	
+		
+	
+	</table>
+  </p>
+</div>
+
+<p><b>示例</b></p>
+<div id="sample3">
+  假定文档中存在一个“年度计划”表，在年度计划表的底部插入书签“年度计划”标记，在文档的其它位置插入下列域之一:　    
+   		<TABLE cellpadding=4 cellspacing=4 cols=3 width="100%" height="77"> 
+		
+			<TR VALIGN="top"> 
+			<TH class = "th1" width="176" height="12"><b>域代码</b></TH> 
+			<TH  class = "th2" width="114" height="12"><b>域结果</b></TH> 
+			</TR> 
+			 
+			<TR VALIGN="top"> 
+			<td td width="60%" class="bottomLine" height="4">参阅表格 <b>{</b> <b>
+      PageRef</b> 年度计划 <b>\p }</b></TD> 
+			<td td width="40%" class="bottomLine" height="4">参阅表格 on page 5</TD> 
+			</TR>
+			 
+			 </TABLE>
+  </div>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p><b>相关功能</b></p>
+<p><a href="Field_About.htm">关于域</a>
+</body>
+
+</html>

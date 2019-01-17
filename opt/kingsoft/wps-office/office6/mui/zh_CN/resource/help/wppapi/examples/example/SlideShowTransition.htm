@@ -1,0 +1,12 @@
+<html>
+<head>
+<title>SlideShowTransition</title>
+<style>@import url(../../css/ksHelpStyle.css);</style>
+<base target="_parent">
+</head>
+<body>
+<div class="ind">
+本示例设置在幻灯片放映过程中，当前演示文稿的第二张幻灯片在&nbsp;5&nbsp;秒后自动换片，并在幻灯片切换时播放声音。<p>With&nbsp;ActivePresentation.Slides(2).SlideShowTransition<br>&nbsp;&nbsp;&nbsp;&nbsp;.AdvanceOnTime&nbsp;=&nbsp;True<br>&nbsp;&nbsp;&nbsp;&nbsp;.AdvanceTime&nbsp;=&nbsp;5<br>&nbsp;&nbsp;&nbsp;&nbsp;.SoundEffect.ImportFromFile&nbsp;"c:\winnt\media\ding.wav"<br>End&nbsp;With<br>ActivePresentation.SlideShowSettings.AdvanceMode&nbsp;=&nbsp;_<br>&nbsp;&nbsp;&nbsp;&nbsp;wpSlideShowUseSlideTimings
+</div>
+</body>
+</html>
