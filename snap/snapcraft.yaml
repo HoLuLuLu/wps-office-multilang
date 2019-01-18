@@ -1,33 +1,48 @@
-name: wps-office-multilang-no-internet
+name: wps-office multilang
 version: '10.1.0.6757'
-summary:  WPS Office Suite multilanguage with no internet connection
+summary:  WPS Office Suite all languages with no internet connection
 description: |
    ABOUT WPS OFFICE
-   WPS Office, is an office productivity suite. WPS Office including Writer, Presentation and Spreadsheets, is a powerful office suite, which is able to process word file, produce wonderful slides, and analyse data as well. It is deeply compatible with all of the latest Microsoft Office file formats. It can easily open and read the documents created with Microsoft Office. This is the Linux version, and it's now a TESTING package.
-Website: http://wps-community.org
+   WPS Office, is an office productivity suite. WPS Office including Writer, Presentation and Spreadsheets, is a powerful office suite, which is able to process word file, produce wonderful slides, and analyse data as well. It is deeply compatible with all of the latest Microsoft Office file formats. It can easily open and read the documents created with Microsoft Office. This is the Linux version, and it's now a TESTING package. Website: http://wps-community.org
 
    ABOUT THIS PACKAGE
-   WPS-office snap package is shipped by default only with English and Chinese. Due to the non modifiable aspect of snap packages, it is currently impossible to install other languages and spellchecker.
-   Supported Interface Languages:
+   This is a multilanguge snap package for wps-office. It contains all interface languages available for the Windows version.
+   This is just an extension of the wps-office-all-lang-no-internet package, which can be found at https://snapcraft.io/wps-office-all-lang-no-internet or https://github.com/cyrpaut/wps-office-all-lang-no-internet for the files to create his package.
+   Because of security and privacy this package is shipped without internet plug. So there is no risk of a backdoor.
+   
+   SUPPORTED INTERFACE LANGUAGES
    - Chinese (CN)
    - English (GB, US)
-   - French (FR)
+   - French (CA, FR)
    - German (DE)
-   - Portuguese (BR, PT)
-   - Russian (RU)
-
-   Supported Spellcheck Languages:
-   - Dutch (NL)
-   - English (AU, GB, US)
-   - French (FR)
-   - German (DE)
+   - Indonesian (ID)
    - Polish (PL)
    - Portuguese (BR, PT)
    - Russian (RU)
    - Spanish (ES, MX)
+   
+   SUPPORTED SPELLCHECK LANGUAGES
+   - Catalan (ES)
+   - Croatian (HR)
+   - Czech (CZ)
+   - Dutch (NL)
+   - English (AU, GB, US)
+   - French (FR)
+   - Greek (GR)
+   - German (DE)
+   - Italian (IT)
+   - Khmer (KH)
+   - Lithuanian (LT)
+   - Polish (PL)
+   - Portuguese (BR, PT)
+   - Romanian (RO)
+   - Russian (RU)
+   - Slovak (SK)
+   - Spanish (ES, MX)
+   - Swedish (SE)
+   - Turkish (TR)
+   - Ukrainian (UA)
 
-   The internet plug of wps-office is deactivated in this package to save your privacy.
-   The files used to create this packages are available at https://github.com/cyrpaut/wps-office-all-lang-no-internet. Please feel free to help me upgrading this package.
 architectures:
 - amd64
 confinement: strict
@@ -36,7 +51,7 @@ base: core18
 icon: gui/icon.png
 
 parts:
-  wps-office-all-lang-no-internet:
+  wps-office-multilang:
     source: ./wps-office-bin/
     plugin: dump
     stage-packages: [libpng16-16]
