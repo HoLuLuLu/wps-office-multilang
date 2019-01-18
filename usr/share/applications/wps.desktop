@@ -1,12 +1,12 @@
 [Desktop Entry]
 Comment=Use WPS Writer to edit articles and reports.
-Comment[zh_CN]=使用 WPS 文字编写报告，排版文章
-Exec=wps-office-fr-nointernet.wps %f
+Comment[fr_FR]= WPS Writer est un équivalent de MS Word
+Exec=wps-office-multilang.wps %U
 GenericName=WPS Writer
-GenericName[zh_CN]=WPS 文字
+GenericName[fr_FR]=WPS Writer
 MimeType=application/vnd.oasis.opendocument.text;application/vnd.oasis.opendocument.text-template;application/vnd.oasis.opendocument.text-web;application/vnd.oasis.opendocument.text-master;application/vnd.oasis.opendocument.text-master-template;application/vnd.sun.xml.writer;application/vnd.sun.xml.writer.template;application/vnd.sun.xml.writer.global;application/msword;application/vnd.ms-word;application/x-doc;application/x-hwp;application/rtf;text/rtf;application/vnd.wordperfect;application/wordperfect;application/vnd.lotus-wordpro;application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.ms-word.document.macroEnabled.12;application/vnd.openxmlformats-officedocument.wordprocessingml.template;application/vnd.ms-word.template.macroEnabled.12;application/vnd.ms-works;application/vnd.stardivision.writer-global;application/x-extension-txt;application/x-t602;text/plain;application/vnd.oasis.opendocument.text-flat-xml;application/x-fictionbook+xml;application/macwriteii;application/x-aportisdoc;application/prs.plucker;application/vnd.palm;application/clarisworks;application/x-sony-bbeb;application/x-abiword;application/x-iwork-pages-sffpages;application/x-mswrite;application/x-starwriter;
 Name=WPS Writer
-Name[zh_CN]=WPS 文字
+Name[fr_FR]=WPS Writer
 StartupNotify=false
 Terminal=false
 Type=Application
@@ -15,6 +15,7 @@ X-DBUS-ServiceName=
 X-DBUS-StartupType=
 X-KDE-SubstituteUID=false
 X-KDE-Username=
-Icon=/usr/share/icons/hicolor/256x256/apps/wps-office-wpsmain.png
+Icon=${SNAP}/usr/share/icons/hicolor/256x256/apps/wps-office-wpsmain.png
 InitialPreference=3
 StartupWMClass=wps
+
