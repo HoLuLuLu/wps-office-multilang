@@ -1,4 +1,4 @@
-# wps-office-multilang
+# WPS Office Multi-Language
 
 ### Dependencies
 Before you can create the snap you need to install the following packages:
