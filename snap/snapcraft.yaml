@@ -1,14 +1,19 @@
 name: wps-office-multilang
-version: '10.1.0.6757'
-summary:  WPS Office Suite all languages with no internet connection
+version: '10.1.0.6757-multilang'
+summary:  WPS Office Suite with support for many languages
 description: |
    ABOUT WPS OFFICE
-   WPS Office, is an office productivity suite. WPS Office including Writer, Presentation and Spreadsheets, is a powerful office suite, which is able to process word file, produce wonderful slides, and analyse data as well. It is deeply compatible with all of the latest Microsoft Office file formats. It can easily open and read the documents created with Microsoft Office. This is the Linux version, and it's now a TESTING package. Website: http://wps-community.org
+   WPS Office, is an office productivity suite. WPS Office including Writer, Presentation and Spreadsheets, is a powerful office suite, which is able to process word file, produce wonderful slides, and analyse data as well. It is deeply compatible with all of the latest Microsoft Office file formats. It can easily open and read the documents created with Microsoft Office. This is the Linux version.
+   Website: http://wps-community.org
 
    ABOUT THIS PACKAGE
    This is a multilanguge snap package for wps-office. It contains all interface languages available for the Windows version.
-   This is just an extension of the wps-office-all-lang-no-internet package, which can be found at https://snapcraft.io/wps-office-all-lang-no-internet or https://github.com/cyrpaut/wps-office-all-lang-no-internet for the files to create his package.
+   This package ist based on the wps-office-all-lang-no-internet package and the official wps-office package.
+   The official wps-office can be found at https://snapcraft.io/wps-office.
+   The package wps-office-all-lang-no-internet can be found at https://snapcraft.io/wps-office-all-lang-no-internet or https://github.com/cyrpaut/wps-office-all-lang-no-internet.
    Because of security and privacy this package is shipped without internet plug. So there is no risk of a backdoor.
+   
+   This package can be found at https://github.com/HoLuLuLu/wps-office-multilang
    
    SUPPORTED INTERFACE LANGUAGES
    - Chinese (CN)
@@ -47,7 +52,6 @@ architectures:
 - amd64
 confinement: strict
 grade: stable
-base: core18
 icon: gui/icon.png
 
 parts:
