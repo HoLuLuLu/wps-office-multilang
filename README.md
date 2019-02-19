@@ -51,7 +51,7 @@ This package can be found at https://snapcraft.io/wps-office-multilang and https
 ## How to build a snap from this "source"
 This short guide will show you how to build a snap from this "source" for your own. The following commands are for Ubuntu based distributions.
 
-**DEPENDENCIES**
+**DEPENDENCIES**  
 There are a few steps to do before you can build your own snap package.
 - install snapd - manager for snap packages
 ```sh
@@ -77,7 +77,7 @@ lxd init
 - accept all the default options that it asks you
 
 
-**BUILD THE SNAP**
+**BUILD THE SNAP**  
 The package creation is very simple.
 - go into your project folder
 - build the snap with the following content
