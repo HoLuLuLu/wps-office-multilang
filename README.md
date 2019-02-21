@@ -48,7 +48,7 @@ This package can be found at https://snapcraft.io/wps-office-multilang and https
 - Turkish (TR)
 - Ukrainian (UA)
 
-**License**
+**LICENSE**  
 WPS Office is subject to the End User License Agreement for WPS Office (https://www.wps.com/eula).  
 The distribution is subject to LICENSE AGREEMENT OF KINGSOFT OFFICE FOR LINUX COMMUNITY VERSION (http://wps-community.org/license.md).
 
