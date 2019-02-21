@@ -48,6 +48,10 @@ This package can be found at https://snapcraft.io/wps-office-multilang and https
 - Turkish (TR)
 - Ukrainian (UA)
 
+**License**
+WPS Office is subject to the End User License Agreement for WPS Office (https://www.wps.com/eula).  
+The distribution is subject to LICENSE AGREEMENT OF KINGSOFT OFFICE FOR LINUX COMMUNITY VERSION (http://wps-community.org/license.md).
+
 ## How to build a snap from this "source"
 This short guide will show you how to build a snap from this "source" for your own. The following commands are for Ubuntu based distributions.
 
