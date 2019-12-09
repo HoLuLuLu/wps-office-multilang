@@ -68,10 +68,12 @@ apps:
     - alsa
     - cups-control
     - desktop
+    - gsettings
     - home
     - opengl
     - pulseaudio
     - removable-media
+    - unity7
     - wayland
     - x11
   wpp:
@@ -81,22 +83,26 @@ apps:
     - alsa
     - cups-control
     - desktop
+    - gsettings
     - home
     - opengl
     - pulseaudio
     - removable-media
+    - unity7
     - wayland
     - x11
   wps:
     command: usr/bin/wps
     desktop: gui/wps.desktop
     plugs:
+    - alsa
+    - cups-control
+    - desktop
     - gsettings
     - home
-    - pulseaudio
-    - unity7
-    - x11
     - opengl
-    - cups-control
-    - alsa
-    - desktop
+    - pulseaudio
+    - removable-media
+    - unity7
+    - wayland
+    - x11
