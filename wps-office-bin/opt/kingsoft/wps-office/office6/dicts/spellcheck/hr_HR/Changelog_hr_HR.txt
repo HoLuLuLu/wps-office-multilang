@@ -1,6 +1,0 @@
-Version 1.0
--dictionary converted from Libre Office 4.1.1.2 to KingSoft Office format
--renamed "hr_HR.aff" to "main.aff"
--renamed "hr_HR.dic" "main.dic"
--convertd encoding of hr_HR.aff "iconv -f ISO8859-2 -t UTF-8 hr_HR.aff > main.aff"
--convertd encoding of hr_HR.dic "iconv -f ISO8859-2 -t UTF-8 hr_HR.dic > main.dic"

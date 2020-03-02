@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=WPS Presentation
-Name[zh_CN]=wps演示文档
-Comment=Enter WPS filename:
-Comment[zh_CN]=请输入WPS演示文档名称：
-Type=Link
-URL=.source/wps演示文档.dps
-Icon=wps-office-wppmain

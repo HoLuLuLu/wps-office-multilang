@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=WPS Writer...
-Name[zh_CN]=wps文字文档
-Comment=Enter WPS filename:
-Comment[zh_CN]=请输入WPS文字文档名称：
-Type=Link
-URL=.source/wps文字文档.wps
-Icon=wps-office-wpsmain

@@ -1,3 +1,0 @@
-fontconfig source: package-needs-versioned-debhelper-build-depends 9
-fontconfig: fc-cache-used-in-maintainer-script
-fontconfig: manpage-has-errors-from-man

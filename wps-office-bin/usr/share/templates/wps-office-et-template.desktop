@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=WPS Spreadsheets
-Name[zh_CN]=wps表格文档
-Comment=Enter WPS filename:
-Comment[zh_CN]=请输入wps表格文档名称：
-Type=Link
-URL=.source/wps表格文档.et
-Icon=wps-office-etmain

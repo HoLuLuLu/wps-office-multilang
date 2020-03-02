@@ -1,1 +1,0 @@
-../libqtdbus4/LGPL_EXCEPTION.txt
