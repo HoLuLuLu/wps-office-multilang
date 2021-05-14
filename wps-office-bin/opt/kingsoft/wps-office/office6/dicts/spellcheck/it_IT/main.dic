@@ -1,37 +1,32 @@
-﻿95186
-/ Estensione linguistica italiana - Italian Writing Aids extension
-/ Forked from: Dizionario italiano, see README.txt for details
-/ 
+﻿95221
+/ Dizionario italiano
+/
 / Copyright (C) 2001, 2002 Gianluca Turconi
 / Copyright (C) 2002, 2003, 2004 Gianluca Turconi and Davide Prina
 / Copyright (C) 2004, 2005, 2006, 2007  Davide Prina
-/ Copyright (C) 2010, 2011 Andrea Pescetti
 /
-/ E-Mail: pescetti<AT>openoffice<DOT>org
-/ Home: http://extensions.services.openoffice.org/project/dict-it
-/ License: GNU GPL 3
+/ E-Mail: DavidePrina(CHIOCCIOLA)yahoo(PUNTO)com
+/ home: http://linguistico.sf.net/wiki
 /
-/ Version 3.3.1 (24/03/2011) (DD/MM/YYYY)
+/ Version 2.4 (01/09/2007) (DD/MM/YYYY)
 /
-/ This file is distributed under the GPL license.
+/ This file is distributed under GPL license.
 /
-/ This file is part of the "Estensione linguistica italiana - Italian
-/ Writing Aids extension".
+/ This file is part of the "dizionario italiano".
 /
-/ The "Estensione linguistica italiana - Italian Writing Aids extension"
-/ is free software; you can redistribute it and/or
-/ modify it under the terms of the GNU General Public License, version 3,
-/ as published by the Free Software Foundation.
+/ The "dizionario italiano" is free software; you can redistribute it and/or
+/ modify it under the terms of the GNU General Public License as published
+/ by the Free Software Foundation; either version 3 of the License, or
+/ (at your option) any later version.
 /
-/ The "Estensione linguistica italiana - Italian Writing Aids extension"
-/ is distributed in the hope that it will be
+/ The "dizionario italiano" is distributed in the hope that it will be                
 / useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
 / MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 / GNU General Public License for more details.
 /
 / You should have received a copy of the GNU General Public
-/ License along with the "Estensione linguistica italiana - Italian
-/ Writing Aids extension"; if not, see <http://www.gnu.org/licenses/>.
+/ License along with the "dizionario italiano",
+/ if not, see <http://www.gnu.org/licenses/>.
 a
 ab
 abaco/OTqr
@@ -3523,7 +3518,6 @@ alitato/EyTUqrs
 alite/Tqr
 alitosi/TUqrs
 alizarina/QTUqs
-all'incontrario
 allacciabile/STU
 allacciamento/OTqr
 allacciando/D
@@ -4016,7 +4010,6 @@ altorilievo/OTqr
 altostrato/OTq
 altr'anno
 altra/QTU
-altresì
 altrettanta/QTU
 altrettanto/OT
 altrimenti
@@ -12078,14 +12071,41 @@ Belinda
 Belisario
 Belize
 belizeano/o
+bell'abitato
+Bell'abitato
+bell'acciottolato
+bell'accoccato
+bell'acquarellata
+bell'acquarellato
+bell'acquarello
+bell'acquerellata
+bell'acquerellato
 belladonna
+bell'aggiustata
 Bellagio
+bell'alcolizzato
+Bell'alcolizzato
+bell'alcoolizzato
+Bell'alcoolizzato
+bell'altalena
+bell'andata
 Bellano
+bell'arrestata
+bell'articolo
 bellavista
+bell'e
 Bellegra
+bell'élite
+bell'emigrante
+bell'emigrata
+bell'emigrato
+bell'essere
 belletto/O
 belleviste
+bell'evoluta
 bellezza/Q
+bell'ibrida
+bell'ibrido
 bellicismo/O
 bellicista/QR
 bellicistico/p
@@ -12098,7 +12118,22 @@ bellido/O
 belligerante/S
 belligeranza/Q
 bellimbusto/O
+bell'immigrata
+bell'immigrato
+bell'inculata
 bellino/o
+bell'insabbiata
+bell'insabbiato
+bell'insaccata
+bell'insaccato
+bell'insacchettata
+bell'insacchettato
+bell'insalivata
+bell'insalivato
+bell'insaponata
+bell'insaponato
+bell'intervistato
+Bell'intervistato
 Bellinzago
 bellinzonese/S
 bellocchio/O
@@ -19215,7 +19250,6 @@ codicologico/p
 codificabile/S
 codificando/DJ
 codificare/ALKhlJI
-codificata
 codificato/EyJ
 codificatore/S
 codificatrice/S
@@ -21816,10 +21850,9 @@ copulazione/S
 copule
 copyleft
 copyright
-CopyrightAndreaPescetti
 CopyrightDavidePrina
 CopyrightGianlucaTurconi
-CopyrightTurconiPrinaPescettiLicenzaGPLTre
+CopyrightGianlucaTurconiDavidePrinaLicenzaGPL
 coque
 coraggio
 coraggioso/oYW
@@ -24123,6 +24156,7 @@ deliziato/Ey
 delizie
 delizioso/oYW
 della/Q
+dell'élite
 dello
 Delmona
 delocalizzazione/S
@@ -26197,7 +26231,6 @@ disinserimento/O
 disinserire/tvI
 disinstallare/ALKhlI
 disinstallato/Ey
-disinstallazione/S
 disintasando/D
 disintasare/ALKhlI
 disintasato/Ey
@@ -28977,9 +29010,10 @@ endovena/QTUqrs
 endovenosa/QTUqrs
 endovenoso/OTqr
 endrica/TUqrs
+endrizzi/Tqr
 endurance/TUqs
 endurista/QRTUqrs
-enduro/TUr
+enduro/Tqr
 Enea/TUqrs
 Enego
 eneida/QTUqrs
@@ -29908,7 +29942,6 @@ esafora/TUqrs
 esagerando/D
 esagerante/Us
 esagerare/ALKhlTXqrI
-esageratamente/TU
 esagerativo/Tqr
 esagerato/EyTUYqrs
 esagerazione/STUqrs
@@ -39762,7 +39795,6 @@ impossibilità/TUqs
 impostando/D
 impostante/Us
 imposta/QUTqs
-impostabile/S
 impostare/ALKhlTXqrI
 impostato/EyTUqrs
 impostatura/TUqrs
@@ -41053,6 +41085,7 @@ incontraffattibile/STU
 incontrando/D
 incontrante/Us
 incontrare/ALKhlTXqrI
+incontrario/Tqr
 incontrastabile/SYTU
 incontrastata/QTU
 incontrastato/OTYW
@@ -42444,7 +42477,6 @@ infusione/STUqrs
 infuso/OTqr
 infusorio/OTqr
 infutura/TUqrs
-ing/Tq
 ingaba/TUqrs
 ingabbanare/ALKhlTXqrI
 ingabbanato/EyTUqrs
@@ -48954,6 +48986,8 @@ Luvinate
 lux
 luxmetro/O
 Luzzana
+lxccix
+lxxlvi
 m/£$
 Maastricht
 macabro/oY
@@ -52141,6 +52175,7 @@ mimico/pY
 Mimma
 m'immerse
 m'immersero
+mimmi
 Mimmo
 m'immusinii
 m'immusonirei
@@ -59736,7 +59771,6 @@ parametrazione/S
 parametrico/p
 parametrio
 parametrite
-parametrizzabile/S
 parametrizzando/D
 parametrizzare/ALKhlI
 parametrizzato/Ey
@@ -67104,6 +67138,7 @@ quechua
 quegli
 quei
 quel
+quell'élite
 quello/o
 querceto/O
 quercia/n
@@ -88913,7 +88948,6 @@ tournée
 tout
 tovaglia/Q
 tovagliato/O
-tovaglietta/Q
 tovagliolino/O
 tovagliolo/O
 tovarisc
@@ -91699,6 +91733,7 @@ un'imponente
 un'importuna
 un'incenerente
 un'incubante
+un'inculante
 un'inculcante
 un'incuneante
 un'indebita
@@ -95006,7 +95041,7 @@ zigzag
 zigzagando/D
 zigzagare/ALKhlI
 zigzagato/Ey
-ziiiziiizxxivziiizmmxi
+ziizivzizixzmmvii
 zillo/O
 zimarra/Q
 zimasi
